@@ -27,7 +27,7 @@ reset.css
   transform: translateX(-50%) translateY(-50%);
 }*/
 #zoom {
-padding:4px;
+padding:5px;
 }
 #pop-up {
    display: none;
