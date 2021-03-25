@@ -26,9 +26,9 @@ reset.css
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }*/
-#imgqr {
+/*#imgqr {
 background:var(--mycol);
-}
+}*/
 #zoom {
 padding:5px;
 }
