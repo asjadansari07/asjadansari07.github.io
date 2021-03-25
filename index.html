@@ -1183,6 +1183,7 @@
                             <li><i class="lnr lnr-smartphone"></i><a href="tel:=+918454966338" id="phn2">+91 8454966338</a><!--,<a href="tel:=+918652625108"> +91 8652625108</a>--></li>
                             <li style="text-transform: lowercase;"><i class="lnr lnr-envelope"></i><a href="mailto:asjadansari07@gmail.com"id="eml2">asjadansari07@gmail.com</a></li>
                             <li style="text-transform: lowercase;"><i class="lnr lnr-earth"></i><a href="https://asjadansari07.github.io" id="web2">www.asjadansari07.github.io</a></li>
+                            <li><i class="lnr" id="zoom"><img alt='Download App' height='40' src='Public/images/AppQR.png' width='40' /></i><a href="https://asjadansari07.github.io/Public/apk/asjadansari.apk" alt="Download App" target="_blank">Download App</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1278,6 +1279,30 @@
             Back to top
         </div>
     </div>
+    <div id="pop-up">       
+      <img alt='Download App' height='200' src='Public/images/AppQR.png' width='200' />
+    </div>
+    <script>
+        $(function () {
+            var moveLeft = 20;
+            var moveDown = 10;
+
+            $('#zoom').hover(function (e) {
+                $('#pop-up').show();
+                //.css('top', e.pageY + moveDown)
+                //.css('left', e.pageX + moveLeft)
+                //.appendTo('body');
+            }, function () {
+                $('#pop-up').hide();
+            });
+
+            $('#zoom').mousemove(function (e) {
+                $("#pop-up").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+            });
+
+        });
+
+    </script>
     <script>
         //Make sure the user has scrolled at least double the height of the browser
         //var toggleHeight = $(window).outerHeight() * 2;

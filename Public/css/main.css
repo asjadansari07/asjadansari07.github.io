@@ -26,6 +26,19 @@ reset.css
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }*/
+#zoom {
+padding:4px;
+}
+#pop-up {
+   display: none;
+   position: absolute;
+/*   width: 280px;*/
+   padding: 5px;
+   background: #ffffff;
+   color: #000000;
+   border: 1px solid #000000;
+   
+ }
 .testimonial-avatar:hover{
 border: 2px solid var(--mycol);
 }
