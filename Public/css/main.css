@@ -40,6 +40,8 @@ padding:5px;
 #pop-up {
    display: none;
    position: absolute;
+   width:200px;
+   height:200px;
 /*   width: 280px;*/
 /*   padding: 5px;*/
    background: #ffffff;
