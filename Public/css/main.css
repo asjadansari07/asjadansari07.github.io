@@ -118,6 +118,9 @@ padding-top: 10px;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+#resume a:hover {
+        color:var(--mycol) !important;
+    }
 #asj:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 11px;
