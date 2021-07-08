@@ -5159,7 +5159,7 @@ h4#comment-post-message {
 	}
 	.header-logo-desc p {
 		/*font-size: 100%;*/
-		font-size: 35px !important;
+		font-size: 33px !important;
 		font-weight: 900 !important;
 		font-family: fantasy, sans-serif !important;
 		text-transform: none !important;
@@ -5170,7 +5170,7 @@ h4#comment-post-message {
         font-weight:bold;
         font-family:fantasy;*/
 		color: var(--mycol);
-		font-size: 35px !important;
+		font-size: 33px !important;
 		font-weight: bold;
 		font-family: sans-serif;
 		text-transform: none;
