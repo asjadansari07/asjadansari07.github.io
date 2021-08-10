@@ -351,7 +351,7 @@
                 <!--<video controls autoplay loop>
   <source src="https://asjadansari07.github.io/Public/images/skillsVid-W-S.mp4" type="video/mp4">
 </video>-->
-                <img id="Img1" src="Public/images/skills-B-L.gif"></img>
+                <img id="imgSkills" src="Public/images/skills-W-L.gif"></img>
             </div>
         </div>
         <div style='clear: both;'></div>
@@ -3541,13 +3541,16 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
             if (e.matches) {
 			if(!$("body").css("background-color")=="rgb(255, 255, 255)"){
 			    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.png) no-repeat center', 'important');            
+			    document.getElementById('imgSkills').setAttribute('src','Public/images/skills-B-L.gif');
 			}else{
                 document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.png) no-repeat center', 'important');
+                document.getElementById('imgSkills').setAttribute('src','Public/images/skills-W-L.gif');
         }
         //alert('Dark');        
         } else {
             //alert('Light');
             document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.png) no-repeat center', 'important');            
+            document.getElementById('imgSkills').setAttribute('src','Public/images/skills-W-L.gif');
         }
         });
         window.onload = function () {
