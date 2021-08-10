@@ -582,7 +582,7 @@ a.btnLM.hover-slide-right:hover::before {
 
 
 /*remove blue highlight in mobile start*/
-
+.m-theme,
 m-backtotop,
 .m-backtotop.active,
 .backtotop,
@@ -893,6 +893,43 @@ position-relative1 {
 * {
 	box-sizing: border-box;
 }
+
+
+.m-theme {	
+	position: fixed;
+	bottom: 15px;
+	left: 20px;
+	width: 50px;
+	height: 50px;
+	background: var(--mycol);
+	border-radius: 25px;
+	text-align: center;
+	border: 2px solid #fff;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+	opacity: 1;
+	overflow: hidden;
+	color: #fff;
+	z-index: 999999;
+}
+
+.m-theme>div.arrow {
+	/*position: absolute;*/
+    position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	opacity: 1;
+}
+
+.m-theme:hover {
+	/*transform: scale(1.1);*/
+	/*bottom: 20px;*/    
+	cursor: pointer;
+	background: var(--mycol);
+	/*box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);*/
+}
+
+
 
 .m-backtotop {
 	-webkit-transition: all 0.3s ease-in-out;

@@ -1817,6 +1817,16 @@
             Back to top
         </div>
     </div>
+    <!--CHANGE THEME BUTTON-->
+    <div class="m-theme" title="Click to change theme">
+        <div class="arrow">
+            <img id="imgtheme" src="Public/images/theme.gif"></img>
+            <!--<i class="fa fa-cog fa-spin"></i>-->
+        </div>
+        <!--<div class="text">
+            Change Theme
+        </div>-->
+    </div>
     <div id="pop-up">
         <!--<img alt='Download App' height='200' src='Public/images/AppQR.png' width='200' />-->
         <svg version="1.1" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
@@ -2378,7 +2388,7 @@
             $("html, body").animate({ scrollTop: 0 }, "slow");
             return false;
         });
-
+                
         $("#loadmore").click(function () {
             if (!$("#gal2").is(":visible")) {
                 $("#gal2").show();
@@ -3452,6 +3462,48 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                         
             var counter = 0;
             $("#Header1_headerimg").click(function () {
+                switch (counter) {
+                    case 0:
+                        changeColor('#ffbd2f', 'rgba(255,189,47,0.5)', 'Public/images/apk_yellow.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSfNb2Kzqwg1ABhvCjaUbFcUw_zRzrF18AK5aaOF1SnWkdpMZA/viewform?embedded=true');
+                        counter += 1;
+                        break;
+
+                    case 1:
+                        changeColor('#00BC22', 'rgba(0,255,0,0.5)', 'Public/images/apk_green.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSejjLWlzY8VK2eO-bhy5JzNHhumu7VXdTEGG8tpPn4EDC5jyQ/viewform?embedded=true');
+                        counter += 1;
+                        break;
+
+                    case 2:
+                        changeColor('#0030EF', 'rgba(0,0,255,0.5)', 'Public/images/apk_blue.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');
+                        counter += 1;
+                        break;
+                    case 3:
+                        changeColor('#008080', 'rgba(0,128,128,0.5)', 'Public/images/apk_teal.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
+                        counter += 1;
+                        break;
+                    case 4:
+                        changeColor('#FF00FF', 'rgba(255,0,255,0.5)', 'Public/images/apk_magenta.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSeXyW2PDxsG5Y_R5eTmWrtWjG-vMJQvYXWksHXFC3TbEO7QxQ/viewform?embedded=true');
+                        counter += 1;
+                        break;
+                    case 5:
+                        changeColor('#FF8000', 'rgba(255,128,0,0.5)', 'Public/images/apk_orange.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSdcda7CfmBlvKwIIhOp8OMMbGiaEWheI8fyUJqsQ0RxK0EDRQ/viewform?embedded=true');
+                        counter += 1;
+                        break;
+                    case 6:
+                        changeColor('#C0C0C0', 'rgba(192,192,192,0.5)', 'Public/images/apk_grey.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScMJ6lFRbePTtDsSnTRCXPQEOhP8K8nVK5Xb8p-qT69QssbpQ/viewform?embedded=true');
+                        counter += 1;
+                        break;
+                    case 7:
+                        changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
+                        counter = 0;
+                        break;
+                    default:
+                        changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
+                        counter = 0;
+                        break;
+                }
+            });
+            $(".m-theme").click(function () {
                 switch (counter) {
                     case 0:
                         changeColor('#ffbd2f', 'rgba(255,189,47,0.5)', 'Public/images/apk_yellow.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSfNb2Kzqwg1ABhvCjaUbFcUw_zRzrF18AK5aaOF1SnWkdpMZA/viewform?embedded=true');
