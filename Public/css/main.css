@@ -4981,6 +4981,10 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 768px) {
+     .m-backtotop > div.text {
+    font-size: 6px;
+	font-weight: 700;
+    }
 	article {
 		padding: 10px;
 	}
@@ -5089,6 +5093,10 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 767px) {
+     .m-backtotop > div.text {
+    font-size: 6px;
+	font-weight: 700;
+    }
 	.fancyBtnHorizontal,
 	.fancyBtnVertical {
 		display: none;
