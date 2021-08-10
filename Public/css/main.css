@@ -1239,7 +1239,7 @@ img {
 
 #preloader {
 	position: fixed;
-	z-index: 1800;
+	z-index: 9999999;
 	top: 0;
 	right: 0;
 	bottom: 0;
