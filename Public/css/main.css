@@ -5111,8 +5111,8 @@ h4#comment-post-message {
 
 @media only screen and (max-width: 480px) {
     .m-backtotop > div.text {
-    font-size: 5px;
-	font-weight: 600;
+    font-size: 6px;
+	font-weight: 700;
     }
     #popDiv {
 		padding-right: 0;
@@ -5199,8 +5199,8 @@ h4#comment-post-message {
 
 @media only screen and (max-width: 360px) {
     .m-backtotop > div.text {
-    font-size: 5px;
-	font-weight: 600;
+    font-size: 6px;
+	font-weight: 700;
     }
 	.index .post h2,
 	.archive .post h2,
@@ -5251,8 +5251,8 @@ h4#comment-post-message {
 
 @media only screen and (max-width: 300px) {
     .m-backtotop > div.text {
-    font-size: 5px;
-	font-weight: 600;
+    font-size: 6px;
+	font-weight: 700;
     }
 	.index .post h2,
 	.archive .post h2,
