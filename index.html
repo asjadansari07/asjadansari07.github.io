@@ -1818,7 +1818,7 @@
         </div>
     </div>
     <!--CHANGE THEME BUTTON-->
-    <div class="m-theme" title="Click to change theme">
+    <div class="m-theme" aria-hidden="true" title="Click to change theme">
         <div class="arrow">
             <img id="imgtheme" src="Public/images/theme.gif"></img>
             <!--<i class="fa fa-cog fa-spin"></i>-->
@@ -2430,10 +2430,12 @@
             if ($(window).scrollTop() > 500) {
                 //Adds active class to make button visible
                 $(".m-backtotop").addClass("active");
+                $(".m-theme").addClass("active");
 
             } else {
                 //Removes active class to make button visible
                 $(".m-backtotop").removeClass("active");
+                $(".m-theme").removeClass("active");
             }
             // checks to see if you have scrolled far enough down to activate the animation
             if ($(window).scrollTop() >= x) {
