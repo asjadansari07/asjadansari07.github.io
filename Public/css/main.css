@@ -988,7 +988,7 @@ img#imgtheme {
 }
 
 .m-backtotop>div.text {
-	font-size: 6px;
+	font-size: 7px;
 	/*font-size: 0.5rem;*/
 	line-height: 10px;
 	text-transform: uppercase;
@@ -5108,7 +5108,11 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 480px) {
-	#popDiv {
+    .m-backtotop > div.text {
+    font-size: 5px;
+	font-weight: 600;
+    }
+    #popDiv {
 		padding-right: 0;
 		width: 100%;
 	}
@@ -5192,6 +5196,10 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 360px) {
+    .m-backtotop > div.text {
+    font-size: 5px;
+	font-weight: 600;
+    }
 	.index .post h2,
 	.archive .post h2,
 	.sora-slide .ty-bonos-entry a,
@@ -5240,6 +5248,10 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 300px) {
+    .m-backtotop > div.text {
+    font-size: 5px;
+	font-weight: 600;
+    }
 	.index .post h2,
 	.archive .post h2,
 	.sora-slide .ty-bonos-entry a,
