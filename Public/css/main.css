@@ -5111,8 +5111,17 @@ h4#comment-post-message {
 
 @media only screen and (max-width: 480px) {
     .m-backtotop > div.text {
-    font-size: 6px !important;
-	font-weight: 700 !important;
+    -webkit-font-size: 6px !important;
+	-webkit-font-weight: 700 !important;
+
+    -o-font-size: 6px !important;
+	-o-font-weight: 700 !important;
+
+    -ms-font-size: 6px !important;
+	-ms-font-weight: 700 !important;
+
+    -moz-font-size: 6px !important;
+	-moz-font-weight: 700 !important; 
     }
     #popDiv {
 		padding-right: 0;
@@ -5199,8 +5208,17 @@ h4#comment-post-message {
 
 @media only screen and (max-width: 360px) {
     .m-backtotop > div.text {
-    font-size: 6px !important;
-	font-weight: 700 !important;
+    -webkit-font-size: 6px !important;
+	-webkit-font-weight: 700 !important;
+
+    -o-font-size: 6px !important;
+	-o-font-weight: 700 !important;
+
+    -ms-font-size: 6px !important;
+	-ms-font-weight: 700 !important;
+
+    -moz-font-size: 6px !important;
+	-moz-font-weight: 700 !important;    
     }
 	.index .post h2,
 	.archive .post h2,
@@ -5251,8 +5269,17 @@ h4#comment-post-message {
 
 @media only screen and (max-width: 300px) {
     .m-backtotop > div.text {
-    font-size: 6px !important;
-	font-weight: 700 !important;
+    -webkit-font-size: 6px !important;
+	-webkit-font-weight: 700 !important;
+
+    -o-font-size: 6px !important;
+	-o-font-weight: 700 !important;
+
+    -ms-font-size: 6px !important;
+	-ms-font-weight: 700 !important;
+
+    -moz-font-size: 6px !important;
+	-moz-font-weight: 700 !important; 
     }
 	.index .post h2,
 	.archive .post h2,
