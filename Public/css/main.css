@@ -4860,20 +4860,7 @@ h4#comment-post-message {
 /* ######## Responsive Css ######################### */
 
 @media only screen and (max-width: 1200px) {
-    .m-backtotop>div.text {
-    -webkit-font-size: 7px !important;
-	-webkit-font-weight: 600 !important;
-
-    -o-font-size: 7px !important;
-	-o-font-weight: 600 !important;
-
-    -ms-font-size: 7px !important;
-	-ms-font-weight: 600 !important;
-
-    -moz-font-size: 7px !important;
-	-moz-font-weight: 600 !important; 
-    }
-	.featured-slider-wrap {
+   .featured-slider-wrap {
 		width: auto !important;
 	}
 	.sora-author-box-text {
@@ -4902,20 +4889,7 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 1100px) {
-	
-    .m-backtotop>div.text {
-    -webkit-font-size: 7px !important;
-	-webkit-font-weight: 600 !important;
-
-    -o-font-size: 7px !important;
-	-o-font-weight: 600 !important;
-
-    -ms-font-size: 7px !important;
-	-ms-font-weight: 600 !important;
-
-    -moz-font-size: 7px !important;
-	-moz-font-weight: 600 !important; 
-    }.fancyBtnHorizontal,
+	.fancyBtnHorizontal,
 	.fancyBtnVertical {
 		display: none;
 	}
@@ -4943,20 +4917,7 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 980px) {
-    .m-backtotop>div.text {
-    -webkit-font-size: 7px !important;
-	-webkit-font-weight: 600 !important;
-
-    -o-font-size: 7px !important;
-	-o-font-weight: 600 !important;
-
-    -ms-font-size: 7px !important;
-	-ms-font-weight: 600 !important;
-
-    -moz-font-size: 7px !important;
-	-moz-font-weight: 600 !important; 
-    }
-	.fancyBtnHorizontal,
+    .fancyBtnHorizontal,
 	.fancyBtnVertical {
 		display: none;
 	}
@@ -5000,20 +4961,7 @@ h4#comment-post-message {
 }
 
 @media screen and (max-width: 880px) {
-    .m-backtotop>div.text {
-    -webkit-font-size: 7px !important;
-	-webkit-font-weight: 600 !important;
-
-    -o-font-size: 7px !important;
-	-o-font-weight: 600 !important;
-
-    -ms-font-size: 7px !important;
-	-ms-font-weight: 600 !important;
-
-    -moz-font-size: 7px !important;
-	-moz-font-weight: 600 !important; 
-    }
-	.index .post-grid-item,
+    .index .post-grid-item,
 	.archive .post-grid-item {
 		width: 32%;
 	}
@@ -5033,20 +4981,7 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 768px) {
-     .m-backtotop>div.text {
-    -webkit-font-size: 7px !important;
-	-webkit-font-weight: 600 !important;
-
-    -o-font-size: 7px !important;
-	-o-font-weight: 600 !important;
-
-    -ms-font-size: 7px !important;
-	-ms-font-weight: 600 !important;
-
-    -moz-font-size: 7px !important;
-	-moz-font-weight: 600 !important; 
-    }
-	article {
+     article {
 		padding: 10px;
 	}
 	.share-art .wat-art {
@@ -5154,20 +5089,7 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 767px) {
-     .m-backtotop>div.text {
-    -webkit-font-size: 7px !important;
-	-webkit-font-weight: 600 !important;
-
-    -o-font-size: 7px !important;
-	-o-font-weight: 600 !important;
-
-    -ms-font-size: 7px !important;
-	-ms-font-weight: 600 !important;
-
-    -moz-font-size: 7px !important;
-	-moz-font-weight: 600 !important; 
-    }
-	.fancyBtnHorizontal,
+     .fancyBtnHorizontal,
 	.fancyBtnVertical {
 		display: none;
 	}
@@ -5186,19 +5108,6 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 480px) {
-    .m-backtotop>div.text {
-    -webkit-font-size: 6px !important;
-	-webkit-font-weight: 700 !important;
-
-    -o-font-size: 6px !important;
-	-o-font-weight: 700 !important;
-
-    -ms-font-size: 6px !important;
-	-ms-font-weight: 700 !important;
-
-    -moz-font-size: 6px !important;
-	-moz-font-weight: 700 !important; 
-    }
     #popDiv {
 		padding-right: 0;
 		width: 100%;
@@ -5283,20 +5192,7 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 360px) {
-    .m-backtotop>div.text {
-    -webkit-font-size: 6px !important;
-	-webkit-font-weight: 700 !important;
-
-    -o-font-size: 6px !important;
-	-o-font-weight: 700 !important;
-
-    -ms-font-size: 6px !important;
-	-ms-font-weight: 700 !important;
-
-    -moz-font-size: 6px !important;
-	-moz-font-weight: 700 !important;    
-    }
-	.index .post h2,
+   .index .post h2,
 	.archive .post h2,
 	.sora-slide .ty-bonos-entry a,
 	#first-post .post h2 {
@@ -5343,20 +5239,7 @@ h4#comment-post-message {
 	}
 }
 
-@media only screen and (max-width: 300px) {
-    .m-backtotop>div.text {
-    -webkit-font-size: 6px !important;
-	-webkit-font-weight: 700 !important;
-
-    -o-font-size: 6px !important;
-	-o-font-weight: 700 !important;
-
-    -ms-font-size: 6px !important;
-	-ms-font-weight: 700 !important;
-
-    -moz-font-size: 6px !important;
-	-moz-font-weight: 700 !important; 
-    }
+@media only screen and (max-width: 300px) {    
 	.index .post h2,
 	.archive .post h2,
 	.sora-slide .ty-bonos-entry a,

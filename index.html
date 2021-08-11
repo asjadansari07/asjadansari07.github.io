@@ -3446,6 +3446,54 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
     <script type="text/javascript" src="Public/js/3830979360-widgets.js"></script>
     <script>
         $(document).ready(function () {
+            var h=$(window).height(); // New height
+            var w=$(window).width(); // New width
+            var ele=$('.m-backtotop>div.text')
+            switch (true) {
+                case (w<=1200):
+                    ele.attr("font-size","7px");
+                    ele.attr("font-weight","600");
+                    break;
+                case (w<=1100):
+                    ele.attr("font-size","7px");
+                    ele.attr("font-weight","600");
+                    break;
+                case (w<=980):
+                    ele.attr("font-size","7px");
+                    ele.attr("font-weight","600");
+                    break;
+                case (w<=880):
+                    ele.attr("font-size","7px");
+                    ele.attr("font-weight","600");
+                    break;
+                case (w<=768):
+                    ele.attr("font-size","7px");
+                    ele.attr("font-weight","600");
+                    break;
+                case (w<=767):
+                    ele.attr("font-size","7px");
+                    ele.attr("font-weight","600");
+                    break;
+                case (w<=480):
+                    ele.attr("font-size","6px");
+                    ele.attr("font-weight","700");
+                    break;
+                case (w<=360):
+                    ele.attr("font-size","6px");
+                    ele.attr("font-weight","700");
+                    break;
+                case (w<=300):
+                    ele.attr("font-size","6px");
+                    ele.attr("font-weight","700");
+                    break;
+                default:
+                    ele.attr("font-size","6px");
+                    ele.attr("font-weight","700");
+                    break;
+
+
+            }
+
             $('#nav').onePageNav();
             $('.slide-in').onePageNav();
             document.documentElement.style.setProperty('--mycol', '#FF0000', 'important');
