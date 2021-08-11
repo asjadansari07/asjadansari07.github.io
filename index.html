@@ -3450,45 +3450,50 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
             var w=$(window).width(); // New width
             var ele=$('.m-backtotop>div.text')
             switch (true) {
+                
+                case (w>1200):
+                    ele.css("font-size","7px");
+                    ele.css("font-weight","600");
+                    break;
                 case (w<=1200):
-                    ele.attr("font-size","7px");
-                    ele.attr("font-weight","600");
+                    ele.css("font-size","7px");
+                    ele.css("font-weight","600");
                     break;
                 case (w<=1100):
-                    ele.attr("font-size","7px");
-                    ele.attr("font-weight","600");
+                    ele.css("font-size","7px");
+                    ele.css("font-weight","600");
                     break;
                 case (w<=980):
-                    ele.attr("font-size","7px");
-                    ele.attr("font-weight","600");
+                    ele.css("font-size","7px");
+                    ele.css("font-weight","600");
                     break;
                 case (w<=880):
-                    ele.attr("font-size","7px");
-                    ele.attr("font-weight","600");
+                    ele.css("font-size","7px");
+                    ele.css("font-weight","600");
                     break;
                 case (w<=768):
-                    ele.attr("font-size","7px");
-                    ele.attr("font-weight","600");
+                    ele.css("font-size","7px");
+                    ele.css("font-weight","600");
                     break;
                 case (w<=767):
-                    ele.attr("font-size","7px");
-                    ele.attr("font-weight","600");
+                    ele.css("font-size","7px");
+                    ele.css("font-weight","600");
                     break;
                 case (w<=480):
-                    ele.attr("font-size","6px");
-                    ele.attr("font-weight","700");
+                    ele.css("font-size","6px");
+                    ele.css("font-weight","700");
                     break;
                 case (w<=360):
-                    ele.attr("font-size","6px");
-                    ele.attr("font-weight","700");
+                    ele.css("font-size","6px");
+                    ele.css("font-weight","700");
                     break;
                 case (w<=300):
-                    ele.attr("font-size","6px");
-                    ele.attr("font-weight","700");
+                    ele.css("font-size","6px");
+                    ele.css("font-weight","700");
                     break;
                 default:
-                    ele.attr("font-size","6px");
-                    ele.attr("font-weight","700");
+                    ele.css("font-size","6px");
+                    ele.css("font-weight","700");
                     break;
 
 
