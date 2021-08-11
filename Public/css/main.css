@@ -988,11 +988,11 @@ img#imgtheme {
 }
 
 .m-backtotop>div.text {
-	font-size: 7px;
+	/*font-size: 7px;*/
 	/*font-size: 0.5rem;*/
 	line-height: 10px;
 	text-transform: uppercase;
-	font-weight: 600;
+	/*font-weight: 600;*/
 	font-family: "Open Sans", sans-serif;
 	position: absolute;
 	left: 50%;
@@ -4860,6 +4860,19 @@ h4#comment-post-message {
 /* ######## Responsive Css ######################### */
 
 @media only screen and (max-width: 1200px) {
+    .m-backtotop>div.text {
+    -webkit-font-size: 7px !important;
+	-webkit-font-weight: 600 !important;
+
+    -o-font-size: 7px !important;
+	-o-font-weight: 600 !important;
+
+    -ms-font-size: 7px !important;
+	-ms-font-weight: 600 !important;
+
+    -moz-font-size: 7px !important;
+	-moz-font-weight: 600 !important; 
+    }
 	.featured-slider-wrap {
 		width: auto !important;
 	}
@@ -4889,7 +4902,20 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 1100px) {
-	.fancyBtnHorizontal,
+	
+    .m-backtotop>div.text {
+    -webkit-font-size: 7px !important;
+	-webkit-font-weight: 600 !important;
+
+    -o-font-size: 7px !important;
+	-o-font-weight: 600 !important;
+
+    -ms-font-size: 7px !important;
+	-ms-font-weight: 600 !important;
+
+    -moz-font-size: 7px !important;
+	-moz-font-weight: 600 !important; 
+    }.fancyBtnHorizontal,
 	.fancyBtnVertical {
 		display: none;
 	}
@@ -4917,6 +4943,19 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 980px) {
+    .m-backtotop>div.text {
+    -webkit-font-size: 7px !important;
+	-webkit-font-weight: 600 !important;
+
+    -o-font-size: 7px !important;
+	-o-font-weight: 600 !important;
+
+    -ms-font-size: 7px !important;
+	-ms-font-weight: 600 !important;
+
+    -moz-font-size: 7px !important;
+	-moz-font-weight: 600 !important; 
+    }
 	.fancyBtnHorizontal,
 	.fancyBtnVertical {
 		display: none;
@@ -4961,6 +5000,19 @@ h4#comment-post-message {
 }
 
 @media screen and (max-width: 880px) {
+    .m-backtotop>div.text {
+    -webkit-font-size: 7px !important;
+	-webkit-font-weight: 600 !important;
+
+    -o-font-size: 7px !important;
+	-o-font-weight: 600 !important;
+
+    -ms-font-size: 7px !important;
+	-ms-font-weight: 600 !important;
+
+    -moz-font-size: 7px !important;
+	-moz-font-weight: 600 !important; 
+    }
 	.index .post-grid-item,
 	.archive .post-grid-item {
 		width: 32%;
@@ -4981,7 +5033,19 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 768px) {
-     
+     .m-backtotop>div.text {
+    -webkit-font-size: 7px !important;
+	-webkit-font-weight: 600 !important;
+
+    -o-font-size: 7px !important;
+	-o-font-weight: 600 !important;
+
+    -ms-font-size: 7px !important;
+	-ms-font-weight: 600 !important;
+
+    -moz-font-size: 7px !important;
+	-moz-font-weight: 600 !important; 
+    }
 	article {
 		padding: 10px;
 	}
@@ -5090,7 +5154,19 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 767px) {
-     
+     .m-backtotop>div.text {
+    -webkit-font-size: 7px !important;
+	-webkit-font-weight: 600 !important;
+
+    -o-font-size: 7px !important;
+	-o-font-weight: 600 !important;
+
+    -ms-font-size: 7px !important;
+	-ms-font-weight: 600 !important;
+
+    -moz-font-size: 7px !important;
+	-moz-font-weight: 600 !important; 
+    }
 	.fancyBtnHorizontal,
 	.fancyBtnVertical {
 		display: none;
@@ -5110,7 +5186,7 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 480px) {
-    .m-backtotop > div.text {
+    .m-backtotop>div.text {
     -webkit-font-size: 6px !important;
 	-webkit-font-weight: 700 !important;
 
@@ -5207,7 +5283,7 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 360px) {
-    .m-backtotop > div.text {
+    .m-backtotop>div.text {
     -webkit-font-size: 6px !important;
 	-webkit-font-weight: 700 !important;
 
@@ -5268,7 +5344,7 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 300px) {
-    .m-backtotop > div.text {
+    .m-backtotop>div.text {
     -webkit-font-size: 6px !important;
 	-webkit-font-weight: 700 !important;
 
