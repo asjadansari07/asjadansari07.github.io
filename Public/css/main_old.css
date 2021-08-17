@@ -4999,7 +4999,8 @@ h4#comment-post-message {
     #vidPlayer {
     width:400px;
     height:400px;
-    display:none;
+    /*display:none;*/
+    display:block;
     }
     .index .post-grid-item,
 	.archive .post-grid-item {
@@ -5027,7 +5028,8 @@ h4#comment-post-message {
     #vidPlayer {
     width:400px;
     height:400px;
-    display:none;
+    /*display:none;*/
+    display:block;
     }
      article {
 		padding: 10px;
@@ -5143,7 +5145,8 @@ h4#comment-post-message {
     #vidPlayer {
     width:400px;
     height:400px;
-    display:none;
+    /*display:none;*/
+    display:block;
     }
      .fancyBtnHorizontal,
 	.fancyBtnVertical {
@@ -5170,7 +5173,8 @@ h4#comment-post-message {
     #vidPlayer {
     width:300px;
     height:300px;
-    display:none;
+    /*display:none;*/
+    display:block;
     }
     #popDiv {
 		padding-right: 0;
@@ -5263,7 +5267,8 @@ h4#comment-post-message {
     #vidPlayer {
     width:200px;
     height:200px;
-    display:none;
+    /*display:none;*/
+    display:block;
     }  
    .index .post h2,
 	.archive .post h2,
@@ -5319,7 +5324,8 @@ h4#comment-post-message {
     #vidPlayer {
     width:200px;
     height:200px;
-    display:none;
+    /*display:none;*/
+    display:block;
     }  
 	.index .post h2,
 	.archive .post h2,
