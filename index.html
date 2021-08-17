@@ -1175,7 +1175,7 @@
             </div>
             <div style='clear: both'></div>
             <div class='row' id='sora_blogger_cntct_form'>
-                <div class='wrap-me wow fadeInLeft' data-wow-delay='0.2s' style='visibility: visible;'>
+                <div class='wrap-me wow fadeInLeft' data-wow-delay='0.2s' style='visibility: visible;' id="formdiv">
                     <div>
                         <iframe id="googleForm" src="https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                         <!--<script src="http://googleformrestyler.apixml.net/GoogleFormStyler.js" form="https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true"></script>-->
@@ -3453,6 +3453,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
             var ele=$('.m-backtotop>div.text')
             var skillimg=$('#imgSkills')
             var skillvid=$('#vidPlayer')
+            var formdiv=$('#formdiv')
             switch (true) {
                 
                 case (w>1200):
@@ -3460,61 +3461,72 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     ele.css("font-weight","600");
                     skillimg.css("display","none")
                     skillvid.css("display","block")
+                    formdiv.css("padding","40px 40px 5px")
                     break;
                 case (w<=1200 && w>1100):
                     ele.css("font-size","7px");
                     ele.css("font-weight","600");
                     skillimg.css("display","none")
                     skillvid.css("display","block")
+                    formdiv.css("padding","40px 40px 5px")
                     break;
                 case (w<=1100 && w>980):
                     ele.css("font-size","7px");
                     ele.css("font-weight","600");
                     skillimg.css("display","none")
                     skillvid.css("display","block")
+                    formdiv.css("padding","40px 40px 5px")
                     break;
                 case (w<=980 && w>880):
                     ele.css("font-size","7px");
                     ele.css("font-weight","600");
                     skillimg.css("display","none")
                     skillvid.css("display","block")
+                    formdiv.css("padding","40px 40px 5px")
                     break;
                 case (w<=880 && w>768):
                     ele.css("font-size","7px");
                     ele.css("font-weight","600");
                     skillimg.css("display","none")
                     skillvid.css("display","block")
+                    formdiv.css("padding","40px 40px 5px")
                     break;
                 case (w<=768 && w>767):
                     ele.css("font-size","7px");
                     ele.css("font-weight","600");
                     skillimg.css("display","none")
                     skillvid.css("display","block")
+                    formdiv.css("padding","40px 40px 5px")
                     break;
                 case (w<=767 && w>480):
                     ele.css("font-size","4px");
                     skillimg.css("display","block")
                     skillvid.css("display","none")
+                    formdiv.css("padding","40px 40px 5px")
                     break;
                 case (w<=480 && w>360):
                     ele.css("font-size","4px");                    
                     skillimg.css("display","block")
                     skillvid.css("display","none")
+                    formdiv.css("padding","20px 20px 5px")
                     break;
                 case (w<=360 && w>300):
                     ele.css("font-size","4px");    
                     skillimg.css("display","block")
                     skillvid.css("display","none")
+                    formdiv.css("padding","20px 20px 5px")
                     break;
                 case (w<=300):
                     ele.css("font-size","4px");   
                     skillimg.css("display","block")
                     skillvid.css("display","none")
+                    formdiv.css("padding","20px 20px 5px")
                     break;
                 default:
                     ele.css("font-size","4px");   
                     skillimg.css("display","block")
                     skillvid.css("display","none")
+                    formdiv.css("padding","20px 20px 5px")
                     break;
             }
 
