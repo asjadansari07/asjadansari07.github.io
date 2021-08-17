@@ -4860,9 +4860,13 @@ h4#comment-post-message {
 /* ######## Responsive Css ######################### */
 
 @media only screen and (max-width: 1200px) {
+     #imgSkills {
+    display:none;
+    }
      #vidPlayer {
     width:500px;
     height:500px;
+    display:block;
     }
    .featured-slider-wrap {
 		width: auto !important;
@@ -4893,9 +4897,13 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 1100px) {
+    #imgSkills {
+    display:none;
+    }
     #vidPlayer {
     width:500px;
-    height:500px;
+    height:500px;    
+    display:block;
     }
 	.fancyBtnHorizontal,
 	.fancyBtnVertical {
@@ -4925,9 +4933,13 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 980px) {
+    #imgSkills {
+    display:none;
+    }
     #vidPlayer {
     width:500px;
     height:500px;
+    display:block;
     }
     .fancyBtnHorizontal,
 	.fancyBtnVertical {
@@ -4973,9 +4985,13 @@ h4#comment-post-message {
 }
 
 @media screen and (max-width: 880px) {
+    #imgSkills {
+    display:block;
+    }
     #vidPlayer {
     width:400px;
     height:400px;
+    display:none;
     }
     .index .post-grid-item,
 	.archive .post-grid-item {
@@ -4997,9 +5013,13 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 768px) {
+    #imgSkills {
+    display:block;
+    }
     #vidPlayer {
     width:400px;
     height:400px;
+    display:none;
     }
      article {
 		padding: 10px;
@@ -5109,9 +5129,13 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 767px) {
+    #imgSkills {
+    display:block;
+    }
     #vidPlayer {
     width:400px;
     height:400px;
+    display:none;
     }
      .fancyBtnHorizontal,
 	.fancyBtnVertical {
@@ -5132,9 +5156,13 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 480px) {
+    #imgSkills {
+    display:block;
+    }
     #vidPlayer {
     width:300px;
     height:300px;
+    display:none;
     }
     #popDiv {
 		padding-right: 0;
@@ -5221,10 +5249,14 @@ h4#comment-post-message {
 
 @media only screen and (max-width: 360px) {
 
+    #imgSkills {
+    display:block;
+    }
     #vidPlayer {
     width:200px;
     height:200px;
-    }
+    display:none;
+    }  
    .index .post h2,
 	.archive .post h2,
 	.sora-slide .ty-bonos-entry a,
@@ -5272,10 +5304,14 @@ h4#comment-post-message {
 	}
 }
 
-@media only screen and (max-width: 300px) {  
+@media only screen and (max-width: 300px) {
+    #imgSkills {
+    display:block;
+    }
     #vidPlayer {
     width:200px;
     height:200px;
+    display:none;
     }  
 	.index .post h2,
 	.archive .post h2,
