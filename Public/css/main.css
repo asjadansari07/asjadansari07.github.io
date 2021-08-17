@@ -4860,6 +4860,10 @@ h4#comment-post-message {
 /* ######## Responsive Css ######################### */
 
 @media only screen and (max-width: 1200px) {
+     #vidPlayer {
+    width:500px;
+    height:500px;
+    }
    .featured-slider-wrap {
 		width: auto !important;
 	}
@@ -4889,6 +4893,10 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 1100px) {
+    #vidPlayer {
+    width:500px;
+    height:500px;
+    }
 	.fancyBtnHorizontal,
 	.fancyBtnVertical {
 		display: none;
@@ -4917,6 +4925,10 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 980px) {
+    #vidPlayer {
+    width:500px;
+    height:500px;
+    }
     .fancyBtnHorizontal,
 	.fancyBtnVertical {
 		display: none;
@@ -4961,6 +4973,10 @@ h4#comment-post-message {
 }
 
 @media screen and (max-width: 880px) {
+    #vidPlayer {
+    width:400px;
+    height:400px;
+    }
     .index .post-grid-item,
 	.archive .post-grid-item {
 		width: 32%;
@@ -4981,6 +4997,10 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 768px) {
+    #vidPlayer {
+    width:400px;
+    height:400px;
+    }
      article {
 		padding: 10px;
 	}
@@ -5089,6 +5109,10 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 767px) {
+    #vidPlayer {
+    width:400px;
+    height:400px;
+    }
      .fancyBtnHorizontal,
 	.fancyBtnVertical {
 		display: none;
@@ -5108,6 +5132,10 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 480px) {
+    #vidPlayer {
+    width:300px;
+    height:300px;
+    }
     #popDiv {
 		padding-right: 0;
 		width: 100%;
@@ -5192,6 +5220,11 @@ h4#comment-post-message {
 }
 
 @media only screen and (max-width: 360px) {
+
+    #vidPlayer {
+    width:200px;
+    height:200px;
+    }
    .index .post h2,
 	.archive .post h2,
 	.sora-slide .ty-bonos-entry a,
@@ -5239,7 +5272,11 @@ h4#comment-post-message {
 	}
 }
 
-@media only screen and (max-width: 300px) {    
+@media only screen and (max-width: 300px) {  
+    #vidPlayer {
+    width:200px;
+    height:200px;
+    }  
 	.index .post h2,
 	.archive .post h2,
 	.sora-slide .ty-bonos-entry a,
