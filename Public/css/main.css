@@ -4985,6 +4985,14 @@ h4#comment-post-message {
 }
 
 @media screen and (max-width: 880px) {
+    .fancyBtnHorizontal,
+	.fancyBtnVertical {
+		display: none;
+	}
+	#popDiv {
+		padding-right: 0;
+		width: 100%;
+	}
     #imgSkills {
     display:block;
     }
@@ -7615,22 +7623,4 @@ article {
 
 .post-header {
 	padding: 0;
-}
-
-@media only screen and (max-width: 880px) {
-	.fancyBtnHorizontal,
-	.fancyBtnVertical {
-		display: none;
-	}
-	#popDiv {
-		padding-right: 0;
-		width: 100%;
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	.fancyBtnHorizontal,
-	.fancyBtnVertical {
-		display: none;
-	}
 }
