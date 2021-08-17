@@ -350,8 +350,10 @@
         <div class="sora-special-box" id="section-skillsVid">
             <div class="special-wrap row" style="text-align: center;">
                 <video autoplay loop>
-  <source id="vidSkills" src="https://asjadansari07.github.io/Public/images/skillsVid-W-S.mp4" type="video/mp4">
-</video>
+                    <source id="vidSkillsmp4" src="https://asjadansari07.github.io/Public/images/skillsVid-W-S.mp4" type="video/mp4">
+                    <source id="vidSkillswebm" src="https://asjadansari07.github.io/Public/images/skillsVid-W-S.mp4" type="video/webm">
+                    <source id="vidSkillsogg" src="https://asjadansari07.github.io/Public/images/skillsVid-W-S.mp4" type="video/ogg">
+                </video>
                 <!--<img id="imgSkills" src="Public/images/skills-W-L.gif"></img>-->
             </div>
         </div>
@@ -3643,18 +3645,24 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
 			if(!$("body").css("background-color")=="rgb(255, 255, 255)"){
 			    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.png) no-repeat center', 'important');            
 			    //document.getElementById('imgSkills').setAttribute('src','Public/images/skills-B-L.gif');
-			    document.getElementById('vidSkills').setAttribute('src','Public/images/skillsVid-B-S.mp4');
+			    document.getElementById('vidSkillsmp4').setAttribute('src','Public/images/skillsVid-B-S.mp4');
+			    document.getElementById('vidSkillswebm').setAttribute('src','Public/images/skillsVid-B-S.webm');
+			    document.getElementById('vidSkillsogg').setAttribute('src','Public/images/skillsVid-B-S.ogg');
 			}else{
                 document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.png) no-repeat center', 'important');
-                //document.getElementById('imgSkills').setAttribute('src','Public/images/skills-W-L.gif');
-                document.getElementById('vidSkills').setAttribute('src','Public/images/skillsVid-W-S.mp4');        
+        //document.getElementById('imgSkills').setAttribute('src','Public/images/skills-W-L.gif');
+                document.getElementById('vidSkillsmp4').setAttribute('src','Public/images/skillsVid-W-S.mp4');        
+                document.getElementById('vidSkillswebm').setAttribute('src','Public/images/skillsVid-B-S.webm');
+                document.getElementById('vidSkillsogg').setAttribute('src','Public/images/skillsVid-B-S.ogg');
         }
         //alert('Dark');        
         } else {
             //alert('Light');
             document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.png) no-repeat center', 'important');            
-            document.getElementById('imgSkills').setAttribute('src','Public/images/skills-W-L.gif');
-            document.getElementById('vidSkills').setAttribute('src','Public/images/skillsVid-W-S.mp4'); 
+            //document.getElementById('imgSkills').setAttribute('src','Public/images/skills-W-L.gif');
+            document.getElementById('vidSkillsmp4').setAttribute('src','Public/images/skillsVid-W-S.mp4'); 
+            document.getElementById('vidSkillswebm').setAttribute('src','Public/images/skillsVid-B-S.webm');
+            document.getElementById('vidSkillsogg').setAttribute('src','Public/images/skillsVid-B-S.ogg');
         }
         });
         window.onload = function () {
