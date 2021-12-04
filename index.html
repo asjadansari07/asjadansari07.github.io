@@ -83,7 +83,8 @@
                                 <a style='display: block; cursor: pointer;'>
                                     <h1 style='display: none'>Asjed</h1>
                                     <!--<img alt="Basil" height="56px; " id="Header1_headerimg" src="Public/images/asj.png" style="display: block" width="150px; ">-->
-                                    <img alt="Asjed Ansari" height="56px;" title="Click to change theme" id="Header1_headerimg" src="Public/images/asj_2.webp" style="display: block" width="56px; ">
+                                    <!--<img alt="Asjed Ansari" height="56px;" title="Click to change theme" id="Header1_headerimg" src="Public/images/asj_2.webp" style="display: block" width="56px; ">-->
+                                    <img alt="Asjed Ansari" title="Click to change theme" id="Header1_headerimg" src="Public/images/asj_2.webp" style="display: block" >
                                 </a>
                             </div>
                         </div>
@@ -3455,7 +3456,8 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
             var skillimg=$('#imgSkills')
             var skillvid=$('#vidPlayer')
             var formdiv=$('#formdiv')
-
+            var hlogo=$('#Header1_headerimg')
+            var hinner=$('#header-inner')
             switch (true) {
                 
                 case (w>1200):
@@ -3464,6 +3466,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     skillimg.css("display","none")
                     skillvid.css("display","block")
                     formdiv.css("padding","40px 40px 5px")
+                    hlogo.css("height","56px").css("width","56px")
                     break;
                 case (w<=1200 && w>1100):
                     ele.css("font-size","7px");
@@ -3471,6 +3474,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     skillimg.css("display","none")
                     skillvid.css("display","block")
                     formdiv.css("padding","40px 40px 5px")
+                    hlogo.css("height","56px").css("width","56px")
                     break;
                 case (w<=1100 && w>980):
                     ele.css("font-size","7px");
@@ -3478,6 +3482,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     skillimg.css("display","none")
                     skillvid.css("display","block")
                     formdiv.css("padding","40px 40px 5px")
+                    hlogo.css("height","56px").css("width","56px")
                     break;
                 case (w<=980 && w>880):
                     ele.css("font-size","7px");
@@ -3485,6 +3490,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     skillimg.css("display","none")
                     skillvid.css("display","block")
                     formdiv.css("padding","40px 40px 5px")
+                    hlogo.css("height","56px").css("width","56px")
                     break;
                 case (w<=880 && w>768):
                     ele.css("font-size","7px");
@@ -3492,6 +3498,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     skillimg.css("display","none")
                     skillvid.css("display","block")
                     formdiv.css("padding","40px 40px 5px")
+                    hlogo.css("height","56px").css("width","56px")
                     break;
                 case (w<=768 && w>767):
                     ele.css("font-size","7px");
@@ -3499,36 +3506,46 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     skillimg.css("display","none")
                     skillvid.css("display","block")
                     formdiv.css("padding","40px 40px 5px")
+                    hlogo.css("height","56px").css("width","56px")
                     break;
                 case (w<=767 && w>480):
                     ele.css("font-size","4px");
                     skillimg.css("display","block")
                     skillvid.css("display","none")
                     formdiv.css("padding","40px 40px 5px")
+                    hlogo.css("height","45px").css("width","45px")
+                    hinner.css("padding-top","7px")
                     break;
                 case (w<=480 && w>360):
                     ele.css("font-size","4px");                    
                     skillimg.css("display","block")
                     skillvid.css("display","none")
                     formdiv.css("padding","20px 20px 5px")
+                    hlogo.css("height","45px").css("width","45px")
+                    hinner.css("padding-top","7px")
                     break;
                 case (w<=360 && w>300):
                     ele.css("font-size","4px");    
                     skillimg.css("display","block")
                     skillvid.css("display","none")
                     formdiv.css("padding","20px 20px 5px")
+                    hlogo.css("height","45px").css("width","45px")
+                    hinner.css("padding-top","7px")
                     break;
                 case (w<=300):
                     ele.css("font-size","4px");   
                     skillimg.css("display","block")
                     skillvid.css("display","none")
                     formdiv.css("padding","20px 20px 5px")
+                    hlogo.css("height","45px").css("width","45px")
+                    hinner.css("padding-top","7px")
                     break;
                 default:
                     ele.css("font-size","4px");   
                     skillimg.css("display","block")
                     skillvid.css("display","none")
                     formdiv.css("padding","20px 20px 5px")
+                    hlogo.css("height","56px").css("width","56px")
                     break;
             }
 
