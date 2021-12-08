@@ -3781,6 +3781,9 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
     <script>
         // disable right click
         var disableoptions = function () {
+            window.setTimeout(()=> {
+            console.log("%cWARNING-DON\'T STEAL!", "font: 2em monospace; color: ffffff; background-color: red;");
+        }, 1000); 
             document.addEventListener('contextmenu', event => event.preventDefault());
  
             document.onkeydown = function (e) {
@@ -3802,10 +3805,6 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
  
                 // disable U key
                 if(e.ctrlKey && e.keyCode == 85) {
-                    return false;
-                }
-
-                if(e.keyCode == 76) {
                     return false;
                 }
             }
