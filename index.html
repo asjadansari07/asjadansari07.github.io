@@ -3454,11 +3454,12 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
 
     <script type="text/javascript" src="Public/js/3830979360-widgets.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function () { 
+            disableoptions();
             //if website steal-start
             (function () { 
                 //const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
-                //const rgx = new RegExp('localhost:6251');
+                //const rgx = new RegExp('localhost:6250');
                 const rgx = new RegExp('asjadansari07.github.io');
     const host = window.location.host; 
     const isMatch = !host.match(rgx); 
@@ -3468,10 +3469,13 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     warning.innerText = 'DON\'T STEAL'; 
                     warning.style.fontSize = '5em'; 
                     warning.style.fontWeight = 700; 
-                    warning.style.position = 'fixed'; 
+                    warning.style.position = 'fixed';
+                    warning.style.backgroundColor='#ff0000';
+                    warning.style.color='#ffffff';
+                    warning.style.padding='12px';
                     warning.style.left = `${(window.innerWidth/2)}px`; 
-                    warning.style.top =`${ window.innerHeight /2}px`; 
-                    warning.style.zIndex = 9999; 
+                    warning.style.top =`${ window.innerHeight /2}px`;                     
+                    warning.style.zIndex = 9999999999999999999; 
                     document.body.appendChild(warning); 
                 } 
  
@@ -3480,7 +3484,8 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
  
                     window.setTimeout(()=> { 
                         exactRvg(); 
-                }, 500); 
+                    console.log("%cWARNING-DON\'T STEAL!", "font: 2em monospace; color: ffffff; background-color: red;");
+                }, 1000); 
  
             } 
     if (isMatch ) { 
@@ -3772,43 +3777,52 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
             }
         }
 
-    </script>
-    <!--<script>
+    </script> 
+    <script>
         // disable right click
-        document.addEventListener('contextmenu', event => event.preventDefault());
+        var disableoptions = function () {
+            document.addEventListener('contextmenu', event => event.preventDefault());
  
-        document.onkeydown = function (e) {
+            document.onkeydown = function (e) {
  
-            // disable F12 key
-            if(e.keyCode == 123) {
-                return false;
-            }
+                // disable F12 key
+                if(e.keyCode == 123) {
+                    return false;
+                }
  
-            // disable I key
-            if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
-                return false;
-            }
+                // disable I key
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+                    return false;
+                }
  
-            // disable J key
-            if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-                return false;
-            }
+                // disable J key
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                    return false;
+                }
  
-            // disable U key
-            if(e.ctrlKey && e.keyCode == 85) {
-                return false;
+                // disable U key
+                if(e.ctrlKey && e.keyCode == 85) {
+                    return false;
+                }
+
+                if(e.keyCode == 76) {
+                    return false;
+                }
             }
         }
- 
-</script>-->
-    <script>
+    </script> 
+    <!--<script>
         $(document).ready(function () {
-            
+            console._log = console.log 
+            console.log = function (log) { 
+                //return console._log("%c ${log}", 'color:rgba(255,255,255,0)'); 
+                return console._log(`%c ${log}`, 'color:rgba(255,255,255,0)'); 
+            }
         });
          
         
 
-    </script>
+    </script>-->
 </body>
 
 

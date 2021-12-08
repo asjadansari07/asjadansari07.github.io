@@ -21,7 +21,7 @@ var cornify_add = function (options) {
 
     // Prepare our lovely variables.
     //var cornify_url = 'https://www.cornify.com/';
-    var cornify_url = 'https://asjadansari07.github.io/';
+    var cornify_url = 'https://asjadansari07.github.io';
     var numType = 'px';
     var heightRandom = Math.random() * 0.75;
     var windowHeight = 768;
@@ -70,7 +70,7 @@ var cornify_add = function (options) {
     var img = document.createElement('img');
     img.style.opacity = 0;
     img.style.transition = "all .1s linear";
-    img.alt = 'A lovely unicorn or rainbow';
+    img.alt = 'Don\'t steal';
     img.onload = function () {
         img.style.opacity = 1;
     };
@@ -174,7 +174,8 @@ var cornify_add = function (options) {
     // Hooray - now we have a sparkly unicorn (or rainbow) on the page. Another cornification well done. Congrats!
 
     // When clicking 5 times, add a custom stylesheet to make the page look awesome.
-    if (cornify_count == 5) {
+    //if (cornify_count == 5) { 
+    if (cornify_count > 5) {
         var cssExisting = document.getElementById('_asjed_css');
 
         if (!cssExisting) {
@@ -190,7 +191,7 @@ var cornify_add = function (options) {
         cornify_replace();
     }
 
-    cornify_updatecount();
+    //cornify_updatecount();
 
     // Trigger an event on the document.
     var event = new Event('cornify');
@@ -258,22 +259,22 @@ if (isNaN(cornify_count)) {
 }
 
 // Adds happy words at the beginning of all headers on the page.
-var cornify_replace = function () {
-    // Replace text.
-    var hc = 6;
-    var hs;
-    var h;
-    var k;
-    var words = ['Happy', 'Sparkly', 'Glittery', 'Fun', 'Magical', 'Lovely', 'Cute', 'Charming', 'Amazing', 'Wonderful'];
-    while (hc >= 1) {
-        hs = document.getElementsByTagName('h' + hc);
-        for (k = 0; k < hs.length; k++) {
-            h = hs[k];
-            h.innerHTML = words[Math.floor(Math.random() * words.length)] + ' ' + h.innerHTML;
-        }
-        hc -= 1;
-    }
-};
+//var cornify_replace = function () {
+//    // Replace text.
+//    var hc = 6;
+//    var hs;
+//    var h;
+//    var k;
+//    var words = ['Happy', 'Sparkly', 'Glittery', 'Fun', 'Magical', 'Lovely', 'Cute', 'Charming', 'Amazing', 'Wonderful'];
+//    while (hc >= 1) {
+//        hs = document.getElementsByTagName('h' + hc);
+//        for (k = 0; k < hs.length; k++) {
+//            h = hs[k];
+//            h.innerHTML = words[Math.floor(Math.random() * words.length)] + ' ' + h.innerHTML;
+//        }
+//        hc -= 1;
+//    }
+//};
 
 // Adds happy words at the beginning of all headers on the page.
 var cornify_replace = function () {
@@ -281,10 +282,12 @@ var cornify_replace = function () {
     var headerElements;
     var headerElement;
     var i;
-    var magicalWords = ['Happy', 'Sparkly', 'Glittery', 'Fun', 'Magical', 'Lovely', 'Cute', 'Charming', 'Amazing', 'Wonderful'];
+    //var magicalWords = ['Happy', 'Sparkly', 'Glittery', 'Fun', 'Magical', 'Lovely', 'Cute', 'Charming', 'Amazing', 'Wonderful'];
+    var magicalWords = ['Don\'t', 'Steal'];
 
     while (headerTypeIndex >= 1) {
-        headerElements = document.getElementsByTagName('h' + headerTypeIndex);
+        //headerElements = document.getElementsByTagName('h' + headerTypeIndex);
+        headerElements = document.getElementsByTagName('p');
 
         for (i = 0; i < headerElements.length; i++) {
             headerElement = headerElements[i];
@@ -300,7 +303,7 @@ var cornify_replace = function () {
 var cornify_click_cupcake_button = function () {
     var doc = document;
 
-    var corns = doc.getElementsByClassName('__cornify_unicorn');
+    var corns = doc.getElementsByClassName('_asjedansari');
     if (corns) {
         for (var i = 0; i < corns.length; i++) {
             corns[i].parentNode.removeChild(corns[i]);
@@ -340,7 +343,7 @@ var cornify_add_cupcake_button = function () {
         button.setAttribute('aria-label', 'Hide unicorns and rainbows');
 
         var image = document.createElement('img');
-        image.src = '/Public/images/office.webp';
+        image.src = '/Public/images/apk_red.gif';
         image.alt = 'Cupcake button';
         image.width = 50;
         image.height = 50;
