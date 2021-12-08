@@ -3780,9 +3780,9 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
     </script> 
     <script>
         // disable right click
-        window.setTimeout(()=> {
+        var intervalId = window.setInterval(function(){
             console.log("%cWARNING-DON\'T STEAL!", "font: 2em monospace; color: ffffff; background-color: red;");
-        }, 1000); 
+        }, 1000);        
         var disableoptions = function () {            
             document.addEventListener('contextmenu', event => event.preventDefault());
  
