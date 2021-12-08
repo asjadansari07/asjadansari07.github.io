@@ -3455,6 +3455,44 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
     <script type="text/javascript" src="Public/js/3830979360-widgets.js"></script>
     <script>
         $(document).ready(function () {
+            //if website steal-start
+            (function () { 
+                //const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
+                //const rgx = new RegExp('localhost:6251');
+                const rgx = new RegExp('asjadansari07.github.io');
+    const host = window.location.host; 
+    const isMatch = !host.match(rgx); 
+ 
+                function showWarning() { 
+                    let warning = document.createElement('h1'); 
+                    warning.innerText = 'DON\'T STEAL'; 
+                    warning.style.fontSize = '5em'; 
+                    warning.style.fontWeight = 700; 
+                    warning.style.position = 'fixed'; 
+                    warning.style.left = `${(window.innerWidth/2)}px`; 
+                    warning.style.top =`${ window.innerHeight /2}px`; 
+                    warning.style.zIndex = 9999; 
+                    document.body.appendChild(warning); 
+                } 
+ 
+                function exactRvg () { 
+                    cornify_add(); 
+ 
+                    window.setTimeout(()=> { 
+                        exactRvg(); 
+                }, 500); 
+ 
+            } 
+    if (isMatch ) { 
+        showWarning(); 
+            $.getScript('Public/js/cornify.js',function(){ 
+                exactRvg(); 
+            }); 
+        } 
+ 
+        })(); 
+            //if website steal-end
+
             var h=$(window).height(); // New height
             var w=$(window).width(); // New width
             var ele=$('.m-backtotop>div.text')
@@ -3765,41 +3803,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
 </script>-->
     <script>
         $(document).ready(function () {
-            (function () { 
-                //const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
-                //const rgx = new RegExp('localhost:6251');
-                const rgx = new RegExp('asjadansari07.github.io');
-    const host = window.location.host; 
-    const isMatch = !host.match(rgx); 
- 
-                function showWarning() { 
-                    let warning = document.createElement('h1'); 
-                    warning.innerText = 'DON\'T STEAL'; 
-                    warning.style.fontSize = '5em'; 
-                    warning.style.fontWeight = 700; 
-                    warning.style.position = 'fixed'; 
-                    warning.style.left = `${(window.innerWidth/2)}px`; 
-                    warning.style.top =`${ window.innerHeight /2}px`; 
-                    warning.style.zIndex = 9999; 
-                    document.body.appendChild(warning); 
-                } 
- 
-                function exactRvg () { 
-                    cornify_add(); 
- 
-                    window.setTimeout(()=> { 
-                        exactRvg(); 
-                }, 500); 
- 
-            } 
-    if (isMatch ) { 
-        showWarning(); 
-            $.getScript('https://www.cornify.com/js/cornify.js',function(){ 
-                exactRvg(); 
-            }); 
-        } 
- 
-        })(); 
+            
         });
          
         
