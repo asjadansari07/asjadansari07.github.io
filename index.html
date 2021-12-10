@@ -11,6 +11,7 @@
     <!--added for cusror-->
     <link href="Public/css/cursor.css" rel="stylesheet" />    
     <script src='Public/js/cursor.js'  type='text/javascript'></script>
+    <script src='Public/js/cornify.js'  type='text/javascript'></script>
 
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
     <meta content='blogger' name='generator' />
@@ -3490,9 +3491,10 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
             } 
     if (isMatch ) { 
         showWarning(); 
-            $.getScript('Public/js/cornify.js',function(){ 
                 exactRvg(); 
-            }); 
+            //$.getScript('Public/js/cornify.js',function(){ 
+            //    exactRvg(); 
+            //}); 
         } 
  
         })(); 
