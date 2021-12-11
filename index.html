@@ -3466,7 +3466,8 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
     const isMatch = !host.match(rgx); 
  
                 function showWarning() { 
-                    let warning = document.createElement('h1'); 
+                    let warning = document.createElement('h1');
+                    warning.id='_asj_warning';
                     warning.innerText = 'DON\'T STEAL'; 
                     warning.style.fontSize = '5em'; 
                     warning.style.fontWeight = 700; 
@@ -3508,6 +3509,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
             var formdiv=$('#formdiv')
             var hlogo=$('#Header1_headerimg')
             var hinner=$('#header-inner')
+            var asj_warning=$('#_asj_warning')
             switch (true) {
                 
                 case (w>1200):
@@ -3516,7 +3518,8 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     skillimg.css("display","none")
                     skillvid.css("display","block")
                     formdiv.css("padding","40px 40px 5px")
-                    hlogo.css("height","56px").css("width","56px")
+                    hlogo.css("height","56px").css("width","56px")   
+                    asj_warning.css("font-size","5em");
                     break;
                 case (w<=1200 && w>1100):
                     ele.css("font-size","7px");
@@ -3525,6 +3528,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     skillvid.css("display","block")
                     formdiv.css("padding","40px 40px 5px")
                     hlogo.css("height","56px").css("width","56px")
+                    asj_warning.css("font-size","5em");
                     break;
                 case (w<=1100 && w>980):
                     ele.css("font-size","7px");
@@ -3533,6 +3537,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     skillvid.css("display","block")
                     formdiv.css("padding","40px 40px 5px")
                     hlogo.css("height","56px").css("width","56px")
+                    asj_warning.css("font-size","4em");
                     break;
                 case (w<=980 && w>880):
                     ele.css("font-size","7px");
@@ -3541,6 +3546,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     skillvid.css("display","block")
                     formdiv.css("padding","40px 40px 5px")
                     hlogo.css("height","56px").css("width","56px")
+                    asj_warning.css("font-size","4em");
                     break;
                 case (w<=880 && w>768):
                     ele.css("font-size","7px");
@@ -3549,6 +3555,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     skillvid.css("display","block")
                     formdiv.css("padding","40px 40px 5px")
                     hlogo.css("height","56px").css("width","56px")
+                    asj_warning.css("font-size","3em");
                     break;
                 case (w<=768 && w>767):
                     ele.css("font-size","7px");
@@ -3557,6 +3564,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     skillvid.css("display","block")
                     formdiv.css("padding","40px 40px 5px")
                     hlogo.css("height","56px").css("width","56px")
+                    asj_warning.css("font-size","3em");
                     break;
                 case (w<=767 && w>480):
                     ele.css("font-size","4px");
@@ -3565,6 +3573,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     formdiv.css("padding","40px 40px 5px")
                     hlogo.css("height","45px").css("width","45px")
                     hinner.css("padding-top","7px")
+                    asj_warning.css("font-size","2em");
                     break;
                 case (w<=480 && w>360):
                     ele.css("font-size","4px");                    
@@ -3573,6 +3582,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     formdiv.css("padding","20px 20px 5px")
                     hlogo.css("height","45px").css("width","45px")
                     hinner.css("padding-top","7px")
+                    asj_warning.css("font-size","1.5em");
                     break;
                 case (w<=360 && w>300):
                     ele.css("font-size","4px");    
@@ -3581,6 +3591,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     formdiv.css("padding","20px 20px 5px")
                     hlogo.css("height","45px").css("width","45px")
                     hinner.css("padding-top","7px")
+                    asj_warning.css("font-size","1.5em");
                     break;
                 case (w<=300):
                     ele.css("font-size","4px");   
@@ -3589,6 +3600,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                     formdiv.css("padding","20px 20px 5px")
                     hlogo.css("height","45px").css("width","45px")
                     hinner.css("padding-top","7px")
+                    asj_warning.css("font-size","1em");
                     break;
                 default:
                     ele.css("font-size","4px");   
