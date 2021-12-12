@@ -3628,7 +3628,10 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
             else{
                 document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
             }
-                        
+            window.matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change', event => {
+          changeThemeMode();
+            })            
             var counter = 0;
             $("#Header1_headerimg").click(function () {
                 changeThemeMode();
