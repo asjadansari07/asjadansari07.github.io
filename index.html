@@ -3617,12 +3617,13 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
             document.documentElement.style.setProperty('--background', '#FF0000', 'important');
             var matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
             if(matched){
-                if(!$("body").css("background-color")=="rgb(255, 255, 255)"){
-                    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.png) no-repeat center', 'important');
-                }
-                else{
-                    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
-                }
+                //if(!$("body").css("background-color")=="rgb(255, 255, 255)"){
+                //    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.png) no-repeat center', 'important');
+                //}
+                //else{
+                //    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
+                //}
+                changeThemeMode();
             }
             else{
                 document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
@@ -3630,33 +3631,7 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                         
             var counter = 0;
             $("#Header1_headerimg").click(function () {
-                if($("body").css("background-color")=="rgb(255, 255, 255)"){
-                    $("body").css("background-color","rgb(0, 0, 0)");                  
-                    $(".sora-special-box").css('background', "rgb(0, 0, 0)");
-                    $(".sora-works-box").css('background', "rgb(0, 0, 0)");
-                    //$(".counter-box").css('background', "rgb(128, 128, 128)");
-                    $(".sora-about-box").css('background', "rgb(0, 0, 0)");
-                    //$(".Portfolio-title").css('background', "rgb(0, 0, 0)");
-                    $("#outer-wrapper").css('background', "rgb(0, 0, 0)");
-                    $(".wrap-me").css('border', "1px solid #ffffff");                    
-                    $(".insta-wrap").css('background', "rgb(0, 0, 0)");
-                    document.documentElement.style.setProperty('--bccol', 'black', 'important');
-                    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.png) no-repeat center', 'important');
-                    
-                }
-                else{
-                    $("body").css("background-color","rgb(255, 255, 255)");
-                    $(".sora-special-box").css('background', "rgb(255, 255, 255)");
-                    $(".sora-works-box").css('background', "rgb(255, 255, 255)");
-                    //$(".counter-box").css('background', "rgb(255, 255, 255)");
-                    $(".sora-about-box").css('background', "rgb(255, 255, 255)");
-                    //$(".Portfolio-title").css('background', "rgb(255, 255, 255)");
-                    $("#outer-wrapper").css('background', "rgb(255, 255, 255)");
-                    $(".wrap-me").css('border', "1px solid #000000");                    
-                    $(".insta-wrap").css('background', "rgb(255, 255, 255)");
-                    document.documentElement.style.setProperty('--bccol', 'white', 'important');
-                    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
-                }
+                changeThemeMode();
             });
             $(".m-theme").click(function () {
                 switch (counter) {
@@ -3700,6 +3675,35 @@ $("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e
                         break;
                 }
             });
+            function changeThemeMode(){
+                if($("body").css("background-color")=="rgb(255, 255, 255)"){
+                    $("body").css("background-color","rgb(0, 0, 0)");                  
+                    $(".sora-special-box").css('background', "rgb(0, 0, 0)");
+                    $(".sora-works-box").css('background', "rgb(0, 0, 0)");
+                    //$(".counter-box").css('background', "rgb(128, 128, 128)");
+                    $(".sora-about-box").css('background', "rgb(0, 0, 0)");
+                    //$(".Portfolio-title").css('background', "rgb(0, 0, 0)");
+                    $("#outer-wrapper").css('background', "rgb(0, 0, 0)");
+                    $(".wrap-me").css('border', "1px solid #ffffff");                    
+                    $(".insta-wrap").css('background', "rgb(0, 0, 0)");
+                    document.documentElement.style.setProperty('--bccol', 'black', 'important');
+                    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.png) no-repeat center', 'important');
+                    
+                }
+                else{
+                    $("body").css("background-color","rgb(255, 255, 255)");
+                    $(".sora-special-box").css('background', "rgb(255, 255, 255)");
+                    $(".sora-works-box").css('background', "rgb(255, 255, 255)");
+                    //$(".counter-box").css('background', "rgb(255, 255, 255)");
+                    $(".sora-about-box").css('background', "rgb(255, 255, 255)");
+                    //$(".Portfolio-title").css('background', "rgb(255, 255, 255)");
+                    $("#outer-wrapper").css('background', "rgb(255, 255, 255)");
+                    $(".wrap-me").css('border', "1px solid #000000");                    
+                    $(".insta-wrap").css('background', "rgb(255, 255, 255)");
+                    document.documentElement.style.setProperty('--bccol', 'white', 'important');
+                    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
+                }
+            }
             function changeColor(col, rgba, src, formsrc) {
                 document.documentElement.style.setProperty('--mycol', col, 'important');
                 $('.popup_menu .btn1').css('background', rgba);
