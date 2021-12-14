@@ -351,23 +351,6 @@ var flkty = new Flickity('.main-gallery', {
     prevNextButtons: true,
     autoPlay: 5000
 });
-
-//<![CDATA[
-$(function () {
-    "use strict";
-    $(".header-logo-desc p").typed({
-        strings: ["Asjed Ansari", "a Developer", "a Designer"], //Headlines(Change It)
-        loop: true,
-        startDelay: 1e3,
-        backDelay: 2e3
-    });
-});
-//]]>
-
-$("div#LinkList230 > div.widget-content > ul#social > li >a[title='email']").css('background','#ad0000');
-$("div#LinkList230 > div.widget-content > ul#social > li >a[title='whatsapp']").css('background','#1C8B82');
-$("div#LinkList230 > div.widget-content > ul#social > li >a[title='SMS']").css('background','#CEB00A');
-$("div#LinkList230 > div.widget-content > ul#social > li >a[title='call']").css('background','#9CB381');
 setInterval(function () {
         if (!$('#asj:visible')['length']) {
             window['location']['href'] = 'https://asjadansari07.github.io'
