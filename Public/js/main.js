@@ -261,6 +261,7 @@ function changeThemeMode(){
         $(".wrap-me").css('border', "1px solid #ffffff");                    
         $(".insta-wrap").css('background', "rgb(0, 0, 0)");
         document.documentElement.style.setProperty('--bccol', 'black', 'important');
+        document.documentElement.style.setProperty('--scol', 'white', 'important');        
         document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.png) no-repeat center', 'important');                    
     }
     else{
@@ -274,6 +275,7 @@ function changeThemeMode(){
         $(".wrap-me").css('border', "1px solid #000000");                    
         $(".insta-wrap").css('background', "rgb(255, 255, 255)");
         document.documentElement.style.setProperty('--bccol', 'white', 'important');
+        document.documentElement.style.setProperty('--scol', 'black', 'important'); 
         document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
     }
 }
