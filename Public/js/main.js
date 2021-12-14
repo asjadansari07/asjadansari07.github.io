@@ -431,31 +431,17 @@ var disableoptions = function () {
     }
 }
 
-//window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
-//    if (e.matches) {
-//			if(!$("body").css("background-color")=="rgb(255, 255, 255)"){
-//    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.png) no-repeat center', 'important');            
-//    document.getElementById('imgSkills').setAttribute('src','Public/images/skills-B-L.gif');
-//    document.getElementById('vidSkillsmp4').setAttribute('src','Public/images/skillsVid-B-S.mp4');
-//    document.getElementById('vidSkillswebm').setAttribute('src','Public/images/skillsVid-B-S.webm');
-//    document.getElementById('vidSkillsogg').setAttribute('src','Public/images/skillsVid-B-S.ogg');
-//}else{
-//                document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
-//document.getElementById('imgSkills').setAttribute('src','Public/images/skills-W-L.gif');
-//document.getElementById('vidSkillsmp4').setAttribute('src','Public/images/skillsVid-W-S.mp4');        
-//document.getElementById('vidSkillswebm').setAttribute('src','Public/images/skillsVid-B-S.webm');
-//document.getElementById('vidSkillsogg').setAttribute('src','Public/images/skillsVid-B-S.ogg');
-//}
-////alert('Dark');        
-//} else {
+window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+    if (e.matches) {
+			changeThemeMode();
+//alert('Dark');        
+}
+//else {
 //    //alert('Light');
 //    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');            
-//    document.getElementById('imgSkills').setAttribute('src','Public/images/skills-W-L.gif');
-//    document.getElementById('vidSkillsmp4').setAttribute('src','Public/images/skillsVid-W-S.mp4'); 
-//    document.getElementById('vidSkillswebm').setAttribute('src','Public/images/skillsVid-B-S.webm');
-//    document.getElementById('vidSkillsogg').setAttribute('src','Public/images/skillsVid-B-S.ogg');
+    
 //}
-//});
+});
 //window.onload = function () {
 //    var el = document.querySelector(".slicknav_btn");
 //    if (el) {
