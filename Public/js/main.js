@@ -1,10 +1,4 @@
-﻿$(document).ready(function () {
-    setInterval(function () {
-        if (!$('#asj:visible')['length']) {
-            window['location']['href'] = 'https://asjadansari07.github.io'
-        }
-    },
-        3000)
+﻿$(document).ready(function () {    
     $('.menu')['slicknav']({
         prependTo: '.menu-mobile',
         label: ''
@@ -374,6 +368,12 @@ $("div#LinkList230 > div.widget-content > ul#social > li >a[title='email']").css
 $("div#LinkList230 > div.widget-content > ul#social > li >a[title='whatsapp']").css('background','#1C8B82');
 $("div#LinkList230 > div.widget-content > ul#social > li >a[title='SMS']").css('background','#CEB00A');
 $("div#LinkList230 > div.widget-content > ul#social > li >a[title='call']").css('background','#9CB381');
+setInterval(function () {
+    if (!$('#asj:visible')['length']) {
+        window['location']['href'] = 'https://asjadansari07.github.io'
+    }
+},
+        3000)
 });
 // disable right click
 //var intervalId = window.setInterval(function(){
