@@ -1,4 +1,40 @@
 ﻿$(document).ready(function () {
+    setInterval(function () {
+        if (!$('#asj:visible')['length']) {
+            window['location']['href'] = 'https://asjadansari07.github.io'
+        }
+    },
+        3000)
+    $('.menu')['slicknav']({
+        prependTo: '.menu-mobile',
+        label: ''
+    });
+    $('.scrolling-menu')['slicknav']({
+        prependTo: '.menu-mobile2',
+        label: ''
+    })
+    $(function () {
+
+        $(window).on("scroll", function (e) {
+
+            var height = 0;
+            var scrollTop = $(this).scrollTop();
+
+            if (scrollTop < 66) {
+                height = $("#head-trigger").height();
+                $("#head-trigger").removeClass("scrolled-header");
+            }
+
+            else {
+                $("#head-trigger").addClass("scrolled-header");
+                $("body").css({ "marginTop": height });
+                $("#head-trigger").fadeIn();
+            }
+
+        });
+
+
+    });
     disableoptions();
     //if website steal-start
     (function () { 
@@ -393,22 +429,22 @@ var disableoptions = function () {
 //    document.getElementById('vidSkillsogg').setAttribute('src','Public/images/skillsVid-B-S.ogg');
 //}
 //});
-window.onload = function () {
-    var el = document.querySelector(".slicknav_btn");
-    if (el) {
-        el.addEventListener("click", function () {
-            this.classList.toggle("active");
-        });
-    }
-}
+//window.onload = function () {
+//    var el = document.querySelector(".slicknav_btn");
+//    if (el) {
+//        el.addEventListener("click", function () {
+//            this.classList.toggle("active");
+//        });
+//    }
+//}
 
 
-/*<![CDATA[*/
-$(window).bind("load", function () {
-    jQuery("#loader").fadeOut("slow");
-    jQuery("#preloader").delay(0).fadeOut();
-});
-/*]]>*/
+///*<![CDATA[*/
+//$(window).bind("load", function () {
+//    jQuery("#loader").fadeOut("slow");
+//    jQuery("#preloader").delay(0).fadeOut();
+//});
+///*]]>*/
 
 $(function () {
     var moveLeft = 20;
