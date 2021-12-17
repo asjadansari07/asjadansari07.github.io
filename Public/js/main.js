@@ -206,10 +206,10 @@ let isMobileDevice = regexp.test(details);
             asj_warning.css("font-size","2em");
             break;
         case (w<=480 && w>360):
-            if (isMobileDevice) { 
-                ele.css("font-size","4px");
-            } else { 
+            if (!isMobileDevice) { 
                 ele.css("font-size","7px");
+            } else { 
+                ele.css("font-size","4px");
             }
             //ele.css("font-size","4px");
             skillimg.css("display","block")
@@ -220,7 +220,7 @@ let isMobileDevice = regexp.test(details);
             asj_warning.css("font-size","1.5em");
             break;
         case (w<=360 && w>300):
-            if (isMobileDevice) { 
+            if (!isMobileDevice) { 
                 ele.css("font-size","4px"); 
                 ele.css("line-height","8px");
                 ele.css("width","60%");
@@ -239,7 +239,7 @@ let isMobileDevice = regexp.test(details);
             asj_warning.css("font-size","1.5em");
             break;
         case (w<=300):
-            if (isMobileDevice) { 
+            if (!isMobileDevice) { 
                 ele.css("font-size","4px"); 
                 ele.css("line-height","8px");
                 ele.css("width","60%");
