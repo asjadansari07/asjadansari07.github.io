@@ -119,7 +119,7 @@ if (isMatch ) {
 
     var h=$(window).height(); // New height
     var w=$(window).width(); // New width
-    var ele=$('.m-backtotop>div.text')
+    var ele=$('.m-backtotop>div.text').m-backtotop>div.text
     var skillimg=$('#imgSkills')
     var skillvid=$('#vidPlayer')
     var formdiv=$('#formdiv')
@@ -200,7 +200,8 @@ if (isMatch ) {
             asj_warning.css("font-size","1.5em");
             break;
         case (w<=360 && w>300):
-            ele.css("font-size","4px");    
+            ele.css("font-size","4px"); 
+            ele.css("line-height","8px","important");
             skillimg.css("display","block")
             skillvid.css("display","none")
             formdiv.css("padding","20px 20px 5px")
@@ -209,7 +210,8 @@ if (isMatch ) {
             asj_warning.css("font-size","1.5em");
             break;
         case (w<=300):
-            ele.css("font-size","4px");   
+            ele.css("font-size","4px");  
+            ele.css("line-height","8px","important");
             skillimg.css("display","block")
             skillvid.css("display","none")
             formdiv.css("padding","20px 20px 5px")
