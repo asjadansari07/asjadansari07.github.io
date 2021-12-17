@@ -201,8 +201,8 @@ if (isMatch ) {
             break;
         case (w<=360 && w>300):
             ele.css("font-size","4px"); 
-            ele.css("line-height","8px","!important");
-            ele.css("width","60%","!important");
+            ele.css({'cssText': 'line-height: 8px !important'});
+            ele.css({'cssText': 'width: 60% !important'});            
             skillimg.css("display","block")
             skillvid.css("display","none")
             formdiv.css("padding","20px 20px 5px")
@@ -211,9 +211,9 @@ if (isMatch ) {
             asj_warning.css("font-size","1.5em");
             break;
         case (w<=300):
-            ele.css("font-size","4px");  
-            ele.css("line-height","8px","!important");
-            ele.css("width","60%","!important");
+            ele.css("font-size","3px");  
+            ele.css({'cssText': 'line-height: 7px !important'});
+            ele.css({'cssText': 'width: 50% !important'});
             skillimg.css("display","block")
             skillvid.css("display","none")
             formdiv.css("padding","20px 20px 5px")
