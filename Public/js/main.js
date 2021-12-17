@@ -201,7 +201,8 @@ if (isMatch ) {
             break;
         case (w<=360 && w>300):
             ele.css("font-size","4px"); 
-            ele.css("line-height","8px","important");
+            ele.css("line-height","8px","!important");
+            ele.css("width","60%","!important");
             skillimg.css("display","block")
             skillvid.css("display","none")
             formdiv.css("padding","20px 20px 5px")
@@ -211,7 +212,8 @@ if (isMatch ) {
             break;
         case (w<=300):
             ele.css("font-size","4px");  
-            ele.css("line-height","8px","important");
+            ele.css("line-height","8px","!important");
+            ele.css("width","60%","!important");
             skillimg.css("display","block")
             skillvid.css("display","none")
             formdiv.css("padding","20px 20px 5px")
