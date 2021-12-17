@@ -115,7 +115,17 @@ if (isMatch ) {
  
 })(); 
 //if website steal-end
+//check browser in mobile-start
 
+let details = navigator.userAgent; 
+let regexp = /android|iphone|kindle|ipad/i; 
+let isMobileDevice = regexp.test(details); 
+//if (isMobileDevice) { 
+//    document.write("You are using a Mobile Device"); 
+//} else { 
+//    document.write("You are using Desktop"); 
+//} 
+//check browser in mobile-end
 
     var h=$(window).height(); // New height
     var w=$(window).width(); // New width
@@ -182,7 +192,12 @@ if (isMatch ) {
             asj_warning.css("font-size","3em");
             break;
         case (w<=767 && w>480):
-            ele.css("font-size","4px");
+            if (isMobileDevice) { 
+                ele.css("font-size","4px");
+            } else { 
+                ele.css("font-size","7px");
+            } 
+            //ele.css("font-size","4px");
             skillimg.css("display","block")
             skillvid.css("display","none")
             formdiv.css("padding","40px 40px 5px")
@@ -191,7 +206,12 @@ if (isMatch ) {
             asj_warning.css("font-size","2em");
             break;
         case (w<=480 && w>360):
-            ele.css("font-size","4px");                    
+            if (isMobileDevice) { 
+                ele.css("font-size","4px");
+            } else { 
+                ele.css("font-size","7px");
+            }
+            //ele.css("font-size","4px");
             skillimg.css("display","block")
             skillvid.css("display","none")
             formdiv.css("padding","20px 20px 5px")
@@ -200,9 +220,17 @@ if (isMatch ) {
             asj_warning.css("font-size","1.5em");
             break;
         case (w<=360 && w>300):
-            ele.css("font-size","4px"); 
-            ele.css("line-height","8px");
-            ele.css("width","60%");
+            if (isMobileDevice) { 
+                ele.css("font-size","4px"); 
+                ele.css("line-height","8px");
+                ele.css("width","60%");
+            } else { 
+                ele.css("font-size","7px"); 
+                ele.css("line-height","10px");
+            }
+            //ele.css("font-size","4px"); 
+            //ele.css("line-height","8px");
+            //ele.css("width","60%");
             skillimg.css("display","block")
             skillvid.css("display","none")
             formdiv.css("padding","20px 20px 5px")
@@ -211,9 +239,17 @@ if (isMatch ) {
             asj_warning.css("font-size","1.5em");
             break;
         case (w<=300):
-            ele.css("font-size","4px");  
-            ele.css("line-height","8px");
-            ele.css("width","60%");
+            if (isMobileDevice) { 
+                ele.css("font-size","4px"); 
+                ele.css("line-height","8px");
+                ele.css("width","60%");
+            } else { 
+                ele.css("font-size","7px"); 
+                ele.css("line-height","10px");
+            }
+            //ele.css("font-size","4px");  
+            //ele.css("line-height","8px");
+            //ele.css("width","60%");
             skillimg.css("display","block")
             skillvid.css("display","none")
             formdiv.css("padding","20px 20px 5px")
