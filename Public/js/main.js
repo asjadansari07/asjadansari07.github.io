@@ -192,12 +192,15 @@ let isMobileDevice = regexp.test(details);
             asj_warning.css("font-size","3em");
             break;
         case (w<=767 && w>480):
-            if (isMobileDevice) { 
-                ele.css("font-size","4px");
+            if (!isMobileDevice) { 
+                ele.css("font-size","4px"); 
+                ele.css("line-height","8px");
+                ele.css("width","58%");
             } else { 
-                ele.css("font-size","7px");
-            } 
-            //ele.css("font-size","4px");
+                ele.css("font-size","7px"); 
+                ele.css("line-height","10px");
+                ele.css("width","58%");
+            }             
             skillimg.css("display","block")
             skillvid.css("display","none")
             formdiv.css("padding","40px 40px 5px")
@@ -213,8 +216,8 @@ let isMobileDevice = regexp.test(details);
             } else { 
                 ele.css("font-size","7px"); 
                 ele.css("line-height","10px");
-            }
-            //ele.css("font-size","4px");
+                ele.css("width","58%");
+            }            
             skillimg.css("display","block")
             skillvid.css("display","none")
             formdiv.css("padding","20px 20px 5px")
@@ -230,12 +233,9 @@ let isMobileDevice = regexp.test(details);
             } else { 
                 ele.css("font-size","7px"); 
                 ele.css("line-height","10px");
-                //ele.css("width","58%");
+                ele.css("width","58%");
 
             }
-            //ele.css("font-size","4px"); 
-            //ele.css("line-height","8px");
-            //ele.css("width","60%");
             skillimg.css("display","block")
             skillvid.css("display","none")
             formdiv.css("padding","20px 20px 5px")
@@ -251,10 +251,8 @@ let isMobileDevice = regexp.test(details);
             } else { 
                 ele.css("font-size","7px"); 
                 ele.css("line-height","10px");
+                ele.css("width","58%");
             }
-            //ele.css("font-size","4px");  
-            //ele.css("line-height","8px");
-            //ele.css("width","60%");
             skillimg.css("display","block")
             skillvid.css("display","none")
             formdiv.css("padding","20px 20px 5px")
