@@ -2923,16 +2923,12 @@
     <script type='text/javascript'>
         $(window).bind("load", function () { 
             if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                //$(".preloader1").css("background", "rgb(0, 0, 0)");
-                //$(".preloader1-circle").css("background", "rgb(0, 0, 0)");
-                $(".preloader1").css("background", "rgb(255, 255, 255)");
-                $(".preloader1-circle").css("background", "rgb(255, 255, 255)");
-            }
-            else {
-                //$(".preloader1").css("background", "rgb(255, 255, 255)");
-                //$(".preloader1-circle").css("background", "rgb(255, 255, 255)");
                 $(".preloader1").css("background", "rgb(0, 0, 0)");
                 $(".preloader1-circle").css("background", "rgb(0, 0, 0)");
+            }
+            else {
+                $(".preloader1").css("background", "rgb(255, 255, 255)");
+                $(".preloader1-circle").css("background", "rgb(255, 255, 255)");
             }
             jQuery("#loader").fadeOut("slow");
             jQuery("#preloader").delay(0).fadeOut();
