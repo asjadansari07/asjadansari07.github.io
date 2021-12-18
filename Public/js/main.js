@@ -271,11 +271,13 @@ let isMobileDevice = regexp.test(details);
     }
     var matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
     if(matched){        
-        darkMode();                       
+        darkMode();  
+        setDefaultColor();
     }
     else{
         //document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
         lightMode();
+        setDefaultColor();
     }
     window.matchMedia('(prefers-color-scheme: dark)')
 .addEventListener('change', event => {
@@ -283,8 +285,10 @@ let isMobileDevice = regexp.test(details);
     })
     $('#nav').onePageNav();
     $('.slide-in').onePageNav();
-    document.documentElement.style.setProperty('--mycol', '#FF0000', 'important');
-    document.documentElement.style.setProperty('--background', '#FF0000', 'important');
+    function setDefaultColor(){
+        document.documentElement.style.setProperty('--mycol', '#FF0000', 'important');
+        document.documentElement.style.setProperty('--background', '#FF0000', 'important');
+    }    
                 
 var counter = 0;
 $("#Header1_headerimg").click(function () {
