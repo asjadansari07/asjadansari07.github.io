@@ -207,9 +207,12 @@ let isMobileDevice = regexp.test(details);
             break;
         case (w<=480 && w>360):
             if (!isMobileDevice) { 
-                ele.css("font-size","7px");
+                ele.css("font-size","4px"); 
+                ele.css("line-height","8px");
+                ele.css("width","58%");
             } else { 
-                ele.css("font-size","4px");
+                ele.css("font-size","7px"); 
+                ele.css("line-height","10px");
             }
             //ele.css("font-size","4px");
             skillimg.css("display","block")
