@@ -134,7 +134,7 @@ if (isMatch ) {
 let details = navigator.userAgent; 
 //let regexp = /android|iphone|kindle|ipad/i; 
 let regexp = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|kindle|Opera Mini/i;
-if(regexp.includes('wv'))
+if(details.toString().includes('wv'))
 {
     document.write('opened in webview');
 }
