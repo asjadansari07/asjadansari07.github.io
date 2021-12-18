@@ -41,14 +41,6 @@
 //});
 
 $(document).ready(function () { 
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        $(".preloader1").css("background", "rgb(0, 0, 0)");
-        $(".preloader1-circle").css("background", "rgb(0, 0, 0)");
-    }
-    else {
-        $(".preloader1").css("background", "rgb(255, 255, 255)");
-        $(".preloader1-circle").css("background", "rgb(255, 255, 255)");
-    }
     $('.menu')['slicknav']({
         prependTo: '.menu-mobile',
         label: ''
@@ -276,11 +268,6 @@ let isMobileDevice = regexp.test(details);
             hlogo.css("height","56px").css("width","56px")
             break;
     }
-
-    $('#nav').onePageNav();
-    $('.slide-in').onePageNav();
-    document.documentElement.style.setProperty('--mycol', '#FF0000', 'important');
-    document.documentElement.style.setProperty('--background', '#FF0000', 'important');
     var matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
     if(matched){        
         darkMode();                       
@@ -292,7 +279,12 @@ let isMobileDevice = regexp.test(details);
     window.matchMedia('(prefers-color-scheme: dark)')
 .addEventListener('change', event => {
     changeThemeMode();
-})            
+    })
+    $('#nav').onePageNav();
+    $('.slide-in').onePageNav();
+    document.documentElement.style.setProperty('--mycol', '#FF0000', 'important');
+    document.documentElement.style.setProperty('--background', '#FF0000', 'important');
+                
 var counter = 0;
 $("#Header1_headerimg").click(function () {
     changeThemeMode();
@@ -338,6 +330,8 @@ $(".m-theme").click(function () {
     }
 });
 function darkMode(){
+    $(".preloader1").css("background", "rgb(0, 0, 0)");
+    $(".preloader1-circle").css("background", "rgb(0, 0, 0)");
     $("body").css("background-color","rgb(0, 0, 0)");                  
     $(".sora-special-box").css('background', "rgb(0, 0, 0)");
     $(".sora-works-box").css('background', "rgb(0, 0, 0)");
@@ -352,6 +346,8 @@ function darkMode(){
     document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.webp) no-repeat center', 'important');
 }
 function lightMode(){
+    $(".preloader1").css("background", "rgb(255, 255, 255)");
+    $(".preloader1-circle").css("background", "rgb(255, 255, 255)");
     $("body").css("background-color","rgb(255, 255, 255)");
     $(".sora-special-box").css('background', "rgb(255, 255, 255)");
     $(".sora-works-box").css('background', "rgb(255, 255, 255)");
