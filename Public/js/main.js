@@ -341,7 +341,7 @@ function darkMode(){
     $(".insta-wrap").css('background', "rgb(0, 0, 0)");
     document.documentElement.style.setProperty('--bccol', 'black', 'important');
     document.documentElement.style.setProperty('--scol', 'white', 'important');        
-    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.webp) no-repeat center', 'important');
+    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.png) no-repeat center', 'important');
 }
 function lightMode(){
     $("body").css("background-color","rgb(255, 255, 255)");
