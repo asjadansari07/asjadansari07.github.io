@@ -118,6 +118,7 @@ if (isMatch ) {
 //check browser in mobile-start
 
 let details = navigator.userAgent; 
+//let regexp = /android|iphone|kindle|ipad/i; 
 let regexp = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
 let isMobileDevice = regexp.test(details); 
 //if (isMobileDevice) { 
