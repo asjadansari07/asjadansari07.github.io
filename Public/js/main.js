@@ -227,7 +227,7 @@ let isMobileDevice = regexp.test(details);
             } else { 
                 ele.css("font-size","7px"); 
                 ele.css("line-height","10px");
-                ele.css("width","58%");
+                //ele.css("width","58%");
 
             }
             //ele.css("font-size","4px"); 
@@ -244,7 +244,7 @@ let isMobileDevice = regexp.test(details);
             if (!isMobileDevice) { 
                 ele.css("font-size","4px"); 
                 ele.css("line-height","8px");
-                ele.css("width","60%");
+                ele.css("width","58%");
             } else { 
                 ele.css("font-size","7px"); 
                 ele.css("line-height","10px");
