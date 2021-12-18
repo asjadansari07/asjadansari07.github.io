@@ -40,7 +40,15 @@
 //        _0x24d5x2('#menu .widget')['attr']('style', 'display:block!important;')
 //});
 
-$(document).ready(function () {    
+$(document).ready(function () { 
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        $(".preloader1").css("background", "rgb(0, 0, 0)");
+        $(".preloader1-circle").css("background", "rgb(0, 0, 0)");
+    }
+    else {
+        $(".preloader1").css("background", "rgb(255, 255, 255)");
+        $(".preloader1-circle").css("background", "rgb(255, 255, 255)");
+    }
     $('.menu')['slicknav']({
         prependTo: '.menu-mobile',
         label: ''
