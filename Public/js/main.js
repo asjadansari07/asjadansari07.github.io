@@ -134,10 +134,10 @@ if (isMatch ) {
 let details = navigator.userAgent; 
 //let regexp = /android|iphone|kindle|ipad/i; 
 let regexp = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|kindle|Opera Mini/i;
-if(details.toString().includes('wv'))
-{
-    document.write('opened in webview');
-}
+//if(details.toString().includes('wv'))
+//{
+//    document.write('opened in webview');
+//}
 let isMobileDevice = regexp.test(details); 
 //if (isMobileDevice) { 
 //    document.write("You are using a Mobile Device"); 
