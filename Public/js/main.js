@@ -342,7 +342,7 @@ $(".m-theme").click(function () {
 function darkMode(){
     $(".preloader1").css("background", "rgb(0, 0, 0)");
     $(".preloader1-circle").css("background", "rgb(0, 0, 0)");
-    //$("body").css("background-color","rgb(0, 0, 0)");                  
+    $("#mainbody").css("background-color","rgb(0, 0, 0)");                  
     $(".sora-special-box").css('background', "rgb(0, 0, 0)");
     $(".sora-works-box").css('background', "rgb(0, 0, 0)");
     //$(".counter-box").css('background', "rgb(128, 128, 128)");
@@ -358,7 +358,7 @@ function darkMode(){
 function lightMode(){
     $(".preloader1").css("background", "rgb(255, 255, 255)");
     $(".preloader1-circle").css("background", "rgb(255, 255, 255)");
-    //$("body").css("background-color","rgb(255, 255, 255)");
+    $("#mainbody").css("background-color","rgb(255, 255, 255)");
     $(".sora-special-box").css('background', "rgb(255, 255, 255)");
     $(".sora-works-box").css('background', "rgb(255, 255, 255)");
     //$(".counter-box").css('background', "rgb(255, 255, 255)");
@@ -372,7 +372,7 @@ function lightMode(){
     document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
 }
 function changeThemeMode(){
-    if($("body").css("background-color")=="rgb(255, 255, 255)"){
+    if($("#mainbody").css("background-color")=="rgb(255, 255, 255)"){
         darkMode();
     }
     else{
