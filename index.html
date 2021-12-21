@@ -4,53 +4,39 @@
     <link href='Public/css/3597120983-css_bundle_v2.css' rel='stylesheet' type='text/css' />
     <link href='Public/css/main.css' rel='stylesheet' type='text/css' />
     <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport' />
-    <script src='Public/js/jquery.min.js' type='text/javascript'></script>
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
-
+    <script src='Public/js/jquery.min.js' type='text/javascript'></script>    
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->    
     <link href='Public/css/font-awesome.min.css' rel='stylesheet' />
     <link href='Public/css/icon-font.min.css' rel='stylesheet' />
+    <!--added for cusror-->
+    <link href="Public/css/cursor.css" rel="stylesheet" />
+    <script src='Public/js/cursor.js'  type='text/javascript'></script>
+     <!--<script src='Public/js/loader.js'  type='text/javascript'></script> -->
+    <!--<script src='Public/js/main.js'  type='text/javascript'></script>-->
+    <!--<script src='Public/js/wow.js'  type='text/javascript'></script>
+    <script src='Public/js/slickNav.js'  type='text/javascript'></script>
+    <script src='Public/js/matchHeight.js'  type='text/javascript'></script>
+    <script src='Public/js/flickity.js'  type='text/javascript'></script>
+    <script src='Public/js/wayPoints.js'  type='text/javascript'></script>
+    <script src='Public/js/counterUp.js'  type='text/javascript'></script>-->
+    <!--<script src='Public/js/dependency.js'  type='text/javascript'></script> -->   
+    <!--<script src='Public/js/main.js'  type='text/javascript'></script>-->
+    
+    <meta name="color-scheme" content="dark light">
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
     <meta content='blogger' name='generator' />
-    <meta name="viewport" content="width=device-width" />
+    <!--<meta name="viewport" content="width=device-width" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='Public/images/favicon.ico' rel='icon' type='image/x-icon' />
     <link href='index.html' rel='canonical' />
     <link rel="me" href="#" />
 
     <title>ASJED ANSARI
     </title>
-
-    <script type='text/javascript'>
-        //<![CDATA[
-        var no_image = "Public/images/nth.png";
-        var month_format = [, "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
-        var more_text = "View More";
-        var comments_text = "<span>Post </span>Comment";
-        var pagenav_prev = "Previous";
-        var pagenav_next = "Next";
-        //]]>
-    </script>
-    <!--<script type='text/javascript'>
-        var thumbnail_mode = &quot;no-float&quot; ;
-        summary_noimg = 400;  /* Summary length if no image*/
-        summary_img = 300; /* Summary length with image*/
-        img_thumb_height = 200; /*Image Height*/
-        img_thumb_width = 200; /*Image Width*/
-    </script>-->
-    <!--<script src='http://netoopscodes.googlecode.com/svn/branches/Js%20files/auto-readmore-blogger.js'
-            type='text/javascript' />-->
-
-    <!--    <style>
-        .freebirdFormviewerViewFooterEmbeddedBackground,.freebirdFormviewerViewNavigationPasswordWarning,.freebirdFormviewerViewHeaderThemeStripe freebirdSolidBackground exportThemeStripe {
-        display:none !important;
-        }
-        #mG61Hd {
-            width:66% !important;
-        }      
-
-    </style>-->
-
 </head>
-<body class='index'>
+<!--added for cursor-->
+<!--    <body class='index'>-->
+<body class='index cur'>
     <!--preloader start-->
     <!--<div id='preloader'>
 <div id='loader'></div>
@@ -64,7 +50,7 @@
                 <div class="preloader1-circle"></div>
                 <div class="preloader1-img pere-text1">
                     <!--<img src="Public/images/asj_21.png" alt="">-->
-                    <img src="Public/images/asj_circle1.png" alt="">
+                    <img src="Public/images/asj_circle1.webp" alt="">
                 </div>
             </div>
         </div>
@@ -74,15 +60,17 @@
 
     <div id="outer-wrapper" class="index home">
         <div class='scroll-header' id='head-trigger'>
+            <!--<div class='scroll-head-wrap row'>-->
             <div class='scroll-head-wrap row'>
-                <div class='scrollin-logo' style="height: 56px !important;">
+                <div class='scrollin-logo'>
                     <div class='header section' id='header' name='Logo & Title'>
                         <div class='widget Header' data-version='1' id='Header1'>
                             <div id='header-inner'>
-                                <a style='display: block; cursor: pointer;'>
-                                    <h1 style='display: none'>Asjed</h1>
+                                <a>
+                                    <!--<h1 style='display: none'>Asjed</h1>-->
                                     <!--<img alt="Basil" height="56px; " id="Header1_headerimg" src="Public/images/asj.png" style="display: block" width="150px; ">-->
-                                    <img alt="Asjed Ansari" height="56px;" title="Click to change theme" id="Header1_headerimg" src="Public/images/asj_2.png" style="display: block" width="56px; ">
+                                    <!--<img alt="Asjed Ansari" height="56px;" title="Click to change theme" id="Header1_headerimg" src="Public/images/asj_2.webp" style="display: block" width="56px; ">-->
+                                    <img alt="Asjed Ansari" title="Click to change theme" id="Header1_headerimg" src="Public/images/asj_2.webp">
                                 </a>
                             </div>
                         </div>
@@ -122,7 +110,7 @@
                             <div class='widget HTML' data-version='1' id='HTML30'>
                                 <div class='widget-content'>
                                     <!--<p>-->
-                                    <p style="font-size: 20px; font-weight: bold; font-family: Arial,sans-serif; text-transform: none;">
+                                    <p id="welcome">
                                         Welcome
                                     </p>
                                 </div>
@@ -147,19 +135,17 @@
                                         <!--<span>A Theme For</span><p></p>-->
                                         <span>I Am</span><p></p>
                                     </div>
-
-                                    <script language='javascript' type='text/javascript'>//<![CDATA[
-                                        $(function () {
-                                            "use strict";
-                                            $(".header-logo-desc p").typed({
-                                                strings: ["Asjed Ansari", "a Developer", "a Designer"], //Headlines(Change It)
-                                                loop: true,
-                                                startDelay: 1e3,
-                                                backDelay: 2e3
-                                            });
-                                        });
-                                        //]]></script>
-
+                                     <script language='javascript' type='text/javascript'>//<![CDATA[
+                                         $(function () {
+                                             "use strict";
+                                             $(".header-logo-desc p").typed({
+                                                 strings: ["Asjed Ansari", "a Developer", "a Designer"], //Headlines(Change It)
+                                                 loop: true,
+                                                 startDelay: 1e3,
+                                                 backDelay: 2e3
+                                             });
+                                         });
+                                         //]]></script>
                                 </div>
                                 <div class='clear'></div>
                                 <span class='widget-item-control'>
@@ -181,18 +167,18 @@
                             <div class='widget LinkList' data-version='1' id='LinkList230'>
                                 <div class='widget-content'>
                                     <ul id='social'>
-                                        <li><a class='facebook' href='https://www.facebook.com/profile.php?id=100006149835885' title='facebook'></a></li>
-                                        <li><a class='twitter' href='https://twitter.com/asjadansari07' title='twitter'></a></li>
+                                        <li><a class='facebook' href='https://www.facebook.com/profile.php?id=100006149835885' title='facebook' target="_blank"></a></li>
+                                        <li><a class='twitter' href='https://twitter.com/asjadansari07' title='twitter' target="_blank"></a></li>
                                         <!--<li><a class='gplus' href='https://aboutme.google.com/u/0/?referer=gplus' title='gplus'></a></li>-->
-                                        <li><a class='instagram' href='https://www.instagram.com/asjadansari07' title='instagram'></a></li>
+                                        <li><a class='instagram' href='https://www.instagram.com/asjadansari07' title='instagram' target="_blank"></a></li>
                                         <!--<li><a class='pinterest' href='#' title='pinterest'></a></li>-->
-                                        <li><a class='linkedin' href='https://www.linkedin.com/in/asjadansari07' title='linkedin'></a></li>
+                                        <li><a class='linkedin' href='https://www.linkedin.com/in/asjadansari07' title='linkedin' target="_blank"></a></li>
                                         <!--<li><a class="envelope" href='mailto:asjadansari07@gmail.com' title='email'></a></li>-->
-                                        <li><a href='mailto:asjadansari07@gmail.com' style="background: #ad0000;" title='email'><i class='fa fa-envelope-o'></i></a></li>
+                                        <li><a href='mailto:asjadansari07@gmail.com' title='email' target="_blank"><i class='fa fa-envelope-o'></i></a></li>
                                         <!--<li><a href='mailto:asjadansari07@gmail.com' style="background: #FFBD2F;" title='email'><i class='fa fa-envelope-o'></i></a></li>-->
-                                        <li><a href='https://wa.me/918454966338?text=Hi' style="background: #1C8B82;" title='whatsapp'><i class='fa fa-whatsapp'></i></a></li>
-                                        <li><a href="sms://+918454966338?body=Hi" style="background: #CEB00A;" title="SMS"><i class="fa fa-commenting-o"></i></a></li>
-                                        <li><a href="tel:=+918454966338" style="background: #9CB381;" title="call"><i class="fa fa-phone"></i></a></li>
+                                        <li><a href='https://wa.me/918454966338?text=Hi' title='whatsapp' target="_blank"><i class='fa fa-whatsapp'></i></a></li>
+                                        <li><a href="sms://+918454966338?body=Hi" title="SMS" target="_blank"><i class="fa fa-commenting-o"></i></a></li>
+                                        <li><a href="tel:=+918454966338" title="call" target="_blank"><i class="fa fa-phone"></i></a></li>
 
                                     </ul>
                                 </div>
@@ -209,55 +195,55 @@
         <!--<div class='sora-special-box wow slideInUp' id='section-2'>-->
         <div class='sora-special-box' id='section-2'>
             <div class='special-wrap row'>
-                <div class='special-title wow fadeInUp animated' style='visibility: visible;'>
+                <div class='special-title wow fadeInUp animated'>
                     <h4>About</h4>
                 </div>
                 <div style='clear: both;'></div>
                 <!--<div class="skill-details" style="font-family:sans-serif;">-->
-                <div class="skill-details wow fadeInRight" style="font-family: sans-serif;">
+                <div class="skill-details wow fadeInRight">
                     <div class="sora-author-box-text-details">
-                        <h2 style="font-size: 36px; line-height: 1.1; font-weight: lighter; margin-bottom: 5px; color: #3d4451; margin-bottom: 50px;">Basic Info.</h2>
+                        <h2>Basic Info.</h2>
                         <ul class="profile-list">
                             <li class="clearfix">
                                 <strong class="list-title">Age</strong>
-                                <span class="cont" style="color: #000000;">30</span>
+                                <span class="cont">30</span>
                             </li>
                             <li class="clearfix">
                                 <strong class="list-title">Address</strong>
-                                <span class="cont" style="color: #000000;"><a href="https://maps.google.co.in/maps?f=d&daddr=19.041108125115837,72.94783334087698&hl=en" id="loc1">P-1 Line,B-Sector,Cheeta Camp,Trombay-88.</a></span>
+                                <span class="cont"><a href="https://maps.google.co.in/maps?f=d&daddr=19.041108125115837,72.94783334087698&hl=en" id="loc1" target="_blank">P-1 Line,B-Sector,Cheeta Camp,Trombay-88.</a></span>
                             </li>
                             <li class="clearfix">
                                 <strong class="list-title">Gender</strong>
-                                <span class="cont" style="color: #000000;">Male</span>
+                                <span class="cont">Male</span>
                             </li>
                             <li class="clearfix">
                                 <strong class="list-title">E-mail</strong>
-                                <span class="cont"><a href="mailto:asjadansari07@gmail.com" id="eml1">asjadansari07@gmail.com</a></span>
+                                <span class="cont"><a href="mailto:asjadansari07@gmail.com" id="eml1" target="_blank">asjadansari07@gmail.com</a></span>
                             </li>
                             <li class="clearfix">
                                 <strong class="list-title">Site</strong>
-                                <span class="cont"><a href="https://asjadansari07.github.io" id="web1">www.asjadansari07.github.io</a></span>
+                                <span class="cont"><a href="https://asjadansari07.github.io" id="web1" target="_blank">www.asjadansari07.github.io</a></span>
                             </li>
                             <li class="clearfix">
                                 <strong class="list-title">Mobile</strong>
-                                <span class="cont"><a href="tel:+918454966338" id="phn1">+91 8454966338</a></span>
+                                <span class="cont"><a href="tel:+918454966338" id="phn1" target="_blank">+91 8454966338</a></span>
                             </li>
                             <!--<li class="clearfix">                            
                             <span class="cont"><a href="tel:+918652625108">+91 8652625108</a></span>
                         </li>-->
                             <li class="clearfix">
                                 <strong class="list-title">Nationality</strong>
-                                <span class="cont" style="color: #000000;">Indian</span>
+                                <span class="cont">Indian</span>
                             </li>
                             <li class="clearfix">
                                 <strong class="list-title">Martial Status</strong>
-                                <span class="cont" style="color: #000000;">Married</span>
+                                <span class="cont">Married</span>
                             </li>
                             <li class="clearfix">
                                 <!--<strong class="list-title"><span class="list-button">On Vacation</span></strong>
                             <span class="cont"><i class="fa fa-calendar"></i>till March 25, 2016</span>-->
                                 <strong class="list-title"><span class="list-button">Career Level</span></strong>
-                                <span class="cont" style="color: #000000;">
+                                <span class="cont">
                                     <!--<i class="fa fa-calendar"></i>till March 25, 2016-->
                                     Middle Level</span>
                             </li>
@@ -269,48 +255,48 @@
                     <div class="sora-author-box-text-details">
                         <div class="popup_menu">
                             <div class="btn1 trigger">
-                                <img src="Public/images/asj_circle1.png" alt="" title="Click to Connect">
+                                <img src="Public/images/asj_circle1.webp" alt="" title="Click to Connect">
                             </div>
                             <div class="icons">
                                 <div class="rotater">
-                                    <div class="btn1 bttn-icon">
-                                        <a href="https://www.facebook.com/profile.php?id=100006149835885" title="facebook"><i class="fa fa-facebook"></i></a>
-                                    </div>
+                                    <a href="https://www.facebook.com/profile.php?id=100006149835885" title="facebook" target="_blank"><div class="btn1 bttn-icon">
+                                        <i class="fa fa-facebook"></i>
+                                    </div></a>
                                 </div>
                                 <div class="rotater">
-                                    <div class="btn1 bttn-icon">
-                                        <a href="https://twitter.com/asjadansari07" title="twitter"><i class="fa fa-twitter"></i></a>
-                                    </div>
+                                    <a href="https://twitter.com/asjadansari07" title="twitter" target="_blank"><div class="btn1 bttn-icon">
+                                        <i class="fa fa-twitter"></i>
+                                    </div></a>
                                 </div>
                                 <div class="rotater">
-                                    <div class="btn1 bttn-icon">
-                                        <a href="https://www.instagram.com/asjadansari07" title="instagram"><i class="fa fa-instagram"></i></a>
-                                    </div>
+                                    <a href="https://www.instagram.com/asjadansari07" title="instagram" target="_blank"><div class="btn1 bttn-icon">
+                                        <i class="fa fa-instagram"></i>
+                                    </div></a>
                                 </div>
                                 <div class="rotater">
-                                    <div class="btn1 bttn-icon">
-                                        <a href="https://www.linkedin.com/in/asjadansari07" title="linkedin"><i class="fa fa-linkedin"></i></a>
-                                    </div>
+                                    <a href="https://www.linkedin.com/in/asjadansari07" title="linkedin" target="_blank"><div class="btn1 bttn-icon">
+                                        <i class="fa fa-linkedin"></i>
+                                    </div></a>
                                 </div>
                                 <div class="rotater">
-                                    <div class="btn1 bttn-icon">
-                                        <a href="mailto:asjadansari07@gmail.com" title="email"><i class="fa fa-envelope-o"></i></a>
-                                    </div>
+                                    <a href="mailto:asjadansari07@gmail.com" title="email" target="_blank"><div class="btn1 bttn-icon">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </div></a>
                                 </div>
                                 <div class="rotater">
-                                    <div class="btn1 bttn-icon">
-                                        <a href="https://wa.me/918454966338?text=Hi" title="whatsapp"><i class="fa fa-whatsapp"></i></a>
-                                    </div>
+                                    <a href="https://wa.me/918454966338?text=Hi" title="whatsapp" target="_blank"><div class="btn1 bttn-icon">
+                                        <i class="fa fa-whatsapp"></i>
+                                    </div></a>
                                 </div>
                                 <div class="rotater">
-                                    <div class="btn1 bttn-icon">
-                                        <a href="sms://+918454966338?body=Hi" title="SMS"><i class="fa fa-commenting-o"></i></a>
-                                    </div>
+                                    <a href="sms://+918454966338?body=Hi" title="SMS" target="_blank"><div class="btn1 bttn-icon">
+                                        <i class="fa fa-commenting-o"></i>
+                                    </div></a>
                                 </div>
                                 <div class="rotater">
-                                    <div class="btn1 bttn-icon">
-                                        <a href="tel:=+918454966338" title="call"><i class="fa fa-phone"></i></a>
-                                    </div>
+                                    <a href="tel:=+918454966338" title="call" target="_blank"><div class="btn1 bttn-icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div></a>
                                 </div>
                                 <!--<div class="rotater">
       <div class="btn1 bttn-icon">
@@ -322,22 +308,22 @@
                     </div>
                 </div>
                 <!--<div class="skill-details" style="font-family:sans-serif;">-->
-                <div class="skill-details wow fadeInLeft" style="font-family: sans-serif;">
+                <div class="skill-details wow fadeInLeft">
                     <div class="sora-author-box-text">
                         <div class="sora-author-box-text-head">
-                            <span class="hello-txt" style="background-color: var(--mycol); color: #fff; font-size: 14px; font-weight: 700; line-height: 1.1; display: inline-block; padding: 7px 12px; text-transform: uppercase; position: relative; margin-bottom: 28px;">Hello</span>
+                            <span class="hello-txt">Hello</span>
                             <h2 class="profile-title"><span>I'm</span> Asjed Ansari</h2>
                             <h3 class="profile-position">MS CRM Dynamics / ASP .Net Developer</h3>
                         </div>
                         <div class="sora-author-box-text-details">
                             <span>
-                                <p style="color: #000000;">I am happy to share a bit about myself,</p>
-                                <p style="color: #000000;">I have started my career in an Information Technology(IT) field in nearly 2016.</p>
-                                <p style="color: #000000;">I am an Analytical Middle-Level Software Engineer with deep expertise in ASP.NET and Database Technologies, with a Bachelor's Degree in Computers.</p>
-                                <p style="color: #000000;">I have overall 3 years of experience in IT Development Industry prior to Software Engineering.</p>
+                                <p>I am happy to share a bit about myself,</p>
+                                <p>I have started my career in an Information Technology(IT) field in nearly 2016.</p>
+                                <p>I am an Analytical Middle-Level Software Engineer with deep expertise in ASP.NET and Database Technologies, with a Bachelor's Degree in Computers.</p>
+                                <p>I have overall 3 years of experience in IT Development Industry prior to Software Engineering.</p>
 
                                 <br>
-                                <p style="color: #000000;">
+                                <p>
                                     <strong>CARRER OBJECTIVE:</strong> To obtain a satisfying career with reputed organization, where I can utilize my capabilities for the progress of the organization and personal growth.
                                 </p>
                             </span>
@@ -347,19 +333,21 @@
             </div>
         </div>
         <div style='clear: both;'></div>
-        <div class="sora-special-box" id="section-skillsVid">
+       <!-- <div class="sora-special-box" id="section-skillsVid">
             <div class="special-wrap row" style="text-align: center;">
-                <!--<video controls autoplay loop>
-  <source src="https://asjadansari07.github.io/Public/images/skillsVid-W-S.mp4" type="video/mp4">
-</video>-->
-                <img id="imgSkills" src="Public/images/skills-W-L.gif"></img>
+                <video id="vidPlayer" autoplay loop width="450" height="450">
+                    <source id="vidSkillsmp4" src="https://asjadansari07.github.io/Public/images/skillsVid-W-S.mp4" type="video/mp4">
+                    <source id="vidSkillswebm" src="https://asjadansari07.github.io/Public/images/skillsVid-W-S.mp4" type="video/webm">
+                    <source id="vidSkillsogg" src="https://asjadansari07.github.io/Public/images/skillsVid-W-S.mp4" type="video/ogg">
+                </video>
+                <img id="imgSkills" src="Public/images/skills-W-L.gif" style="text-align: center;"></img>
             </div>
-        </div>
+        </div>-->
         <div style='clear: both;'></div>
         <div class='sora-special-box' id='section-2A'>
 
             <div class='special-wrap row'>
-                <div class='special-title wow fadeInUp animated' style='visibility: visible;'>
+                <div class='special-title wow fadeInUp animated'>
                     <h4>Skills</h4>
                 </div>
                 <div style='clear: both;'></div>
@@ -422,7 +410,7 @@
         </div>
         <div style='clear: both;'></div>
 
-        <div class="sora-works-box wow slideInUp" style="visibility: visible; animation-name: slideInUp; padding-bottom: 0px;">
+        <div class="sora-works-box wow slideInUp">
             <div class="works-wrap row">
                 <!--<div class="works-title">
                 <h4>About Me</h4>                
@@ -437,12 +425,12 @@
                     </span>
                     <h6 class="works-heading">1. Professional Summary</h6>
 
-                    <p class="works-text testclass" style="text-align: left; font-size: 16px; margin-bottom: 12px;">
+                    <p class="works-text testclass">
 
-                        <i class="fa fa-arrow-right"></i><a>An Analytical Middle-Level Software Engineer with deep expertise in ASP.NET and Database Technologies, with Bachelor Degree in Computers.</a>
+                        <i class="fa fa-arrow-right imarg"></i><a>An Analytical Middle-Level Software Engineer with deep expertise in ASP.NET and Database Technologies, with Bachelor Degree in Computers.</a>
                     </p>
-                    <p class="works-text testclass" style="text-align: left; font-size: 16px; margin-bottom: 12px;">
-                        <i class="fa fa-arrow-right"></i><a>Overall 3 years of experience in IT Development Industry prior to Software Engineering.</a>
+                    <p class="works-text testclass">
+                        <i class="fa fa-arrow-right imarg"></i><a>Overall 3 years of experience in IT Development Industry prior to Software Engineering.</a>
                     </p>
                 </div>
                 <!-- First One Ends -->
@@ -453,21 +441,21 @@
                     </span>
 
                     <h6 class="works-heading">2. Abilities</h6>
-                    <p class="works-text" style="text-align: left; font-size: 16px; margin-bottom: 12px;">
+                    <p class="works-text">
 
-                        <i class="fa fa-arrow-right"></i><a>Self-motivated & quick learner</a>
+                        <i class="fa fa-arrow-right imarg"></i><a>Self-motivated & quick learner</a>
                     </p>
-                    <p class="works-text testclass" style="text-align: left; font-size: 16px; margin-bottom: 12px;">
-                        <i class="fa fa-arrow-right"></i><a>Can work with or without the group without problem/s</a>
+                    <p class="works-text testclass">
+                        <i class="fa fa-arrow-right imarg"></i><a>Can work with or without the group without problem/s</a>
                     </p>
-                    <p class="works-text" style="text-align: left; font-size: 16px; margin-bottom: 12px;">
-                        <i class="fa fa-arrow-right"></i><a>Adjust to any difficult situation</a>
+                    <p class="works-text">
+                        <i class="fa fa-arrow-right imarg"></i><a>Adjust to any difficult situation</a>
                     </p>
-                    <p class="works-text" style="text-align: left; font-size: 16px; margin-bottom: 12px;">
-                        <i class="fa fa-arrow-right"></i><a>Remain calm under work pressure</a>
+                    <p class="works-text">
+                        <i class="fa fa-arrow-right imarg"></i><a>Remain calm under work pressure</a>
                     </p>
-                    <p class="works-text" style="text-align: left; font-size: 16px; margin-bottom: 12px;">
-                        <i class="fa fa-arrow-right"></i><a>Rapid learner, punctual and flexible</a>
+                    <p class="works-text">
+                        <i class="fa fa-arrow-right imarg"></i><a>Rapid learner, punctual and flexible</a>
                     </p>
                 </div>
                 <!-- Second Ends -->
@@ -477,21 +465,21 @@
                         <li data-percent="75"><span class="text"><i aria-hidden="true" class="fa fa-paint-brush"></i></span></li>
                     </span>
                     <h6 class="works-heading">3. Interests / Hobbies</h6>
-                    <p class="works-text" style="text-align: left; font-size: 16px; margin-bottom: 12px;">
+                    <p class="works-text">
 
-                        <i class="fa fa-arrow-right"></i><a>Reading</a>
+                        <i class="fa fa-arrow-right imarg"></i><a>Reading</a>
                     </p>
-                    <p class="works-text" style="text-align: left; font-size: 16px; margin-bottom: 12px;">
-                        <i class="fa fa-arrow-right"></i><a>Playing Computer Games</a>
+                    <p class="works-text">
+                        <i class="fa fa-arrow-right imarg"></i><a>Playing Computer Games</a>
                     </p>
-                    <p class="works-text" style="text-align: left; font-size: 16px; margin-bottom: 12px;">
-                        <i class="fa fa-arrow-right"></i><a>Travelling</a>
+                    <p class="works-text">
+                        <i class="fa fa-arrow-right imarg"></i><a>Travelling</a>
                     </p>
-                    <p class="works-text" style="text-align: left; font-size: 16px; margin-bottom: 12px;">
-                        <i class="fa fa-arrow-right"></i><a>All Indoor Games</a>
+                    <p class="works-text">
+                        <i class="fa fa-arrow-right imarg"></i><a>All Indoor Games</a>
                     </p>
-                    <p class="works-text" style="text-align: left; font-size: 16px; margin-bottom: 12px;">
-                        <i class="fa fa-arrow-right"></i><a>Listening to Music</a>
+                    <p class="works-text">
+                        <i class="fa fa-arrow-right imarg"></i><a>Listening to Music</a>
                     </p>
                 </div>
                 <!-- Third Ends -->
@@ -502,7 +490,7 @@
                     </span>
                     <h6 class="works-heading">4. Languages Known</h6>
                     <p class="works-text">
-                        <div class="skills" style="padding-right: 0px; padding: 0px; width: 100%;">
+                        <div class="skills" id="langskills">
                             <!-- skill -->
                             <dl>
                                 <dt>English</dt>
@@ -523,7 +511,7 @@
                 <!-- Fourth Ends -->
                 <div style="clear: both;"></div>
                 <div class="works-title" id="section-3">
-                    <h4 style="line-height: 75px;">Education</h4>
+                    <h4>Education</h4>
                 </div>
             </div>
         </div>
@@ -534,21 +522,21 @@
             <div class='row counter-box-wrap'>
                 <div class='counter-box-item'>
                     <i class='color lnr lnr-book'></i>
-                    <h1 class="counter-text" style="color: #fff; font-size: 48px; line-height: 48px; font-weight: 700; margin: 3px 0; -webkit-transition: all 300ms linear; -moz-transition: all 300ms linear; -o-transition: all 300ms linear; transition: all 300ms linear; font-family: 'Righteous', cursive;">SSC</h1>
-                    <h1><span class='counter-sora' style="color: var(--mycol); margin-bottom: 3px; font-size: 25px;">66.53</span><span style="color: var(--mycol); margin-bottom: 3px; font-size: 25px;"> %</span></h1>
+                    <h1 class="counter-text">SSC</h1>
+                    <h1><span class='counter-sora'>66.53</span><span class="perctext"> %</span></h1>
                     <div class='counter-sora-text'><a href="https://www.mhssce.ac.in" target="_blank">M. H. Saboo Siddik Technical High School</a></div>
                 </div>
                 <div class='counter-box-item'>
                     <i class='color lnr lnr-book'></i>
-                    <h1 class="counter-text" style="color: #fff; font-size: 48px; line-height: 48px; font-weight: 700; margin: 3px 0; -webkit-transition: all 300ms linear; -moz-transition: all 300ms linear; -o-transition: all 300ms linear; transition: all 300ms linear; font-family: 'Righteous', cursive;">HSC</h1>
-                    <h1><span class='counter-sora' style="color: var(--mycol); margin-bottom: 3px; font-size: 25px;">63.50</span><span style="color: var(--mycol); margin-bottom: 3px; font-size: 25px;"> %</span></h1>
-                    <div class='counter-sora-text'><a href="http://www.apcollege.in" target="_blank">Akbar Peerbhoy College of Commerce & Ecomomics</a></div>
+                    <h1 class="counter-text">HSC</h1>
+                    <h1><span class='counter-sora'>63.50</span><span class="perctext"> %</span></h1>
+                    <div class='counter-sora-text'><a href="https://www.apcollege.in" target="_blank">Akbar Peerbhoy College of Commerce & Ecomomics</a></div>
                 </div>
                 <div class='counter-box-item'>
                     <i class='color lnr lnr-book'></i>
-                    <h1 class="counter-text" style="color: #fff; font-size: 48px; line-height: 48px; font-weight: 700; margin: 3px 0; -webkit-transition: all 300ms linear; -moz-transition: all 300ms linear; -o-transition: all 300ms linear; transition: all 300ms linear; font-family: 'Righteous', cursive;">Bsc IT</h1>
-                    <h1><span class='counter-sora' style="color: var(--mycol); margin-bottom: 3px; font-size: 25px;">64.60</span><span style="color: var(--mycol); margin-bottom: 3px; font-size: 25px;"> %</span></h1>
-                    <div class='counter-sora-text'><a href="http://www.apcollege.in" target="_blank">Akbar Peerbhoy College of Commerce & Ecomomics</a></div>
+                    <h1 class="counter-text">Bsc IT</h1>
+                    <h1><span class='counter-sora'>64.60</span><span class="perctext"> %</span></h1>
+                    <div class='counter-sora-text'><a href="https://www.apcollege.in" target="_blank">Akbar Peerbhoy College of Commerce & Ecomomics</a></div>
                 </div>
 
             </div>
@@ -559,10 +547,10 @@
             <div class='about-wrap row'>
                 <div class='about-title wow fadeInUp  animated'>
                     <h4>Work</h4>
-                    <span style="color: #606060; line-height: 43px;">Worked on kind of projects using various technologies.</span>
+                    <span id="worktext">Worked on kind of projects using various technologies.</span>
                 </div>
                 <div style='clear: both;'></div>
-                <div class='about-tiles wow fadeInLeft' data-wow-delay='0.2s' style='visibility: visible;'>
+                <div class='about-tiles wow fadeInLeft' data-wow-delay='0.2s'>
                     <div class='team-member text-center'>
                         <div class='team-img'>
                             <!--<img alt="" src="Public/images/team_1.jpg">-->
@@ -577,9 +565,9 @@
                                         </li>
                                     </span>
                                     <span class="special-content">
-                                        <h6 class="works-heading">MS CRM Dynamics Customization</h6>
+                                        <h3 class="works-heading">MS CRM Dynamics Customization</h3>
                                         <!--<h6 class="special-heading" style="font-size:25px;">MS CRM Dynamics Customization</h6>-->
-                                        <p class="special-text" style="font-size: 18px;">Working as Microsoft Dynamics CRM 365 online Customizer and Developer. Also maintain an external portal for the client which is based on Asp.Net.</p>
+                                        <p class="special-text">Working as Microsoft Dynamics CRM 365 online Customizer and Developer. Also maintain an external portal for the client which is based on Asp.Net.</p>
                                     </span>
 
                                 </div>
@@ -587,28 +575,28 @@
                             </div>
                             <div class='overlay'>
                                 <div class='team-details text-center'>
-                                    <p style="text-align: left;" class="testclass"><i class="fa fa-arrow-right"></i>Design and develop modifications or extensions to the standard Microsoft Dynamics CRM application.</p>
-                                    <p style="text-align: left;" class="testclass"><i class="fa fa-arrow-right"></i>Investigate problems, perform root-cause analysis and deliver bug-fixes.</p>
-                                    <p style="text-align: left;" class="testclass"><i class="fa fa-arrow-right"></i>Support and troubleshoot existing code for asp.net portal and MSCRM.</p>
+                                    <p class="testclass"><i class="fa fa-arrow-right imarg"></i>Design and develop modifications or extensions to the standard Microsoft Dynamics CRM application.</p>
+                                    <p class="testclass"><i class="fa fa-arrow-right imarg"></i>Investigate problems, perform root-cause analysis and deliver bug-fixes.</p>
+                                    <p class="testclass"><i class="fa fa-arrow-right imarg"></i>Support and troubleshoot existing code for asp.net portal and MSCRM.</p>
                                     <div class='socials mt-20'>
-                                        <a href='https://www.facebook.com/profile.php?id=100006149835885'><i class='fa fa-facebook'></i></a>
-                                        <a href='https://twitter.com/asjadansari07'><i class='fa fa-twitter'></i></a>
+                                        <a href='https://www.facebook.com/profile.php?id=100006149835885' target="_blank"><i class='fa fa-facebook'></i></a>
+                                        <a href='https://twitter.com/asjadansari07' target="_blank"><i class='fa fa-twitter'></i></a>
                                         <!--<a href='https://aboutme.google.com/u/0/?referer=gplus'><i class='fa fa-google-plus'></i></a>-->
-                                        <a href='https://www.instagram.com/asjadansari07'><i class='fa fa-instagram'></i></a>
-                                        <a href='https://www.linkedin.com/in/asjadansari07'><i class='fa fa-linkedin'></i></a>
-                                        <a href='mailto:asjadansari07@gmail.com'><i class='fa fa-envelope-o'></i></a>
-                                        <a href='https://wa.me/918454966338?text=Hi'><i class='fa fa-whatsapp'></i></a>
-                                        <a href='sms://+918454966338?body=Hi'><i class="fa fa-commenting-o"></i></a>
-                                        <a href="tel:=+918454966338"><i class="fa fa-phone"></i></a>
+                                        <a href='https://www.instagram.com/asjadansari07' target="_blank"><i class='fa fa-instagram'></i></a>
+                                        <a href='https://www.linkedin.com/in/asjadansari07' target="_blank"><i class='fa fa-linkedin'></i></a>
+                                        <a href='mailto:asjadansari07@gmail.com' target="_blank"><i class='fa fa-envelope-o'></i></a>
+                                        <a href='https://wa.me/918454966338?text=Hi' target="_blank"><i class='fa fa-whatsapp'></i></a>
+                                        <a href='sms://+918454966338?body=Hi' target="_blank"><i class="fa fa-commenting-o"></i></a>
+                                        <a href="tel:=+918454966338" target="_blank"><i class="fa fa-phone"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!--<h6 class='team-title'>John Marshall</h6>-->
-                        <span style="font-weight: bold;">MS CRM Developer</span>
+                        <span class="textbold">MS CRM Developer</span>
                     </div>
                 </div>
-                <div class='about-tiles wow fadeInUp' data-wow-delay='0s' style='visibility: visible;'>
+                <div class='about-tiles wow fadeInUp' data-wow-delay='0s'>
                     <div class='team-member text-center'>
                         <div class='team-img'>
                             <!--<img alt="" src="Public/images/team_2.jpg">-->
@@ -621,8 +609,8 @@
                                         </li>
                                     </span>
                                     <span class="special-content">
-                                        <h6 class="works-heading">Web Application</h6>
-                                        <p class="special-text" style="font-size: 18px;">Worked as Webs Application Developer for Building and Maintaining recruitment domain. Also, maintaining static and dynamic websites for clients.</p>
+                                        <h3 class="works-heading">Web Application</h3>
+                                        <p class="special-text">Worked as Webs Application Developer for Building and Maintaining recruitment domain. Also, maintaining static and dynamic websites for clients.</p>
                                     </span>
 
                                 </div>
@@ -630,28 +618,28 @@
                             </div>
                             <div class='overlay'>
                                 <div class='team-details text-center'>
-                                    <p style="text-align: left;" class="testclass"><i class="fa fa-arrow-right"></i>Perform design and development of web based services and applications.</p>
-                                    <p style="text-align: left;"><i class="fa fa-arrow-right"></i>Doing maintenance for projects and websites.</p>
-                                    <p style="text-align: left;" class="testclass"><i class="fa fa-arrow-right"></i>Develop databases including queries, views and stored procedures.</p>
+                                    <p class="testclass"><i class="fa fa-arrow-right imarg"></i>Perform design and development of web based services and applications.</p>
+                                    <p class="testclass"><i class="fa fa-arrow-right imarg"></i>Doing maintenance for projects and websites.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                    <p class="testclass"><i class="fa fa-arrow-right imarg"></i>Develop databases including queries, views and stored procedures.</p>
                                     <div class='socials mt-20'>
-                                        <a href='https://www.facebook.com/profile.php?id=100006149835885'><i class='fa fa-facebook'></i></a>
-                                        <a href='https://twitter.com/asjadansari07'><i class='fa fa-twitter'></i></a>
+                                        <a href='https://www.facebook.com/profile.php?id=100006149835885' target="_blank"><i class='fa fa-facebook'></i></a>
+                                        <a href='https://twitter.com/asjadansari07' target="_blank"><i class='fa fa-twitter'></i></a>
                                         <!--<a href='https://aboutme.google.com/u/0/?referer=gplus'><i class='fa fa-google-plus'></i></a>-->
-                                        <a href='https://www.instagram.com/asjadansari07'><i class='fa fa-instagram'></i></a>
-                                        <a href='https://www.linkedin.com/in/asjadansari07'><i class='fa fa-linkedin'></i></a>
-                                        <a href='mailto:asjadansari07@gmail.com'><i class='fa fa-envelope-o'></i></a>
-                                        <a href='https://wa.me/918454966338?text=Hi'><i class='fa fa-whatsapp'></i></a>
-                                        <a href='sms://+918454966338?body=Hi'><i class="fa fa-commenting-o"></i></a>
-                                        <a href="tel:=+918454966338"><i class="fa fa-phone"></i></a>
+                                        <a href='https://www.instagram.com/asjadansari07' target="_blank"><i class='fa fa-instagram'></i></a>
+                                        <a href='https://www.linkedin.com/in/asjadansari07' target="_blank"><i class='fa fa-linkedin'></i></a>
+                                        <a href='mailto:asjadansari07@gmail.com' target="_blank"><i class='fa fa-envelope-o'></i></a>
+                                        <a href='https://wa.me/918454966338?text=Hi' target="_blank"><i class='fa fa-whatsapp'></i></a>
+                                        <a href='sms://+918454966338?body=Hi' target="_blank"><i class="fa fa-commenting-o"></i></a>
+                                        <a href="tel:=+918454966338" target="_blank"><i class="fa fa-phone"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!--<h6 class='team-title'>Steve Roberts</h6>-->
-                        <span style="font-weight: bold;">Web Developer</span>
+                        <span class="textbold">Web Developer</span>
                     </div>
                 </div>
-                <div class='about-tiles wow fadeInRight' data-wow-delay='0.2s' style='visibility: visible;'>
+                <div class='about-tiles wow fadeInRight' data-wow-delay='0.2s'>
                     <div class='team-member last text-center'>
                         <div class='team-img'>
                             <!--<img alt="" src="Public/images/team_3.jpg">-->
@@ -664,8 +652,8 @@
                                         </li>
                                     </span>
                                     <span class="special-content">
-                                        <h6 class="works-heading">Web Design</h6>
-                                        <p class="special-text" style="font-size: 18px;">As a Website Designer my responsibilities were building websites from HTML Templates and scratch. Also made changes to client websites as per their requirements.</p>
+                                        <h3 class="works-heading">Web Design</h3>
+                                        <p class="special-text">As a Website Designer my responsibilities were building websites from HTML Templates and scratch. Also made changes to client websites as per their requirements.</p>
                                     </span>
 
                                 </div>
@@ -675,49 +663,49 @@
                             <div class='overlay'>
                                 <div class='team-details text-center'>
                                     <p>
-                                        <p style="text-align: left;" class="testclass"><i class="fa fa-arrow-right"></i>Updating and maintaining websites as per client requirements.</p>
-                                        <p style="text-align: left;" class="testclass"><i class="fa fa-arrow-right"></i>Creating (Using Templates) and modifying/editing various websites.</p>
-                                        <p style="text-align: left;"><i class="fa fa-arrow-right"></i>Doing maintenance for projects and websites.</p>
+                                        <p class="testclass"><i class="fa fa-arrow-right imarg"></i>Updating and maintaining websites as per client requirements.</p>
+                                        <p class="testclass"><i class="fa fa-arrow-right imarg"></i>Creating (Using Templates) and modifying/editing various websites.</p>
+                                        <p class="testclass"><i class="fa fa-arrow-right imarg"></i>Doing maintenance for projects and websites.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                                     </p>
                                     <div class='socials mt-20'>
-                                        <a href='https://www.facebook.com/profile.php?id=100006149835885'><i class='fa fa-facebook'></i></a>
-                                        <a href='https://twitter.com/asjadansari07'><i class='fa fa-twitter'></i></a>
+                                        <a href='https://www.facebook.com/profile.php?id=100006149835885' target="_blank"><i class='fa fa-facebook'></i></a>
+                                        <a href='https://twitter.com/asjadansari07' target="_blank"><i class='fa fa-twitter'></i></a>
                                         <!--<a href='https://aboutme.google.com/u/0/?referer=gplus'><i class='fa fa-google-plus'></i></a>-->
-                                        <a href='https://www.instagram.com/asjadansari07'><i class='fa fa-instagram'></i></a>
-                                        <a href='https://www.linkedin.com/in/asjadansari07'><i class='fa fa-linkedin'></i></a>
-                                        <a href='mailto:asjadansari07@gmail.com'><i class='fa fa-envelope-o'></i></a>
-                                        <a href='https://wa.me/918454966338?text=Hi'><i class='fa fa-whatsapp'></i></a>
-                                        <a href='sms://+918454966338?body=Hi'><i class="fa fa-commenting-o"></i></a>
-                                        <a href="tel:=+918454966338"><i class="fa fa-phone"></i></a>
+                                        <a href='https://www.instagram.com/asjadansari07' target="_blank"><i class='fa fa-instagram'></i></a>
+                                        <a href='https://www.linkedin.com/in/asjadansari07' target="_blank"><i class='fa fa-linkedin'></i></a>
+                                        <a href='mailto:asjadansari07@gmail.com' target="_blank"><i class='fa fa-envelope-o'></i></a>
+                                        <a href='https://wa.me/918454966338?text=Hi' target="_blank"><i class='fa fa-whatsapp'></i></a>
+                                        <a href='sms://+918454966338?body=Hi' target="_blank"><i class="fa fa-commenting-o"></i></a>
+                                        <a href="tel:=+918454966338" target="_blank"><i class="fa fa-phone"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!--<h6 class='team-title'>Michael Cartney</h6>-->
-                        <span style="font-weight: bold;">Web Designer</span>
+                        <span class="textbold">Web Designer</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class='main-gallery wow fadeInRight' id='section-6' style='visibility: visible;'>
+        <div class='main-gallery wow fadeInUp' id='section-6'>
             <div class='gallery-cell'>
                 <div class='testimonial'>
                     <!--<img class="testimonial-avatar" src="Public/images/rp.jpg">-->
                     <a href="https://www.mphasis.com" target="_blank">
-                        <img class="testimonial-avatar" src="Public/images/mp.png"></a>
+                        <img class="testimonial-avatar lazyload" data-src="Public/images/mp.png"></a>
                     <!--<q class='testimonial-quote'>"Worked as a back office executive for one of the best Ultratech's cement and construction material supplier agency."</q>
 <span class='testimonial-author'>Back Office Executive,<span style="text-transform:uppercase"> Rock Products</span></span>-->
                     <q class='testimonial-quote'>"Working as a Asp.Net software engineer(with SharePoint) at client side for Aditya Birla Sun Life Insurance(ABSLI) a subsidiary of Aditya Birla Capital Ltd (ABCL)."</q>
-                    <span class='testimonial-author'>Delivery Software Engineer,<span style="text-transform: uppercase"> Mphasis Ltd</span></span>
+                    <span class='testimonial-author'>Delivery Software Engineer,<span class="textcapital"> Mphasis Ltd</span></span>
                 </div>
             </div>
             <div class='gallery-cell'>
                 <div class='testimonial'>
                     <!--<img class="testimonial-avatar" src="Public/images/it.jpg">-->
                     <a href="https://dynamics.microsoft.com/en-in" target="_blank">
-                        <img class="testimonial-avatar" src="Public/images/fl.jpg"></a>
+                        <img class="testimonial-avatar lazyload" data-src="Public/images/fl.webp"></a>
                     <q class='testimonial-quote'>"Working as a Free Lancer software engineer( or MSD CRM Developer) on Microsoft Dynamic CRM 365 online."</q>
-                    <span class='testimonial-author'>Software Engineer,<span style="text-transform: uppercase"> Free Lance</span></span>
+                    <span class='testimonial-author'>Software Engineer,<span  class="textcapital"> Free Lance</span></span>
                     <!--<img class="testimonial-avatar" src="Public/images/it.png">
     <q class='testimonial-quote'>"Worked as a software engineer for well known Microsoft Dynamic CRM Customizer,Consultant,Development services provider in foreign countries."</q>
     <span class='testimonial-author'>Software Engineer,<span style="text-transform:uppercase"> Inogic Tech India Pvt. Ltd.</span></span>-->
@@ -726,16 +714,16 @@
             <div class='gallery-cell'>
                 <div class='testimonial'>
                     <!--<img class="testimonial-avatar" src="Public/images/pt.jpg">-->
-                    <a href="http://paloji.com" target="_blank">
-                        <img class="testimonial-avatar" src="Public/images/pt.png" style="background-color: #ffffff;"></a>
+                    <a href="https://paloji.com" target="_blank">
+                        <img class="testimonial-avatar lazyload" data-src="Public/images/pt.png"></a>
                     <q class='testimonial-quote'>"Worked as a software engineer or web developer and designer for Paloji Technologies, which is one of the IT services and software providers in recruitment industries."</q>
-                    <span class='testimonial-author'>Software Engineer,<span style="text-transform: uppercase"> Paloji Technologies</span></span>
+                    <span class='testimonial-author'>Software Engineer,<span class="textcapital"> Paloji Technologies</span></span>
                 </div>
             </div>
         </div>
         <div style='clear: both'></div>
         <div class='Portfolio-title wow fadeInUp animated' id='main-wrapper'>
-            <h4 style="line-height: 75px;">Technologies</h4>
+            <h4>Technologies</h4>
             <!--<span>Technologies used in development</span>-->
         </div>
         <div style='clear: both;'></div>
@@ -744,17 +732,17 @@
                 <div class='main section' id='main'>
                     <div class='widget Blog' data-version='1' id='Blog1'>
                         <div class='blog-posts hfeed' id="gal1">
-                            <div class='post-grid wow fadeInUp' style='visibility: visible;'>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                            <div class='post-grid wow fadeInUp'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="Asp.Net" src="Public/images/aspnet.jpg">
+                                                <img alt="Asp.Net" class="lazyload" data-src="Public/images/aspnet.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         ASP.NET is an open-source server-side web application framework designed for web development.
                                                     </span>
                                                 </h2>
@@ -764,16 +752,16 @@
 
                                     </div>
                                 </div>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="SQL Server" src="Public/images/sql.jpg">
+                                                <img alt="SQL Server" class="lazyload" data-src="Public/images/sql.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system.
                                                     </span>
                                                 </h2>
@@ -785,16 +773,16 @@
 
                                     </div>
                                 </div>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="MS CRM Dynamics" src="Public/images/crm.jpg">
+                                                <img alt="MS CRM Dynamics" class="lazyload" data-src="Public/images/crm.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         Dynamics 365 is a product line of enterprise resource planning and customer relationship management applications.
                                                     </span>
                                                 </h2>
@@ -804,16 +792,16 @@
 
                                     </div>
                                 </div>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="HTML" src="Public/images/html.jpg">
+                                                <img alt="HTML" class="lazyload" data-src="Public/images/html.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser.
                                                     </span>
                                                 </h2>
@@ -823,16 +811,16 @@
 
                                     </div>
                                 </div>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="CSS" src="Public/images/css.jpg">
+                                                <img alt="CSS" class="lazyload" data-src="Public/images/css.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML.
                                                     </span>
                                                 </h2>
@@ -842,16 +830,16 @@
 
                                     </div>
                                 </div>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="Bootstrap" src="Public/images/bootstrap.jpg">
+                                                <img alt="Bootstrap" class="lazyload" data-src="Public/images/bootstrap.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.
                                                     </span>
                                                 </h2>
@@ -861,16 +849,16 @@
 
                                     </div>
                                 </div>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="JavaScript" src="Public/images/javascript.jpg">
+                                                <img alt="JavaScript" class="lazyload" data-src="Public/images/javascript.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         JavaScript, often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification. 
                                                     </span>
                                                 </h2>
@@ -882,16 +870,16 @@
 
                                     </div>
                                 </div>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="JQuery" src="Public/images/jquery.jpg">
+                                                <img alt="JQuery" class="lazyload" data-src="Public/images/jquery.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.
                                                     </span>
                                                 </h2>
@@ -904,17 +892,17 @@
                             </div>
                         </div>
                         <div class='blog-posts hfeed' id="gal2">
-                            <div class='post-grid wow fadeInUp' style='visibility: visible;'>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                            <div class='post-grid wow fadeInUp'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="Ado.Net" src="Public/images/adonet.jpg">
+                                                <img alt="Ado.Net" class="lazyload" data-src="Public/images/adonet.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         ADO.NET is a data access technology from the Microsoft .NET Framework that provides communication between relational and non-relational systems.
                                                     </span>
                                                 </h2>
@@ -924,16 +912,16 @@
 
                                     </div>
                                 </div>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="LINQ" src="Public/images/linq.jpg">
+                                                <img alt="LINQ" class="lazyload" data-src="Public/images/linq.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                          (LINQ, pronounced "link") is a Microsoft .NET Framework component that adds native data querying capabilities to .NET languages.
                                                     </span>
                                                 </h2>
@@ -945,16 +933,16 @@
 
                                     </div>
                                 </div>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="XML" src="Public/images/xml.jpg">
+                                                <img alt="XML" class="lazyload" data-src="Public/images/xml.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. 
                                                     </span>
                                                 </h2>
@@ -964,16 +952,16 @@
 
                                     </div>
                                 </div>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="Google Forms" src="Public/images/googleform.jpg">
+                                                <img alt="Google Forms" class="lazyload" data-src="Public/images/googleform.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         Google Forms is a survey administration software included as part of the free, web-based Google Docs Editors suite offered by Google.
                                                     </span>
                                                 </h2>
@@ -986,17 +974,17 @@
                             </div>
                         </div>
                         <div class='blog-posts hfeed' id="gal3">
-                            <div class='post-grid wow fadeInUp' style='visibility: visible;'>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                            <div class='post-grid wow fadeInUp'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="C#" src="Public/images/csharp.jpg">
+                                                <img alt="C#" class="lazyload" data-src="Public/images/csharp.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                          It  is a general-purpose, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines.
                                                     </span>
                                                 </h2>
@@ -1006,16 +994,16 @@
 
                                     </div>
                                 </div>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="JSON" src="Public/images/json.jpg">
+                                                <img alt="JSON" class="lazyload" data-src="Public/images/json.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         JSON is an open standard file format, and data interchange format, that uses human-readable text to store and transmit data objects.
                                                     </span>
                                                 </h2>
@@ -1025,16 +1013,16 @@
 
                                     </div>
                                 </div>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="AJAX" src="Public/images/ajax.jpg">
+                                                <img alt="AJAX" class="lazyload" data-src="Public/images/ajax.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         Ajax is a set of web development techniques using many web technologies on the client-side to create asynchronous web applications.
                                                     </span>
                                                 </h2>
@@ -1046,16 +1034,16 @@
 
                                     </div>
                                 </div>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="Web Service" src="Public/images/ws.jpg">
+                                                <img alt="Web Service" class="lazyload" data-src="Public/images/ws.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         It is a service offered by an electronic device to another electronic device, communicating with each other via the World Wide Web.
                                                     </span>
                                                 </h2>
@@ -1068,17 +1056,17 @@
                             </div>
                         </div>
                         <div class='blog-posts hfeed' id="gal4">
-                            <div class='post-grid wow fadeInUp' style='visibility: visible;'>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                            <div class='post-grid wow fadeInUp'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="Web Form" src="Public/images/form.jpg">
+                                                <img alt="Web Form" class="lazyload" data-src="Public/images/form.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         A webform, web form or HTML form on a web page allows a user to enter data that is sent to a server for processing.
                                                     </span>
                                                 </h2>
@@ -1088,16 +1076,16 @@
 
                                     </div>
                                 </div>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="MS Office" src="Public/images/office.jpg">
+                                                <img alt="MS Office" class="lazyload" data-src="Public/images/office.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         Microsoft Office, or simply Office, is a family of client software, server software, and services developed by Microsoft.
                                                     </span>
                                                 </h2>
@@ -1107,16 +1095,16 @@
 
                                     </div>
                                 </div>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="SSRS" src="Public/images/ssrs.jpg">
+                                                <img alt="SSRS" class="lazyload" data-src="Public/images/ssrs.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         SQL Server Reporting Services is a server-based report generating software system from Microsoft. It is part of a suite of Microsoft SQL Server services.
                                                     </span>
                                                 </h2>
@@ -1128,16 +1116,16 @@
 
                                     </div>
                                 </div>
-                                <div class='post-grid-item wow flipInX' style='visibility: visible;'>
+                                <div class='post-grid-item wow flipInX'>
                                     <div class='post hentry'>
                                         <div class='block-image'>
                                             <a class='thumb' href='#'>
-                                                <img alt="MVC" src="Public/images/mvc.jpg">
+                                                <img alt="MVC" class="lazyload" data-src="Public/images/mvc.webp">
                                             </a>
                                             <font class='retitle'>
                                             <span class='post-retitle'>
                                                 <h2 class='post-title entry-title'>
-                                                    <span style="color:white !important;">
+                                                    <span>
                                                         Model–view–controller is a software design pattern commonly used for developing user interfaces that divides the related program logic into three interconnected elements.
                                                     </span>
                                                 </h2>
@@ -1154,7 +1142,7 @@
                 </div>
                 <div>
                     <!--<div class="Portfolio-title"><a id="loadmore" onmouseover="this.style.color='var(--mycol)'" onmouseout="this.style.color='Black'" style="font-size: 23px; color: Black;">Load more</a></div></div>-->
-                    <div id="btntitle" class="Portfolio-title" style="margin-bottom: 0px; margin-top: 47px;"><a class="btnLM btn-2 hover-slide-right" id="loadmore"><span>Load more</span></a></div>
+                    <div id="btntitle" class="Portfolio-title wow fadeInUp"><a class="btnLM btn-2 hover-slide-right" id="loadmore"><span>Load more</span></a></div>
                 </div>
             </div>
 
@@ -1164,8 +1152,8 @@
 
 
         <div class='insta-wrap' id='section-7'>
-            <div class='contact-title wow fadeInUp  animated' style="margin-top: 0px;">
-                <h4 style="line-height: 75px;">Get in Touch</h4>
+            <div class='contact-title wow fadeInUp  animated'>
+                <h4>Get in Touch</h4>
                 <span>Feel free to drop us a line to contact us</span>
             </div>
             <div style='clear: both'></div>
@@ -1173,25 +1161,25 @@
             </div>
             <div style='clear: both'></div>
             <div class='row' id='sora_blogger_cntct_form'>
-                <div class='wrap-me wow fadeInLeft' data-wow-delay='0.2s' style='visibility: visible;'>
+                <div class='wrap-me wow fadeInLeft' data-wow-delay='0.2s' id="formdiv">
                     <div>
-                        <iframe id="googleForm" src="https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                        <!--<script src="http://googleformrestyler.apixml.net/GoogleFormStyler.js" form="https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true"></script>-->
+                        <iframe class="lazyload" id="googleForm" data-src="https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        <!--<script src="https://googleformrestyler.apixml.net/GoogleFormStyler.js" form="https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true"></script>-->
                     </div>
 
                     <br />
                 </div>
-                <div class='map-me wow fadeInRight' data-wow-delay='0s' style='visibility: visible;'>
+                <div class='map-me wow fadeInRight' data-wow-delay='0s'>
                     <div class='contact-other'>
                         <h1 class='con-title'>Feel free To Contact</h1>
-                        <p class='' style="color: #606060; font-family: Montserrat; font-size: 14px; font-weight: normal; line-height: 34px; margin: 0 0 10px;">
+                        <p class='contacttext'>
                             Should you need any further information, please do not hesitate to contact me.
                         </p>
                         <ul class='con-list'>
-                            <li><i class="lnr lnr-map-marker"></i><a href="https://maps.google.co.in/maps?f=d&daddr=19.041108125115837,72.94783334087698&hl=en" id="loc2">P-1 Line,B-Sector,Cheeta Camp,Trombay-88.</a></li>
-                            <li><i class="lnr lnr-smartphone"></i><a href="tel:=+918454966338" id="phn2">+91 8454966338</a><!--,<a href="tel:=+918652625108"> +91 8652625108</a>--></li>
-                            <li style="text-transform: lowercase;"><i class="lnr lnr-envelope"></i><a href="mailto:asjadansari07@gmail.com" id="eml2">asjadansari07@gmail.com</a></li>
-                            <li style="text-transform: lowercase;"><i class="lnr lnr-earth"></i><a href="https://asjadansari07.github.io" id="web2">www.asjadansari07.github.io</a></li>
+                            <li><i class="lnr lnr-map-marker"></i><a href="https://maps.google.co.in/maps?f=d&daddr=19.041108125115837,72.94783334087698&hl=en" id="loc2" target="_blank">P-1 Line,B-Sector,Cheeta Camp,Trombay-88.</a></li>
+                            <li><i class="lnr lnr-smartphone"></i><a href="tel:=+918454966338" id="phn2" target="_blank">+91 8454966338</a><!--,<a href="tel:=+918652625108"> +91 8652625108</a>--></li>
+                            <li class="textsmall"><i class="lnr lnr-envelope"></i><a href="mailto:asjadansari07@gmail.com" id="eml2" target="_blank">asjadansari07@gmail.com</a></li>
+                            <li class="textsmall"><i class="lnr lnr-earth"></i><a href="https://asjadansari07.github.io" id="web2" target="_blank">www.asjadansari07.github.io</a></li>
                             <li><i class="lnr" id="zoom">
                                 <!--<img alt='Download App' height='40' src='Public/images/AppQR.png' width='40' id="imgqr" />-->
                                 <svg version="1.1" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
@@ -1750,26 +1738,12 @@
 </div>-->
                         <div class='widget-content'>
                             <div class="fancyBtn">
-                                <div id="google_translate_element"></div>
-                                <script type="text/javascript">
-                                    //function googleTranslateElementInit() {
-                                    //    new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
-                                    //}
-                                    function googleTranslateElementInit() {
-                                        if (/Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                                            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, 'google_translate_element');
-                                        }
-                                        else {
-                                            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
-                                        }
-                                    }
-                                </script>
-                                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                                <div id="google_translate_element"></div>                                
                                 <div class="fancyBtnHorizontal"></div>
                                 <div class="fancyBtnVertical"></div>
                             </div>
 
-                            <!--<embed style="opacity: 0;" hidden="true" src="https://stanthonyschoolbyculla.com/wp-content/uploads/2019/01/St.-Anthony-s-School-Anthem-2019.mp3" />-->
+                            <!--<embed style="opacity: 0;" type="audio/midi" hidden="true" src="https://stanthonyschoolbyculla.com/wp-content/uploads/2019/01/St.-Anthony-s-School-Anthem-2019.mp3" />-->
                         </div>
                     </div>
                 </div>
@@ -1780,15 +1754,15 @@
                     <div class='widget LinkList' data-version='1' id='LinkList236'>
                         <div class='widget-content'>
                             <ul id='social'>
-                                <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100006149835885" title="facebook"></a></li>
-                                <li><a class="twitter" href="https://twitter.com/asjadansari07" title="twitter"></a></li>
-                                <!--<li><a class="gplus" href="https://aboutme.google.com/u/0/?referer=gplus" title="gplus"></a></li>-->
-                                <li><a class="instagram" href="https://www.instagram.com/asjadansari07" title="instagram"></a></li>
-                                <li><a class="linkedin" href="https://www.linkedin.com/in/asjadansari07" title="linkedin"></a></li>
-                                <li><a href='mailto:asjadansari07@gmail.com'><i class='fa fa-envelope-o' title='email'></i></a></li>
-                                <li><a href='https://wa.me/918454966338?text=Hi'><i class='fa fa-whatsapp' title='whatsapp'></i></a></li>
-                                <li><a href='sms://+918454966338?body=Hi'><i class="fa fa-commenting-o" title="SMS"></i></a></li>
-                                <li><a href="tel:=+918454966338" title="Call"><i class="fa fa-phone"></i></a></li>
+                                <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100006149835885" title="facebook" target="_blank"></a></li>
+                                <li><a class="twitter" href="https://twitter.com/asjadansari07" title="twitter" target="_blank"></a></li>
+                                <!--<li><a class="gplus" href="https://aboutme.google.com/u/0/?referer=gplus" title="gplus" target="_blank"></a></li>-->
+                                <li><a class="instagram" href="https://www.instagram.com/asjadansari07" title="instagram" target="_blank"></a></li>
+                                <li><a class="linkedin" href="https://www.linkedin.com/in/asjadansari07" title="linkedin" target="_blank"></a></li>
+                                <li><a href='mailto:asjadansari07@gmail.com' target="_blank"><i class='fa fa-envelope-o' title='email'></i></a></li>
+                                <li><a href='https://wa.me/918454966338?text=Hi' target="_blank"><i class='fa fa-whatsapp' title='whatsapp'></i></a></li>
+                                <li><a href='sms://+918454966338?body=Hi' target="_blank"><i class="fa fa-commenting-o" title="SMS"></i></a></li>
+                                <li><a href="tel:=+918454966338" title="Call" target="_blank"><i class="fa fa-phone"></i></a></li>
 
                             </ul>
                         </div>
@@ -1815,11 +1789,11 @@
             <i class="fa fa-arrow-up"></i>
         </div>
         <div class="text">
-            Back to top
+            back to top
         </div>
     </div>
     <!--CHANGE THEME BUTTON-->
-    <div class="m-theme" aria-hidden="true" title="Click to change theme">
+    <div class="m-theme" aria-hidden="true" title="Click to change theme color">
         <div class="arrow">
             <img id="imgtheme" src="Public/images/theme.gif"></img>
             <!--<i class="fa fa-cog fa-spin"></i>-->
@@ -2359,58 +2333,7 @@
             <rect shape-rendering="optimizeSpeed" x="172" y="177" width="5" height="5" fill="black" />
         </svg>
     </div>
-    <script>
-        $(function () {
-            var moveLeft = 20;
-            var moveDown = 10;
-
-            $('#zoom').hover(function (e) {
-                $('#pop-up').show();
-                //.css('top', e.pageY + moveDown)
-                //.css('left', e.pageX + moveLeft)
-                //.appendTo('body');
-            }, function () {
-                $('#pop-up').hide();
-            });
-
-            $('#zoom').mousemove(function (e) {
-                $("#pop-up").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
-            });
-
-        });
-
-    </script>
-    <script>
-        //Make sure the user has scrolled at least double the height of the browser
-        //var toggleHeight = $(window).outerHeight() * 2;
-
-        //Scrolls the user to the top of the page again
-        $(".m-backtotop").click(function () {
-            $("html, body").animate({ scrollTop: 0 }, "slow");
-            return false;
-        });
-                
-        $("#loadmore").click(function () {
-            if (!$("#gal2").is(":visible")) {
-                $("#gal2").show();
-            }
-            else if (!$("#gal3").is(":visible")) {
-                $("#gal3").show();
-            }
-            else if (!$("#gal4").is(":visible")) {
-                $("#gal4").show();
-                $(this).hide();
-                $("#btntitle").hide();
-            }
-            else {
-                $(this).hide();
-                $("#btntitle").hide();
-            }
-            var y = $(window).scrollTop();  //your current y position on the page
-            $(window).scrollTop(y + 1);
-        });
-    </script>
-    <script>
+    <!--<script>
         /*<![CDATA[*/
         /*! WOW wow.js - v1.3.0 - 2016-10-04
         * https://wowjs.uk
@@ -2452,8 +2375,8 @@
         });
 
         /*]]>*/
-    </script>
-    <script type='text/javascript'>
+    </script>-->
+    <!--<script type='text/javascript'>
         //<![CDATA[
 
         /*!
@@ -2695,7 +2618,7 @@
                 _0x24d5x2('#menu > .LinkList > ul')['attr']('id', 'nav1'),
                 _0x24d5x2('#menu ul > li > ul')['parent']('li')['addClass']('parent'),
                 _0x24d5x2('#menu .widget')['attr']('style', 'display:block!important;')
-        });       
+        });
         $(function () {
             $('.index .post-grid-item, .archive .post-grid-item')['matchHeight']();
             $('.post-body img')['parent']('a')['css']('margin', '0 auto!important')
@@ -2761,17 +2684,8 @@
                 }
             }
         })
-    </script>
-
-    <script>var flkty = new Flickity('.main-gallery', {
-    cellAlign: 'left',
-    contain: true,
-    wrapAround: true,
-    prevNextButtons: true,
-    autoPlay: 5000
-});
-    </script>
-    <script id='navPlugin' language='javascript' type='text/javascript'>//<![CDATA[
+    </script>-->
+    <!--<script id='navPlugin' language='javascript' type='text/javascript'>//<![CDATA[
         /*
          * jQuery One Page Nav Plugin
          * http://github.com/davist11/jQuery-One-Page-Nav
@@ -2995,9 +2909,8 @@
             };
 
         })(jQuery, window, document);
-        //]]></script>
-
-    <script language='javascript' type='text/javascript'>//<![CDATA[
+        //]]></script>-->
+    <!--<script language='javascript' type='text/javascript'>//<![CDATA[
         // SmoothScroll for websites v1.2.1
         // Licensed under the terms of the MIT license.
 
@@ -3006,665 +2919,46 @@
         //  - Michael Herf     (Pulse Algorithm)
 
         !function () { function e() { var e = !1; e && c("keydown", r), v.keyboardSupport && !e && u("keydown", r) } function t() { if (document.body) { var t = document.body, o = document.documentElement, n = window.innerHeight, r = t.scrollHeight; if (S = document.compatMode.indexOf("CSS") >= 0 ? o : t, w = t, e(), x = !0, top != self) y = !0; else if (r > n && (t.offsetHeight <= n || o.offsetHeight <= n)) { var a = !1, i = function () { a || o.scrollHeight == document.height || (a = !0, setTimeout(function () { o.style.height = document.height + "px", a = !1 }, 500)) }; if (o.style.height = "auto", setTimeout(i, 10), S.offsetHeight <= n) { var l = document.createElement("div"); l.style.clear = "both", t.appendChild(l) } } v.fixedBackground || b || (t.style.backgroundAttachment = "scroll", o.style.backgroundAttachment = "scroll") } } function o(e, t, o, n) { if (n || (n = 1e3), d(t, o), 1 != v.accelerationMax) { var r = +new Date, a = r - C; if (a < v.accelerationDelta) { var i = (1 + 30 / a) / 2; i > 1 && (i = Math.min(i, v.accelerationMax), t *= i, o *= i) } C = +new Date } if (M.push({ x: t, y: o, lastX: 0 > t ? .99 : -.99, lastY: 0 > o ? .99 : -.99, start: +new Date }), !T) { var l = e === document.body, u = function () { for (var r = +new Date, a = 0, i = 0, c = 0; c < M.length; c++) { var s = M[c], d = r - s.start, f = d >= v.animationTime, h = f ? 1 : d / v.animationTime; v.pulseAlgorithm && (h = p(h)); var m = s.x * h - s.lastX >> 0, w = s.y * h - s.lastY >> 0; a += m, i += w, s.lastX += m, s.lastY += w, f && (M.splice(c, 1), c--) } l ? window.scrollBy(a, i) : (a && (e.scrollLeft += a), i && (e.scrollTop += i)), t || o || (M = []), M.length ? E(u, e, n / v.frameRate + 1) : T = !1 }; E(u, e, 0), T = !0 } } function n(e) { x || t(); var n = e.target, r = l(n); if (!r || e.defaultPrevented || s(w, "embed") || s(n, "embed") && /\.pdf/i.test(n.src)) return !0; var a = e.wheelDeltaX || 0, i = e.wheelDeltaY || 0; return a || i || (i = e.wheelDelta || 0), !v.touchpadSupport && f(i) ? !0 : (Math.abs(a) > 1.2 && (a *= v.stepSize / 120), Math.abs(i) > 1.2 && (i *= v.stepSize / 120), o(r, -a, -i), void e.preventDefault()) } function r(e) { var t = e.target, n = e.ctrlKey || e.altKey || e.metaKey || e.shiftKey && e.keyCode !== H.spacebar; if (/input|textarea|select|embed/i.test(t.nodeName) || t.isContentEditable || e.defaultPrevented || n) return !0; if (s(t, "button") && e.keyCode === H.spacebar) return !0; var r, a = 0, i = 0, u = l(w), c = u.clientHeight; switch (u == document.body && (c = window.innerHeight), e.keyCode) { case H.up: i = -v.arrowScroll; break; case H.down: i = v.arrowScroll; break; case H.spacebar: r = e.shiftKey ? 1 : -1, i = -r * c * .9; break; case H.pageup: i = .9 * -c; break; case H.pagedown: i = .9 * c; break; case H.home: i = -u.scrollTop; break; case H.end: var d = u.scrollHeight - u.scrollTop - c; i = d > 0 ? d + 10 : 0; break; case H.left: a = -v.arrowScroll; break; case H.right: a = v.arrowScroll; break; default: return !0 } o(u, a, i), e.preventDefault() } function a(e) { w = e.target } function i(e, t) { for (var o = e.length; o--;) z[N(e[o])] = t; return t } function l(e) { var t = [], o = S.scrollHeight; do { var n = z[N(e)]; if (n) return i(t, n); if (t.push(e), o === e.scrollHeight) { if (!y || S.clientHeight + 10 < o) return i(t, document.body) } else if (e.clientHeight + 10 < e.scrollHeight && (overflow = getComputedStyle(e, "").getPropertyValue("overflow-y"), "scroll" === overflow || "auto" === overflow)) return i(t, e) } while (e = e.parentNode) } function u(e, t, o) { window.addEventListener(e, t, o || !1) } function c(e, t, o) { window.removeEventListener(e, t, o || !1) } function s(e, t) { return (e.nodeName || "").toLowerCase() === t.toLowerCase() } function d(e, t) { e = e > 0 ? 1 : -1, t = t > 0 ? 1 : -1, (k.x !== e || k.y !== t) && (k.x = e, k.y = t, M = [], C = 0) } function f(e) { if (e) { e = Math.abs(e), D.push(e), D.shift(), clearTimeout(A); var t = D[0] == D[1] && D[1] == D[2], o = h(D[0], 120) && h(D[1], 120) && h(D[2], 120); return !(t || o) } } function h(e, t) { return Math.floor(e / t) == e / t } function m(e) { var t, o, n; return e *= v.pulseScale, 1 > e ? t = e - (1 - Math.exp(-e)) : (o = Math.exp(-1), e -= 1, n = 1 - Math.exp(-e), t = o + n * (1 - o)), t * v.pulseNormalize } function p(e) { return e >= 1 ? 1 : 0 >= e ? 0 : (1 == v.pulseNormalize && (v.pulseNormalize /= m(1)), m(e)) } var w, g = { frameRate: 150, animationTime: 800, stepSize: 120, pulseAlgorithm: !0, pulseScale: 8, pulseNormalize: 1, accelerationDelta: 20, accelerationMax: 1, keyboardSupport: !0, arrowScroll: 50, touchpadSupport: !0, fixedBackground: !0, excluded: "" }, v = g, b = !1, y = !1, k = { x: 0, y: 0 }, x = !1, S = document.documentElement, D = [120, 120, 120], H = { left: 37, up: 38, right: 39, down: 40, spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36 }, v = g, M = [], T = !1, C = +new Date, z = {}; setInterval(function () { z = {} }, 1e4); var A, N = function () { var e = 0; return function (t) { return t.uniqueID || (t.uniqueID = e++) } }(), E = function () { return window.requestAnimationFrame || window.webkitRequestAnimationFrame || function (e, t, o) { window.setTimeout(e, o || 1e3 / 60) } }(), K = /chrome/i.test(window.navigator.userAgent), L = "onmousewheel" in document; L && K && (u("mousedown", a), u("mousewheel", n), u("load", t)) }();
-        //]]></script>
-    <!--<script>
-//<![CDATA[
-$(document).ready(function(){function relatedPost(g,e,r){$.ajax({url:"/feeds/posts/default/-/"+e+"?alt=json-in-script&max-results="+r,type:"get",dataType:"jsonp",success:function(t){for(var u="",h='<div class="related">',x=0;x<t.feed.entry.length;x++){for(var z=0;z<t.feed.entry[x].link.length;z++){if("alternate"==t.feed.entry[x].link[z].rel){u=t.feed.entry[x].link[z].href;break}}
-    var p=t.feed.entry[x].title.$t;var c=t.feed.entry[x].content.$t;var y=$('<div>').html(c);if(c.indexOf("http://www.youtube.com/embed/")>-1||c.indexOf("https://www.youtube.com/embed/")>-1){var d=t.feed.entry[x].media$thumbnail.url,m=d.replace('default.html','mqdefault.html'),k=m;}else if(c.indexOf("<img")>-1){var s=y.find('img:first').attr('src'),v=s.replace('s72-c','s600');var k=v;}else{var k='Public/images/nth.png';}
-h+='<li><div class="related-thumb"><a class="related-img" href="'+u+'" style="background:url('+k+') no-repeat center center;background-size: cover"/></div><h3 class="related-title"><a href="'+u+'">'+p+'</a></h3></li>'}
-h+='</div>',g.html(h);}})}
-$("#related-posts").each(function(){var g=$(this),e=g.text(),r=3;relatedPost(g,e,r);});});
- //]]>
-</script>-->
-
-    <!--Page Navigation Starts-->
-    <script type='text/javascript'>        // <![CDATA[
-        //(function($) {
-        //    'use strict';
-        //    Date.now = Date.now || function() {
-        //        return +new Date()
-        //    };
-        //    $.ias = function(g) {
-        //        var h = $.extend({}, $.ias.defaults, g);
-        //        var i = new $.ias.util();
-        //        var j = new $.ias.paging(h.scrollContainer);
-        //        var k = (h.history ? new $.ias.history() : false);
-        //        var l = this;
-
-        //        function init() {
-        //            var d;
-        //            j.onChangePage(function(a, b, c) {
-        //                if (k) {
-        //                    k.setPage(a, c)
-        //                }
-        //                h.onPageChange.call(this, a, c, b)
-        //            });
-        //            reset();
-        //            if (k && k.havePage()) {
-        //                stop_scroll();
-        //                d = k.getPage();
-        //                i.forceScrollTop(function() {
-        //                    var a;
-        //                    if (d > 1) {
-        //                        paginateToPage(d);
-        //                        a = get_scroll_threshold(true);
-        //                        $('html, body').scrollTop(a)
-        //                    } else {
-        //                        reset()
-        //                    }
-        //                })
-        //            }
-        //            return l
-        //        }
-        //        init();
-
-        //        function reset() {
-        //            hide_pagination();
-        //            h.scrollContainer.scroll(scroll_handler)
-        //        }
-
-        //        function scroll_handler() {
-        //            var a, scrThreshold;
-        //            a = i.getCurrentScrollOffset(h.scrollContainer);
-        //            scrThreshold = get_scroll_threshold();
-        //            if (a >= scrThreshold) {
-        //                if (get_current_page() >= h.triggerPageThreshold) {
-        //                    stop_scroll();
-        //                    show_trigger(function() {
-        //                        paginate(a)
-        //                    })
-        //                } else {
-        //                    paginate(a)
-        //                }
-        //            }
-        //        }
-
-        //        function stop_scroll() {
-        //            h.scrollContainer.unbind('scroll', scroll_handler)
-        //        }
-
-        //        function hide_pagination() {
-        //            $(h.pagination).hide()
-        //        }
-
-        //        function get_scroll_threshold(a) {
-        //            var b, threshold;
-        //            b = $(h.container).find(h.item).last();
-        //            if (b.size() === 0) {
-        //                return 0
-        //            }
-        //            threshold = b.offset().top + b.height();
-        //            if (!a) {
-        //                threshold += h.thresholdMargin
-        //            }
-        //            return threshold
-        //        }
-
-        //        function paginate(d, e) {
-        //            var f;
-        //            f = $(h.next).attr('href');
-        //            if (!f) {
-        //                if (h.noneleft) {
-        //                    $(h.container).find(h.item).last().after(h.noneleft)
-        //                }
-        //                return stop_scroll()
-        //            }
-        //            if (h.beforePageChange && $.isFunction(h.beforePageChange)) {
-        //                if (h.beforePageChange(d, f) === false) {
-        //                    return
-        //                }
-        //            }
-        //            j.pushPages(d, f);
-        //            stop_scroll();
-        //            show_loader();
-        //            loadItems(f, function(a, b) {
-        //                var c = h.onLoadItems.call(this, b),
-        //                    curLastItem;
-        //                if (c !== false) {
-        //                    $(b).hide();
-        //                    curLastItem = $(h.container).find(h.item).last();
-        //                    curLastItem.after(b);
-        //                    $(b).fadeIn()
-        //                }
-        //                f = $(h.next, a).attr('href');
-        //                $(h.pagination).replaceWith($(h.pagination, a));
-        //                remove_loader();
-        //                hide_pagination();
-        //                if (f) {
-        //                    reset()
-        //                } else {
-        //                    stop_scroll()
-        //                }
-        //                h.onRenderComplete.call(this, b);
-        //                if (e) {
-        //                    e.call(this)
-        //                }
-        //            })
-        //        }
-
-        //        function loadItems(b, c, d) {
-        //            var e = [],
-        //                container, startTime = Date.now(),
-        //                diffTime, self;
-        //            d = d || h.loaderDelay;
-        //            $.get(b, null, function(a) {
-        //                container = $(h.container, a).eq(0);
-        //                if (0 === container.length) {
-        //                    container = $(a).filter(h.container).eq(0)
-        //                }
-        //                if (container) {
-        //                    container.find(h.item).each(function() {
-        //                        e.push(this)
-        //                    })
-        //                }
-        //                if (c) {
-        //                    self = this;
-        //                    diffTime = Date.now() - startTime;
-        //                    if (diffTime < d) {
-        //                        setTimeout(function() {
-        //                            c.call(self, a, e)
-        //                        }, d - diffTime)
-        //                    } else {
-        //                        c.call(self, a, e)
-        //                    }
-        //                }
-        //            }, 'html')
-        //        }
-
-        //        function paginateToPage(a) {
-        //            var b = get_scroll_threshold(true);
-        //            if (b > 0) {
-        //                paginate(b, function() {
-        //                    stop_scroll();
-        //                    if ((j.getCurPageNum(b) + 1) < a) {
-        //                        paginateToPage(a);
-        //                        $('html,body').animate({
-        //                            'scrollTop': b
-        //                        }, 400, 'swing')
-        //                    } else {
-        //                        $('html,body').animate({
-        //                            'scrollTop': b
-        //                        }, 1000, 'swing');
-        //                        reset()
-        //                    }
-        //                })
-        //            }
-        //        }
-
-        //        function get_current_page() {
-        //            var a = i.getCurrentScrollOffset(h.scrollContainer);
-        //            return j.getCurPageNum(a)
-        //        }
-
-        //        function get_loader() {
-        //            var a = $('.ias_loader');
-        //            if (a.size() === 0) {
-        //              a = $('<div class="ias_loader" style="text-align:center;">' + h.loader + '</div>');
-        //                a.hide()
-        //            }
-        //            return a
-        //        }
-
-        //        function show_loader() {
-        //            var a = get_loader(),
-        //                el;
-        //            if (h.customLoaderProc !== false) {
-        //                h.customLoaderProc(a)
-        //            } else {
-        //                el = $(h.container).find(h.item).last();
-        //                el.after(a);
-        //                a.fadeIn()
-        //            }
-        //        }
-
-        //        function remove_loader() {
-        //            var a = get_loader();
-        //            a.remove()
-        //        }
-
-        //        function get_trigger(a) {
-        //            var b = $('.ias_trigger');
-        //            if (b.size() === 0) {
-        //                b = $('<div class="ias_trigger"><a href="#">' + h.trigger + '</a></div>');
-        //                b.hide()
-        //            }
-        //            $('a', b).off('click').on('click', function() {
-        //                remove_trigger();
-        //                a.call();
-        //                return false
-        //            });
-        //            return b
-        //        }
-
-        //        function show_trigger(a) {
-        //            var b = get_trigger(a),
-        //                el;
-        //            el = $(h.container).find(h.item).last();
-        //            el.after(b);
-        //            b.fadeIn()
-        //        }
-
-        //        function remove_trigger() {
-        //            var a = get_trigger();
-        //            a.remove()
-        //        }
-        //    };
-        //    $.ias.defaults = {
-        //        container: '.blog-posts',
-        //        scrollContainer: $(window),
-        //        item: '.post-grid',
-        //        pagination: '#blog-pager',
-        //        next: '#blog-pager-older-link a',
-        //        loader: '<img src="Public/images/loadersz.gif" class="loader-page"/>',
-        //        loaderDelay: 600,
-        //        triggerPageThreshold: 1,
-        //        trigger: 'See More',
-        //        thresholdMargin: -500,
-        //        history: true,
-        //        onPageChange: function() {},
-        //        beforePageChange: function() {},
-        //        onLoadItems: function() {},
-        //        onRenderComplete: function() {},
-        //        customLoaderProc: false
-        //    };
-        //    $.ias.util = function() {
-        //        var c = false;
-        //        var d = false;
-        //        var e = this;
-
-        //        function init() {
-        //            $(window).load(function() {
-        //                c = true
-        //            })
-        //        }
-        //        init();
-        //        this.forceScrollTop = function(a) {
-        //            $('html,body').scrollTop(0);
-        //            if (!d) {
-        //                if (!c) {
-        //                    setTimeout(function() {
-        //                        e.forceScrollTop(a)
-        //                    }, 1)
-        //                } else {
-        //                    a.call();
-        //                    d = true
-        //                }
-        //            }
-        //        };
-        //        this.getCurrentScrollOffset = function(a) {
-        //            var b, wndHeight;
-        //            if (a.get(0) === window) {
-        //                b = a.scrollTop()
-        //            } else {
-        //                b = a.offset().top
-        //            }
-        //            wndHeight = a.height();
-        //            return b + wndHeight
-        //        }
-        //    };
-        //    $.ias.paging = function() {
-        //        var c = [
-        //            [0, document.location.toString()]
-        //        ];
-        //        var d = function() {};
-        //        var e = 1;
-        //        var f = new $.ias.util();
-
-        //        function init() {
-        //            $(window).scroll(scroll_handler)
-        //        }
-        //        init();
-
-        //        function scroll_handler() {
-        //            var a, curPageNum, curPagebreak, scrOffset, urlPage;
-        //            a = f.getCurrentScrollOffset($(window));
-        //            curPageNum = getCurPageNum(a);
-        //            curPagebreak = getCurPagebreak(a);
-        //            if (e !== curPageNum) {
-        //                scrOffset = curPagebreak[0];
-        //                urlPage = curPagebreak[1];
-        //                d.call({}, curPageNum, scrOffset, urlPage)
-        //            }
-        //            e = curPageNum
-        //        }
-
-        //        function getCurPageNum(a) {
-        //            for (var i = (c.length - 1); i > 0; i--) {
-        //                if (a > c[i][0]) {
-        //                    return i + 1
-        //                }
-        //            }
-        //            return 1
-        //        }
-        //        this.getCurPageNum = function(a) {
-        //            a = a || f.getCurrentScrollOffset($(window));
-        //            return getCurPageNum(a)
-        //        };
-
-        //        function getCurPagebreak(a) {
-        //            for (var i = (c.length - 1); i >= 0; i--) {
-        //                if (a > c[i][0]) {
-        //                    return c[i]
-        //                }
-        //            }
-        //            return null
-        //        }
-        //        this.onChangePage = function(a) {
-        //            d = a
-        //        };
-        //        this.pushPages = function(a, b) {
-        //            c.push([a, b])
-        //        }
-        //    };
-        //    $.ias.history = function() {
-        //        var e = false;
-        //        var f = false;
-
-        //        function init() {
-        //            f = !!(window.history && history.pushState && history.replaceState);
-        //            f = false
-        //        }
-        //        init();
-        //        this.setPage = function(a, b) {
-        //            this.updateState({
-        //                page: a
-        //            }, '', b)
-        //        };
-        //        this.havePage = function() {
-        //            return (this.getState() !== false)
-        //        };
-        //        this.getPage = function() {
-        //            var a;
-        //            if (this.havePage()) {
-        //                a = this.getState();
-        //                return a.page
-        //            }
-        //            return 1
-        //        };
-        //        this.getState = function() {
-        //            var a, stateObj, pageNum;
-        //            if (f) {
-        //                stateObj = history.state;
-        //                if (stateObj && stateObj.ias) {
-        //                    return stateObj.ias
-        //                }
-        //            } else {
-        //                a = (window.location.hash.substring(0, 7) === '#/page/');
-        //                if (a) {
-        //                    pageNum = parseInt(window.location.hash.replace('#/page/', ''), 10);
-        //                    return {
-        //                        page: pageNum
-        //                    }
-        //                }
-        //            }
-        //            return false
-        //        };
-        //        this.updateState = function(a, b, c) {
-        //            if (e) {
-        //                this.replaceState(a, b, c)
-        //            } else {
-        //                this.pushState(a, b, c)
-        //            }
-        //        };
-        //        this.pushState = function(a, b, c) {
-        //            var d;
-        //            if (f) {
-        //                history.pushState({
-        //                    ias: a
-        //                }, b, c)
-        //            } else {
-        //                d = (a.page > 0 ? '#/page/' + a.page : '');
-        //                window.location.hash = d
-        //            }
-        //            e = true
-        //        };
-        //        this.replaceState = function(a, b, c) {
-        //            if (f) {
-        //                history.replaceState({
-        //                    ias: a
-        //                }, b, c)
-        //            } else {
-        //                this.pushState(a, b, c)
-        //            }
-        //        }
-        //    }
-        //})(jQuery);
-
-
-        //]]></script>
-    <!--<script>jQuery.ias();</script>-->
-    <!--Page Navigation Ends -->
+        //]]></script>-->
     <script type='text/javascript'>
-        /*<![CDATA[*/
-        $(window).bind("load", function () {
+        $(window).bind("load", function () {             
             jQuery("#loader").fadeOut("slow");
             jQuery("#preloader").delay(0).fadeOut();
         });
-        /*]]>*/
-    </script>
 
-    <script type="text/javascript" src="Public/js/3830979360-widgets.js"></script>
-    <script>
-        $(document).ready(function () {
-            var h=$(window).height(); // New height
-            var w=$(window).width(); // New width
-            var ele=$('.m-backtotop>div.text')
-            switch (true) {
-                
-                case (w>1200):
-                    ele.css("font-size","7px");
-                    ele.css("font-weight","600");
-                    break;
-                case (w<=1200 && w>1100):
-                    ele.css("font-size","7px");
-                    ele.css("font-weight","600");
-                    break;
-                case (w<=1100 && w>980):
-                    ele.css("font-size","7px");
-                    ele.css("font-weight","600");
-                    break;
-                case (w<=980 && w>880):
-                    ele.css("font-size","7px");
-                    ele.css("font-weight","600");
-                    break;
-                case (w<=880 && w>768):
-                    ele.css("font-size","7px");
-                    ele.css("font-weight","600");
-                    break;
-                case (w<=768 && w>767):
-                    ele.css("font-size","7px");
-                    ele.css("font-weight","600");
-                    break;
-                case (w<=767 && w>480):
-                    ele.css("font-size","4px");
-                    break;
-                case (w<=480 && w>360):
-                    ele.css("font-size","4px");                    
-                    break;
-                case (w<=360 && w>300):
-                    ele.css("font-size","4px");                    
-                    break;
-                case (w<=300):
-                    ele.css("font-size","4px");                    
-                    break;
-                default:
-                    ele.css("font-size","4px");                    
-                    break;
-            }
-
-            $('#nav').onePageNav();
-            $('.slide-in').onePageNav();
-            document.documentElement.style.setProperty('--mycol', '#FF0000', 'important');
-            document.documentElement.style.setProperty('--background', '#FF0000', 'important');
-            var matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if(matched){
-                if(!$("body").css("background-color")=="rgb(255, 255, 255)"){
-                    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.png) no-repeat center', 'important');
-                }
-                else{
-                    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.png) no-repeat center', 'important');
-                }
-            }
-            else{
-                document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.png) no-repeat center', 'important');
-            }
-                        
-            var counter = 0;
-            $("#Header1_headerimg").click(function () {
-                switch (counter) {
-                    case 0:
-                        changeColor('#ffbd2f', 'rgba(255,189,47,0.5)', 'Public/images/apk_yellow.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSfNb2Kzqwg1ABhvCjaUbFcUw_zRzrF18AK5aaOF1SnWkdpMZA/viewform?embedded=true');
-                        counter += 1;
-                        break;
-
-                    case 1:
-                        changeColor('#00BC22', 'rgba(0,255,0,0.5)', 'Public/images/apk_green.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSejjLWlzY8VK2eO-bhy5JzNHhumu7VXdTEGG8tpPn4EDC5jyQ/viewform?embedded=true');
-                        counter += 1;
-                        break;
-
-                    case 2:
-                        changeColor('#0030EF', 'rgba(0,0,255,0.5)', 'Public/images/apk_blue.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');
-                        counter += 1;
-                        break;
-                    case 3:
-                        changeColor('#008080', 'rgba(0,128,128,0.5)', 'Public/images/apk_teal.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
-                        counter += 1;
-                        break;
-                    case 4:
-                        changeColor('#FF00FF', 'rgba(255,0,255,0.5)', 'Public/images/apk_magenta.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSeXyW2PDxsG5Y_R5eTmWrtWjG-vMJQvYXWksHXFC3TbEO7QxQ/viewform?embedded=true');
-                        counter += 1;
-                        break;
-                    case 5:
-                        changeColor('#FF8000', 'rgba(255,128,0,0.5)', 'Public/images/apk_orange.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSdcda7CfmBlvKwIIhOp8OMMbGiaEWheI8fyUJqsQ0RxK0EDRQ/viewform?embedded=true');
-                        counter += 1;
-                        break;
-                    case 6:
-                        changeColor('#C0C0C0', 'rgba(192,192,192,0.5)', 'Public/images/apk_grey.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScMJ6lFRbePTtDsSnTRCXPQEOhP8K8nVK5Xb8p-qT69QssbpQ/viewform?embedded=true');
-                        counter += 1;
-                        break;
-                    case 7:
-                        changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
-                        counter = 0;
-                        break;
-                    default:
-                        changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
-                        counter = 0;
-                        break;
-                }
-            });
-            $(".m-theme").click(function () {
-                switch (counter) {
-                    case 0:
-                        changeColor('#ffbd2f', 'rgba(255,189,47,0.5)', 'Public/images/apk_yellow.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSfNb2Kzqwg1ABhvCjaUbFcUw_zRzrF18AK5aaOF1SnWkdpMZA/viewform?embedded=true');
-                        counter += 1;
-                        break;
-
-                    case 1:
-                        changeColor('#00BC22', 'rgba(0,255,0,0.5)', 'Public/images/apk_green.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSejjLWlzY8VK2eO-bhy5JzNHhumu7VXdTEGG8tpPn4EDC5jyQ/viewform?embedded=true');
-                        counter += 1;
-                        break;
-
-                    case 2:
-                        changeColor('#0030EF', 'rgba(0,0,255,0.5)', 'Public/images/apk_blue.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');
-                        counter += 1;
-                        break;
-                    case 3:
-                        changeColor('#008080', 'rgba(0,128,128,0.5)', 'Public/images/apk_teal.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
-                        counter += 1;
-                        break;
-                    case 4:
-                        changeColor('#FF00FF', 'rgba(255,0,255,0.5)', 'Public/images/apk_magenta.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSeXyW2PDxsG5Y_R5eTmWrtWjG-vMJQvYXWksHXFC3TbEO7QxQ/viewform?embedded=true');
-                        counter += 1;
-                        break;
-                    case 5:
-                        changeColor('#FF8000', 'rgba(255,128,0,0.5)', 'Public/images/apk_orange.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSdcda7CfmBlvKwIIhOp8OMMbGiaEWheI8fyUJqsQ0RxK0EDRQ/viewform?embedded=true');
-                        counter += 1;
-                        break;
-                    case 6:
-                        changeColor('#C0C0C0', 'rgba(192,192,192,0.5)', 'Public/images/apk_grey.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScMJ6lFRbePTtDsSnTRCXPQEOhP8K8nVK5Xb8p-qT69QssbpQ/viewform?embedded=true');
-                        counter += 1;
-                        break;
-                    case 7:
-                        changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
-                        counter = 0;
-                        break;
-                    default:
-                        changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
-                        counter = 0;
-                        break;
-                }
-            });
-            function changeColor(col, rgba, src, formsrc) {
-                document.documentElement.style.setProperty('--mycol', col, 'important');
-                $('.popup_menu .btn1').css('background', rgba);
-                document.documentElement.style.setProperty('--background', col, 'important');
-                $('#androidapk').attr("src", src)
-                $('#googleForm').attr("src", formsrc)
-            }
-            $(".trigger").click(function () {
-                $(".popup_menu").toggleClass("active");
-            });
-            if ($(window).width() <= 1100) {
-                $(".fancyBtn").removeClass("fancyBtn");
-            }
-            $(function () {
-                $("#androidapk").hover(function () {
-                    $("#androidapk").animate({ left: '-12px' });
-                    $(this).stop(true).fadeTo(200, 1);
-                }, function () {
-                    $("#androidapk").animate({ left: '-12px' });
-                    $(this).stop(true).fadeTo(200, 1);
-                });
-            });
-
-            $(function () {
-                $("#androidapk").mouseleave(function () {
-                    $("#androidapk").animate({ left: '-65px' });
-                    resetAnim()
-                }, function () {
-                    $("#androidapk").animate({ left: '-65px' });
-                    resetAnim()
-                });
-                var startAnim = function () {
-                    $("#androidapk").delay(7000).animate({ left: '-12px' }, resetAnim);
-                }
-                var resetAnim = function () {
-                    $("#androidapk").delay(7000).animate({ left: '-65px' });
-                    startAnim();
-                }
-                startAnim()
-            });
+       window.onload = function () {
+    var el = document.querySelector(".slicknav_btn");
+    if (el) {
+        el.addEventListener("click", function () {
+            this.classList.toggle("active");
         });
-    </script>
-    <script>
+    }
+    var asj = document['getElementById']('asj');
+    asj['setAttribute']('href', 'https://asjadansari07.github.io');
+    asj['setAttribute']('rel', 'dofollow');
+    asj['setAttribute']('title', 'By Asjed Ansari');
+    asj['setAttribute']('style', 'display: inline-block!important; font-size: inherit!important; color: var(--mycol)!important; visibility: visible!important;z-index:99!important; opacity: 1!important;');
+    asj['innerHTML'] = 'HTML,CSS,JS,Google Form';
 
-        window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
-            if (e.matches) {
-			if(!$("body").css("background-color")=="rgb(255, 255, 255)"){
-			    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.png) no-repeat center', 'important');            
-			    document.getElementById('imgSkills').setAttribute('src','Public/images/skills-B-L.gif');
-			}else{
-                document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.png) no-repeat center', 'important');
-                document.getElementById('imgSkills').setAttribute('src','Public/images/skills-W-L.gif');
-        }
-        //alert('Dark');        
-        } else {
-            //alert('Light');
-            document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.png) no-repeat center', 'important');            
-            document.getElementById('imgSkills').setAttribute('src','Public/images/skills-W-L.gif');
-        }
-        });
-        window.onload = function () {
-            var el = document.querySelector(".slicknav_btn");
-            if (el) {
-                el.addEventListener("click", function () {
-                    this.classList.toggle("active");
-                });
-            }
-        }
-
+    $("div#LinkList230 > div.widget-content > ul#social > li >a[title='email']").css('background', '#ad0000');
+    $("div#LinkList230 > div.widget-content > ul#social > li >a[title='whatsapp']").css('background', '#1C8B82');
+    $("div#LinkList230 > div.widget-content > ul#social > li >a[title='SMS']").css('background', '#CEB00A');
+    $("div#LinkList230 > div.widget-content > ul#social > li >a[title='call']").css('background', '#9CB381');
+}
     </script>
+    <script src='Public/js/lazysizes.min.js' type='text/javascript' async></script>    
+    <script src='Public/js/cornify.js'  type='text/javascript'></script>
+    <script src='Public/js/wow.js'  type='text/javascript'></script>
+    <script src='Public/js/slickNav.js'  type='text/javascript'></script>
+    <script src='Public/js/counterUp.js'  type='text/javascript'></script>
+    <script src='Public/js/matchHeight.js'  type='text/javascript'></script>
+    <script src='Public/js/flickity.js'  type='text/javascript'></script>
+    <script src='Public/js/wayPoints.js'  type='text/javascript'></script>
+    <script src='Public/js/counterUp.js'  type='text/javascript'></script>        
+    <script src='Public/js/main.js'  type='text/javascript'></script>
+    <script src='Public/js/onePageNav.js'  type='text/javascript'></script>
+    <script src='Public/js/smoothScroll.js'  type='text/javascript'></script>
+    <script src='Public/js/gtranslate.js'  type='text/javascript'></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
 </body>
-
-
 </html>
