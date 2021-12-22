@@ -160,81 +160,71 @@ let isMobileDevice = regexp.test(details);
     var popupqr=$('#pop-up')
     switch (true) {                
         case (w>1200):
-            ele.css("font-size","7px");
-            ele.css("font-weight","600");
+            ele.css("font-size","7px").css("font-weight","600");
             skillimg.css("display","none")
             skillvid.css("display","block")
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")   
             asj_warning.css("font-size","5em");
             //lqr.css("width","200").css("height","200");
-            popupqr.css("width","200").css("height","200");
+            popupqr.css("width","193").css("height","193");
 
             break;
         case (w<=1200 && w>1100):
-            ele.css("font-size","7px");
-            ele.css("font-weight","600");
+            ele.css("font-size","7px").css("font-weight","600");
             skillimg.css("display","none")
             skillvid.css("display","block")
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","5em");
             //lqr.css("width","200").css("height","200");
-            popupqr.css("width","200").css("height","200");
+            popupqr.css("width","193").css("height","193");
             break;
         case (w<=1100 && w>980):
-            ele.css("font-size","7px");
-            ele.css("font-weight","600");
+            ele.css("font-size","7px").css("font-weight","600");
             skillimg.css("display","none")
             skillvid.css("display","block")
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","4em");
             //lqr.css("width","200").css("height","200");
-            popupqr.css("width","200").css("height","200");
+            popupqr.css("width","193").css("height","193");
             break;
         case (w<=980 && w>880):
-            ele.css("font-size","7px");
-            ele.css("font-weight","600");
+            ele.css("font-size","7px").css("font-weight","600");
             skillimg.css("display","none")
             skillvid.css("display","block")
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","4em");
             //lqr.css("width","200").css("height","200");
-            popupqr.css("width","200").css("height","200");
+            popupqr.css("width","193").css("height","193");
             break;
         case (w<=880 && w>768):
-            ele.css("font-size","7px");
-            ele.css("font-weight","600");
+            ele.css("font-size","7px").css("font-weight","600");
             skillimg.css("display","none")
             skillvid.css("display","block")
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","3em");
             //lqr.css("width","200").css("height","200");
-            popupqr.css("width","200").css("height","200");
+            popupqr.css("width","193").css("height","193");
             break;
         case (w<=768 && w>767):
-            ele.css("font-size","7px");
-            ele.css("font-weight","600");
+            ele.css("font-size","7px").css("font-weight","600");
             skillimg.css("display","none")
             skillvid.css("display","block")
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","3em");
             //lqr.css("width","200").css("height","200");
-            popupqr.css("width","200").css("height","200");
+            popupqr.css("width","193").css("height","193");
             break;
         case (w<=767 && w>480):
             if (!isMobileDevice) { 
-                ele.css("font-size","4px"); 
-                ele.css("line-height","8px");
-                ele.css("width","58%");
+                ele.css("font-size","4px").css("line-height","8px").css("width","58%");
             } else { 
-                ele.css("font-size","7px"); 
-                ele.css("line-height","10px");
-                ele.css("width","58%");
+                ele.css("font-size","7px").css("line-height","10px").css("width","58%");
             }             
             skillimg.css("display","block")
             skillvid.css("display","none")
@@ -248,13 +238,9 @@ let isMobileDevice = regexp.test(details);
             break;
         case (w<=480 && w>360):
             if (!isMobileDevice) { 
-                ele.css("font-size","4px"); 
-                ele.css("line-height","8px");
-                ele.css("width","58%");
+                ele.css("font-size","4px").css("line-height","8px").css("width","58%");
             } else { 
-                ele.css("font-size","7px"); 
-                ele.css("line-height","10px");
-                ele.css("width","58%");
+                ele.css("font-size","7px").css("line-height","10px").css("width","58%");
             }            
             skillimg.css("display","block")
             skillvid.css("display","none")
@@ -268,13 +254,9 @@ let isMobileDevice = regexp.test(details);
             break;
         case (w<=360 && w>300):
             if (!isMobileDevice) { 
-                ele.css("font-size","4px"); 
-                ele.css("line-height","8px");
-                ele.css("width","58%");
+                ele.css("font-size","4px").css("line-height","8px").css("width","58%");
             } else { 
-                ele.css("font-size","7px"); 
-                ele.css("line-height","10px");
-                ele.css("width","58%");
+                ele.css("font-size","7px").css("line-height","10px").css("width","58%");
 
             }
             skillimg.css("display","block")
@@ -289,13 +271,9 @@ let isMobileDevice = regexp.test(details);
             break;
         case (w<=300):
             if (!isMobileDevice) { 
-                ele.css("font-size","4px"); 
-                ele.css("line-height","8px");
-                ele.css("width","58%");
+                ele.css("font-size","4px").css("line-height","8px").css("width","58%");
             } else { 
-                ele.css("font-size","7px"); 
-                ele.css("line-height","10px");
-                ele.css("width","58%");
+                ele.css("font-size","7px").css("line-height","10px").css("width","58%");
             }
             skillimg.css("display","block")
             skillvid.css("display","none")
@@ -314,7 +292,7 @@ let isMobileDevice = regexp.test(details);
             formdiv.css("padding","20px 20px 5px")
             hlogo.css("height","56px").css("width","56px")
             //lqr.css("width","200").css("height","200");
-            popupqr.css("width","200").css("height","200");
+            popupqr.css("width","193").css("height","193");
             break;
     }    
     $('#nav').onePageNav();
