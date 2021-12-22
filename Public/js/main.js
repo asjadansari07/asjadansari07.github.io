@@ -40,7 +40,7 @@
 //        _0x24d5x2('#menu .widget')['attr']('style', 'display:block!important;')
 //});
 
-$(document).ready(function () { 
+$(document).ready(function () {     
     $('.menu')['slicknav']({
         prependTo: '.menu-mobile',
         label: ''
@@ -227,6 +227,7 @@ let isMobileDevice = regexp.test(details);
             hlogo.css("height","45px").css("width","45px")
             hinner.css("padding-top","7px")
             asj_warning.css("font-size","2em");
+            $('head').append('<meta name="color-scheme" content="dark light" />');
             break;
         case (w<=480 && w>360):
             if (!isMobileDevice) { 
@@ -244,6 +245,7 @@ let isMobileDevice = regexp.test(details);
             hlogo.css("height","45px").css("width","45px")
             hinner.css("padding-top","7px")
             asj_warning.css("font-size","1.5em");
+            $('head').append('<meta name="color-scheme" content="dark light" />');
             break;
         case (w<=360 && w>300):
             if (!isMobileDevice) { 
@@ -262,6 +264,7 @@ let isMobileDevice = regexp.test(details);
             hlogo.css("height","45px").css("width","45px")
             hinner.css("padding-top","7px")
             asj_warning.css("font-size","1.5em");
+            $('head').append('<meta name="color-scheme" content="dark light" />');
             break;
         case (w<=300):
             if (!isMobileDevice) { 
@@ -279,6 +282,7 @@ let isMobileDevice = regexp.test(details);
             hlogo.css("height","45px").css("width","45px")
             hinner.css("padding-top","7px")
             asj_warning.css("font-size","1em");
+            $('head').append('<meta name="color-scheme" content="dark light" />');
             break;
         default:
             ele.css("font-size","4px");   
