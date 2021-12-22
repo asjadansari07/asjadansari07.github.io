@@ -156,6 +156,7 @@ let isMobileDevice = regexp.test(details);
     var hlogo=$('#Header1_headerimg')
     var hinner=$('#header-inner')
     var asj_warning=$('#_asj_warning')
+    var lqr=$('#Lqr')
     switch (true) {                
         case (w>1200):
             ele.css("font-size","7px");
@@ -165,6 +166,8 @@ let isMobileDevice = regexp.test(details);
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")   
             asj_warning.css("font-size","5em");
+            lqr.css("width","200");
+            lqr.css("height","200");
             break;
         case (w<=1200 && w>1100):
             ele.css("font-size","7px");
@@ -174,6 +177,8 @@ let isMobileDevice = regexp.test(details);
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","5em");
+            lqr.css("width","200");
+            lqr.css("height","200");
             break;
         case (w<=1100 && w>980):
             ele.css("font-size","7px");
@@ -183,6 +188,8 @@ let isMobileDevice = regexp.test(details);
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","4em");
+            lqr.css("width","200");
+            lqr.css("height","200");
             break;
         case (w<=980 && w>880):
             ele.css("font-size","7px");
@@ -192,6 +199,8 @@ let isMobileDevice = regexp.test(details);
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","4em");
+            lqr.css("width","200");
+            lqr.css("height","200");
             break;
         case (w<=880 && w>768):
             ele.css("font-size","7px");
@@ -201,6 +210,8 @@ let isMobileDevice = regexp.test(details);
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","3em");
+            lqr.css("width","200");
+            lqr.css("height","200");
             break;
         case (w<=768 && w>767):
             ele.css("font-size","7px");
@@ -210,6 +221,8 @@ let isMobileDevice = regexp.test(details);
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","3em");
+            lqr.css("width","200");
+            lqr.css("height","200");
             break;
         case (w<=767 && w>480):
             if (!isMobileDevice) { 
@@ -228,6 +241,8 @@ let isMobileDevice = regexp.test(details);
             hinner.css("padding-top","7px")
             asj_warning.css("font-size","2em");
             $('head').append('<meta name="color-scheme" content="dark light" />');
+            lqr.css("width","157");
+            lqr.css("height","157");
             break;
         case (w<=480 && w>360):
             if (!isMobileDevice) { 
@@ -246,6 +261,8 @@ let isMobileDevice = regexp.test(details);
             hinner.css("padding-top","7px")
             asj_warning.css("font-size","1.5em");
             $('head').append('<meta name="color-scheme" content="dark light" />');
+            lqr.css("width","157");
+            lqr.css("height","157");
             break;
         case (w<=360 && w>300):
             if (!isMobileDevice) { 
@@ -265,6 +282,8 @@ let isMobileDevice = regexp.test(details);
             hinner.css("padding-top","7px")
             asj_warning.css("font-size","1.5em");
             $('head').append('<meta name="color-scheme" content="dark light" />');
+            lqr.css("width","157");
+            lqr.css("height","157");
             break;
         case (w<=300):
             if (!isMobileDevice) { 
@@ -283,6 +302,8 @@ let isMobileDevice = regexp.test(details);
             hinner.css("padding-top","7px")
             asj_warning.css("font-size","1em");
             $('head').append('<meta name="color-scheme" content="dark light" />');
+            lqr.css("width","157");
+            lqr.css("height","157");
             break;
         default:
             ele.css("font-size","4px");   
@@ -290,6 +311,8 @@ let isMobileDevice = regexp.test(details);
             skillvid.css("display","none")
             formdiv.css("padding","20px 20px 5px")
             hlogo.css("height","56px").css("width","56px")
+            lqr.css("width","200");
+            lqr.css("height","200");
             break;
     }    
     $('#nav').onePageNav();
