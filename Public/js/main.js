@@ -71,6 +71,8 @@ $(document).ready(function () {
 
 
     });
+    var h=$(window).height(); // New height
+    var w=$(window).width(); // New width
     var matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
     if(matched){        
         darkMode();  
@@ -147,8 +149,8 @@ let isMobileDevice = regexp.test(details);
 //} 
 //check browser in mobile-end
 
-    var h=$(window).height(); // New height
-    var w=$(window).width(); // New width
+    //var h=$(window).height(); // New height
+    //var w=$(window).width(); // New width
     var ele=$('.m-backtotop>div.text')
     var skillimg=$('#imgSkills')
     var skillvid=$('#vidPlayer')
@@ -158,6 +160,8 @@ let isMobileDevice = regexp.test(details);
     var asj_warning=$('#_asj_warning')
     var lqr=$('#Lqr')
     var popupqr=$('#pop-up')
+    var iframe=$('#googleForm')
+
     switch (true) {                
         case (w>1200):
             ele.css("font-size","7px").css("font-weight","600");
@@ -167,8 +171,8 @@ let isMobileDevice = regexp.test(details);
             hlogo.css("height","56px").css("width","56px")   
             asj_warning.css("font-size","5em");
             //lqr.css("width","200").css("height","200");
-            popupqr.css("width","193").css("height","193");
-
+            popupqr.css("width","193").css("height","193");                   
+            iframe.css("filter","invert(0.9)");
             break;
         case (w<=1200 && w>1100):
             ele.css("font-size","7px").css("font-weight","600");
@@ -179,6 +183,7 @@ let isMobileDevice = regexp.test(details);
             asj_warning.css("font-size","5em");
             //lqr.css("width","200").css("height","200");
             popupqr.css("width","193").css("height","193");
+            iframe.css("filter","invert(0.9)");
             break;
         case (w<=1100 && w>980):
             ele.css("font-size","7px").css("font-weight","600");
@@ -189,6 +194,7 @@ let isMobileDevice = regexp.test(details);
             asj_warning.css("font-size","4em");
             //lqr.css("width","200").css("height","200");
             popupqr.css("width","193").css("height","193");
+            iframe.css("filter","invert(0.9)");
             break;
         case (w<=980 && w>880):
             ele.css("font-size","7px").css("font-weight","600");
@@ -199,6 +205,7 @@ let isMobileDevice = regexp.test(details);
             asj_warning.css("font-size","4em");
             //lqr.css("width","200").css("height","200");
             popupqr.css("width","193").css("height","193");
+            iframe.css("filter","invert(0.9)");
             break;
         case (w<=880 && w>768):
             ele.css("font-size","7px").css("font-weight","600");
@@ -209,6 +216,7 @@ let isMobileDevice = regexp.test(details);
             asj_warning.css("font-size","3em");
             //lqr.css("width","200").css("height","200");
             popupqr.css("width","193").css("height","193");
+            iframe.css("filter","invert(0.9)");
             break;
         case (w<=768 && w>767):
             ele.css("font-size","7px").css("font-weight","600");
@@ -219,6 +227,7 @@ let isMobileDevice = regexp.test(details);
             asj_warning.css("font-size","3em");
             //lqr.css("width","200").css("height","200");
             popupqr.css("width","193").css("height","193");
+            iframe.css("filter","invert(0.9)");
             break;
         case (w<=767 && w>480):
             if (!isMobileDevice) { 
@@ -300,6 +309,11 @@ let isMobileDevice = regexp.test(details);
     function setDefaultColor(){
         document.documentElement.style.setProperty('--mycol', '#FF0000', 'important');
         document.documentElement.style.setProperty('--background', '#FF0000', 'important');
+        if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){            
+            $('#googleForm').attr("src", "https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true").css("filter","invert(0.9)");
+        }else{            
+            $('#googleForm').attr("src", "https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true").css("filter","invert(0.9)");
+        }
     }    
                 
 var counter = 0;
@@ -309,27 +323,60 @@ $("#Header1_headerimg").click(function () {
 $(".m-theme").click(function () {
     switch (counter) {
         case 0:
-            changeColor('#ffbd2f', 'rgba(255,189,47,0.5)', 'Public/images/apk_yellow.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSfNb2Kzqwg1ABhvCjaUbFcUw_zRzrF18AK5aaOF1SnWkdpMZA/viewform?embedded=true');
+            //changeColor('#ffbd2f', 'rgba(255,189,47,0.5)', 'Public/images/apk_yellow.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSfNb2Kzqwg1ABhvCjaUbFcUw_zRzrF18AK5aaOF1SnWkdpMZA/viewform?embedded=true');
+            if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
+                changeColor('#ffbd2f', 'rgba(255,189,47,0.5)', 'Public/images/apk_yellow.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');
+            }else{
+                //blue
+                changeColor('#ffbd2f', 'rgba(255,189,47,0.5)', 'Public/images/apk_yellow.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSfNb2Kzqwg1ABhvCjaUbFcUw_zRzrF18AK5aaOF1SnWkdpMZA/viewform?embedded=true');
+            }
             counter += 1;
             break;
         case 1:
+        //changeColor('#00BC22', 'rgba(0,255,0,0.5)', 'Public/images/apk_green.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSejjLWlzY8VK2eO-bhy5JzNHhumu7VXdTEGG8tpPn4EDC5jyQ/viewform?embedded=true');
+        if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
+            changeColor('#00BC22', 'rgba(0,255,0,0.5)', 'Public/images/apk_green.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSeXyW2PDxsG5Y_R5eTmWrtWjG-vMJQvYXWksHXFC3TbEO7QxQ/viewform?embedded=true');
+        }else{
+            //magenta
             changeColor('#00BC22', 'rgba(0,255,0,0.5)', 'Public/images/apk_green.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSejjLWlzY8VK2eO-bhy5JzNHhumu7VXdTEGG8tpPn4EDC5jyQ/viewform?embedded=true');
+        }
             counter += 1;
             break;
         case 2:
-            changeColor('#0030EF', 'rgba(0,0,255,0.5)', 'Public/images/apk_blue.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');
+            //changeColor('#0030EF', 'rgba(0,0,255,0.5)', 'Public/images/apk_blue.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');
+            if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
+                changeColor('#0030EF', 'rgba(0,0,255,0.5)', 'Public/images/apk_blue.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSfNb2Kzqwg1ABhvCjaUbFcUw_zRzrF18AK5aaOF1SnWkdpMZA/viewform?embedded=true');
+            }else{
+                //orange
+                changeColor('#0030EF', 'rgba(0,0,255,0.5)', 'Public/images/apk_blue.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');
+            }
             counter += 1;
             break;
         case 3:
-            changeColor('#008080', 'rgba(0,128,128,0.5)', 'Public/images/apk_teal.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
+            //changeColor('#008080', 'rgba(0,128,128,0.5)', 'Public/images/apk_teal.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
+            if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
+                changeColor('#008080', 'rgba(0,128,128,0.5)', 'Public/images/apk_teal.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
+            }else{
+                changeColor('#008080', 'rgba(0,128,128,0.5)', 'Public/images/apk_teal.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
+            }
             counter += 1;
             break;
         case 4:
-            changeColor('#FF00FF', 'rgba(255,0,255,0.5)', 'Public/images/apk_magenta.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSeXyW2PDxsG5Y_R5eTmWrtWjG-vMJQvYXWksHXFC3TbEO7QxQ/viewform?embedded=true');
+            //changeColor('#FF00FF', 'rgba(255,0,255,0.5)', 'Public/images/apk_magenta.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSeXyW2PDxsG5Y_R5eTmWrtWjG-vMJQvYXWksHXFC3TbEO7QxQ/viewform?embedded=true');
+            if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
+                changeColor('#FF00FF', 'rgba(255,0,255,0.5)', 'Public/images/apk_magenta.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSejjLWlzY8VK2eO-bhy5JzNHhumu7VXdTEGG8tpPn4EDC5jyQ/viewform?embedded=true');
+            }else{
+                changeColor('#FF00FF', 'rgba(255,0,255,0.5)', 'Public/images/apk_magenta.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSeXyW2PDxsG5Y_R5eTmWrtWjG-vMJQvYXWksHXFC3TbEO7QxQ/viewform?embedded=true');
+            }
             counter += 1;
             break;
         case 5:
-            changeColor('#FF8000', 'rgba(255,128,0,0.5)', 'Public/images/apk_orange.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSdcda7CfmBlvKwIIhOp8OMMbGiaEWheI8fyUJqsQ0RxK0EDRQ/viewform?embedded=true');
+            //changeColor('#FF8000', 'rgba(255,128,0,0.5)', 'Public/images/apk_orange.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSdcda7CfmBlvKwIIhOp8OMMbGiaEWheI8fyUJqsQ0RxK0EDRQ/viewform?embedded=true');
+            if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
+                changeColor('#FF8000', 'rgba(255,128,0,0.5)', 'Public/images/apk_orange.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');                
+            }else{
+                changeColor('#FF8000', 'rgba(255,128,0,0.5)', 'Public/images/apk_orange.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSdcda7CfmBlvKwIIhOp8OMMbGiaEWheI8fyUJqsQ0RxK0EDRQ/viewform?embedded=true');
+            }
             counter += 1;
             break;
         case 6:
@@ -337,11 +384,21 @@ $(".m-theme").click(function () {
             counter += 1;
             break;
         case 7:
-            changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
+            //changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
+            if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
+                changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
+            }else{
+                changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
+            }
             counter = 0;
             break;
         default:
-            changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
+            //changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
+            if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
+                changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
+            }else{
+                changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
+            }
             counter = 0;
             break;
     }
