@@ -342,7 +342,7 @@ $(".m-theme").click(function () {
 function darkMode(){
     $(".preloader1").css("background", "rgb(0, 0, 0)");
     $(".preloader1-circle").css("background", "rgb(0, 0, 0)");
-    $("#mainbody").css("background-color","rgb(0, 0, 0)");                  
+    $("body").css("background-color","rgb(0, 0, 0)");                  
     $(".sora-special-box").css('background', "rgb(0, 0, 0)");
     $(".sora-works-box").css('background', "rgb(0, 0, 0)");
     //$(".counter-box").css('background', "rgb(128, 128, 128)");
@@ -350,7 +350,7 @@ function darkMode(){
     //$(".Portfolio-title").css('background', "rgb(0, 0, 0)");
     $("#outer-wrapper").css('background', "rgb(0, 0, 0)");
     $(".wrap-me").css('border', "1px solid #ffffff");                    
-    //$(".insta-wrap").css('background', "rgb(0, 0, 0)");
+    $(".insta-wrap").css('background', "rgb(0, 0, 0)");
     document.documentElement.style.setProperty('--bccol', 'black', 'important');
     document.documentElement.style.setProperty('--scol', 'white', 'important');        
     document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.webp) no-repeat center', 'important');
@@ -358,7 +358,7 @@ function darkMode(){
 function lightMode(){
     $(".preloader1").css("background", "rgb(255, 255, 255)");
     $(".preloader1-circle").css("background", "rgb(255, 255, 255)");
-    $("#mainbody").css("background-color","rgb(255, 255, 255)");
+    $("body").css("background-color","rgb(255, 255, 255)");
     $(".sora-special-box").css('background', "rgb(255, 255, 255)");
     $(".sora-works-box").css('background', "rgb(255, 255, 255)");
     //$(".counter-box").css('background', "rgb(255, 255, 255)");
@@ -366,13 +366,13 @@ function lightMode(){
     //$(".Portfolio-title").css('background', "rgb(255, 255, 255)");
     $("#outer-wrapper").css('background', "rgb(255, 255, 255)");
     $(".wrap-me").css('border', "1px solid #000000");                    
-    //$(".insta-wrap").css('background', "rgb(255, 255, 255)");
+    $(".insta-wrap").css('background', "rgb(255, 255, 255)");
     document.documentElement.style.setProperty('--bccol', 'white', 'important');
     document.documentElement.style.setProperty('--scol', 'black', 'important'); 
     document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
 }
 function changeThemeMode(){
-    if($("#mainbody").css("background-color")=="rgb(255, 255, 255)"){
+    if($("body").css("background-color")=="rgb(255, 255, 255)"){
         darkMode();
     }
     else{
