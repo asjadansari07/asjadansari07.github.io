@@ -510,11 +510,15 @@ function changeForm(mode,w,col){
                 $('#googleForm').css("filter","none");
             }
         }else{ 
-            if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-                $('#googleForm').css("filter","none");
-            }else{
-                $('#googleForm').css("filter","invert(0.9)");
+            if(matchMedia && matched)
+            {
+                if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
+                    $('#googleForm').css("filter","invert(0.9)");
+                }else{
+                    $('#googleForm').css("filter","none");
+                }
             }
+            
             
         }  
     
