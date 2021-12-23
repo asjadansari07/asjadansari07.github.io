@@ -506,7 +506,7 @@ function changeForm(mode,w,col){
             if(matchMedia && matched)
             {
                 if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-                    $('#googleForm').css("filter","invert(0.9)");
+                    $('#googleForm').css("filter","invert(1)");
                 }else{
                     $('#googleForm').css("filter","none");
                 }
@@ -524,7 +524,7 @@ function changeForm(mode,w,col){
             if(matchMedia && matched)
             {
                 if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-                    $('#googleForm').css("filter","invert(0.9)");
+                    $('#googleForm').css("filter","invert(1)");
                 
                 }else{
                     $('#googleForm').css("filter","none");
