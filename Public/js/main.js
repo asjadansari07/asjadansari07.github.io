@@ -497,9 +497,8 @@ function changeForm(mode,w,col){
             if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
                 $('#googleForm').css("filter","invert(0.9)");
             }else{
-            
+                $('#googleForm').css("filter","none");
             }
-            $('#googleForm').css("filter","none");
             
         }  
     
