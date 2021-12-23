@@ -515,15 +515,18 @@ function changeForm(mode,w,col){
             
             
         }            
-    }//else{            
-    //    if(mode=="light"){ 
-    //        $('#googleForm').attr("src", frmUrl).css("filter","invert(0.9)"); 
-    //    }else{            
+    }else{   
+        var frmUrl=getFormbyCol(col);
+        if(mode=="light"){ 
+            //$('#googleForm').attr("src", frmUrl).css("filter","invert(0.9)"); 
+            $('#googleForm').attr("data-src","").attr("src", frmUrl)
+        }else{            
             
-    //        $('#googleForm').attr("src", frmUrl).css("filter","none"); 
-    //    }  
+            //$('#googleForm').attr("src", frmUrl).css("filter","none"); 
+            $('#googleForm').attr("data-src","").attr("src", frmUrl)
+        }  
     
-    //}
+    }
 }
 function invertCol(clr){    
     var invCol;    
