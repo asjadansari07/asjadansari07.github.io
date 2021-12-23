@@ -159,7 +159,7 @@ var hinner=$('#header-inner')
 var asj_warning=$('#_asj_warning')
 //var lqr=$('#Lqr')
 var popupqr=$('#pop-up')
-//var iframe=$('#googleForm')
+var iframe=$('#googleForm')
 
 switch (true) {                
     case (w>1200):
@@ -220,7 +220,7 @@ switch (true) {
         if (!isMobileDevice) { 
             ele.css("font-size","4px").css("line-height","8px").css("width","58%");
         } else { 
-            ele.css("font-size","7px").css("line-height","10px").css("width","58%");
+            ele.css("font-size","7px").css("line-height","10px").css("width","58%");            
         }             
         skillimg.css("display","block")
         skillvid.css("display","none")
@@ -235,7 +235,7 @@ switch (true) {
         if (!isMobileDevice) { 
             ele.css("font-size","4px").css("line-height","8px").css("width","58%");
         } else { 
-            ele.css("font-size","7px").css("line-height","10px").css("width","58%");
+            ele.css("font-size","7px").css("line-height","10px").css("width","58%");            
         }            
         skillimg.css("display","block")
         skillvid.css("display","none")
@@ -251,7 +251,10 @@ switch (true) {
             ele.css("font-size","4px").css("line-height","8px").css("width","58%");
         } else { 
             ele.css("font-size","7px").css("line-height","10px").css("width","58%");
-
+            if(matchMedia && matched)
+            {
+                iframe.css("filter","invert(0.9)");
+            }
         }
         skillimg.css("display","block")
         skillvid.css("display","none")
