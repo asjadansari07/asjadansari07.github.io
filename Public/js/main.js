@@ -503,13 +503,6 @@ function changeForm(mode,w,col){
     }
     else{           
         if(mode=="light"){ 
-            if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
-                $('#googleForm').css("filter","invert(0.9)");
-                
-            }else{
-                $('#googleForm').css("filter","none");
-            }
-        }else{ 
             if(matchMedia && matched)
             {
                 if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
@@ -518,7 +511,13 @@ function changeForm(mode,w,col){
                     $('#googleForm').css("filter","none");
                 }
             }
-            
+        }else{             
+            if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
+                $('#googleForm').css("filter","invert(0.9)");
+                
+            }else{
+                $('#googleForm').css("filter","none");
+            }
             
         }  
     
