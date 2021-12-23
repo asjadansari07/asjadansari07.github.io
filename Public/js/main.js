@@ -515,31 +515,32 @@ function changeForm(mode,w,col){
             $('#googleForm').attr("data-src", "").css("filter","none");
             $('#googleForm').attr("src", frmUrl);
         }            
-    }else{           
-        if(mode=="light"){ 
-            //$('#googleForm').attr("src", frmUrl).css("filter","invert(0.9)"); 
-            //$('#googleForm').attr("data-src","").attr("src", frmUrl)
-            var colrev=invertCol(col);
-            var frmUrl=getFormbyCol(colrev);
-            //$('#googleForm').css("filter","invert(0.9)").attr("src", frmUrl);
-            $('#googleForm').attr("data-src", "").css("filter","invert(0.9)");
-            $('#googleForm').attr("src", frmUrl);
-        }else{                        
-            //$('#googleForm').attr("src", frmUrl).css("filter","none"); 
-            //$('#googleForm').attr("data-src","").attr("src", frmUrl)
-
-            //var frmUrl=getFormbyCol(col);
-            ////$('#googleForm').css("filter","none").attr("src", frmUrl);
-            //$('#googleForm').attr("data-src", "").css("filter","none");
-            //$('#googleForm').attr("src", frmUrl);
-            var colrev=invertCol(col);
-            var frmUrl=getFormbyCol(colrev);
-            //$('#googleForm').css("filter","invert(0.9)").attr("src", frmUrl);
-            $('#googleForm').attr("data-src", "").css("filter","invert(0.9)");
-            $('#googleForm').attr("src", frmUrl);
-        }  
-    
     }
+    //else{           
+    //    if(mode=="light"){ 
+    //        //$('#googleForm').attr("src", frmUrl).css("filter","invert(0.9)"); 
+    //        //$('#googleForm').attr("data-src","").attr("src", frmUrl)
+    //        var colrev=invertCol(col);
+    //        var frmUrl=getFormbyCol(colrev);
+    //        //$('#googleForm').css("filter","invert(0.9)").attr("src", frmUrl);
+    //        $('#googleForm').attr("data-src", "").css("filter","invert(0.9)");
+    //        $('#googleForm').attr("src", frmUrl);
+    //    }else{                        
+    //        //$('#googleForm').attr("src", frmUrl).css("filter","none"); 
+    //        //$('#googleForm').attr("data-src","").attr("src", frmUrl)
+
+    //        //var frmUrl=getFormbyCol(col);
+    //        ////$('#googleForm').css("filter","none").attr("src", frmUrl);
+    //        //$('#googleForm').attr("data-src", "").css("filter","none");
+    //        //$('#googleForm').attr("src", frmUrl);
+    //        var colrev=invertCol(col);
+    //        var frmUrl=getFormbyCol(colrev);
+    //        //$('#googleForm').css("filter","invert(0.9)").attr("src", frmUrl);
+    //        $('#googleForm').attr("data-src", "").css("filter","invert(0.9)");
+    //        $('#googleForm').attr("src", frmUrl);
+    //    }  
+    
+    //}
 }
 function invertCol(clr){    
     var invCol;    
