@@ -488,8 +488,17 @@ function changeForm(mode,w,col){
     }
     else{           
         if(mode=="light"){ 
-            $('#googleForm').css("filter","invert(0.9)");
-        }else{                        
+            if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
+                $('#googleForm').css("filter","none");
+            }else{
+                $('#googleForm').css("filter","invert(0.9)");
+            }
+        }else{ 
+            if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
+                $('#googleForm').css("filter","invert(0.9)");
+            }else{
+            
+            }
             $('#googleForm').css("filter","none");
         }  
     
