@@ -515,15 +515,15 @@ function changeForm(mode,w,col){
             
             
         }            
-    }else{            
-        if(mode=="light"){ 
-            $('#googleForm').attr("src", frmUrl).css("filter","invert(0.9)"); 
-        }else{            
+    }//else{            
+    //    if(mode=="light"){ 
+    //        $('#googleForm').attr("src", frmUrl).css("filter","invert(0.9)"); 
+    //    }else{            
             
-            $('#googleForm').attr("src", frmUrl).css("filter","none"); 
-        }  
+    //        $('#googleForm').attr("src", frmUrl).css("filter","none"); 
+    //    }  
     
-    }
+    //}
 }
 function invertCol(clr){    
     var invCol;    
@@ -594,6 +594,7 @@ function getFormbyCol(c){
 function changeThemeMode(){
     var col=$(".hello-txt").css("background-color");
     if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){
+    //if(matched){    
         darkMode();
         
         changeForm('light',w,col)
