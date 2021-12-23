@@ -301,6 +301,21 @@ function setDefaultColor(){
     //}else{            
     //    $('#googleForm').attr("data-src", "https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true");
     //}
+
+    if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){  
+        if(window.matchMedia && matched){      
+            $('#googleForm').css("filter","invert(0.9)");
+        }else{
+            $('#googleForm').css("filter","none");
+        }
+            
+    }else{            
+        if(window.matchMedia && matched){      
+            $('#googleForm').css("filter","none");
+        }else{
+            $('#googleForm').css("filter","none");
+        }
+    }
 }    
                 
 var counter = 0;
