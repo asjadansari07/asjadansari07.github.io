@@ -84,7 +84,7 @@ $(document).ready(function () {
         setDefaultColor();
     }
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {   
-    changeThemeMode();
+        changeThemeMode();
 })
 disableoptions();
 //if website steal-start
@@ -511,14 +511,32 @@ function changeForm(mode,w,col){
                     $('#googleForm').css("filter","none");
                 }
             }
-        }else{             
-            if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
-                $('#googleForm').css("filter","invert(0.9)");
-                
-            }else{
-                $('#googleForm').css("filter","none");
+            else
+            {
+                if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
+                    $('#googleForm').css("filter","none");                
+                }else{
+                    $('#googleForm').css("filter","invert(0.9)");
+                }
             }
             
+        }else{ 
+            if(matchMedia && matched)
+            {
+                if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
+                    $('#googleForm').css("filter","invert(0.9)");
+                
+                }else{
+                    $('#googleForm').css("filter","none");
+                }
+            }else
+            {
+                if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
+                    $('#googleForm').css("filter","none");                
+                }else{
+                    $('#googleForm').css("filter","invert(0.9)");
+                }
+            }
         }  
     
     }
@@ -592,7 +610,7 @@ function getFormbyCol(c){
 function changeThemeMode(){
     var col=$(".hello-txt").css("background-color");
     if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){
-    //if(window.matchMedia && matched){                  
+        //if(window.matchMedia && matched){                  
         changeForm('dark',w,col)
         darkMode();
     }
