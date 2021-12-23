@@ -500,6 +500,7 @@ function changeForm(mode,w,col){
             
             }
             $('#googleForm').css("filter","none");
+            
         }  
     
     }
