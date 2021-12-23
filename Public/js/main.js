@@ -91,8 +91,8 @@ disableoptions();
 (function () { 
     //const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
     //const rgx = new RegExp('localhost:2435');
-    //const rgx = new RegExp('localhost:8426');
-    const rgx = new RegExp('asjadansari07.github.io');
+    const rgx = new RegExp('localhost:8426');
+    //const rgx = new RegExp('asjadansari07.github.io');
 const host = window.location.host; 
 const isMatch = !host.match(rgx); 
  
@@ -136,7 +136,8 @@ var iframe=$('#googleForm')
 let details = navigator.userAgent; 
 //let regexp = /android|iphone|kindle|ipad/i; 
 let regexp = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|kindle|Opera Mini/i;
-if(!(details.toString().includes('wv')))
+let isWebview=details.toString().includes('wv');
+if(!isWebview)
 {
     //document.write('opened in webview');
     //document.write('opened in mobilebrowser');
@@ -507,7 +508,49 @@ function changeForm(mode,w,col){
             $('#googleForm').css("filter","invert(0.9)");
         }            
     }
-    else{           
+    else{   
+        if(!isWebview){
+        
+        }
+        else{
+            //if(mode=="light"){ 
+            //    if(matchMedia && matched)
+            //    {
+            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
+            //            $('#googleForm').css("filter","invert(1)");
+            //        }else{
+            //            $('#googleForm').css("filter","none");
+            //        }
+            //    }
+            //    else
+            //    {
+            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
+            //            $('#googleForm').css("filter","invert(0.9)");         
+            //        }else{                    
+            //            $('#googleForm').css("filter","none");
+            //        }
+            //    }
+            
+            //}else{ 
+            //    if(matchMedia && matched)
+            //    {
+            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
+            //            $('#googleForm').css("filter","invert(1)");
+                
+            //        }else{
+            //            $('#googleForm').css("filter","none");
+            //        }
+            //    }else
+            //    {
+            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
+            //            $('#googleForm').css("filter","none");                
+            //        }else{
+            //            $('#googleForm').css("filter","invert(0.9)");
+            //        }
+            //    }
+            //} 
+        }
+
         if(mode=="light"){ 
             if(matchMedia && matched)
             {
