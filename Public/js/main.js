@@ -503,10 +503,16 @@ function changeForm(mode,w,col){
         if(mode=="light"){             
             var colrev=invertCol(col);
             var frmUrl=getFormbyCol(colrev);
-            $('#googleForm').css("filter","invert(0.9)").attr("src", frmUrl);
+            //$('#googleForm').css("filter","invert(0.9)").attr("src", frmUrl);
+            $('#googleForm').css("filter","invert(0.9)");
+            $('#googleForm').attr("src", frmUrl);
+            
         }else{                     
             var frmUrl=getFormbyCol(col);
-            $('#googleForm').css("filter","none").attr("src", frmUrl);
+            //$('#googleForm').css("filter","none").attr("src", frmUrl);
+            $('#googleForm').css("filter","none");
+            $('#googleForm').attr("src", frmUrl);
+            
             
         }            
     }else{            
@@ -602,7 +608,8 @@ function changeColor(col, rgba, src, formsrc) {
     $('.popup_menu .btn1').css('background', rgba);
     document.documentElement.style.setProperty('--background', col, 'important');
     $('#androidapk').attr("src", src)
-    $('#googleForm').attr("src", formsrc)
+
+    $('#googleForm').attr("data-src","").attr("src", formsrc)
 }
 $(".trigger").click(function () {
     $(".popup_menu").toggleClass("active");
