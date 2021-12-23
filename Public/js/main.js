@@ -74,7 +74,7 @@ $(document).ready(function () {
     var h=$(window).height(); // New height
     var w=$(window).width(); // New width
     var matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if(matched){        
+    if(window.matchMedia && matched){        
         darkMode();  
         setDefaultColor();
     }
@@ -83,12 +83,7 @@ $(document).ready(function () {
         lightMode();
         setDefaultColor();
     }
-    window.matchMedia('(prefers-color-scheme: dark)')
-.addEventListener('change', event => {
-    //if(matched)
-    //{
-    //matched=true;
-    //}
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {   
     changeThemeMode();
 })
 disableoptions();
@@ -176,7 +171,7 @@ switch (true) {
         asj_warning.css("font-size","5em");
         //lqr.css("width","200").css("height","200");
         popupqr.css("width","193").css("height","193"); 
-        if(matched){        
+        if(window.matchMedia && matched){      
             iframe.css("filter","invert(0.9)");
         }
         //iframe.css("filter","invert(0.9)");
@@ -190,7 +185,7 @@ switch (true) {
         asj_warning.css("font-size","5em");
         //lqr.css("width","200").css("height","200");
         popupqr.css("width","193").css("height","193");
-        if(matched){        
+        if(window.matchMedia && matched){      
             iframe.css("filter","invert(0.9)");
         }
         //iframe.css("filter","invert(0.9)");
@@ -204,7 +199,7 @@ switch (true) {
         asj_warning.css("font-size","4em");
         //lqr.css("width","200").css("height","200");
         popupqr.css("width","193").css("height","193");
-        if(matched){        
+        if(window.matchMedia && matched){      
             iframe.css("filter","invert(0.9)");
         }
         //iframe.css("filter","invert(0.9)");
@@ -218,7 +213,7 @@ switch (true) {
         asj_warning.css("font-size","4em");
         //lqr.css("width","200").css("height","200");
         popupqr.css("width","193").css("height","193");
-        if(matched){        
+        if(window.matchMedia && matched){      
             iframe.css("filter","invert(0.9)");
         }
         //iframe.css("filter","invert(0.9)");
@@ -232,7 +227,7 @@ switch (true) {
         asj_warning.css("font-size","3em");
         //lqr.css("width","200").css("height","200");
         popupqr.css("width","193").css("height","193");
-        if(matched){        
+        if(window.matchMedia && matched){      
             iframe.css("filter","invert(0.9)");
         }
         //iframe.css("filter","invert(0.9)");
@@ -246,7 +241,7 @@ switch (true) {
         asj_warning.css("font-size","3em");
         //lqr.css("width","200").css("height","200");
         popupqr.css("width","193").css("height","193");
-        if(matched){        
+        if(window.matchMedia && matched){      
             iframe.css("filter","invert(0.9)");
         }
         //iframe.css("filter","invert(0.9)");
@@ -332,7 +327,7 @@ function setDefaultColor(){
     document.documentElement.style.setProperty('--mycol', '#FF0000', 'important');
     document.documentElement.style.setProperty('--background', '#FF0000', 'important');
     if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){  
-        if(matched){        
+        if(window.matchMedia && matched){      
             $('#googleForm').attr("data-src", "https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true").css("filter","invert(0.9)");
         }else{
             $('#googleForm').attr("data-src", "https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true");
@@ -352,6 +347,7 @@ $(".m-theme").click(function () {
         case 0:
             //changeColor('#ffbd2f', 'rgba(255,189,47,0.5)', 'Public/images/apk_yellow.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSfNb2Kzqwg1ABhvCjaUbFcUw_zRzrF18AK5aaOF1SnWkdpMZA/viewform?embedded=true');
             if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
+                //if(matchMedia && matched){
                 if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
                     changeColor('#ffbd2f', 'rgba(255,189,47,0.5)', 'Public/images/apk_yellow.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');
                 }else{
@@ -367,7 +363,8 @@ $(".m-theme").click(function () {
         case 1:
             //changeColor('#00BC22', 'rgba(0,255,0,0.5)', 'Public/images/apk_green.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSejjLWlzY8VK2eO-bhy5JzNHhumu7VXdTEGG8tpPn4EDC5jyQ/viewform?embedded=true');
             if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
-                if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
+                //if(matchMedia && matched){
+                    if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
                     changeColor('#00BC22', 'rgba(0,255,0,0.5)', 'Public/images/apk_green.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSeXyW2PDxsG5Y_R5eTmWrtWjG-vMJQvYXWksHXFC3TbEO7QxQ/viewform?embedded=true');
                 }else{
                     //magenta
@@ -382,7 +379,8 @@ $(".m-theme").click(function () {
         case 2:
             //changeColor('#0030EF', 'rgba(0,0,255,0.5)', 'Public/images/apk_blue.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');
             if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
-                if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){ 
+                //if(matchMedia && matched){
+                    if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
                     changeColor('#0030EF', 'rgba(0,0,255,0.5)', 'Public/images/apk_blue.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSfNb2Kzqwg1ABhvCjaUbFcUw_zRzrF18AK5aaOF1SnWkdpMZA/viewform?embedded=true');
                 }else{
                     //orange
@@ -397,7 +395,8 @@ $(".m-theme").click(function () {
         case 3:
             //changeColor('#008080', 'rgba(0,128,128,0.5)', 'Public/images/apk_teal.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
             if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
-                if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){ 
+                //if(matchMedia && matched){
+                    if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
                     changeColor('#008080', 'rgba(0,128,128,0.5)', 'Public/images/apk_teal.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
                 }else{
                     //red
@@ -412,7 +411,8 @@ $(".m-theme").click(function () {
         case 4:
             //changeColor('#FF00FF', 'rgba(255,0,255,0.5)', 'Public/images/apk_magenta.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSeXyW2PDxsG5Y_R5eTmWrtWjG-vMJQvYXWksHXFC3TbEO7QxQ/viewform?embedded=true');
             if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
-                if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){ 
+                //if(matchMedia && matched){
+                    if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
                     changeColor('#FF00FF', 'rgba(255,0,255,0.5)', 'Public/images/apk_magenta.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSejjLWlzY8VK2eO-bhy5JzNHhumu7VXdTEGG8tpPn4EDC5jyQ/viewform?embedded=true');
                 }else{
                     //green
@@ -427,7 +427,8 @@ $(".m-theme").click(function () {
         case 5:
             //changeColor('#FF8000', 'rgba(255,128,0,0.5)', 'Public/images/apk_orange.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSdcda7CfmBlvKwIIhOp8OMMbGiaEWheI8fyUJqsQ0RxK0EDRQ/viewform?embedded=true');
             if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
-                if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){ 
+                //if(matchMedia && matched){
+                    if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
                     changeColor('#FF8000', 'rgba(255,128,0,0.5)', 'Public/images/apk_orange.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');                
                 }else{
                     changeColor('#FF8000', 'rgba(255,128,0,0.5)', 'Public/images/apk_orange.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSdcda7CfmBlvKwIIhOp8OMMbGiaEWheI8fyUJqsQ0RxK0EDRQ/viewform?embedded=true');
@@ -444,7 +445,8 @@ $(".m-theme").click(function () {
         case 7:
             //changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
             if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
-                if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){ 
+                //if(matchMedia && matched){
+                    if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
                     changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
                 }else{
                     changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
@@ -608,7 +610,7 @@ function getFormbyCol(c){
 function changeThemeMode(){
     var col=$(".hello-txt").css("background-color");
     if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){
-    //if(matched){    
+    //if(window.matchMedia && matched){  
         darkMode();
         
         changeForm('light',w,col)
