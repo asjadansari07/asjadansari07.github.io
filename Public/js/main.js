@@ -509,7 +509,7 @@ function changeForm(mode,w,col){
         }            
     }
     else{   
-        if(!isWebview){
+        if(isWebview){
             if(mode=="light"){ 
                 if(matchMedia && matched)
                 {
