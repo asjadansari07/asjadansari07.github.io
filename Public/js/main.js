@@ -132,14 +132,21 @@ exactRvg();
 })(); 
 //if website steal-end
 //check browser in mobile-start
-
+var iframe=$('#googleForm')
 let details = navigator.userAgent; 
 //let regexp = /android|iphone|kindle|ipad/i; 
 let regexp = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|kindle|Opera Mini/i;
-//if(details.toString().includes('wv'))
-//{
-//    document.write('opened in webview');
-//}
+if(!(details.toString().includes('wv')))
+{
+    //document.write('opened in webview');
+    //document.write('opened in mobilebrowser');
+    if(window.matchMedia && matched){        
+        iframe.css("filter","invert(0.9)");      
+    }
+    else{
+        iframe.css("filter","none"); 
+    }
+}
 let isMobileDevice = regexp.test(details); 
 //if (isMobileDevice) { 
 //    document.write("You are using a Mobile Device"); 
@@ -159,7 +166,7 @@ var hinner=$('#header-inner')
 var asj_warning=$('#_asj_warning')
 //var lqr=$('#Lqr')
 var popupqr=$('#pop-up')
-var iframe=$('#googleForm')
+//var iframe=$('#googleForm')
 
 switch (true) {                
     case (w>1200):
