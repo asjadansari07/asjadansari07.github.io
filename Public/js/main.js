@@ -492,24 +492,25 @@ function changeForm(mode,w,col){
             //var frmUrl=getFormbyCol(colrev);            
             //$('#googleForm').attr("data-src", "").css("filter","invert(0.9)");
             //$('#googleForm').attr("src", frmUrl);
-            $('#googleForm').css("filter","invert(0.9)");
+            $('#googleForm').css("filter","none");
             
         }else{                     
             //var frmUrl=getFormbyCol(col);
             //$('#googleForm').attr("data-src", "").css("filter","none");
             //$('#googleForm').attr("src", frmUrl);
-            $('#googleForm').css("filter","none");
+            $('#googleForm').css("filter","invert(0.9)");
         }            
     }
     else{           
         if(mode=="light"){ 
-            if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-                $('#googleForm').css("filter","none");
-            }else{
+            if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
                 $('#googleForm').css("filter","invert(0.9)");
+                
+            }else{
+                $('#googleForm').css("filter","none");
             }
         }else{ 
-            if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
+            if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
                 $('#googleForm').css("filter","none");
             }else{
                 $('#googleForm').css("filter","invert(0.9)");
@@ -588,13 +589,13 @@ function getFormbyCol(c){
 function changeThemeMode(){
     var col=$(".hello-txt").css("background-color");
     if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){
-    //if(window.matchMedia && matched){  
-        darkMode();        
-        changeForm('light',w,col)
+    //if(window.matchMedia && matched){                  
+        changeForm('dark',w,col)
+        darkMode();
     }
-    else{
+    else{        
+        changeForm('light',w,col);
         lightMode();
-        changeForm('dark',w,col);
     }
 }
 function changeColor(col, rgba, src, formsrc) {
