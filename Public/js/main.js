@@ -251,10 +251,6 @@ switch (true) {
             ele.css("font-size","4px").css("line-height","8px").css("width","58%");
         } else { 
             ele.css("font-size","7px").css("line-height","10px").css("width","58%");
-            if(matchMedia && matched)
-            {
-                iframe.css("filter","invert(0.9)");
-            }
         }
         skillimg.css("display","block")
         skillvid.css("display","none")
