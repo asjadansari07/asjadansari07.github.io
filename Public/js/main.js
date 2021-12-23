@@ -488,9 +488,9 @@ function changeForm(mode,w,col){
     }
     else{           
         if(mode=="light"){ 
-            
+            $('#googleForm').css("filter","invert(0.9)");
         }else{                        
-            
+            $('#googleForm').css("filter","invert(0.9)");
         }  
     
     }
