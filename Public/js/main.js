@@ -310,11 +310,11 @@ function setDefaultColor(){
         }
             
     }else{            
-        if(window.matchMedia && matched){      
-            $('#googleForm').css("filter","none");
-        }else{
-            $('#googleForm').css("filter","none");
-        }
+        //if(window.matchMedia && matched){      
+        //    $('#googleForm').css("filter","none");
+        //}else{
+        //    $('#googleForm').css("filter","none");
+        //}
     }
 }    
                 
