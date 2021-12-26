@@ -140,6 +140,7 @@ let isWebview=details.toString().includes('wv');
 if(!isWebview)
 {
     document.write(details.toString());
+    return;
     //document.write('opened in webview');
     //document.write('opened in mobilebrowser');
     if(window.matchMedia && matched){        
