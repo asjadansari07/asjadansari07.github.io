@@ -139,10 +139,27 @@ let regexp = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|kindle|Opera Mi
 let isWebview=details.toString().includes('wv');
 if(!isWebview)
 {
-    //document.write(details.toString());
-    //return;
+    document.write(details.toString());
+    return;
     //document.write('opened in webview');
     //document.write('opened in mobilebrowser');
+    if(details.toString().toLowerCase().includes('firefox'))
+    {
+        if(window.matchMedia && matched){        
+        iframe.css("filter","invert(0.9)");      
+    }
+    else{
+        iframe.css("filter","none"); 
+    }
+    }
+    else if(details.toString().toLowerCase().includes('opr') || details.toString().toLowerCase().includes('opera'))
+    {
+    
+    }
+    else if(details.toString().toLowerCase().includes('opr') || details.toString().toLowerCase().includes('opera'))
+    {
+    }
+
     if(window.matchMedia && matched){        
         iframe.css("filter","invert(0.9)");      
     }
