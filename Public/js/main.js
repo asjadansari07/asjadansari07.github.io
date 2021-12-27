@@ -139,8 +139,8 @@ let regexp = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|kindle|Opera Mi
 let isWebview=details.toString().includes('wv');
 if(!isWebview)
 {
-    document.write(details.toString());
-    return;
+    //document.write(details.toString());
+    //return;
     //document.write('opened in webview');
     //document.write('opened in mobilebrowser');
     if(details.toString().toLowerCase().includes('firefox'))
@@ -156,16 +156,21 @@ if(!isWebview)
     {
     
     }
-    else if(details.toString().toLowerCase().includes('opr') || details.toString().toLowerCase().includes('opera'))
+    else if(details.toString().toLowerCase().includes('chrome'))
     {
     }
-
-    if(window.matchMedia && matched){        
-        iframe.css("filter","invert(0.9)");      
+    else if(details.toString().toLowerCase().includes('ucbrowser'))
+    {
     }
     else{
-        iframe.css("filter","none"); 
+        if(window.matchMedia && matched){        
+            iframe.css("filter","invert(0.9)");      
+        }
+        else{
+            iframe.css("filter","none"); 
+        }
     }
+    
 }
 let isMobileDevice = regexp.test(details); 
 //if (isMobileDevice) { 
@@ -510,64 +515,66 @@ function lightMode(){
     document.documentElement.style.setProperty('--scol', 'black', 'important'); 
     document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
 }
-function changeForm(mode,w,col){  
+function changeForm(mode,w,col){ 
+    var gform='https://docs.google.com/forms/d/e/1FAIpQLScMJ6lFRbePTtDsSnTRCXPQEOhP8K8nVK5Xb8p-qT69QssbpQ/viewform?embedded=true';
     col=col.replace(/\s/g,'');
     if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
-        if(mode=="light"){             
+        if(mode=="tolight"){             
             //var colrev=invertCol(col);
             //var frmUrl=getFormbyCol(colrev);            
             //$('#googleForm').attr("data-src", "").css("filter","invert(0.9)");
             //$('#googleForm').attr("src", frmUrl);
-            $('#googleForm').css("filter","none");
+            $('#googleForm').css("filter","none");            
             
         }else{                     
             //var frmUrl=getFormbyCol(col);
             //$('#googleForm').attr("data-src", "").css("filter","none");
             //$('#googleForm').attr("src", frmUrl);
             $('#googleForm').css("filter","invert(0.9)");
+            //$('#googleForm').attr("src", gform);
         }            
     }
     else{   
         if(isWebview){
-            if(mode=="light"){ 
-                if(matchMedia && matched)
-                {
-                    if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-                        $('#googleForm').css("filter","invert(1)");
-                    }else{
-                        $('#googleForm').css("filter","none");
-                    }
-                }
-                else
-                {
-                    if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
-                        $('#googleForm').css("filter","invert(0.9)");         
-                    }else{                    
-                        $('#googleForm').css("filter","none");
-                    }
-                }
+            //if(mode=="tolight"){ 
+            //    if(matchMedia && matched)
+            //    {
+            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
+            //            $('#googleForm').css("filter","invert(1)");
+            //        }else{
+            //            $('#googleForm').css("filter","none");
+            //        }
+            //    }
+            //    else
+            //    {
+            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
+            //            $('#googleForm').css("filter","invert(0.9)");         
+            //        }else{                    
+            //            $('#googleForm').css("filter","none");
+            //        }
+            //    }
             
-            }else{ 
-                if(matchMedia && matched)
-                {
-                    if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-                        $('#googleForm').css("filter","invert(1)");
+            //}else{ 
+            //    if(matchMedia && matched)
+            //    {
+            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
+            //            $('#googleForm').css("filter","invert(1)");
                 
-                    }else{
-                        $('#googleForm').css("filter","none");
-                    }
-                }else
-                {
-                    if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-                        $('#googleForm').css("filter","none");                
-                    }else{
-                        $('#googleForm').css("filter","invert(0.9)");
-                    }
-                }
-            } 
+            //        }else{
+            //            $('#googleForm').css("filter","none");
+            //        }
+            //    }else
+            //    {
+            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
+            //            $('#googleForm').css("filter","none");                
+            //        }else{
+            //            $('#googleForm').css("filter","invert(0.9)");
+            //        }
+            //    }
+            //} 
         }
         else{
-            if(mode=="light"){ 
+            if(mode=="tolight"){ 
                 if(matchMedia && matched)
                 {
                     if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
@@ -716,11 +723,11 @@ function changeThemeMode(){
     var col=$(".hello-txt").css("background-color");
     if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){
         //if(window.matchMedia && matched){                  
-        changeForm('dark',w,col)
+        changeForm('todark',w,col)
         darkMode();
     }
     else{        
-        changeForm('light',w,col);
+        changeForm('tolight',w,col);
         lightMode();
     }
 }
