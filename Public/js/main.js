@@ -81,8 +81,7 @@ $(document).ready(function () {
     //    document.write("You are using a Mobile Device"); 
     //} else { 
     //    document.write("You are using Desktop"); 
-    //} 
-    let isWebview=details.toString().includes('wv');
+    //}
     //if(!isWebview)
     //{
     //    //document.write(details.toString());
