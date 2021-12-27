@@ -567,14 +567,17 @@ function changeForm(w,col){
         else{
 
             if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-                $('#googleForm').css("filter","none");
-                $('#googleForm').attr("data-src","");
+                $('#googleForm').attr("data-src","");     
                 $('#googleForm').attr("data-src",gform);
+                $('#googleForm').css("filter","none");
+                
+                
                 
             }else{
-                $('#googleForm').css("filter","invert(0.9)");               
                 $('#googleForm').attr("data-src","");
                 $('#googleForm').attr("data-src",gform);
+                $('#googleForm').css("filter","invert(0.9)");               
+                
             }        
         }
     }
