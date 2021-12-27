@@ -515,24 +515,32 @@ function lightMode(){
     document.documentElement.style.setProperty('--scol', 'black', 'important'); 
     document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
 }
-function changeForm(mode,w,col){ 
+function changeForm(w,col){ 
     var gform='https://docs.google.com/forms/d/e/1FAIpQLScMJ6lFRbePTtDsSnTRCXPQEOhP8K8nVK5Xb8p-qT69QssbpQ/viewform?embedded=true';
     col=col.replace(/\s/g,'');
     if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
-        if(mode=="tolight"){             
-            //var colrev=invertCol(col);
-            //var frmUrl=getFormbyCol(colrev);            
-            //$('#googleForm').attr("data-src", "").css("filter","invert(0.9)");
-            //$('#googleForm').attr("src", frmUrl);
-            $('#googleForm').css("filter","none");            
-            
-        }else{                     
-            //var frmUrl=getFormbyCol(col);
-            //$('#googleForm').attr("data-src", "").css("filter","none");
-            //$('#googleForm').attr("src", frmUrl);
+
+        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
+            $('#googleForm').css("filter","none"); 
+        }else{
             $('#googleForm').css("filter","invert(0.9)");
-            //$('#googleForm').attr("src", gform);
-        }            
+        }
+
+
+        //if(mode=="tolight"){             
+        //    //var colrev=invertCol(col);
+        //    //var frmUrl=getFormbyCol(colrev);            
+        //    //$('#googleForm').attr("data-src", "").css("filter","invert(0.9)");
+        //    //$('#googleForm').attr("src", frmUrl);
+        //    $('#googleForm').css("filter","none");            
+            
+        //}else{                     
+        //    //var frmUrl=getFormbyCol(col);
+        //    //$('#googleForm').attr("data-src", "").css("filter","none");
+        //    //$('#googleForm').attr("src", frmUrl);
+        //    $('#googleForm').css("filter","invert(0.9)");
+        //    //$('#googleForm').attr("src", gform);
+        //}            
     }
     else{   
         if(isWebview){
@@ -551,123 +559,48 @@ function changeForm(mode,w,col){
                 }else{                    
                     $('#googleForm').css("filter","none");
                 }
-            }
-
-            //if(mode=="tolight"){ 
-            //    if(matchMedia && matched)
-            //    {
-            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-            //            $('#googleForm').css("filter","invert(1)");
-            //        }else{
-            //            $('#googleForm').css("filter","none");
-            //        }
-            //    }
-            //    else
-            //    {
-            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
-            //            $('#googleForm').css("filter","invert(0.9)");         
-            //        }else{                    
-            //            $('#googleForm').css("filter","none");
-            //        }
-            //    }
-            
-            //}else{ 
-            //    if(matchMedia && matched)
-            //    {
-            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-            //            $('#googleForm').css("filter","invert(1)");
-                
-            //        }else{
-            //            $('#googleForm').css("filter","none");
-            //        }
-            //    }else
-            //    {
-            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-            //            $('#googleForm').css("filter","none");                
-            //        }else{
-            //            $('#googleForm').css("filter","invert(0.9)");
-            //        }
-            //    }
-            //} 
+            }            
         }
-        else{
-            if(mode=="tolight"){ 
-                if(matchMedia && matched)
-                {
-                    if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
+        //else{
+        //    if(mode=="tolight"){ 
+        //        if(matchMedia && matched)
+        //        {
+        //            if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
                         
-                        $('#googleForm').css("filter","none");
-                    }else{
-                        $('#googleForm').css("filter","invert(1)");
-                    }
-                }
-                else
-                {
-                    if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
-                        $('#googleForm').css("filter","invert(0.9)");         
-                    }else{                    
-                        $('#googleForm').css("filter","none");
-                    }
-                }
+        //                $('#googleForm').css("filter","none");
+        //            }else{
+        //                $('#googleForm').css("filter","invert(1)");
+        //            }
+        //        }
+        //        else
+        //        {
+        //            if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
+        //                $('#googleForm').css("filter","invert(0.9)");         
+        //            }else{                    
+        //                $('#googleForm').css("filter","none");
+        //            }
+        //        }
             
-            }else{ 
-                if(matchMedia && matched)
-                {
-                    if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-                        $('#googleForm').css("filter","none");
+        //    }else{ 
+        //        if(matchMedia && matched)
+        //        {
+        //            if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
+        //                $('#googleForm').css("filter","none");
                 
-                    }else{
-                        $('#googleForm').css("filter","invert(1)");
+        //            }else{
+        //                $('#googleForm').css("filter","invert(1)");
                         
-                    }
-                }else
-                {
-                    if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-                        $('#googleForm').css("filter","none");                
-                    }else{
-                        $('#googleForm').css("filter","invert(0.9)");
-                    }
-                }
-            } 
-        }
-
-        //if(mode=="light"){ 
-        //    if(matchMedia && matched)
-        //    {
-        //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-        //            $('#googleForm').css("filter","invert(1)");
-        //        }else{
-        //            $('#googleForm').css("filter","none");
+        //            }
+        //        }else
+        //        {
+        //            if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
+        //                $('#googleForm').css("filter","none");                
+        //            }else{
+        //                $('#googleForm').css("filter","invert(0.9)");
+        //            }
         //        }
-        //    }
-        //    else
-        //    {
-        //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
-        //            $('#googleForm').css("filter","invert(0.9)");         
-        //        }else{                    
-        //            $('#googleForm').css("filter","none");
-        //        }
-        //    }
-            
-        //}else{ 
-        //    if(matchMedia && matched)
-        //    {
-        //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-        //            $('#googleForm').css("filter","invert(1)");
-                
-        //        }else{
-        //            $('#googleForm').css("filter","none");
-        //        }
-        //    }else
-        //    {
-        //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-        //            $('#googleForm').css("filter","none");                
-        //        }else{
-        //            $('#googleForm').css("filter","invert(0.9)");
-        //        }
-        //    }
-        //}  
-    
+        //    } 
+        //}
     }
 }
 function invertCol(clr){    
@@ -740,11 +673,11 @@ function changeThemeMode(){
     var col=$(".hello-txt").css("background-color");
     if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){
         //if(window.matchMedia && matched){                  
-        changeForm('todark',w,col)
+        changeForm(w,col)
         darkMode();
     }
     else{        
-        changeForm('tolight',w,col);
+        changeForm(w,col);
         lightMode();
     }
 }
