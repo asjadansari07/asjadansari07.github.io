@@ -3,8 +3,6 @@
     width: 100%;
     object-fit: fill;
     pointer-events: none;
-    display: none!important;
-    z-index: -1!important;
 }
 
 .mainvid:before {
@@ -18,7 +16,6 @@
 }
 
 .mainvid {
-    display: none!important;
     width: 100%;
     height: 100%;
     position: absolute;
