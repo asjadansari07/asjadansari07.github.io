@@ -156,6 +156,7 @@ var asj_warning=$('#_asj_warning')
 //var lqr=$('#Lqr')
 var popupqr=$('#pop-up')
 //var iframe=$('#googleForm')
+var mainvid=$('video')
 
 switch (true) {                
     case (w>1200):
@@ -226,6 +227,7 @@ switch (true) {
         asj_warning.css("font-size","2em");
         $('head').append('<meta name="color-scheme" content="dark light" />');
         popupqr.css("width","157").css("height","157");
+        mainvid.css("width","").css("object-fit","none");
         break;
     case (w<=480 && w>360):
         if (!isMobileDevice) { 
@@ -241,6 +243,7 @@ switch (true) {
         asj_warning.css("font-size","1.5em");
         $('head').append('<meta name="color-scheme" content="dark light" />');
         popupqr.css("width","157").css("height","157");
+        mainvid.css("width","inherit").css("object-fit","none");
         break;
     case (w<=360 && w>300):
         if (!isMobileDevice) { 
@@ -256,6 +259,7 @@ switch (true) {
         asj_warning.css("font-size","1.5em");
         $('head').append('<meta name="color-scheme" content="dark light" />');
         popupqr.css("width","157").css("height","157");
+        mainvid.css("width","").css("object-fit","none");
         break;
     case (w<=300):
         if (!isMobileDevice) { 
@@ -271,6 +275,7 @@ switch (true) {
         asj_warning.css("font-size","1em");
         $('head').append('<meta name="color-scheme" content="dark light" />');
         popupqr.css("width","157").css("height","157");
+        mainvid.css("width","").css("object-fit","none");
         break;
     default:
         ele.css("font-size","4px");   
