@@ -2485,7 +2485,7 @@
        var mainvid = $(".mainvid");
        var vid = $("#myvideo");
        var video = document.getElementById("myvideo");
-       mainvid.attr('style', 'z-index: -1 !important;display: none !important');
+       mainvid.attr('style', 'display: none !important');
        vid.attr('style', 'z-index: -1 !important;display: none !important');
        checkforVideo(); 
        function checkforVideo() {
@@ -2495,7 +2495,7 @@
                    //This block of code is triggered when the video is loaded
 
                    //your code goes here
-                   mainvid.attr('style', 'z-index: 0 !important;display: block !important');
+                   mainvid.attr('style', 'display: block !important');
                    vid.attr('style', 'z-index: 0 !important;display: block !important');                   
                    //vid.attr('autoplay', 'true').attr('loop', 'true').attr('muted', 'true').attr('disablepictureinpicture', 'true');
                                     
