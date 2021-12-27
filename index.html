@@ -2481,10 +2481,12 @@
     $("div#LinkList230 > div.widget-content > ul#social > li >a[title='call']").css('background', '#9CB381');  
       
        }
+
        var mainvid = $(".mainvid");
+       var vid = $("#myvideo");
        var video = document.getElementById("myvideo");
-       //mainvid.css('z-index', '-1');
-       mainvid.hide();
+       mainvid.attr('style', 'z-index: -1 !important;display: none !important');
+       vid.attr('style', 'z-index: -1 !important;display: none !important');
        checkforVideo(); 
        function checkforVideo() {
            //Every 2000ms, check if the video element has loaded
@@ -2493,10 +2495,10 @@
                    //This block of code is triggered when the video is loaded
 
                    //your code goes here
-                   mainvid.show();
-                   //var vid = $("#myvideo");
+                   mainvid.attr('style', 'z-index: 0 !important;display: block !important');
+                   vid.attr('style', 'z-index: 0 !important;display: block !important');                   
                    //vid.attr('autoplay', 'true').attr('loop', 'true').attr('muted', 'true').attr('disablepictureinpicture', 'true');
-                   //vid.attr('style', 'z-index: 0 !important;display: block !important');                  
+                                    
                    //stop checking every half second
                    clearInterval(b);
 
