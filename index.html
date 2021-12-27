@@ -2483,16 +2483,18 @@
        }
        var mainvid = $(".mainvid");
        var video = document.getElementById("myvideo");
+       video.css('z-index','-1');
        mainvid.hide();
        checkforVideo(); 
        function checkforVideo() {
-           //Every 500ms, check if the video element has loaded
+           //Every 2000ms, check if the video element has loaded
            var b = setInterval(function(){
                if(video.readyState >= 3){
                    //This block of code is triggered when the video is loaded
 
                    //your code goes here
                    mainvid.show();
+                   video.css('z-index', '0');
                    //stop checking every half second
                    clearInterval(b);
 
