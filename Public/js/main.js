@@ -384,6 +384,25 @@ $(".m-theme").click(function () {
             break;
     }
 });
+function changeThemeMode(){
+    var col=$(".hello-txt").css("background-color");
+    if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){
+        //if(window.matchMedia && matched){                  
+        changeForm(w,col)
+        darkMode();
+    }
+    else{        
+        changeForm(w,col);
+        lightMode();
+    }
+}
+function changeColor(col, rgba, src, formsrc) {
+    document.documentElement.style.setProperty('--mycol', col, 'important');
+    $('.popup_menu .btn1').css('background', rgba);
+    document.documentElement.style.setProperty('--background', col, 'important');
+    $('#androidapk').attr("src", src)
+    //iframe.attr("data-src","").attr("src", formsrc)
+}
 function darkMode(){
     $(".preloader1").css("background", "rgb(0, 0, 0)");
     $(".preloader1-circle").css("background", "rgb(0, 0, 0)");
@@ -527,25 +546,6 @@ function changeForm(w,col){
 //    }
 //    return formUrl;
 //}
-function changeThemeMode(){
-    var col=$(".hello-txt").css("background-color");
-    if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){
-        //if(window.matchMedia && matched){                  
-        changeForm(w,col)
-        darkMode();
-    }
-    else{        
-        changeForm(w,col);
-        lightMode();
-    }
-}
-function changeColor(col, rgba, src, formsrc) {
-    document.documentElement.style.setProperty('--mycol', col, 'important');
-    $('.popup_menu .btn1').css('background', rgba);
-    document.documentElement.style.setProperty('--background', col, 'important');
-    $('#androidapk').attr("src", src)
-    //iframe.attr("data-src","").attr("src", formsrc)
-}
 $(".trigger").click(function () {
     $(".popup_menu").toggleClass("active");
 });
