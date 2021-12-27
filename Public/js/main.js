@@ -102,9 +102,9 @@ disableoptions();
 //if website steal-start
 (function () { 
     //const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
-    const rgx = new RegExp('localhost:2435');
+    //const rgx = new RegExp('localhost:2435');
     //const rgx = new RegExp('localhost:8426');
-    //const rgx = new RegExp('asjadansari07.github.io');
+    const rgx = new RegExp('asjadansari07.github.io');
 const host = window.location.host; 
 const isMatch = !host.match(rgx); 
  
