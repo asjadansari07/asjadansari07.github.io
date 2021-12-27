@@ -2483,7 +2483,7 @@
        }
        var mainvid = $(".mainvid");
        var video = document.getElementById("myvideo");
-       mainvid.css('z-index', '-1');
+       //mainvid.css('z-index', '-1');
        mainvid.hide();
        checkforVideo(); 
        function checkforVideo() {
@@ -2494,7 +2494,9 @@
 
                    //your code goes here
                    mainvid.show();
-                   mainvid.css('z-index', '0');
+                   var vid = $("#myvideo");
+                       vid.css('display','block');
+                   //mainvid.css('z-index', '0');
                    //stop checking every half second
                    clearInterval(b);
 
