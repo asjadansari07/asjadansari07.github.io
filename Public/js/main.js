@@ -138,8 +138,8 @@ disableoptions();
 (function () { 
     //const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
     //const rgx = new RegExp('localhost:2435');
-    const rgx = new RegExp('localhost:8426');
-    //const rgx = new RegExp('asjadansari07.github.io');
+    //const rgx = new RegExp('localhost:8426');
+    const rgx = new RegExp('asjadansari07.github.io');
 const host = window.location.host; 
 const isMatch = !host.match(rgx); 
  
@@ -449,17 +449,37 @@ function changeForm(w,col){
         else{
 
             if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-                iframe.attr("data-src","");     
-                iframe.attr("data-src",gform);
-                iframe.css("filter","none");
+                $('#googleForm').attr("data-src","");     
+                $('#googleForm').attr("data-src",gform);
+                $('#googleForm').css("filter","none");
             }else{
-                iframe.attr("data-src","");
-                iframe.attr("data-src",gform);
-                iframe.css("filter","invert(0.9)");               
+                $('#googleForm').attr("data-src","");
+                $('#googleForm').attr("data-src",gform);
+                $('#googleForm').css("filter","invert(0.9)");               
                 
             }        
         }
     }
+}
+
+function changeThemeMode(){
+    var col=$(".hello-txt").css("background-color");
+    if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){
+        //if(window.matchMedia && matched){                  
+        changeForm(w,col)
+        darkMode();
+    }
+    else{        
+        changeForm(w,col);
+        lightMode();
+    }
+}
+function changeColor(col, rgba, src, formsrc) {
+    document.documentElement.style.setProperty('--mycol', col, 'important');
+    $('.popup_menu .btn1').css('background', rgba);
+    document.documentElement.style.setProperty('--background', col, 'important');
+    $('#androidapk').attr("src", src)
+    //$('#googleForm').attr("data-src","").attr("src", formsrc)
 }
 $(".trigger").click(function () {
     $(".popup_menu").toggleClass("active");
@@ -523,6 +543,23 @@ $("#loadmore").click(function () {
     var y = $(window).scrollTop();  //your current y position on the page
     $(window).scrollTop(y + 1);
 });
+    
+
+var flkty = new Flickity('.main-gallery', {
+    cellAlign: 'left',
+    contain: true,
+    wrapAround: true,
+    prevNextButtons: true,
+    autoPlay: 5000
+});
+
+setInterval(function () {
+    if (!$('#asj:visible')['length']) {
+        window['location']['href'] = 'https://asjadansari07.github.io'
+    }
+},
+        3000)
+
 $(function () {
     var moveLeft = 20;
     var moveDown = 10;
@@ -540,27 +577,12 @@ $(function () {
         $("#pop-up").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
     });
 
-});   
-
-var flkty = new Flickity('.main-gallery', {
-    cellAlign: 'left',
-    contain: true,
-    wrapAround: true,
-    prevNextButtons: true,
-    autoPlay: 5000
-});
-setInterval(function () {
-    if (!$('#asj:visible')['length']) {
-        window['location']['href'] = 'https://asjadansari07.github.io'
-    }
-},
-        3000)
 });
 // disable right click
 //var intervalId = window.setInterval(function(){
 //    console.log("%cWARNING-DON\'T STEAL!", "font: 2em monospace; color: ffffff; background-color: red;");
 //}, 1000);        
-var disableoptions = function () {            
+function disableoptions() {            
     document.addEventListener('contextmenu', event => event.preventDefault());
  
     document.onkeydown = function (e) {
@@ -586,6 +608,8 @@ var disableoptions = function () {
         }
     }
 }
+});
+
 
 //window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
 //    if (e.matches) {
@@ -628,7 +652,6 @@ var disableoptions = function () {
 //    jQuery("#preloader").delay(0).fadeOut();
 //});
 ///*]]>*/
-
 
 //function invertCol(clr){    
 //    var invCol;    
