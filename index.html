@@ -2431,13 +2431,16 @@
 </g><image xlink:href="https://asjadansari07.github.io/Public/images/asj_2.webp" width="104" height="104" x="128" y="128"></image>
 </svg>
     </div>
-<!--    <script type="text/javascript">
+    <script type="text/javascript">
         window.onload = function () {
-            var videoEl = document.getElementById("myvideo");
-            videoEl.load();
-            videoEl.play();
+            if (video.hasAttribute("controls")) {
+                video.removeAttribute("controls")
+            }
+            //var videoEl = document.getElementById("myvideo");
+            //videoEl.load();
+            //videoEl.play();
         };
-</script>-->
+</script>
     <script>
         var video = document.getElementById("myvideo");
 
