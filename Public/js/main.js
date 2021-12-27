@@ -567,11 +567,11 @@ function changeForm(w,col){
         else{
 
             if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-                $('#googleForm').css("filter","none");
-                $('#googleForm').contentWindow.location.reload();
+                $('#googleForm').css("filter","none");                
+                
             }else{
-                $('#googleForm').css("filter","invert(0.9)");
-                $('#googleForm').contentWindow.location.reload();
+                $('#googleForm').css("filter","invert(0.9)");               
+                
             }        
         }
     }
