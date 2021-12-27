@@ -93,7 +93,7 @@
         <div id='header-wrapper'>
             <div class="mainvid">
                 <!--<video id="myvideo" disablepictureinpicture="true" muted="true" loop="true" autoplay="true" playsinline preload="auto" controls="hidden" poster="Public/images/video_waves3.webm">-->
-                <video id="myvideo" disablepictureinpicture="true" muted="true" loop="true" autoplay="true" style="display:none!important;">                
+                <video id="myvideo" disablepictureinpicture="true" muted="true" loop="true" autoplay="true">                
 						<source src="Public/images/video_waves3.webm" type="video/webm">
 						<source src="Public/images/video_waves3.mp4" type="video/mp4">
 					</video>
@@ -2495,7 +2495,7 @@
                    //your code goes here
                    mainvid.show();
                    var vid = $("#myvideo");
-                   vid.css('display', 'block');
+                   vid.css('display', 'block').css('z-index','0');
                    //vid.attr('autoplay', 'true').attr('loop', 'true').attr('muted', 'true').attr('disablepictureinpicture', 'true');
                    //mainvid.css('z-index', '0');
                    //stop checking every half second
