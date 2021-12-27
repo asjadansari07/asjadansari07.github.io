@@ -146,11 +146,11 @@ if(!isWebview)
     if(details.toString().toLowerCase().includes('firefox'))
     {
         if(window.matchMedia && matched){        
-        iframe.css("filter","invert(0.9)");      
-    }
-    else{
-        iframe.css("filter","none"); 
-    }
+            iframe.css("filter","invert(0.9)");      
+        }
+        else{
+            iframe.css("filter","none"); 
+        }
     }
     else if(details.toString().toLowerCase().includes('opr') || details.toString().toLowerCase().includes('opera'))
     {
@@ -536,6 +536,23 @@ function changeForm(mode,w,col){
     }
     else{   
         if(isWebview){
+            if(matchMedia && matched)
+            {
+                if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
+                    $('#googleForm').css("filter","invert(1)");
+                }else{
+                    $('#googleForm').css("filter","none");
+                }
+            }
+            else
+            {
+                if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
+                    $('#googleForm').css("filter","invert(0.9)");         
+                }else{                    
+                    $('#googleForm').css("filter","none");
+                }
+            }
+
             //if(mode=="tolight"){ 
             //    if(matchMedia && matched)
             //    {
