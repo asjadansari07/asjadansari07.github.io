@@ -2479,6 +2479,13 @@
     $("div#LinkList230 > div.widget-content > ul#social > li >a[title='whatsapp']").css('background', '#1C8B82');
     $("div#LinkList230 > div.widget-content > ul#social > li >a[title='SMS']").css('background', '#CEB00A');
     $("div#LinkList230 > div.widget-content > ul#social > li >a[title='call']").css('background', '#9CB381');
+
+    var vid = document.getElementById("myvideo");
+    vid.hide();
+    video.addEventListener('loadeddata', function () {
+        // Video is loaded and can be played
+        vid.show();
+    }, false);
 }
     </script>
     <script src='Public/js/lazysizes.min.js' type='text/javascript' async></script>    
