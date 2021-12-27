@@ -2483,12 +2483,16 @@
     var mainvid = $(".mainvid");
            //mainvid.css("z-index", "-1");
     mainvid.hide();
-    var video = $("#myvideo");
-    video.addEventListener('loadeddata', function () {
-        // Video is loaded and can be played
-        //mainvid.css("z-index", "0");
+    var video = document.getElementById("myvideo");
+    if (video.readyState === 4) {
+        // it's loaded
         mainvid.show();
-    }, false);
+    }
+    //video.addEventListener('loadeddata', function () {
+    //    // Video is loaded and can be played
+    //    //mainvid.css("z-index", "0");
+    //    mainvid.show();
+    //}, false);
 }
     </script>
     <script src='Public/js/lazysizes.min.js' type='text/javascript' async></script>    
