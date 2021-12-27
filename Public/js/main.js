@@ -340,12 +340,15 @@ function setDefaultColor(){
             $('#googleForm').css("filter","none");
         }
             
-    }else{            
-        //if(window.matchMedia && matched){      
-        //    $('#googleForm').css("filter","none");
-        //}else{
-        //    $('#googleForm').css("filter","none");
-        //}
+    }else{  
+        if(!isWebview){
+            if(window.matchMedia && matched){      
+                $('#googleForm').css("filter","invert(0.9)");
+            }else{
+                $('#googleForm').css("filter","none");
+            }
+        }
+        
     }
 }    
                 
