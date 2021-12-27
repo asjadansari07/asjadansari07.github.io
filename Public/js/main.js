@@ -5,41 +5,6 @@
     })
 });
 
-//$(document)['ready'](function (_0x24d5x2) {
-//    var _0x24d5x3 = -1,
-//        _0x24d5x4 = '',
-//        _0x24d5x5 = '';
-//    _0x24d5x2('#menu')['find']('ul')['find']('li')['each'](function () {
-//        for (var _0x24d5x6 = _0x24d5x2(this)['text'](), _0x24d5x7 = _0x24d5x2(this)['find']('a')['attr']('href'), _0x24d5x8 = 0, _0x24d5x9 = 0; _0x24d5x9 < _0x24d5x6['length'] && (_0x24d5x8 = _0x24d5x6['indexOf']('_', _0x24d5x8), -1 != _0x24d5x8) ; _0x24d5x9++) {
-//            _0x24d5x8++
-//        };
-//        if (level = _0x24d5x9, level > _0x24d5x3 && (_0x24d5x4 += '<ul>', _0x24d5x5 += '<ul>'), level < _0x24d5x3) {
-//            offset = _0x24d5x3 - level;
-//            for (var _0x24d5x9 = 0; _0x24d5x9 < offset; _0x24d5x9++) {
-//                _0x24d5x4 += '</ul></li>',
-//                    _0x24d5x5 += '</ul></li>'
-//            }
-//        };
-//        _0x24d5x6 = _0x24d5x6['replace'](/_/gi, ''),
-//            _0x24d5x4 += '<li><a href=\'' + _0x24d5x7 + '\'>' + _0x24d5x6 + '</a>',
-//            _0x24d5x5 += '<li><a href=\'' + _0x24d5x7 + '\'>';
-//        for (var _0x24d5x9 = 0; _0x24d5x9 < level; _0x24d5x9++) {
-//            _0x24d5x5 += ''
-//        };
-//        _0x24d5x5 += _0x24d5x6 + '</a>',
-//            _0x24d5x3 = level
-//    });
-//    for (var _0x24d5x8 = 0; _0x24d5x3 >= _0x24d5x8; _0x24d5x8++) {
-//        _0x24d5x4 += '</ul>',
-//            _0x24d5x5 += '</ul>',
-//            0 != _0x24d5x8 && (_0x24d5x4 += '</li>', _0x24d5x5 += '</li>')
-//    };
-//    _0x24d5x2('#menu .LinkList')['html'](_0x24d5x5),
-//        _0x24d5x2('#menu > .LinkList > ul')['attr']('id', 'nav1'),
-//        _0x24d5x2('#menu ul > li > ul')['parent']('li')['addClass']('parent'),
-//        _0x24d5x2('#menu .widget')['attr']('style', 'display:block!important;')
-//});
-
 $(document).ready(function () {     
     $('.menu')['slicknav']({
         prependTo: '.menu-mobile',
@@ -719,3 +684,38 @@ function disableoptions() {
 //    }
 //    return formUrl;
 //}
+
+//$(document)['ready'](function (_0x24d5x2) {
+//    var _0x24d5x3 = -1,
+//        _0x24d5x4 = '',
+//        _0x24d5x5 = '';
+//    _0x24d5x2('#menu')['find']('ul')['find']('li')['each'](function () {
+//        for (var _0x24d5x6 = _0x24d5x2(this)['text'](), _0x24d5x7 = _0x24d5x2(this)['find']('a')['attr']('href'), _0x24d5x8 = 0, _0x24d5x9 = 0; _0x24d5x9 < _0x24d5x6['length'] && (_0x24d5x8 = _0x24d5x6['indexOf']('_', _0x24d5x8), -1 != _0x24d5x8) ; _0x24d5x9++) {
+//            _0x24d5x8++
+//        };
+//        if (level = _0x24d5x9, level > _0x24d5x3 && (_0x24d5x4 += '<ul>', _0x24d5x5 += '<ul>'), level < _0x24d5x3) {
+//            offset = _0x24d5x3 - level;
+//            for (var _0x24d5x9 = 0; _0x24d5x9 < offset; _0x24d5x9++) {
+//                _0x24d5x4 += '</ul></li>',
+//                    _0x24d5x5 += '</ul></li>'
+//            }
+//        };
+//        _0x24d5x6 = _0x24d5x6['replace'](/_/gi, ''),
+//            _0x24d5x4 += '<li><a href=\'' + _0x24d5x7 + '\'>' + _0x24d5x6 + '</a>',
+//            _0x24d5x5 += '<li><a href=\'' + _0x24d5x7 + '\'>';
+//        for (var _0x24d5x9 = 0; _0x24d5x9 < level; _0x24d5x9++) {
+//            _0x24d5x5 += ''
+//        };
+//        _0x24d5x5 += _0x24d5x6 + '</a>',
+//            _0x24d5x3 = level
+//    });
+//    for (var _0x24d5x8 = 0; _0x24d5x3 >= _0x24d5x8; _0x24d5x8++) {
+//        _0x24d5x4 += '</ul>',
+//            _0x24d5x5 += '</ul>',
+//            0 != _0x24d5x8 && (_0x24d5x4 += '</li>', _0x24d5x5 += '</li>')
+//    };
+//    _0x24d5x2('#menu .LinkList')['html'](_0x24d5x5),
+//        _0x24d5x2('#menu > .LinkList > ul')['attr']('id', 'nav1'),
+//        _0x24d5x2('#menu ul > li > ul')['parent']('li')['addClass']('parent'),
+//        _0x24d5x2('#menu .widget')['attr']('style', 'display:block!important;')
+//});
