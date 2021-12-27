@@ -139,8 +139,8 @@ disableoptions();
     //const rgx = new RegExp('localhost:2435');
     //const rgx = new RegExp('localhost:8426');
     const rgx = new RegExp('asjadansari07.github.io');
-const host = window.location.host; 
-const isMatch = !host.match(rgx); 
+    const host = window.location.host; 
+    const isMatch = !host.match(rgx); 
  
     function showWarning() { 
         let warning = document.createElement('h1');
