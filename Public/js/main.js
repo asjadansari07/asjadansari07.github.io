@@ -127,7 +127,6 @@ $(document).ready(function () {
         setDefaultColor();
     }
     else{
-        //document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
         lightMode();
         setDefaultColor();
     }
@@ -322,17 +321,6 @@ $('.slide-in').onePageNav();
 function setDefaultColor(){
     document.documentElement.style.setProperty('--mycol', '#FF0000', 'important');
     document.documentElement.style.setProperty('--background', '#FF0000', 'important');
-    //if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){  
-    //    if(window.matchMedia && matched){      
-    //        $('#googleForm').attr("data-src", "https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true").css("filter","invert(0.9)");
-    //    }else{
-    //        $('#googleForm').attr("data-src", "https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true");
-    //    }
-            
-    //}else{            
-    //    $('#googleForm').attr("data-src", "https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true");
-    //}
-
     if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){  
         if(window.matchMedia && matched){      
             $('#googleForm').css("filter","invert(0.9)");
@@ -359,100 +347,26 @@ $("#Header1_headerimg").click(function () {
 $(".m-theme").click(function () {
     switch (counter) {
         case 0:            
-            //if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){               
-            //    if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-            //        changeColor('#ffbd2f', 'rgba(255,189,47,0.5)', 'Public/images/apk_yellow.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');
-            //    }else{
-            //        //blue
-            //        changeColor('#ffbd2f', 'rgba(255,189,47,0.5)', 'Public/images/apk_yellow.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSfNb2Kzqwg1ABhvCjaUbFcUw_zRzrF18AK5aaOF1SnWkdpMZA/viewform?embedded=true');
-            //    }
-            //}else{
-            //    //blue
-            //    changeColor('#ffbd2f', 'rgba(255,189,47,0.5)', 'Public/images/apk_yellow.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSfNb2Kzqwg1ABhvCjaUbFcUw_zRzrF18AK5aaOF1SnWkdpMZA/viewform?embedded=true');
-            //}
             changeColor('#ffbd2f', 'rgba(255,189,47,0.5)', 'Public/images/apk_yellow.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');
             counter += 1;
             break;
         case 1:
-           
-            //if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
-           
-            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-            //        changeColor('#00BC22', 'rgba(0,255,0,0.5)', 'Public/images/apk_green.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSeXyW2PDxsG5Y_R5eTmWrtWjG-vMJQvYXWksHXFC3TbEO7QxQ/viewform?embedded=true');
-            //    }else{
-            //        //magenta
-            //        changeColor('#00BC22', 'rgba(0,255,0,0.5)', 'Public/images/apk_green.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSejjLWlzY8VK2eO-bhy5JzNHhumu7VXdTEGG8tpPn4EDC5jyQ/viewform?embedded=true');
-            //    }
-            //}else{
-            //    //magenta
-            //    changeColor('#00BC22', 'rgba(0,255,0,0.5)', 'Public/images/apk_green.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSejjLWlzY8VK2eO-bhy5JzNHhumu7VXdTEGG8tpPn4EDC5jyQ/viewform?embedded=true');
-            //}
             changeColor('#00BC22', 'rgba(0,255,0,0.5)', 'Public/images/apk_green.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSeXyW2PDxsG5Y_R5eTmWrtWjG-vMJQvYXWksHXFC3TbEO7QxQ/viewform?embedded=true');
             counter += 1;
             break;
         case 2:
-           
-            //if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
-           
-            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-            //        changeColor('#0030EF', 'rgba(0,0,255,0.5)', 'Public/images/apk_blue.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSfNb2Kzqwg1ABhvCjaUbFcUw_zRzrF18AK5aaOF1SnWkdpMZA/viewform?embedded=true');
-            //    }else{
-            //        //orange
-            //        changeColor('#0030EF', 'rgba(0,0,255,0.5)', 'Public/images/apk_blue.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');
-            //    }
-            //}else{
-            //    //orange
-            //    changeColor('#0030EF', 'rgba(0,0,255,0.5)', 'Public/images/apk_blue.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');
-            //}
             changeColor('#0030EF', 'rgba(0,0,255,0.5)', 'Public/images/apk_blue.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSfNb2Kzqwg1ABhvCjaUbFcUw_zRzrF18AK5aaOF1SnWkdpMZA/viewform?embedded=true');
             counter += 1;
             break;
         case 3:
-           
-            //if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
-           
-            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-            //        changeColor('#008080', 'rgba(0,128,128,0.5)', 'Public/images/apk_teal.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
-            //    }else{
-            //        //red
-            //        changeColor('#008080', 'rgba(0,128,128,0.5)', 'Public/images/apk_teal.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
-            //    }
-            //}else{
-            //    //red
-            //    changeColor('#008080', 'rgba(0,128,128,0.5)', 'Public/images/apk_teal.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
-            //}
             changeColor('#008080', 'rgba(0,128,128,0.5)', 'Public/images/apk_teal.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
             counter += 1;
             break;
         case 4:
-           
-            //if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
-           
-            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-            //        changeColor('#FF00FF', 'rgba(255,0,255,0.5)', 'Public/images/apk_magenta.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSejjLWlzY8VK2eO-bhy5JzNHhumu7VXdTEGG8tpPn4EDC5jyQ/viewform?embedded=true');
-            //    }else{
-            //        //green
-            //        changeColor('#FF00FF', 'rgba(255,0,255,0.5)', 'Public/images/apk_magenta.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSeXyW2PDxsG5Y_R5eTmWrtWjG-vMJQvYXWksHXFC3TbEO7QxQ/viewform?embedded=true');
-            //    }
-            //}else{
-            //    //green
-            //    changeColor('#FF00FF', 'rgba(255,0,255,0.5)', 'Public/images/apk_magenta.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSeXyW2PDxsG5Y_R5eTmWrtWjG-vMJQvYXWksHXFC3TbEO7QxQ/viewform?embedded=true');
-            //}
             changeColor('#FF00FF', 'rgba(255,0,255,0.5)', 'Public/images/apk_magenta.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSejjLWlzY8VK2eO-bhy5JzNHhumu7VXdTEGG8tpPn4EDC5jyQ/viewform?embedded=true');
             counter += 1;
             break;
         case 5:
-           
-            //if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
-           
-            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-            //        changeColor('#FF8000', 'rgba(255,128,0,0.5)', 'Public/images/apk_orange.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');                
-            //    }else{
-            //        changeColor('#FF8000', 'rgba(255,128,0,0.5)', 'Public/images/apk_orange.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSdcda7CfmBlvKwIIhOp8OMMbGiaEWheI8fyUJqsQ0RxK0EDRQ/viewform?embedded=true');
-            //    }
-            //}else{
-            //    changeColor('#FF8000', 'rgba(255,128,0,0.5)', 'Public/images/apk_orange.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSdcda7CfmBlvKwIIhOp8OMMbGiaEWheI8fyUJqsQ0RxK0EDRQ/viewform?embedded=true');
-            //}
             changeColor('#FF8000', 'rgba(255,128,0,0.5)', 'Public/images/apk_orange.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');                
             counter += 1;
             break;
@@ -461,27 +375,11 @@ $(".m-theme").click(function () {
             counter += 1;
             break;
         case 7:
-           
-            //if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
-           
-            //        if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-            //        changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
-            //    }else{
-            //        changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
-            //    }
-            //}else{
-            //    changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
-            //}
             changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
             counter = 0;
             break;
         default:
-           
-            //if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){
-            //    changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
-            //}else{
-            //    changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
-            //}
+            changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
             counter = 0;
             break;
     }
@@ -527,23 +425,7 @@ function changeForm(w,col){
             $('#googleForm').css("filter","none"); 
         }else{
             $('#googleForm').css("filter","invert(0.9)");
-        }
-
-
-        //if(mode=="tolight"){             
-        //    //var colrev=invertCol(col);
-        //    //var frmUrl=getFormbyCol(colrev);            
-        //    //$('#googleForm').attr("data-src", "").css("filter","invert(0.9)");
-        //    //$('#googleForm').attr("src", frmUrl);
-        //    $('#googleForm').css("filter","none");            
-            
-        //}else{                     
-        //    //var frmUrl=getFormbyCol(col);
-        //    //$('#googleForm').attr("data-src", "").css("filter","none");
-        //    //$('#googleForm').attr("src", frmUrl);
-        //    $('#googleForm').css("filter","invert(0.9)");
-        //    //$('#googleForm').attr("src", gform);
-        //}            
+        }            
     }
     else{   
         if(isWebview){
@@ -570,9 +452,6 @@ function changeForm(w,col){
                 $('#googleForm').attr("data-src","");     
                 $('#googleForm').attr("data-src",gform);
                 $('#googleForm').css("filter","none");
-                
-                
-                
             }else{
                 $('#googleForm').attr("data-src","");
                 $('#googleForm').attr("data-src",gform);
