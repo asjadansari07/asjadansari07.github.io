@@ -71,6 +71,54 @@ $(document).ready(function () {
 
 
     });
+    //check browser in mobile-start
+    var iframe=$('#googleForm')
+    let details = navigator.userAgent; 
+    //let regexp = /android|iphone|kindle|ipad/i; 
+    let regexp = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|kindle|Opera Mini/i;
+    let isWebview=details.toString().includes('wv');
+    //if(!isWebview)
+    //{
+    //    //document.write(details.toString());
+    //    //return;
+    //    //document.write('opened in webview');
+    //    //document.write('opened in mobilebrowser');
+    //    //if(details.toString().toLowerCase().includes('firefox'))
+    //    //{
+    //    //    if(window.matchMedia && matched){        
+    //    //        iframe.css("filter","invert(0.9)");      
+    //    //    }
+    //    //    else{
+    //    //        iframe.css("filter","none"); 
+    //    //    }
+    //    //}
+    //    //else if(details.toString().toLowerCase().includes('opr') || details.toString().toLowerCase().includes('opera'))
+    //    //{
+    
+    //    //}
+    //    //else if(details.toString().toLowerCase().includes('chrome'))
+    //    //{
+    //    //}
+    //    //else if(details.toString().toLowerCase().includes('ucbrowser'))
+    //    //{
+    //    //}
+    //    //else{
+    //    //    if(window.matchMedia && matched){        
+    //    //        iframe.css("filter","invert(0.9)");      
+    //    //    }
+    //    //    else{
+    //    //        iframe.css("filter","none"); 
+    //    //    }
+    //    //}
+    
+    //}
+    let isMobileDevice = regexp.test(details); 
+    //if (isMobileDevice) { 
+    //    document.write("You are using a Mobile Device"); 
+    //} else { 
+    //    document.write("You are using Desktop"); 
+    //} 
+    //check browser in mobile-end
     var h=$(window).height(); // New height
     var w=$(window).width(); // New width
     var matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -131,54 +179,6 @@ exactRvg();
  
 })(); 
 //if website steal-end
-//check browser in mobile-start
-var iframe=$('#googleForm')
-let details = navigator.userAgent; 
-//let regexp = /android|iphone|kindle|ipad/i; 
-let regexp = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|kindle|Opera Mini/i;
-let isWebview=details.toString().includes('wv');
-//if(!isWebview)
-//{
-//    //document.write(details.toString());
-//    //return;
-//    //document.write('opened in webview');
-//    //document.write('opened in mobilebrowser');
-//    //if(details.toString().toLowerCase().includes('firefox'))
-//    //{
-//    //    if(window.matchMedia && matched){        
-//    //        iframe.css("filter","invert(0.9)");      
-//    //    }
-//    //    else{
-//    //        iframe.css("filter","none"); 
-//    //    }
-//    //}
-//    //else if(details.toString().toLowerCase().includes('opr') || details.toString().toLowerCase().includes('opera'))
-//    //{
-    
-//    //}
-//    //else if(details.toString().toLowerCase().includes('chrome'))
-//    //{
-//    //}
-//    //else if(details.toString().toLowerCase().includes('ucbrowser'))
-//    //{
-//    //}
-//    //else{
-//    //    if(window.matchMedia && matched){        
-//    //        iframe.css("filter","invert(0.9)");      
-//    //    }
-//    //    else{
-//    //        iframe.css("filter","none"); 
-//    //    }
-//    //}
-    
-//}
-let isMobileDevice = regexp.test(details); 
-//if (isMobileDevice) { 
-//    document.write("You are using a Mobile Device"); 
-//} else { 
-//    document.write("You are using Desktop"); 
-//} 
-//check browser in mobile-end
 
 //var h=$(window).height(); // New height
 //var w=$(window).width(); // New width
