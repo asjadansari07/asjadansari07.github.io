@@ -2480,7 +2480,7 @@
     $("div#LinkList230 > div.widget-content > ul#social > li >a[title='SMS']").css('background', '#CEB00A');
     $("div#LinkList230 > div.widget-content > ul#social > li >a[title='call']").css('background', '#9CB381');
 
-    var mainvid = document.getElementById("mainvid");
+    var mainvid = $(".mainvid");
     mainvid.hide()
     video.addEventListener('loadeddata', function () {
         // Video is loaded and can be played
