@@ -2481,10 +2481,10 @@
     $("div#LinkList230 > div.widget-content > ul#social > li >a[title='call']").css('background', '#9CB381');
 
     var mainvid = $(".mainvid");
-    mainvid.hide();
+    mainvid.css("z-index","-1");
     video.addEventListener('loadeddata', function () {
         // Video is loaded and can be played
-        mainvid.show();
+        mainvid.css("z-index", "0");
     }, false);
 }
     </script>
