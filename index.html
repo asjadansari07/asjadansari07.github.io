@@ -92,7 +92,7 @@
         <div style='clear: both;'></div>
         <div id='header-wrapper'>
             <div class="mainvid">
-                <video disablepictureinpicture="true" muted="true" loop="true" autoplay="true" playsinline preload="auto" controls="hidden">
+                <video id="myvideo" disablepictureinpicture="true" muted="true" loop="true" autoplay="true" playsinline preload="auto" controls="hidden">
 						<source src="Public/images/video_waves3.webm" type="video/webm">
 						<source src="Public/images/video_waves3.mp4" type="video/mp4">
 					</video>
@@ -2431,6 +2431,25 @@
 </g><image xlink:href="https://asjadansari07.github.io/Public/images/asj_2.webp" width="104" height="104" x="128" y="128"></image>
 </svg>
     </div>
+<!--    <script type="text/javascript">
+        window.onload = function () {
+            var videoEl = document.getElementById("myvideo");
+            videoEl.load();
+            videoEl.play();
+        };
+</script>-->
+    <script>
+        var video = document.getElementById("myvideo");
+
+        function toggleControls() {
+            if (video.hasAttribute("controls")) {
+                video.removeAttribute("controls")
+            }
+            //else {
+            //    video.setAttribute("controls", "controls")
+            //}
+        }
+</script>
     <script type='text/javascript'>
         $(window).bind("load", function () {             
             jQuery("#loader").fadeOut("slow");
