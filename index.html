@@ -92,6 +92,7 @@
         <div style='clear: both;'></div>
         <div id='header-wrapper'>
             <div class="mainvid">
+                <div class="filter"></div>
                <!-- <video id="myvideo" disablepictureinpicture="true" muted="true" loop="true" autoplay="true" playsinline preload="auto" controls="hidden" poster="Public/images/video_waves3.webm">-->
                  <video id="myvideo" playsinline="" autoplay="" muted="" loop="">
                 <!--<video id="myvideo">           -->     
@@ -2486,8 +2487,8 @@
        var mainvid = $(".mainvid");
        var vid = $("#myvideo");
        var video = document.getElementById("myvideo");
-       mainvid.attr('style', 'display: none !important');
-       vid.attr('style', 'z-index: -1 !important;display: none !important');
+       //mainvid.attr('style', 'display: none !important');
+       //vid.attr('style', 'z-index: -1 !important;display: none !important');
        //checkforVideo(); 
        function checkforVideo() {
            //Every 2000ms, check if the video element has loaded
