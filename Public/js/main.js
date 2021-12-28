@@ -435,8 +435,8 @@ function changeForm(w,col){
                     iframe.attr("data-src","");     
                         iframe.attr("data-src",gform);
                         iframe.css("filter","none");
-                    //gtranslate.css("filter","invert(1)");
-                        gtranslate.css("filter","none"); 
+                        gtranslate.css("filter","invert(1)");
+                        
                 }else{
                     iframe.attr("data-src","");
                         iframe.attr("data-src",gform);
