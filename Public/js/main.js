@@ -38,6 +38,7 @@ $(document).ready(function () {
     });
     //check browser in mobile-start
     var iframe=$('#googleForm');
+    var gtranslate=$('#google_translate_element');
     let details = navigator.userAgent; 
     //let regexp = /android|iphone|kindle|ipad/i; 
     let regexp = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|kindle|Opera Mini/i;
@@ -294,16 +295,21 @@ function setDefaultColor(){
     if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){  
         if(window.matchMedia && matched){      
             iframe.css("filter","invert(0.9)");
+            gtranslate.css("filter","invert(1)");
+            
         }else{
             iframe.css("filter","none");
+            gtranslate.css("filter","none");
         }
             
     }else{  
         if(!isWebview){
             if(window.matchMedia && matched){      
                 iframe.css("filter","invert(0.9)");
+                gtranslate.css("filter","invert(1)");
             }else{
                 iframe.css("filter","none");
+                gtranslate.css("filter","none");
             }
         }
         
@@ -393,8 +399,10 @@ function changeForm(w,col){
 
         if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
             iframe.css("filter","none"); 
+            gtranslate.css("filter","none");
         }else{
             iframe.css("filter","invert(0.9)");
+            gtranslate.css("filter","invert(1)");
         }            
     }
     else{   
@@ -403,29 +411,35 @@ function changeForm(w,col){
             {
                 if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
                     iframe.css("filter","invert(1)");
+                    gtranslate.css("filter","invert(1)");
                 }else{
                     iframe.css("filter","none");
+                    gtranslate.css("filter","none");
                 }
             }
             else
             {
                 if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
-                    iframe.css("filter","invert(0.9)");         
+                    iframe.css("filter","invert(0.9)");
+                    gtranslate.css("filter","invert(1)");
                 }else{                    
                     iframe.css("filter","none");
+                    gtranslate.css("filter","none");
                 }
             }            
         }
         else{
 
             if($("body").css("background-color").replace(/\s/g,'')=="rgb(0,0,0)"){  
-                $('#googleForm').attr("data-src","");     
-                $('#googleForm').attr("data-src",gform);
-                $('#googleForm').css("filter","none");
+                iframe.attr("data-src","");     
+                iframe.attr("data-src",gform);
+                iframe.css("filter","none");
+                gtranslate.css("filter","none");
             }else{
-                $('#googleForm').attr("data-src","");
-                $('#googleForm').attr("data-src",gform);
-                $('#googleForm').css("filter","invert(0.9)");               
+                iframe.attr("data-src","");
+                iframe.attr("data-src",gform);
+                iframe.css("filter","invert(0.9)");  
+                gtranslate.css("filter","invert(1)");
                 
             }        
         }
