@@ -5,8 +5,7 @@
     /*pointer-events: none;*/
 }
 
-element.style {
-}
+
 .mainvid .filter {
     /*z-index: 100;*/
     position: absolute;
@@ -14,6 +13,24 @@ element.style {
     width: 100%;
     height: 100%;
 }
+.mainvid video {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        /*z-index: -100;*/
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        background: url(../images/poster.jpg) no-repeat;
+        background-size: cover;
+        -webkit-transition: 1s opacity;
+        -o-transition: 1s opacity;
+        transition: 1s opacity;
+    }
 /*.mainvid:before {
     content: '';
     background: rgba(0,0,0,.3);
@@ -25,10 +42,17 @@ element.style {
 }*/
 
 .mainvid {
-    width: 100%;
+    /*width: 100%;
     height: 100%;
     position: absolute;
-    overflow:hidden;
+    overflow:hidden;*/
+
+     position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .scrollin-logo {
