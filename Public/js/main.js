@@ -446,9 +446,15 @@ function changeForm(w,col){
             }
             else
             {
-                if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){  
+                if($("body").css("background-color").replace(/\s/g,'')=="rgb(255,255,255)"){
+                    iframe.attr("data-src","");
+                    iframe.attr("data-src",gform);
+                    iframe.css("filter","invert(0.9)");
                     gtranslate.css("filter","invert(1)");
-                }else{                    
+                }else{   
+                    iframe.attr("data-src","");     
+                    iframe.attr("data-src",gform);
+                    iframe.css("filter","none");
                     gtranslate.css("filter","none"); 
                 }
             }
