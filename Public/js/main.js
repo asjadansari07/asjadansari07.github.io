@@ -104,8 +104,8 @@ disableoptions();
 (function () { 
     //const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
     //const rgx = new RegExp('localhost:2435');
-    //const rgx = new RegExp('localhost:8426');
-    const rgx = new RegExp('asjadansari07.github.io');
+    const rgx = new RegExp('localhost:8426');
+    //const rgx = new RegExp('asjadansari07.github.io');
 const host = window.location.host; 
 const isMatch = !host.match(rgx); 
  
@@ -435,7 +435,8 @@ function changeForm(w,col){
                     iframe.attr("data-src","");     
                         iframe.attr("data-src",gform);
                         iframe.css("filter","none");
-                        gtranslate.css("filter","invert(1)");
+                    //gtranslate.css("filter","invert(1)");
+                        gtranslate.css("filter","none"); 
                 }else{
                     iframe.attr("data-src","");
                         iframe.attr("data-src",gform);
