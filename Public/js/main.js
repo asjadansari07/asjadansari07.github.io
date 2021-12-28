@@ -306,10 +306,10 @@ function setDefaultColor(){
         if(!isWebview){
             if(window.matchMedia && matched){      
                 iframe.css("filter","invert(0.9)");
-                gtranslate.css("filter","invert(1)");
+                gtranslate.css("filter","none");                
             }else{
                 iframe.css("filter","none");
-                gtranslate.css("filter","none");
+                //gtranslate.css("filter","invert(1)");
             }
         }
         
