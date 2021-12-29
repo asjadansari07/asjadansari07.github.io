@@ -39,7 +39,6 @@ $(document).ready(function () {
     //check browser in mobile-start
     var iframe=$('#googleForm');
     var gtranslate=$('#google_translate_element');
-    var sourcevid=$('source')
     let details = navigator.userAgent; 
     //let regexp = /android|iphone|kindle|ipad/i; 
     let regexp = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|kindle|Opera Mini/i;
@@ -297,28 +296,21 @@ function setDefaultColor(){
         if(window.matchMedia && matched){      
             iframe.css("filter","invert(0.9)");
             gtranslate.css("filter","invert(1)");
-            sourcevid.attr('src','Public/images/video_waves3.webm').attr('type','video/webm');
             
         }else{
             iframe.css("filter","none");
             gtranslate.css("filter","none");
-            sourcevid.attr('src','Public/images/video_waves3.webm').attr('type','video/webm');
         }
             
     }else{  
         if(!isWebview){
             if(window.matchMedia && matched){      
                 iframe.css("filter","invert(0.9)");
-                gtranslate.css("filter","none"); 
-                sourcevid.attr('src','Public/images/video_waves3.webm').attr('type','video/webm');
+                gtranslate.css("filter","none");                
             }else{
                 iframe.css("filter","none");
-                sourcevid.attr('src','Public/images/video_waves3.webm').attr('type','video/webm');
                 //gtranslate.css("filter","invert(1)");
             }
-        }
-        else{
-            sourcevid.attr('src','Public/images/video_waves3.mp4').attr('type','video/mp4');
         }
         
     }
