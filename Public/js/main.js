@@ -39,6 +39,7 @@ $(document).ready(function () {
     //check browser in mobile-start
     var iframe=$('#googleForm');
     var gtranslate=$('#google_translate_element');
+    var sourcevid=$('source')
     let details = navigator.userAgent; 
     //let regexp = /android|iphone|kindle|ipad/i; 
     let regexp = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|kindle|Opera Mini/i;
@@ -158,7 +159,6 @@ var asj_warning=$('#_asj_warning')
 var popupqr=$('#pop-up')
 //var iframe=$('#googleForm')
 var mainvid=$('video')
-var sourcevid=$('source')
 
 switch (true) {                
     case (w>1200):
