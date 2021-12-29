@@ -158,6 +158,7 @@ var asj_warning=$('#_asj_warning')
 var popupqr=$('#pop-up')
 //var iframe=$('#googleForm')
 var mainvid=$('video')
+var sourcevid=$('source')
 
 switch (true) {                
     case (w>1200):
@@ -296,21 +297,28 @@ function setDefaultColor(){
         if(window.matchMedia && matched){      
             iframe.css("filter","invert(0.9)");
             gtranslate.css("filter","invert(1)");
+            sourcevid.attr('src','Public/images/video_waves3.webm').attr('type','video/webm');
             
         }else{
             iframe.css("filter","none");
             gtranslate.css("filter","none");
+            sourcevid.attr('src','Public/images/video_waves3.webm').attr('type','video/webm');
         }
             
     }else{  
         if(!isWebview){
             if(window.matchMedia && matched){      
                 iframe.css("filter","invert(0.9)");
-                gtranslate.css("filter","none");                
+                gtranslate.css("filter","none"); 
+                sourcevid.attr('src','Public/images/video_waves3.webm').attr('type','video/webm');
             }else{
                 iframe.css("filter","none");
+                sourcevid.attr('src','Public/images/video_waves3.webm').attr('type','video/webm');
                 //gtranslate.css("filter","invert(1)");
             }
+        }
+        else{
+            sourcevid.attr('src','Public/images/video_waves3.mp4').attr('type','video/mp4');
         }
         
     }
