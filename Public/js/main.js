@@ -630,7 +630,9 @@ $(function() {
     //&& video.readyState > video.HAVE_CURRENT_DATA;
     //    if (!isPlaying) {
             video.load();
-            video.play();
+            video.play().catch(function(e) {
+                // console.log('There was an error', e);
+            });
      //   }        
     });    
 });
