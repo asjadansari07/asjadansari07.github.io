@@ -104,8 +104,8 @@ disableoptions();
 (function () { 
     //const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
     //const rgx = new RegExp('localhost:2435');
-    //const rgx = new RegExp('localhost:8426');
-    const rgx = new RegExp('asjadansari07.github.io');
+    const rgx = new RegExp('localhost:8426');
+    //const rgx = new RegExp('asjadansari07.github.io');
 const host = window.location.host; 
 const isMatch = !host.match(rgx); 
  
@@ -620,6 +620,30 @@ function disableoptions() {
         }
     }
 }
+
+
+
+
+setTimeout(function() {
+    $("video#myvideo source").each(function() {
+        var sourceFile = $(this).attr("data-src");
+        $(this).attr("src", sourceFile);
+        var video = this.parentElement;
+        video.load();
+        video.play().catch(function(e) {});
+    }); 
+}, 3000);
+//$(function() {
+//    $("video#myvideo source").each(function() {
+//        var sourceFile = $(this).attr("data-src");
+//        $(this).attr("src", sourceFile);
+//        var video = this.parentElement;
+//        video.load();
+//        video.play().catch(function(e) {});
+//    });
+//});
+
+
 });
 
 
