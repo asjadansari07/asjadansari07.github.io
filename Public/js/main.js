@@ -620,24 +620,6 @@ function disableoptions() {
         }
     }
 }
-
-//$(function() {
-//    $("video#myvideo source").each(function() {
-//        var sourceFile = $(this).attr("data-src");
-//        $(this).attr("src", sourceFile);
-//        var video = this.parentElement;        
-//    //    var isPlaying = video.currentTime > 0 && !video.paused && !video.ended 
-//    //&& video.readyState > video.HAVE_CURRENT_DATA;
-//    //    if (!isPlaying) {
-//            video.load();
-//            video.play().catch(function(e) {
-//                // console.log('There was an error', e);
-//            });
-//     //   }        
-//    });    
-//});
-
-
 });
 
 
