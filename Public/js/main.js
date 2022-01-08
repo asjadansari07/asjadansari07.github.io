@@ -96,7 +96,10 @@ $(document).ready(function () {
         lightMode();
         setDefaultColor();
     }
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {   
+//    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {   
+//        changeThemeMode();
+    //})
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {   
         changeThemeMode();
 })
 disableoptions();
