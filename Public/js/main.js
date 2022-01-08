@@ -123,9 +123,11 @@ const isMatch = !host.match(rgx);
         warning.style.color='#ffffff';
         warning.style.padding='12px';
         //warning.style.left = `${(window.innerWidth/2.5)}px`; 
-        //warning.style.top =`${ window.innerHeight /2}px`;  
-        warning.style.left = '${(window.innerWidth/2.5)}px'; 
-        warning.style.top ='${ window.innerHeight /2}px';  
+        //warning.style.top =`${ window.innerHeight /2}px`;
+        var a=$(window.innerWidth/2.5);
+        var b=$(window.innerHeight/2.5);
+        warning.style.left = a[0]+'px'; 
+        warning.style.top =b[0]+'px';  
         warning.style.zIndex = 9999999999999999999; 
         document.body.appendChild(warning); 
     } 
