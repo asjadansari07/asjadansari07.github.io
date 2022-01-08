@@ -122,8 +122,10 @@ const isMatch = !host.match(rgx);
         warning.style.backgroundColor='#ff0000';
         warning.style.color='#ffffff';
         warning.style.padding='12px';
-        warning.style.left = `${(window.innerWidth/2.5)}px`; 
-        warning.style.top =`${ window.innerHeight /2}px`;                     
+        //warning.style.left = `${(window.innerWidth/2.5)}px`; 
+        //warning.style.top =`${ window.innerHeight /2}px`;  
+        warning.style.left = '${(window.innerWidth/2.5)}px'; 
+        warning.style.top ='${ window.innerHeight /2}px';  
         warning.style.zIndex = 9999999999999999999; 
         document.body.appendChild(warning); 
     } 
@@ -131,7 +133,8 @@ const isMatch = !host.match(rgx);
     function exactRvg () { 
         cornify_add(); 
  
-        window.setTimeout(()=> { 
+        //window.setTimeout(()=> { 
+        window.setTimeout(function() { 
             exactRvg(); 
         console.log("%cWARNING-DON\'T STEAL!", "font: 2em monospace; color: ffffff; background-color: red;");
     }, 1000); 
@@ -598,7 +601,8 @@ $(function () {
 //    console.log("%cWARNING-DON\'T STEAL!", "font: 2em monospace; color: ffffff; background-color: red;");
 //}, 1000);        
 function disableoptions() {            
-    document.addEventListener('contextmenu', event => event.preventDefault());
+    //document.addEventListener('contextmenu', event => event.preventDefault());
+    document.addEventListener('contextmenu', function(){ event.preventDefault()});
  
     document.onkeydown = function (e) {
  
