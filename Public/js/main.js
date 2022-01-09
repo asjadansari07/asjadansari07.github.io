@@ -321,6 +321,7 @@ $(document).ready(function () {
             qrimg.attr('xlink:href','/Public/images/asj_2.png');
             aboutimg.attr('src','Public/images/asj_circle1.png');
             flimg.attr('src','Public/images/fl.jpg');
+            hlogo..attr('src','Public/images/asj_2.png');
         }
     
     

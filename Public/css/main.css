@@ -245,7 +245,7 @@ border: 2px solid #ff0000;
     }
 
     #resume a:hover {
-        color: #ff0000!important;
+        color: #ff0000 !important;
         color: var(--mycol)!important;
     }
 
