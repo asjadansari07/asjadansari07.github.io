@@ -312,7 +312,7 @@ $(document).ready(function () {
         }
         if(details.toString().toLowerCase().includes('trident'))
         {  
-
+            $("#header-wrapper").css("background", "url(/Public/images/head-back.jpg) no-repeat center bottom");
             $('head').append('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />');
             $('img[alt="Loading..."]').attr('src','Public/images/asj_circle1.png');
             $('#Header1_headerimg').attr('src','Public/images/asj_2.png');
@@ -436,14 +436,15 @@ $(document).ready(function () {
         {        
             document.documentElement.style.setProperty('--bckimg', 'url(../Public/images/header-mask-black-after.webp) no-repeat center', 'important');
         }
+        else if(details.toString().toLowerCase().includes('trident'))
+        {  
+            $("<style type='text/css'>.hello-txt.black:before{color:black;} </style>").appendTo("head");
+            $('.sora-author-box-text .hello-txt').addClass('black');            
+        }
         else{
             document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.webp) no-repeat center', 'important');
         }
-        if(details.toString().toLowerCase().includes('trident'))
-        {  
-            $("<style type='text/css'>.hello-txt.black:before{color:black;} </style>").appendTo("head");
-            $('.sora-author-box-text .hello-txt').addClass('black');
-        }
+        
     
     }
     function lightMode(){
@@ -464,14 +465,15 @@ $(document).ready(function () {
         {
             document.documentElement.style.setProperty('--bckimg', 'url(../Public/images/header-mask-white-after.webp) no-repeat center', 'important');
         }
+        else if(details.toString().toLowerCase().includes('trident'))
+        {  
+            $("<style type='text/css'>.hello-txt.white:before{color:white;} </style>").appendTo("head");
+            $('.sora-author-box-text .hello-txt').addClass('white');            
+        }
         else{
             document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
         }
-        if(details.toString().toLowerCase().includes('trident'))
-        {  
-            $("<style type='text/css'>.hello-txt.white:before{color:white;} </style>").appendTo("head");
-            $('.sora-author-box-text .hello-txt').addClass('white');
-        }
+        
     }
     function changeForm(w,col){ 
         var gform='https://docs.google.com/forms/d/e/1FAIpQLScMJ6lFRbePTtDsSnTRCXPQEOhP8K8nVK5Xb8p-qT69QssbpQ/viewform?embedded=true';
