@@ -2916,6 +2916,7 @@ div#sora_blogger_cntct_form .clear-button {
     }
 
         .block-image .thumb:before {
+            background: #ff0000;
             background: var(--background);
             bottom: 0;
             content: "";
