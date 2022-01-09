@@ -669,9 +669,10 @@ setTimeout(function() {
         var sourceFile = $(this).attr("data-src");
         $(this).attr("src", sourceFile);
         var video = this.parentElement;
-        video.load();
+        //video.load();
         //video.play().catch(function(e) {});
         try{
+            video.load();
             video.play()
         }
         catch(ex){
