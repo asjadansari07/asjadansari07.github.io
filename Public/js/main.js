@@ -317,7 +317,12 @@ $(document).ready(function () {
             $('img[title="Click to Connect"]').attr('src','Public/images/asj_circle1.png');
             $('img[data-src="Public/images/fl.webp"]').attr('class','').attr('src','Public/images/fl.jpg');
             $('img[alt="Asp.Net"]').attr('class','').attr('src','Public/images/aspnet.jpg');
-            
+            $('img[alt="SQL Server"]').attr('class','').attr('src','Public/images/sql.jpg');
+            $('img[alt="MS CRM Dynamics"]').attr('class','').attr('src','Public/images/crm.jpg');
+            $('img[alt="HTML"]').attr('class','').attr('src','Public/images/html.jpg');
+            $('img[alt="CSS"]').attr('class','').attr('src','Public/images/css.jpg');
+            $('img[alt="Bootstrap"]').attr('class','').attr('src','Public/images/bootstrap.jpg');
+
             
             
             
