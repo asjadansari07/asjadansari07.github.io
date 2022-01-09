@@ -315,8 +315,8 @@ $(document).ready(function () {
             $('img[alt="Loading..."]').attr('src','Public/images/asj_circle1.png');
             $('image[width="104"]').attr('xlink:href','/Public/images/asj_2.png');
             $('img[title="Click to Connect"]').attr('src','Public/images/asj_circle1.png');
-            $('img[data-src="Public/images/fl.webp"]').attr('src','Public/images/fl.jpg');
-            $('img[alt="Asp.Net"]').attr('src','Public/images/aspnet.jpg');
+            $('img[data-src="Public/images/fl.webp"]').attr('class','').attr('src','Public/images/fl.jpg');
+            $('img[alt="Asp.Net"]').attr('class','').attr('src','Public/images/aspnet.jpg');
             
             
             
