@@ -444,7 +444,7 @@ $(document).ready(function () {
             //$("<style type='text/css'>#header-wrapper.black:after{background:url(../Public/images/header-mask-black-after.png) no-repeat center !important;} </style>").appendTo("head");
             $("<style type='text/css'>.black:after{background:url(../Public/images/header-mask-black-after.png) no-repeat center !important;} </style>").appendTo("head");
             $("#header-wrapper").addClass('black');
-            $("##section-6").addClass('black');
+            $("#section-6").addClass('black');
             $(".counter-box.wow.slideInUp").addClass('black');
         }
         else{
@@ -479,7 +479,7 @@ $(document).ready(function () {
             //$("<style type='text/css'>#header-wrapper.white:after{background:url(../Public/images/header-mask-white-after.png) no-repeat center !important;} </style>").appendTo("head");            
             $("<style type='text/css'>.white:after{background:url(../Public/images/header-mask-white-after.png) no-repeat center !important;} </style>").appendTo("head");            
             $("#header-wrapper").addClass('white');
-            $("##section-6").addClass('black');
+            $("#section-6").addClass('black');
             $(".counter-box.wow.slideInUp").addClass('black');
         }
         else{
