@@ -390,7 +390,7 @@ function darkMode(){
     document.documentElement.style.setProperty('--bccol', 'black', 'important');
     document.documentElement.style.setProperty('--scol', 'white', 'important');  
     
-    if(details.toString().toLowerCase().includes('chrome'))
+    if(details.toString().toLowerCase().includes('edge'))
     {
         document.documentElement.style.setProperty('--bckimg', 'url(../Public/images/header-mask-black-after.webp) no-repeat center', 'important');
     }
@@ -413,7 +413,7 @@ function lightMode(){
     $(".insta-wrap").css('background', "rgb(255, 255, 255)");
     document.documentElement.style.setProperty('--bccol', 'white', 'important');
     document.documentElement.style.setProperty('--scol', 'black', 'important'); 
-    if(details.toString().toLowerCase().includes('chrome'))
+    if(details.toString().toLowerCase().includes('edge'))
     {
         document.documentElement.style.setProperty('--bckimg', 'url(../Public/images/header-mask-white-after.webp) no-repeat center', 'important');
     }
