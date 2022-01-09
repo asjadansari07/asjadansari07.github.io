@@ -1975,6 +1975,7 @@ ul#nav1 {
     }
 
     .top-bar-social ul#social a:hover {
+        color: #ff0000;
         color: var(--mycol);
         opacity: 1;
     }
@@ -2254,6 +2255,7 @@ ul#nav1 {
 .works-icons {
     font-size: 45px;
     display: block;
+    color: #ff0000;
     color: var(--mycol);
     margin-bottom: 20px;
 }
@@ -2261,6 +2263,7 @@ ul#nav1 {
     .works-icons li {
         width: 60px;
         height: 60px;
+        background-color: #ff0000;
         background-color: var(--mycol);
         border-radius: 50%;
         position: relative;
@@ -2345,6 +2348,7 @@ http://flickity.metafizzy.co
     height: 44px;
     border: none;
     border-radius: 50%;
+    background: #ff0000;
     background: var(--mycol);
     opacity: .75;
     cursor: pointer;
@@ -2471,10 +2475,12 @@ http://flickity.metafizzy.co
 .testimonial-author {
     display: block;
     font-weight: 700;
+    color: #ff0000;
     color: var(--mycol);
 }
 
 .flickity-page-dots .dot.is-selected {
+    background: #ff0000;
     background: var(--mycol);
 }
 
@@ -2596,6 +2602,7 @@ http://flickity.metafizzy.co
 
 .socials a:hover i {
     color: #fff;
+    background-color: #ff0000;
     background-color: var(--mycol);
 }
 
@@ -2726,6 +2733,7 @@ div#sora_blogger_cntct_form .clear-button {
                 -ms-flex-pack: center;
                 justify-content: center;
                 background: #000;
+                color: #ff0000;
                 color: var(--mycol);
                 border: 1px solid #fff;
             }
@@ -2787,6 +2795,7 @@ div#sora_blogger_cntct_form .clear-button {
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
+    color: #ff0000;
     color: var(--mycol);
     position: relative;
 }
@@ -2804,6 +2813,7 @@ div#sora_blogger_cntct_form .clear-button {
     -o-transition: all .3s linear;
     transition: all .3s linear;
     font-family: Righteous,cursive;
+    color: #ff0000;
     color: var(--mycol);
     margin-bottom: 3px;
     font-size: 25px;
@@ -3175,6 +3185,7 @@ div#sora_blogger_cntct_form .clear-button {
             font-style: normal;
             font-weight: 400;
             font-size: 18px;
+            color: #ff0000;
             color: var(--mycol);
             top: 12px;
             right: 15px;
@@ -3211,6 +3222,7 @@ div#sora_blogger_cntct_form .clear-button {
 
         .comments .comments-content .icon.blog-author:after {
             content: "Author";
+            background: #ff0000;
             background: var(--mycol);
             color: #fff;
             font-size: 11px;
@@ -3280,6 +3292,7 @@ div#sora_blogger_cntct_form .clear-button {
             }
 
                 .bot-menu ul li a:hover {
+                    color: #ff0000;
                     color: var(--mycol);
                 }
 
@@ -3350,6 +3363,7 @@ div#sora_blogger_cntct_form .clear-button {
     }
 
     .bottom-bar-social ul#social a:hover {
+        color: #ff0000;
         color: var(--mycol);
         opacity: 1;
     }
@@ -3362,6 +3376,7 @@ div#sora_blogger_cntct_form .clear-button {
 }
 
     .jugas_footer_copyright a {
+        color: #ff0000;
         color: var(--mycol);
     }
 
@@ -3381,6 +3396,7 @@ div#sora_blogger_cntct_form .clear-button {
         left: 0;
         top: 8px;
         font-size: 22px;
+        color: #ff0000;
         color: var(--mycol);
     }
 
@@ -3393,6 +3409,7 @@ div#sora_blogger_cntct_form .clear-button {
     }
 
     .list-label-widget-content li span:last-child {
+        color: #ff0000;
         color: var(--mycol);
         font-size: 12px;
         font-weight: 700;
@@ -3424,6 +3441,7 @@ div#sora_blogger_cntct_form .clear-button {
 }
 
     .PopularPosts ul li a:hover {
+        color: #ff0000;
         color: var(--mycol);
     }
 
@@ -3782,6 +3800,7 @@ div#sora_blogger_cntct_form .clear-button {
     }
 
     .header-logo-desc span {
+        color: #ff0000;
         color: var(--mycol);
         font-size: 42px!important;
         font-weight: 700;
@@ -3877,6 +3896,7 @@ div#sora_blogger_cntct_form .clear-button {
     }
 
     .header-logo-desc span {
+        color: #ff0000;
         color: var(--mycol);
         font-size: 33px!important;
         font-weight: 700;
@@ -5356,6 +5376,7 @@ a.button {
 }
 
     .sora-author-box-text .hello-txt:before {
+        border-left-color: #ff0000;
         border-left-color: var(--mycol);
         content: '';
         width: 0;
@@ -5374,11 +5395,13 @@ a.button {
     line-height: 1.1;
     font-weight: 700;
     margin-bottom: 5px;
+    color: #ff0000;
     color: var(--mycol);
 }
 
     .sora-author-box-text .profile-title span {
         font-weight: 300;
+        color: #ff0000;
         color: var(--mycol);
     }
 
@@ -5446,6 +5469,7 @@ h3.profile-position {
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
+        background: #ff0000;
         background: var(--mycol);
     }
 
