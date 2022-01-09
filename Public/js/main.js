@@ -305,6 +305,11 @@ switch (true) {
 $('#nav').onePageNav();
 $('.slide-in').onePageNav();
 function setDefaultColor(){
+    if(details.toString().toLowerCase().includes('edge'))
+    {        
+        mainvid.css('position','absolute').css('max-height','none').css('width','auto').css('height','auto');
+    }
+    
     document.documentElement.style.setProperty('--mycol', '#FF0000', 'important');
     document.documentElement.style.setProperty('--background', '#FF0000', 'important');
     if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){  
@@ -391,7 +396,7 @@ function darkMode(){
     document.documentElement.style.setProperty('--scol', 'white', 'important');  
     
     if(details.toString().toLowerCase().includes('edge'))
-    {
+    {        
         document.documentElement.style.setProperty('--bckimg', 'url(../Public/images/header-mask-black-after.webp) no-repeat center', 'important');
     }
     else{
