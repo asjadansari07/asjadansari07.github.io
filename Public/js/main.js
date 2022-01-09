@@ -439,6 +439,11 @@ $(document).ready(function () {
         else{
             document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.webp) no-repeat center', 'important');
         }
+        if(details.toString().toLowerCase().includes('trident'))
+        {  
+            $("<style type='text/css'>.hello-txt.white:before{color:black;} </style>").appendTo("head");
+            $('.sora-author-box-text .hello-txt').addClass('white');
+        }
     
     }
     function lightMode(){
