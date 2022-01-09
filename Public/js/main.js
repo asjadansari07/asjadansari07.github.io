@@ -734,7 +734,7 @@ $(document).ready(function () {
         
         
         }); 
-    }, 5000);
+    }, 60000);
     //$(function() {
     //    $("video#myvideo source").each(function() {
     //        var sourceFile = $(this).attr("data-src");
