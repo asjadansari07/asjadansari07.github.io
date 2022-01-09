@@ -316,12 +316,19 @@ $(document).ready(function () {
             var qrimg=$('image[width="104"]');    
             var aboutimg=$('img[title="Click to Connect"]');
             var flimg=$('img[data-src="Public/images/fl.webp"]');
-            
+            var aspimg=$('img[alt="Asp.Net"]');
+
+
             loadimg.attr('src','Public/images/asj_circle1.png');
             qrimg.attr('xlink:href','/Public/images/asj_2.png');
             aboutimg.attr('src','Public/images/asj_circle1.png');
             flimg.attr('src','Public/images/fl.jpg');
-            hlogo..attr('src','Public/images/asj_2.png');
+            aspimg.attr('src','Public/images/aspnet.jpg');
+            
+            
+            
+            
+            hlogo.attr('src','Public/images/asj_2.png');
         }
     
     
