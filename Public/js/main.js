@@ -312,12 +312,12 @@ $(document).ready(function () {
         }
         if(details.toString().toLowerCase().includes('trident'))
         {   
-            var qrimg=$('image:has[xlink:href]');    
+            var qrimg=$('image[href="https://asjadansari07.github.io/Public/images/asj_2.webp"]');    
             var aboutimg=$('img[title="Click to Connect"]');
             var flimg=$('img[title="Free Lancer"]');
             
             
-            qrimg.attr('xlink:href','https://asjadansari07.github.io/Public/images/asj_2.webp');
+            qrimg.attr('xlink:href','https://asjadansari07.github.io/Public/images/asj_2.png');
             aboutimg.attr('src','Public/images/asj_circle1.png');
             flimg.attr('src','Public/images/fl.jpg');
         }
