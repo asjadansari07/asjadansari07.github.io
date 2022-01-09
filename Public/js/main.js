@@ -441,7 +441,8 @@ $(document).ready(function () {
             $("<style type='text/css'>.hello-txt.black:before{color:black;} </style>").appendTo("head");
             $('.sora-author-box-text .hello-txt').addClass('black');  
             
-            $("<style type='text/css'>#header-wrapper.black:after{background:url(../Public/images/header-mask-black-after.png) no-repeat center !important;} </style>").appendTo("head");
+            //$("<style type='text/css'>#header-wrapper.black:after{background:url(../Public/images/header-mask-black-after.png) no-repeat center !important;} </style>").appendTo("head");
+            $("<style type='text/css'>.black:after{background:url(../Public/images/header-mask-black-after.png) no-repeat center !important;} </style>").appendTo("head");
             $("#header-wrapper").addClass('black');
         }
         else{
@@ -473,7 +474,8 @@ $(document).ready(function () {
             $("<style type='text/css'>.hello-txt.white:before{color:white;} </style>").appendTo("head");
             $('.sora-author-box-text .hello-txt').addClass('white');
 
-            $("<style type='text/css'>#header-wrapper.white:after{background:url(../Public/images/header-mask-white-after.png) no-repeat center !important;} </style>").appendTo("head");
+            //$("<style type='text/css'>#header-wrapper.white:after{background:url(../Public/images/header-mask-white-after.png) no-repeat center !important;} </style>").appendTo("head");            
+            $("<style type='text/css'>.white:after{background:url(../Public/images/header-mask-white-after.png) no-repeat center !important;} </style>").appendTo("head");            
             $("#header-wrapper").addClass('white');
         }
         else{
