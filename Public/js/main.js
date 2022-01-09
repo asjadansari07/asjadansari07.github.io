@@ -479,8 +479,8 @@ $(document).ready(function () {
             //$("<style type='text/css'>#header-wrapper.white:after{background:url(../Public/images/header-mask-white-after.png) no-repeat center !important;} </style>").appendTo("head");            
             $("<style type='text/css'>.white:after{background:url(../Public/images/header-mask-white-after.png) no-repeat center !important;} </style>").appendTo("head");            
             $("#header-wrapper").addClass('white');
-            $("#section-6").addClass('black');
-            $(".counter-box.wow.slideInUp").addClass('black');
+            $("#section-6").addClass('white');
+            $(".counter-box.wow.slideInUp").addClass('white');
         }
         else{
             document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
