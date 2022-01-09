@@ -314,7 +314,7 @@ $(document).ready(function () {
         {   
             var qrimg=$('image[width="104"]');    
             var aboutimg=$('img[title="Click to Connect"]');
-            var flimg=$('img[title="Free Lancer"]');
+            var flimg=$('img[data-src="Public/images/fl.webp"]');
             
             
             qrimg.attr('xlink:href','/Public/images/asj_2.png');
