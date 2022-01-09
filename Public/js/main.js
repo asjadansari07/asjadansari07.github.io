@@ -312,7 +312,7 @@ $(document).ready(function () {
         }
         if(details.toString().toLowerCase().includes('trident'))
         {   
-            var qrimg=$('image');    
+            var qrimg=$('image:has[xlink:href]');    
             var aboutimg=$('img[title="Click to Connect"]');
             var flimg=$('img[title="Free Lancer"]');
             
