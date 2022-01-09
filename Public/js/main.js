@@ -305,7 +305,7 @@ switch (true) {
 $('#nav').onePageNav();
 $('.slide-in').onePageNav();
 function setDefaultColor(){
-    if(details.toString().toLowerCase().includes('edge'))
+    if(details.toString().toLowerCase().includes('edge') || details.toString().toLowerCase().includes('trident'))
     {        var myvid=$('#myvideo')
         myvid.css('position','absolute').css('max-height','none').css('width','auto').css('height','auto');
     }
@@ -669,15 +669,22 @@ setTimeout(function() {
         var sourceFile = $(this).attr("data-src");
         $(this).attr("src", sourceFile);
         var video = this.parentElement;
-        video.load();
-        video.play().catch(function(e) {});
-        //try{
-        //    video.load();
-        //    video.play()
-        //}
-        //catch(ex){
-        //    //function(ex) {}
-        //}
+        if(details.toString().toLowerCase().includes('edge') || details.toString().toLowerCase().includes('trident'))
+        {
+            try{
+                video.load();
+                video.play()
+            }
+            catch(ex){
+                //function(ex) {}
+            }
+        }
+        else{
+            video.load();
+            video.play().catch(function(e) {});
+        }
+        
+        
     }); 
 }, 5000);
 //$(function() {
