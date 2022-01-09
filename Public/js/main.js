@@ -99,16 +99,23 @@ $(document).ready(function () {
 //    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {   
 //        changeThemeMode();
     //})
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {   
-        changeThemeMode();
-})
+    var theme=window.matchMedia('(prefers-color-scheme: dark)');
+    bindEvent(theme,'change',function(){changeThemeMode();});
+
+    function bindEvent(el, eventName, eventHandler) {
+        if (el.addEventListener){
+            el.addEventListener(eventName, eventHandler, false); 
+        } else if (el.attachEvent){
+            el.attachEvent('on'+eventName, eventHandler);
+        }
+    }   
 disableoptions();
 //if website steal-start
 (function () { 
     //const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
     //const rgx = new RegExp('localhost:2435');
-    //const rgx = new RegExp('localhost:8426');
-    const rgx = new RegExp('asjadansari07.github.io');
+    const rgx = new RegExp('localhost:8426');
+    //const rgx = new RegExp('asjadansari07.github.io');
 const host = window.location.host; 
 const isMatch = !host.match(rgx); 
  
