@@ -30,7 +30,20 @@
             }
             cornify_replace()
         }
-        var d = new Event("cornify");
+        //var d = new Event("cornify");        
+        //document.dispatchEvent(d)
+
+        var d = createNewEvent("cornify");
+        function createNewEvent(eventName) {
+            var event;
+            if (typeof (Event) === 'function') {
+                event = new Event(eventName);
+            } else {
+                event = document.createEvent('Event');
+                event.initEvent(eventName, true, true);
+            }
+            return event;
+        }
         document.dispatchEvent(d)
     },
     cornify_updatecount = function () {
