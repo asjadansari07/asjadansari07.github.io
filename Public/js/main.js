@@ -311,9 +311,15 @@ $(document).ready(function () {
             myvid.css('position','absolute').css('max-height','none').css('width','auto').css('height','auto');
         }
         if(details.toString().toLowerCase().includes('trident'))
-        {       
+        {   
+            var qrimg=$('image');    
             var aboutimg=$('img[title="Click to Connect"]');
+            var flimg=$('img[title="Free Lancer"]');
+            
+            
+            qrimg.attr('xlink:href','https://asjadansari07.github.io/Public/images/asj_2.webp');
             aboutimg.attr('src','Public/images/asj_circle1.png');
+            flimg.attr('src','Public/images/fl.jpg');
         }
     
     
