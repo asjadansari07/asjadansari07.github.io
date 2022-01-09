@@ -669,7 +669,7 @@ setTimeout(function() {
         var sourceFile = $(this).attr("data-src");
         $(this).attr("src", sourceFile);
         var video = this.parentElement;
-        if(details.toString().toLowerCase().includes('edge') || details.toString().toLowerCase().includes('trident'))
+        if(details.toString().toLowerCase().includes('trident'))
         {
             try{
                 video.load();
