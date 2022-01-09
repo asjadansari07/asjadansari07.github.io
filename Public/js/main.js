@@ -309,6 +309,11 @@ function setDefaultColor(){
     {        var myvid=$('#myvideo')
         myvid.css('position','absolute').css('max-height','none').css('width','auto').css('height','auto');
     }
+    if(details.toString().toLowerCase().includes('trident'))
+    {        var aboutimg=$('img[title:"Click to Connect"]');
+    aboutimg.attr('src','Public/images/asj_circle1.png');
+    }
+    
     
     document.documentElement.style.setProperty('--mycol', '#FF0000', 'important');
     document.documentElement.style.setProperty('--background', '#FF0000', 'important');
