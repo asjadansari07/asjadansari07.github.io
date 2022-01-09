@@ -313,6 +313,7 @@ $(document).ready(function () {
         if(details.toString().toLowerCase().includes('trident'))
         {  
             $("#header-wrapper").css("background", "url(/Public/images/head-back.jpg) no-repeat center bottom").css('background-size','cover');
+            $(".counter-box").css("background", "url(/Public/images/sg-back.jpg) no-repeat");
             $('head').append('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />');
             $('img[alt="Loading..."]').attr('src','Public/images/asj_circle1.png');
             $('#Header1_headerimg').attr('src','Public/images/asj_2.png');
