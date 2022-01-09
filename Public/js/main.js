@@ -390,14 +390,14 @@ function darkMode(){
     document.documentElement.style.setProperty('--bccol', 'black', 'important');
     document.documentElement.style.setProperty('--scol', 'white', 'important');  
     
-    //if(details.toString().toLowerCase().includes('edge'))
-    //{
-    //    document.documentElement.style.setProperty('--bckimg', 'url(../Public/images/header-mask-black-after.webp) no-repeat center', 'important');
-    //}
-    //else{
-    //    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.webp) no-repeat center', 'important');
-    //}
-    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.webp) no-repeat center', 'important');
+    if(details.toString().toLowerCase().includes('edge'))
+    {
+        document.documentElement.style.setProperty('--bckimg', 'url(../Public/images/header-mask-black-after.webp) no-repeat center', 'important');
+    }
+    else{
+        document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.webp) no-repeat center', 'important');
+    }
+    
 }
 function lightMode(){
     $(".preloader1").css("background", "rgb(255, 255, 255)");
@@ -413,14 +413,14 @@ function lightMode(){
     $(".insta-wrap").css('background', "rgb(255, 255, 255)");
     document.documentElement.style.setProperty('--bccol', 'white', 'important');
     document.documentElement.style.setProperty('--scol', 'black', 'important'); 
-    //if(details.toString().toLowerCase().includes('edge'))
-    //{
-    //    document.documentElement.style.setProperty('--bckimg', 'url(../Public/images/header-mask-white-after.webp) no-repeat center', 'important');
-    //}
-    //else{
-    //    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
-    //}
-    document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
+    if(details.toString().toLowerCase().includes('edge'))
+    {
+        document.documentElement.style.setProperty('--bckimg', 'url(../Public/images/header-mask-white-after.webp) no-repeat center', 'important');
+    }
+    else{
+        document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
+    }
+    
 }
 function changeForm(w,col){ 
     var gform='https://docs.google.com/forms/d/e/1FAIpQLScMJ6lFRbePTtDsSnTRCXPQEOhP8K8nVK5Xb8p-qT69QssbpQ/viewform?embedded=true';
