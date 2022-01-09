@@ -322,6 +322,8 @@ $(document).ready(function () {
             $('img[alt="HTML"]').attr('class','').attr('src','Public/images/html.jpg');
             $('img[alt="CSS"]').attr('class','').attr('src','Public/images/css.jpg');
             $('img[alt="Bootstrap"]').attr('class','').attr('src','Public/images/bootstrap.jpg');
+            $('img[alt="JavaScript"]').attr('class','').attr('src','Public/images/javaScript.jpg');
+            $('img[alt="JQuery"]').attr('class','').attr('src','Public/images/jquery.jpg');
 
             
             
