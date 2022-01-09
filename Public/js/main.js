@@ -311,24 +311,17 @@ $(document).ready(function () {
             myvid.css('position','absolute').css('max-height','none').css('width','auto').css('height','auto');
         }
         if(details.toString().toLowerCase().includes('trident'))
-        {   
-            var loadimg=$('img[alt="Loading..."]');
-            var qrimg=$('image[width="104"]');    
-            var aboutimg=$('img[title="Click to Connect"]');
-            var flimg=$('img[data-src="Public/images/fl.webp"]');
-            var aspimg=$('img[alt="Asp.Net"]');
-
-
-            loadimg.attr('src','Public/images/asj_circle1.png');
-            qrimg.attr('xlink:href','/Public/images/asj_2.png');
-            aboutimg.attr('src','Public/images/asj_circle1.png');
-            flimg.attr('src','Public/images/fl.jpg');
-            aspimg.attr('src','Public/images/aspnet.jpg');
+        {  
+            $('img[alt="Loading..."]').attr('src','Public/images/asj_circle1.png');
+            $('image[width="104"]').attr('xlink:href','/Public/images/asj_2.png');
+            $('img[title="Click to Connect"]').attr('src','Public/images/asj_circle1.png');
+            $('img[data-src="Public/images/fl.webp"]').attr('src','Public/images/fl.jpg');
+            $('img[alt="Asp.Net"]').attr('src','Public/images/aspnet.jpg');
             
             
             
             
-            hlogo.attr('src','Public/images/asj_2.png');
+            $('#Header1_headerimg').attr('src','Public/images/asj_2.png');
         }
     
     
