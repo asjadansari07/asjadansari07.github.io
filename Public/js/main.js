@@ -306,8 +306,8 @@ $('#nav').onePageNav();
 $('.slide-in').onePageNav();
 function setDefaultColor(){
     if(details.toString().toLowerCase().includes('edge'))
-    {        var mainvid=$('#myvideo')
-        mainvid.css('position','absolute').css('max-height','none').css('width','auto').css('height','auto');
+    {        var myvid=$('#myvideo')
+        myvid.css('position','absolute').css('max-height','none').css('width','auto').css('height','auto');
     }
     
     document.documentElement.style.setProperty('--mycol', '#FF0000', 'important');
