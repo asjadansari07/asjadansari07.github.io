@@ -439,7 +439,10 @@ $(document).ready(function () {
         else if(details.toString().toLowerCase().includes('trident'))
         {  
             $("<style type='text/css'>.hello-txt.black:before{color:black;} </style>").appendTo("head");
-            $('.sora-author-box-text .hello-txt').addClass('black');            
+            $('.sora-author-box-text .hello-txt').addClass('black');  
+            
+            $("<style type='text/css'>#header-wrapper.black:after{background:url(../Public/images/header-mask-black-after.png) no-repeat center !important;} </style>").appendTo("head");
+            $("#header-wrapper").addClass('black');
         }
         else{
             document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-black-after.webp) no-repeat center', 'important');
@@ -468,7 +471,10 @@ $(document).ready(function () {
         else if(details.toString().toLowerCase().includes('trident'))
         {  
             $("<style type='text/css'>.hello-txt.white:before{color:white;} </style>").appendTo("head");
-            $('.sora-author-box-text .hello-txt').addClass('white');            
+            $('.sora-author-box-text .hello-txt').addClass('white');
+
+            $("<style type='text/css'>#header-wrapper.white:after{background:url(../Public/images/header-mask-white-after.png) no-repeat center !important;} </style>").appendTo("head");
+            $("#header-wrapper").addClass('white');
         }
         else{
             document.documentElement.style.setProperty('--bckimg', 'url(../images/header-mask-white-after.webp) no-repeat center', 'important');
