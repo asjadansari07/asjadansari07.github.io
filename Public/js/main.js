@@ -313,6 +313,7 @@ $(document).ready(function () {
         if(details.toString().toLowerCase().includes('trident'))
         {  
             $('img[alt="Loading..."]').attr('src','Public/images/asj_circle1.png');
+            $('#Header1_headerimg').attr('src','Public/images/asj_2.png');
             $('image[width="104"]').attr('xlink:href','/Public/images/asj_2.png');
             $('img[title="Click to Connect"]').attr('src','Public/images/asj_circle1.png');
             $('img[data-src="Public/images/fl.webp"]').attr('class','').attr('src','Public/images/fl.jpg').addClass('testimonial-avatar');
@@ -324,7 +325,6 @@ $(document).ready(function () {
             $('img[alt="Bootstrap"]').attr('class','').attr('src','Public/images/bootstrap.jpg');
             $('img[alt="JavaScript"]').attr('class','').attr('src','Public/images/javascript.jpg');
             $('img[alt="JQuery"]').attr('class','').attr('src','Public/images/jquery.jpg');
-
             $('img[alt="Ado.Net"]').attr('class','').attr('src','Public/images/adonet.jpg');
             $('img[alt="LINQ"]').attr('class','').attr('src','Public/images/linq.jpg');
             $('img[alt="XML"]').attr('class','').attr('src','Public/images/xml.jpg');
@@ -341,7 +341,7 @@ $(document).ready(function () {
             
             
             
-            $('#Header1_headerimg').attr('src','Public/images/asj_2.png');
+            
         }
     
     
