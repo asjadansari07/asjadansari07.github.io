@@ -325,6 +325,19 @@ $(document).ready(function () {
             $('img[alt="JavaScript"]').attr('class','').attr('src','Public/images/javascript.jpg');
             $('img[alt="JQuery"]').attr('class','').attr('src','Public/images/jquery.jpg');
 
+            $('img[alt="Ado.Net"]').attr('class','').attr('src','Public/images/adonet.jpg');
+            $('img[alt="LINQ"]').attr('class','').attr('src','Public/images/linq.jpg');
+            $('img[alt="XML"]').attr('class','').attr('src','Public/images/xml.jpg');
+            $('img[alt="Google Forms"]').attr('class','').attr('src','Public/images/googleform.jpg');
+            $('img[alt="C#"]').attr('class','').attr('src','Public/images/csharp.jpg');
+            $('img[alt="JSON"]').attr('class','').attr('src','Public/images/json.jpg');
+            $('img[alt="AJAX"]').attr('class','').attr('src','Public/images/ajax.jpg');
+            $('img[alt="Web Service"]').attr('class','').attr('src','Public/images/ws.jpg');
+            $('img[alt="Web Form"]').attr('class','').attr('src','Public/images/form.jpg');
+            $('img[alt="MS Office"]').attr('class','').attr('src','Public/images/office.jpg');
+            $('img[alt="SSRS"]').attr('class','').attr('src','Public/images/ssrs.jpg');
+            $('img[alt="MVC"]').attr('class','').attr('src','Public/images/mvc.jpg');
+
             
             
             
