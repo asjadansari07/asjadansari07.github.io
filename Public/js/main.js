@@ -670,7 +670,13 @@ setTimeout(function() {
         $(this).attr("src", sourceFile);
         var video = this.parentElement;
         video.load();
-        video.play().catch(function(e) {});
+        //video.play().catch(function(e) {});
+        try{
+            video.play()
+        }
+        catch(ex){
+        
+        }
     }); 
 }, 5000);
 //$(function() {
