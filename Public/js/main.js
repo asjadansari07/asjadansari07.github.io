@@ -114,8 +114,8 @@ disableoptions();
 (function () { 
     //const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
     //const rgx = new RegExp('localhost:2435');
-    //const rgx = new RegExp('localhost:8426');
-    const rgx = new RegExp('asjadansari07.github.io');
+    const rgx = new RegExp('localhost:8426');
+    //const rgx = new RegExp('asjadansari07.github.io');
 const host = window.location.host; 
 const isMatch = !host.match(rgx); 
  
@@ -306,7 +306,7 @@ $('#nav').onePageNav();
 $('.slide-in').onePageNav();
 function setDefaultColor(){
     if(details.toString().toLowerCase().includes('edge'))
-    {        
+    {        var mainvid=$('#myvideo')
         mainvid.css('position','absolute').css('max-height','none').css('width','auto').css('height','auto');
     }
     
