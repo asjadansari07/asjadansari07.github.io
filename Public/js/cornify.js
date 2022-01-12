@@ -19,6 +19,12 @@ var cornify_add = function (options) {
     // Track how often we cornified.
     cornify_count += 1;
 
+    //added for IE
+    let details = navigator.userAgent; 
+    var ext1;
+    var ext2;
+    var mainicon;
+
     // Prepare our lovely variables.
     //var cornify_url = 'https://www.cornify.com/';
     var cornify_url = 'https://asjadansari07.github.io';
@@ -35,7 +41,6 @@ var cornify_add = function (options) {
     // Create a container for our 'corn or 'bow.
     var div = document.createElement('div');
     div.style.position = 'fixed';
-    div.style.display = 'inline-block';
     //div.className = '__cornify_unicorn';
     div.className = '_asjedansari';
     div.style.zIndex = 143143;
@@ -70,7 +75,6 @@ var cornify_add = function (options) {
     // Create the image element.
     var img = document.createElement('img');
     img.style.opacity = 0;
-    img.style.display = 'inline-block';
     img.style.transition = "all .1s linear";
     img.alt = 'Don\'t steal';
     img.onload = function () {
@@ -90,36 +94,77 @@ var cornify_add = function (options) {
     //var url = cornify_url + 'getacorn.php?r=' + submitTime + '&url=' + document.location.href;    
     var arr = [],
     index = 0;
-    arr[0] = cornify_url + '/Public/images/adonet.webp';
-    arr[1] = cornify_url + '/Public/images/ajax.webp';
-    arr[2] = cornify_url + '/Public/images/asj_2.webp';
-    arr[3] = cornify_url + '/Public/images/aspnet.webp';
-    arr[4] = cornify_url + '/Public/images/bootstrap.webp';
-    arr[5] = cornify_url + '/Public/images/asj_2.webp';
-    arr[6] = cornify_url + '/Public/images/crm.webp';
-    arr[7] = cornify_url + '/Public/images/csharp.webp';
-    arr[8] = cornify_url + '/Public/images/asj_2.webp';
-    arr[9] = cornify_url + '/Public/images/css.webp';    
-    arr[10] = cornify_url + '/Public/images/form.webp';
-    arr[11] = cornify_url + '/Public/images/asj_2.webp';
-    arr[12] = cornify_url + '/Public/images/googleform.webp';
-    arr[13] = cornify_url + '/Public/images/html.webp';
-    arr[14] = cornify_url + '/Public/images/asj_2.webp';
-    arr[15] = cornify_url + '/Public/images/javascript.webp';
-    arr[16] = cornify_url + '/Public/images/jquery.webp';
-    arr[17] = cornify_url + '/Public/images/asj_2.webp';
-    arr[18] = cornify_url + '/Public/images/json.webp';
-    arr[19] = cornify_url + '/Public/images/linq.webp';
-    arr[20] = cornify_url + '/Public/images/asj_2.webp';
-    arr[21] = cornify_url + '/Public/images/mvc.webp';
-    arr[22] = cornify_url + '/Public/images/office.webp';
-    arr[23] = cornify_url + '/Public/images/asj_2.webp';
-    arr[24] = cornify_url + '/Public/images/sql.webp';
-    arr[25] = cornify_url + '/Public/images/ssrs.webp';
-    arr[26] = cornify_url + '/Public/images/asj_2.webp';
-    arr[27] = cornify_url + '/Public/images/ws.webp';
-    arr[28] = cornify_url + '/Public/images/xml.webp';
-    arr[29] = cornify_url + '/Public/images/asj_2.webp';
+    if(details.toString().toLowerCase().includes('trident'))
+    {
+        ext1='.jpg';
+        ext2='.png';
+        mainicon='asj_21';
+    }
+    else{
+        ext1='.webp';
+        ext2='.webp'; 
+        mainicon='asj_2';
+    }
+    arr[0] = cornify_url + '/Public/images/adonet'+ext1;
+    arr[1] = cornify_url + '/Public/images/ajax'+ext1;
+    arr[2] = cornify_url + '/Public/images/'+mainicon+ext2;
+    arr[3] = cornify_url + '/Public/images/aspnet'+ext1;
+    arr[4] = cornify_url + '/Public/images/bootstrap'+ext1;
+    arr[5] = cornify_url + '/Public/images/'+mainicon+ext2;
+    arr[6] = cornify_url + '/Public/images/crm'+ext1;
+    arr[7] = cornify_url + '/Public/images/csharp'+ext1;
+    arr[8] = cornify_url + '/Public/images/'+mainicon+ext2;
+    arr[9] = cornify_url + '/Public/images/css'+ext1;    
+    arr[10] = cornify_url + '/Public/images/form'+ext1;
+    arr[11] = cornify_url + '/Public/images/'+mainicon+ext2;
+    arr[12] = cornify_url + '/Public/images/googleform'+ext1;
+    arr[13] = cornify_url + '/Public/images/html'+ext1;
+    arr[14] = cornify_url + '/Public/images/'+mainicon+ext2;
+    arr[15] = cornify_url + '/Public/images/javascript'+ext1;
+    arr[16] = cornify_url + '/Public/images/jquery'+ext1;
+    arr[17] = cornify_url + '/Public/images/'+mainicon+ext2;
+    arr[18] = cornify_url + '/Public/images/json'+ext1;
+    arr[19] = cornify_url + '/Public/images/linq'+ext1;
+    arr[20] = cornify_url + '/Public/images/'+mainicon+ext2;
+    arr[21] = cornify_url + '/Public/images/mvc'+ext1;
+    arr[22] = cornify_url + '/Public/images/office'+ext1;
+    arr[23] = cornify_url + '/Public/images/'+mainicon+ext2;
+    arr[24] = cornify_url + '/Public/images/sql'+ext1;
+    arr[25] = cornify_url + '/Public/images/ssrs'+ext1;
+    arr[26] = cornify_url + '/Public/images/'+mainicon+ext2;
+    arr[27] = cornify_url + '/Public/images/ws'+ext1;
+    arr[28] = cornify_url + '/Public/images/xml'+ext1;
+    arr[29] = cornify_url + '/Public/images/'+mainicon+ext2;
+    //arr[0] = cornify_url + '/Public/images/adonet.webp';
+    //arr[1] = cornify_url + '/Public/images/ajax.webp';
+    //arr[2] = cornify_url + '/Public/images/asj_2.webp';
+    //arr[3] = cornify_url + '/Public/images/aspnet.webp';
+    //arr[4] = cornify_url + '/Public/images/bootstrap.webp';
+    //arr[5] = cornify_url + '/Public/images/asj_2.webp';
+    //arr[6] = cornify_url + '/Public/images/crm.webp';
+    //arr[7] = cornify_url + '/Public/images/csharp.webp';
+    //arr[8] = cornify_url + '/Public/images/asj_2.webp';
+    //arr[9] = cornify_url + '/Public/images/css.webp';    
+    //arr[10] = cornify_url + '/Public/images/form.webp';
+    //arr[11] = cornify_url + '/Public/images/asj_2.webp';
+    //arr[12] = cornify_url + '/Public/images/googleform.webp';
+    //arr[13] = cornify_url + '/Public/images/html.webp';
+    //arr[14] = cornify_url + '/Public/images/asj_2.webp';
+    //arr[15] = cornify_url + '/Public/images/javascript.webp';
+    //arr[16] = cornify_url + '/Public/images/jquery.webp';
+    //arr[17] = cornify_url + '/Public/images/asj_2.webp';
+    //arr[18] = cornify_url + '/Public/images/json.webp';
+    //arr[19] = cornify_url + '/Public/images/linq.webp';
+    //arr[20] = cornify_url + '/Public/images/asj_2.webp';
+    //arr[21] = cornify_url + '/Public/images/mvc.webp';
+    //arr[22] = cornify_url + '/Public/images/office.webp';
+    //arr[23] = cornify_url + '/Public/images/asj_2.webp';
+    //arr[24] = cornify_url + '/Public/images/sql.webp';
+    //arr[25] = cornify_url + '/Public/images/ssrs.webp';
+    //arr[26] = cornify_url + '/Public/images/asj_2.webp';
+    //arr[27] = cornify_url + '/Public/images/ws.webp';
+    //arr[28] = cornify_url + '/Public/images/xml.webp';
+    //arr[29] = cornify_url + '/Public/images/asj_2.webp';
     index=arr[Math.floor(Math.random() * arr.length)];    
     url = index;
 
@@ -196,6 +241,7 @@ var cornify_add = function (options) {
     //cornify_updatecount();
 
     // Trigger an event on the document.
+    //added for IE
     //var event = new Event('cornify');
     var event = function (e) {
         var t;
