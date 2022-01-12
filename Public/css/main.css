@@ -2155,6 +2155,7 @@ ul#nav1 {
     font-family: sans-serif;
     width: 6%;
     padding-left: 0;
+    z-index:1;
 }
 
 .skills dt:after {
