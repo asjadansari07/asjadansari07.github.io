@@ -1,5 +1,7 @@
-﻿#ie {
+﻿#ie,ieform {
     display:none;
+    color:#ff0000;
+    color: var(--mycol);
 }
 
 .filter2 {
