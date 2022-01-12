@@ -114,8 +114,8 @@ $(document).ready(function () {
     (function () { 
         //const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
         //const rgx = new RegExp('localhost:2435');
-        //const rgx = new RegExp('localhost:8426');
-        const rgx = new RegExp('asjadansari07.github.io');
+        const rgx = new RegExp('localhost:8426');
+        //const rgx = new RegExp('asjadansari07.github.io');
     const host = window.location.host; 
     const isMatch = !host.match(rgx); 
  
@@ -590,11 +590,30 @@ $(document).ready(function () {
         }
     }
     function changeColor(col, rgba, src, formsrc) {
-        document.documentElement.style.setProperty('--mycol', col, 'important');
-        $('.popup_menu .btn1').css('background', rgba);
-        document.documentElement.style.setProperty('--background', col, 'important');
+        if(details.toString().toLowerCase().includes('trident'))
+        { 
+            
+            $(".perctext").css("color",col);
+            $(".testimonial-avatar").hover(function(){ $(this).css("border","2px solid "+col);},function(){ $(this).css("border","none");});
+            $("<style type='text/css'>.mycol:after{background:"+col+";"+"} </style>").appendTo("head");
+            $("#resume a").hover(function(){ $(this).addClass("mycol");},function(){ $(this).removeClass("mycol");});
+
+            
+            
+        }
+        else
+        {
+            document.documentElement.style.setProperty('--mycol', col, 'important');            
+            document.documentElement.style.setProperty('--background', col, 'important');
+            
+        }
+        $('.popup_menu .btn1').css('background', rgba);           
         $('#androidapk').attr("src", src)
-        //$('#googleForm').attr("data-src","").attr("src", formsrc)
+        //document.documentElement.style.setProperty('--mycol', col, 'important');
+        //$('.popup_menu .btn1').css('background', rgba);
+        //document.documentElement.style.setProperty('--background', col, 'important');
+        //$('#androidapk').attr("src", src)
+        ////$('#googleForm').attr("data-src","").attr("src", formsrc)
     }
     $(".trigger").click(function () {
         $(".popup_menu").toggleClass("active");
