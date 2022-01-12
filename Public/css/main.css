@@ -1,14 +1,4 @@
-﻿iegform {
-    display:none;
-    color:#ff0000;
-}
-
-#iegtranslate {
-    display:none;
-    color:#ff0000;
-}
-
-.filter2 {
+﻿.filter2 {
     z-index: 2;
     position: absolute;
     width: 100%;

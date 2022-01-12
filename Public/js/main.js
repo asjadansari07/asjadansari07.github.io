@@ -344,7 +344,7 @@ $(document).ready(function () {
 
             
             $('#google_translate_element').css('display','none');
-            $('#iegtranslate').css('display','inline-block');
+            $('#iegtranslate').css('display','inline-block').css('color','#ff0000');
             $('#iegform').css('display','inline-block').css('color','#ff0000');
             
             
