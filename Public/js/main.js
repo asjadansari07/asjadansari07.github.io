@@ -343,7 +343,8 @@ $(document).ready(function () {
             $(".counter-sora").css("font-size","60px");
 
             
-            
+            $('#google_translate_element').css('display','none');
+            $('#ie').css('display','inline-block');
             
             
         }
