@@ -340,6 +340,7 @@ $(document).ready(function () {
             $('img[alt="MS Office"]').attr('class','').attr('src','Public/images/office.jpg');
             $('img[alt="SSRS"]').attr('class','').attr('src','Public/images/ssrs.jpg');
             $('img[alt="MVC"]').attr('class','').attr('src','Public/images/mvc.jpg');
+            $(".counter-sora").css("font-size","60px");
 
             
             
