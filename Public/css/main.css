@@ -244,8 +244,7 @@ video {
         width: 0;
     }
 
-    #resume a:hover {
-        color: red!important;
+    #resume a:hover {        
         color: var(--mycol)!important;
     }
 
@@ -893,8 +892,8 @@ position-relative1 {
 
     .m-theme:hover {
         cursor: pointer;
-        background: red;
-        background: var(--mycol);
+        /*background: red;
+        background: var(--mycol);*/
     }
 
 img#imgtheme {

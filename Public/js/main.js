@@ -312,6 +312,8 @@ $(document).ready(function () {
         }
         if(details.toString().toLowerCase().includes('trident'))
         {  
+            $(".m-theme").hide();
+
             $("#header-wrapper").css("background", "url(/Public/images/head-back.jpg) no-repeat center bottom").css('background-size','cover');
             $(".counter-box").css("background", "url(/Public/images/sg-back.jpg) no-repeat");
             $('head').append('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />');
@@ -346,7 +348,7 @@ $(document).ready(function () {
             $('#google_translate_element').css('display','none');
             $('#iegtranslate').css('display','inline-block').css('color','#ff0000');
             $('#iegform').css('display','inline-block').css('color','#ff0000');
-            
+            $('#resume a').hover(function(){$(this).css('color','red');},function(){$(this).css('color','white');});            
             
         }
     
@@ -592,14 +594,30 @@ $(document).ready(function () {
     function changeColor(col, rgba, src, formsrc) {
         if(details.toString().toLowerCase().includes('trident'))
         { 
-            
-            $(".perctext").css("color",col);
-            $(".testimonial-avatar").hover(function(){ $(this).css("border","2px solid "+col);},function(){ $(this).css("border","none");});
-            $("<style type='text/css'>.mycol:after{background:"+col+";"+"} </style>").appendTo("head");
-            $("#resume a").hover(function(){ $(this).addClass("mycol");},function(){ $(this).removeClass("mycol");});
+
 
             
             
+            $(".perctext").css("color",col);
+            $(".testimonial-avatar").hover(function(){ $(this).css("border","2px solid "+col);},function(){ $(this).css("border","none");});
+            $("<style type='text/css'>.mycol:after{background:"+col+" !important;"+"} </style>").appendTo("head");            
+            $("<style type='text/css'>.mycol1{color:"+col+" !important;"+"} </style>").appendTo("head");
+            $("<style type='text/css'>.mycol2:before{background-color:"+col+" !important;"+"} </style>").appendTo("head");
+            $("<style type='text/css'>.mycol3:before{background:"+col+" !important;"+"} </style>").appendTo("head");            
+            $("#resume a").hover(function(){$(this).addClass("mycol mycol1");},function(){$(this).removeClass("mycol1");});
+            $("#asj").css("color",col).hover(function(){ $(this).addClass("mycol");});
+            $("a.btn-2 span").css("color",col).css("border","1px solid "+col);
+            $("a.btn-2").hover(function(){$(this).addClass("mycol2");$("a.btn-2 span").css("color","white");},function(){$("a.btn-2 span").css("color",col);});            
+            
+            //$(".popup_menu .btn1 .fa").hover(function(){$(this).addClass("mycol1");},function(){$(this).removeClass("mycol1");});
+            $(".fancyBtn").addClass("mycol1");
+            $(".m-theme.active").css("background",col);
+            $(".m-backtotop.active").css("background",col);
+            //$(".scrolling-menu #nav li.current a").addClass("mycol3 mycol1");
+            //$(".scrolling-menu #nav li.current a").hover(function(){$(this).addClass("mycol3 mycol1")},function(){$(this).removeClass("mycol3");});
+            //$(".scrolling-menu #nav li a").hover(function(){$(this).addClass("mycol1");},function(){$(this).removeClass("mycol1");});
+
+            $(".slicknav_menu .slicknav_icon-bar").css("background",col).addClass("mycol3 mycol");
         }
         else
         {
