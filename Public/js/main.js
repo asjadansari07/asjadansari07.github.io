@@ -312,7 +312,7 @@ $(document).ready(function () {
         }
         if(details.toString().toLowerCase().includes('trident'))
         {  
-            $(".m-theme").hide();
+            //$(".m-theme").hide();
 
             $("#header-wrapper").css("background", "url(/Public/images/head-back.jpg) no-repeat center bottom").css('background-size','cover');
             $(".counter-box").css("background", "url(/Public/images/sg-back.jpg) no-repeat");
@@ -607,7 +607,7 @@ $(document).ready(function () {
             $("#resume a").hover(function(){$(this).addClass("mycol mycol1");},function(){$(this).removeClass("mycol1");});
             $("#asj").css("color",col).hover(function(){ $(this).addClass("mycol");});
             $("a.btn-2 span").css("color",col).css("border","1px solid "+col);
-            $("a.btn-2").hover(function(){$(this).addClass("mycol2");$("a.btn-2 span").css("color","white");},function(){$("a.btn-2 span").css("color",col);});            
+            $("a.btn-2").hover(function(){$(this).addClass("mycol3");$("a.btn-2 span").css("color","white");},function(){$("a.btn-2 span").css("color",col);});            
             
             //$(".popup_menu .btn1 .fa").hover(function(){$(this).addClass("mycol1");},function(){$(this).removeClass("mycol1");});
             $(".fancyBtn").addClass("mycol1");
@@ -617,7 +617,18 @@ $(document).ready(function () {
             //$(".scrolling-menu #nav li.current a").hover(function(){$(this).addClass("mycol3 mycol1")},function(){$(this).removeClass("mycol3");});
             //$(".scrolling-menu #nav li a").hover(function(){$(this).addClass("mycol1");},function(){$(this).removeClass("mycol1");});
 
-            $(".slicknav_menu .slicknav_icon-bar").css("background",col).addClass("mycol3 mycol");
+            //$(".slicknav_menu .slicknav_icon-bar").css("background",col).addClass("mycol3 mycol");
+
+            
+            $("<style type='text/css'>.hellotext:before{border-left-color:"+col+" !important;"+"} </style>").appendTo("head");   
+            $(".sora-author-box-text .hello-txt").css("background",col).addClass("hellotext");                        
+            $(".sora-author-box-text-details .profile-list li .list-button,.works-icons li,.flickity-prev-next-button").css("background",col);            
+            $(".header-logo-desc span,.sora-author-box-text .profile-title,.sora-author-box-text .profile-title span,.counter-box-item,.counter-sora,.testimonial-author,.map-me .con-list li i,#iegtranslate,#iegform").css("color",col);
+            $(".flickity-prev-next-button").hover(function(){ $(this).css("background","#fff");},function(){ $(this).css("background",col);});
+            
+            //$(".block-image").hover(function(){$(".block-image a.thumb").addClass("mycol3");},function(){$(".block-image a.thumb").removeClass("mycol3");});
+            $(".top-bar-social ul#social a,.bottom-bar-social ul#social a").hover(function(){$(this).addClass("mycol1");},function(){$(this).removeClass("mycol1");});
+            $(".socials a i").hover(function(){$(this).css("background",col);},function(){$(this).css("background","none");});
         }
         else
         {
