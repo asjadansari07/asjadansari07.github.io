@@ -5,7 +5,8 @@
     })
 });
 
-$(document).ready(function () {     
+$(document).ready(function () {  
+    document.addEventListener("mousewheel", this.mousewheel.bind(this), { passive: false });
     $('.menu')['slicknav']({
         prependTo: '.menu-mobile',
         label: ''

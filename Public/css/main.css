@@ -1,8 +1,4 @@
-﻿.owl-carousel {
--ms-touch-action: pan-y;
-touch-action: pan-y;
-}
-.filter2 {
+﻿.filter2 {
     z-index: 2;
     position: absolute;
     width: 100%;
