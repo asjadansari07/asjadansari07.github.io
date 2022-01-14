@@ -1254,12 +1254,12 @@ body {
             }
 
                 .scrolling-menu #nav li a:hover {
-                    color: red;
+                    /*color: red;*/
                     color: var(--mycol);
                 }
 
             .scrolling-menu #nav li.current a {
-                color: red;
+                /*color: red;*/
                 color: var(--mycol);
             }
 
@@ -1273,7 +1273,7 @@ body {
                     content: '';
                     -webkit-transition: all ease .3s;
                     transition: all ease .3s;
-                    background: red;
+                    /*background: red;*/
                     background: var(--mycol);
                 }
 
@@ -1381,7 +1381,7 @@ body {
     display: block;
     width: 1.5em;
     height: .15em;
-    background: red;
+    /*background: red;*/
     background: var(--mycol);
     position: relative;
     display: block;
@@ -1393,7 +1393,7 @@ body {
         width: 1.5em;
         display: block;
         height: .15em;
-        background: red;
+        /*background: red;*/
         background: var(--mycol);
         position: absolute;
         display: block;
@@ -1405,7 +1405,7 @@ body {
         display: block;
         width: 1.5em;
         height: .15em;
-        background: red;
+        /*background: red;*/
         background: var(--mycol);
         position: absolute;
         display: block;
@@ -1487,7 +1487,7 @@ a.slicknav_btn.slicknav_open.active .slicknav_icon-bar:after {
     margin: 0;
     padding: 0;
     font-size: .875em;
-    background: red;
+    /*background: red;*/
     background: var(--mycol);
 }
 

@@ -14,6 +14,9 @@ $(document).ready(function () {
         prependTo: '.menu-mobile2',
         label: ''
     })
+
+
+
     $(function () {
 
         $(window).on("scroll", function (e) {
@@ -84,7 +87,19 @@ $(document).ready(function () {
     //    //}
     
     //}    
+
+    ////$(function () {    
+    //    if(details.toString().toLowerCase().includes('trident'))
+    //    {      
+    //        $("button .flickity-prev-next-button .next").click(function () {
+    //                $(".flickity-page-dots .dot.is-selected").css("background",col);
+    //                $(".flickity-page-dots .dot").css("background","none");
+    //        });
+    //    }
+    ////});
     //check browser in mobile-end
+
+
     var h=$(window).height(); // New height
     var w=$(window).width(); // New width
     var matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -313,6 +328,24 @@ $(document).ready(function () {
         if(details.toString().toLowerCase().includes('trident'))
         {  
             //$(".m-theme").hide();
+            $("<style type='text/css'>.mycoll:after{background:red;"+"} </style>").appendTo("head");            
+            //$("<style type='text/css'>.mycoll1{color:red;"+"} </style>").appendTo("head");
+            //$("<style type='text/css'>.mycoll2:before{background-color:red ;"+"} </style>").appendTo("head");
+            $("<style type='text/css'>.mycoll3:before{background:red;"+"} </style>").appendTo("head"); 
+            $("<style type='text/css'>.mycoll4{background:red;"+"} </style>").appendTo("head"); 
+            $(".slicknav_nav").addClass("mycoll4");
+            $(".slicknav_menu .slicknav_icon-bar").css("background","none");
+            $(".flickity-page-dots").css("display","none");
+            //$(".scrolling-menu #nav li a").hover(function(){$(this).addClass("mycoll1");},function(){$(this).removeClass("mycoll1");});
+            
+            //$(".scrolling-menu #nav li.current a").addClass("mycoll1");
+            //$(".scrolling-menu #nav li.current a").addClass("mycoll2");
+
+            $(".slicknav_menu .slicknav_icon-bar").addClass("mycoll4");
+            $(".slicknav_menu .slicknav_icon-bar,.slicknav_menu .slicknav_icon-bar").addClass("mycoll3 mycoll");
+            setTimeout(function() {$("ol.flickity-page-dots").css("display","none");},7000);
+            
+
 
             $("#header-wrapper").css("background", "url(/Public/images/head-back.jpg) no-repeat center bottom").css('background-size','cover');
             $(".counter-box").css("background", "url(/Public/images/sg-back.jpg) no-repeat");
@@ -602,8 +635,9 @@ $(document).ready(function () {
             $(".testimonial-avatar").hover(function(){ $(this).css("border","2px solid "+col);},function(){ $(this).css("border","none");});
             $("<style type='text/css'>.mycol:after{background:"+col+" !important;"+"} </style>").appendTo("head");            
             $("<style type='text/css'>.mycol1{color:"+col+" !important;"+"} </style>").appendTo("head");
-            $("<style type='text/css'>.mycol2:before{background-color:"+col+" !important;"+"} </style>").appendTo("head");
-            $("<style type='text/css'>.mycol3:before{background:"+col+" !important;"+"} </style>").appendTo("head");            
+            //$("<style type='text/css'>.mycol2:before{background-color:"+col+" !important;"+"} </style>").appendTo("head");
+            $("<style type='text/css'>.mycol3:before{background:"+col+" !important;"+"} </style>").appendTo("head"); 
+            $("<style type='text/css'>.mycol4{background:"+col+" !important;"+"} </style>").appendTo("head"); 
             $("#resume a").hover(function(){$(this).addClass("mycol mycol1");},function(){$(this).removeClass("mycol1");});
             $("#asj").css("color",col).hover(function(){ $(this).addClass("mycol");});
             $("a.btn-2 span").css("color",col).css("border","1px solid "+col);
@@ -619,12 +653,18 @@ $(document).ready(function () {
 
             //$(".slicknav_menu .slicknav_icon-bar").css("background",col).addClass("mycol3 mycol");
 
-
-            $(".block-image .thumb").addClass("mycol3");
-
-
-
+            $(".slicknav_nav").addClass("mycol4");
+            //$(".scrolling-menu #nav li a").hover(function(){$(this).addClass("mycol1");},function(){$(this).removeClass("mycol1");});
             
+            //$(".scrolling-menu #nav li.current a").addClass("mycol1");
+            //$(".scrolling-menu #nav li.current a").addClass("mycol2");
+
+            $(".slicknav_menu .slicknav_icon-bar").css("background","none");
+            $(".slicknav_menu .slicknav_icon-bar,.slicknav_menu .slicknav_icon-bar").addClass("mycol3 mycol");
+            $("ol.flickity-page-dots").css("display","none");
+
+
+            $(".block-image .thumb").addClass("mycol3");            
             $("<style type='text/css'>.hellotext:before{border-left-color:"+col+" !important;"+"} </style>").appendTo("head");   
             $(".sora-author-box-text .hello-txt").css("background",col).addClass("hellotext");                        
             $(".sora-author-box-text-details .profile-list li .list-button,.works-icons li,.flickity-prev-next-button").css("background",col);            
