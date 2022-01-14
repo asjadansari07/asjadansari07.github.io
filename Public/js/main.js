@@ -619,6 +619,11 @@ $(document).ready(function () {
 
             //$(".slicknav_menu .slicknav_icon-bar").css("background",col).addClass("mycol3 mycol");
 
+
+            $(".block-image .thumb").addClass("mycol3");
+
+
+
             
             $("<style type='text/css'>.hellotext:before{border-left-color:"+col+" !important;"+"} </style>").appendTo("head");   
             $(".sora-author-box-text .hello-txt").css("background",col).addClass("hellotext");                        
