@@ -42,6 +42,7 @@ $(document).ready(function () {
     //check browser in mobile-start
     var iframe=$('#googleForm');
     var gtranslate=$('#google_translate_element');
+    var fntweight=$(".color .lnr .lnr-license",".color .lnr .lnr-graduation-hat",".color .lnr .lnr-book")
     let details = navigator.userAgent; 
     //let regexp = /android|iphone|kindle|ipad/i; 
     let regexp = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|kindle|Opera Mini/i;
@@ -197,7 +198,8 @@ $(document).ready(function () {
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")   
             asj_warning.css("font-size","5em");
-            popupqr.css("width","193").css("height","193");         
+            popupqr.css("width","193").css("height","193"); 
+            fntweight.css("font-weight","200");
             break;
         case (w<=1200 && w>1100):
             ele.css("font-size","7px").css("font-weight","600");
@@ -207,6 +209,7 @@ $(document).ready(function () {
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","5em");
             popupqr.css("width","193").css("height","193");
+            fntweight.css("font-weight","200");
             break;
         case (w<=1100 && w>980):
             ele.css("font-size","7px").css("font-weight","600");
@@ -216,6 +219,7 @@ $(document).ready(function () {
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","4em");
             popupqr.css("width","193").css("height","193");
+            fntweight.css("font-weight","200");
             break;
         case (w<=980 && w>880):
             ele.css("font-size","7px").css("font-weight","600");
@@ -225,6 +229,7 @@ $(document).ready(function () {
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","4em");
             popupqr.css("width","193").css("height","193");
+            fntweight.css("font-weight","200");
             break;
         case (w<=880 && w>768):
             ele.css("font-size","7px").css("font-weight","600");
@@ -234,6 +239,7 @@ $(document).ready(function () {
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","3em");
             popupqr.css("width","193").css("height","193");
+            fntweight.css("font-weight","200");
             break;
         case (w<=768 && w>767):
             ele.css("font-size","7px").css("font-weight","600");
@@ -243,6 +249,7 @@ $(document).ready(function () {
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","3em");
             popupqr.css("width","193").css("height","193");
+            fntweight.css("font-weight","200");
             break;
         case (w<=767 && w>480):
             if (!isMobileDevice) { 
@@ -259,6 +266,7 @@ $(document).ready(function () {
             $('head').append('<meta name="color-scheme" content="dark light" />');
             popupqr.css("width","157").css("height","157");
             mainvid.css("width","inherit").css("object-fit","cover");
+            fntweight.css("font-weight","200");
             break;
         case (w<=480 && w>360):
             if (!isMobileDevice) { 
