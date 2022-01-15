@@ -188,7 +188,8 @@ $(document).ready(function () {
     var popupqr=$('#pop-up')
     //var iframe=$('#googleForm')
     var mainvid=$('video')
-    var fntweight=$("i.color .lnr .lnr-license","i.color .lnr .lnr-graduation-hat","i.color .lnr .lnr-book","i.lnr .lnr-home","i.lnr .lnr-smartphone","i.lnr .lnr-envelope","i.lnr .lnr-earth");
+    //var fntweight=$("i.color .lnr .lnr-license","i.color .lnr .lnr-graduation-hat","i.color .lnr .lnr-book","i.lnr .lnr-home","i.lnr .lnr-smartphone","i.lnr .lnr-envelope","i.lnr .lnr-earth");
+    var fntweight=$("i.color .lnr .lnr-license");
     switch (true) {                
         case (w>1200):
             ele.css("font-size","7px").css("font-weight","600");
