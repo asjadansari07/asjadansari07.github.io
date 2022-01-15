@@ -41,8 +41,7 @@ $(document).ready(function () {
     });
     //check browser in mobile-start
     var iframe=$('#googleForm');
-    var gtranslate=$('#google_translate_element');
-    var fntweight=$(".color .lnr .lnr-license",".color .lnr .lnr-graduation-hat",".color .lnr .lnr-book")
+    var gtranslate=$('#google_translate_element');    
     let details = navigator.userAgent; 
     //let regexp = /android|iphone|kindle|ipad/i; 
     let regexp = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|kindle|Opera Mini/i;
@@ -189,7 +188,7 @@ $(document).ready(function () {
     var popupqr=$('#pop-up')
     //var iframe=$('#googleForm')
     var mainvid=$('video')
-
+    var fntweight=$(".color .lnr .lnr-license",".color .lnr .lnr-graduation-hat",".color .lnr .lnr-book",".lnr .lnr-home",".lnr .lnr-smartphone",".lnr .lnr-envelope",".lnr .lnr-earth");
     switch (true) {                
         case (w>1200):
             ele.css("font-size","7px").css("font-weight","600");
