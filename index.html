@@ -61,7 +61,88 @@
 }
  </script>
 
+    <style type="text/css">
+.d-flex1 {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
 
+position-relative1 {
+    position: relative!important;
+}
+
+.preloader1 {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+    margin: 0 auto;
+}
+
+    .preloader1 .preloader1-circle {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        border-style: solid;
+        border-width: 1px;
+        border-top-color: red;
+        border-top-color: var(--mycol);
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        z-index: 10;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+        box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+        -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+        background-color: #fff;
+        -webkit-animation: zoom 2s infinite ease;
+        animation: zoom 2s infinite ease;
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s;
+    }
+
+    .preloader1 .preloader1-circle2 {
+        border-top-color: #0078ff;
+    }
+
+    .preloader1 .preloader1-img {
+        position: absolute;
+        top: 50%;
+        z-index: 200;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        display: inline-block;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s;
+    }
+
+        .preloader1 .preloader1-img img {
+            max-width: 98.5px;
+        }
+
+    .preloader1 .pere-text1 strong {
+        font-weight: 800;
+        color: #dca73a;
+        text-transform: uppercase;
+    }
+
+    </style>
 </head>
 <!--added for cursor-->
 <!--    <body class='index'>-->
