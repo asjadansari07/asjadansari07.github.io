@@ -1,0 +1,32 @@
+{
+    "short_name": "Asjed Ansari",
+    "name": "Asjed Ansari's profile showcase website",
+    "icons": [
+    {
+      "src": "Public/images/asj_21.webp",
+      "type": "image/webp",
+      "sizes": "100x100"
+    },  
+    {
+      "src": "Public/images/asj_21.png",
+      "type": "image/png",
+      "sizes": "132x132"
+    },
+    {
+      "src": "/images/asj_21_32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/images/asj_21_16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#808080",
+    "display": "standalone",
+    "scope": "/app/",
+    "theme_color": "#808080",
+    "description": "This is Asjed Ansari's presonal profile showcase websit.",
+}
