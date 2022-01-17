@@ -2,6 +2,11 @@
     "short_name": "Asjed Ansari",
     "name": "Asjed Ansari's profile showcase website",
     "icons": [
+	{
+      "src": "Public/images/asj_21_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
     {
       "src": "Public/images/asj_21.webp",
       "type": "image/webp",
