@@ -13,15 +13,16 @@
       "type": "image/png",
       "sizes": "192x192"	  
     },
-    {
-      "src": "Public/images/asj_2_100.webp",
-      "type": "image/webp",
-      "sizes": "100x100"
-    },  
+	  
     {
       "src": "Public/images/asj_21.png",
       "type": "image/png",
       "sizes": "132x132"
+    },
+    {
+      "src": "Public/images/asj_2_100.webp",
+      "type": "image/webp",
+      "sizes": "100x100"
     }
     ],
     "start_url": "/index.html",
