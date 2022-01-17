@@ -721,5 +721,7 @@ $(document).ready(function () {
         
         
         }); 
+
+        $("#google_translate_element").css("display","inline-block");
     }, 5000);
 });
