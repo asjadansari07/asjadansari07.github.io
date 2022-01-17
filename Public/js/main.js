@@ -187,7 +187,7 @@ $(document).ready(function () {
             skillimg.css("display","block")
             skillvid.css("display","none")
             formdiv.css("padding","40px 40px 5px")
-            hlogo.css("height","45px").css("width","45px").src("src","/Public/images/asj_2_45.webp").src("src","/Public/images/asj_2_45.webp")
+            hlogo.css("height","45px").css("width","45px").src("src","/Public/images/asj_2_45.webp")
             hinner.css("padding-top","7px")
             asj_warning.css("font-size","2em");
             $('head').append('<meta name="color-scheme" content="dark light" />');
