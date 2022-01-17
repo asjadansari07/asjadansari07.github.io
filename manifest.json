@@ -1,6 +1,14 @@
 {
     "short_name": "Asjed Ansari",
     "name": "Asjed Ansari's profile showcase website",
+	"start_url": "https://asjadansari07.github.io/index.html",
+    "background_color": "#000000",
+    "display": "fullscreen",
+    "scope": "https://asjadansari07.github.io/",
+    "theme_color": "#000000",
+    "description": "This is Asjed Ansari's presonal profile showcase websit.",
+	"orientation": "portrait-primary",
+	"prefer_related_applications": true,
     "icons": [
 	{
       "src": "Public/images/asj_21_512.png",
@@ -13,24 +21,35 @@
       "type": "image/png",
       "sizes": "192x192"	  
     },
-	  
-    {
-      "src": "Public/images/asj_21.png",
+	{
+      "src": "Public/images/asj_21_180.png",
       "type": "image/png",
-      "sizes": "132x132"
+      "sizes": "180x180"	  
     },
     {
+      "src": "Public/images/asj_21_64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "Public/images/asj_21_48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+	{
+      "src": "Public/images/asj_21_32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+	{
+      "src": "Public/images/asj_21_16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+	{
       "src": "Public/images/asj_2_100.webp",
       "type": "image/webp",
       "sizes": "100x100"
     }
-    ],
-    "start_url": "https://asjadansari07.github.io/index.html",
-    "background_color": "#000000",
-    "display": "fullscreen",
-    "scope": "https://asjadansari07.github.io/",
-    "theme_color": "#000000",
-    "description": "This is Asjed Ansari's presonal profile showcase websit.",
-	"orientation": "portrait-primary",
-	"prefer_related_applications": true
+    ]    
 }
