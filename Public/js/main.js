@@ -692,12 +692,6 @@ $(document).ready(function () {
         }
     }
 
-
-    //if (isMobileDevice) { 
-    //    setTimeout(function() {$("#google_translate_element").css("display","inline-block");},5000);        
-    //}
-    //else{$("#google_translate_element").css("display","inline-block");
-    //}
     setTimeout(function() {
         var webmsrcvid=$('#webmsrcvid');
         var mp4srcvid=$('#mp4srcvid');
