@@ -31,7 +31,7 @@
     "start_url": "/index.html",
     "background_color": "#808080",
     "display": "standalone",
-    "scope": "/app/",
+    "scope": "/",
     "theme_color": "#808080",
     "description": "This is Asjed Ansari's presonal profile showcase websit.",
 	"prefer_related_applications": true
