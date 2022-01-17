@@ -31,5 +31,6 @@
     "scope": "https://asjadansari07.github.io/",
     "theme_color": "#000000",
     "description": "This is Asjed Ansari's presonal profile showcase websit.",
+	"orientation": "portrait-primary",
 	"prefer_related_applications": true
 }
