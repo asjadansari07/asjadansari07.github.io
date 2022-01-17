@@ -5,7 +5,8 @@
 	{
       "src": "Public/images/asj_21_192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+	  "purpose": "any maskable"
     },
     {
       "src": "Public/images/asj_21.webp",
