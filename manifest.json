@@ -27,7 +27,7 @@
     ],
     "start_url": "https://asjadansari07.github.io/index.html",
     "background_color": "#808080",
-    "display": "standalone",
+    "display": "fullscreen",
     "scope": "https://asjadansari07.github.io/",
     "theme_color": "#808080",
     "description": "This is Asjed Ansari's presonal profile showcase websit.",
