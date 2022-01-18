@@ -17,6 +17,11 @@
 	  "purpose": "any maskable"
     },
 	{
+      "src": "Public/images/asj_21_384.png",
+      "type": "image/png",
+      "sizes": "384x384"	  
+    },
+	{
       "src": "Public/images/asj_21_192.png",
       "type": "image/png",
       "sizes": "192x192"	  
@@ -25,6 +30,36 @@
       "src": "Public/images/asj_21_180.png",
       "type": "image/png",
       "sizes": "180x180"	  
+    },
+	{
+      "src": "Public/images/asj_21_152.png",
+      "type": "image/png",
+      "sizes": "152x152"	  
+    },
+	{
+      "src": "Public/images/asj_21_144.png",
+      "type": "image/png",
+      "sizes": "144x144"	  
+    },
+	{
+      "src": "Public/images/asj_21_128.png",
+      "type": "image/png",
+      "sizes": "128x128"	  
+    },
+	{
+      "src": "Public/images/asj_21_120.png",
+      "type": "image/png",
+      "sizes": "120x120"	  
+    },
+	{
+      "src": "Public/images/asj_21_96.png",
+      "type": "image/png",
+      "sizes": "96x96"	  
+    },
+	{
+      "src": "Public/images/asj_21_72.png",
+      "type": "image/png",
+      "sizes": "72x72"	  
     },
     {
       "src": "Public/images/asj_21_64.png",
