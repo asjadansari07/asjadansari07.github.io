@@ -14,38 +14,47 @@
       "src": "Public/images/asj_21_512.png",
       "type": "image/png",
       "sizes": "512x512",
-	  "purpose": "any maskable"
+	  "purpose": "maskable"
     },
 	{
       "src": "Public/images/asj_21_384.png",
       "type": "image/png",
-      "sizes": "384x384"	  
+      "sizes": "384x384",
+	  "purpose": "maskable"	  
     },
 	{
       "src": "Public/images/asj_21_192.png",
       "type": "image/png",
-      "sizes": "192x192"	  
+      "sizes": "192x192",
+	  "purpose": "maskable"  
     },
 	{
       "src": "Public/images/asj_21_180.png",
       "type": "image/png",
-      "sizes": "180x180"	  
+      "sizes": "180x180",
+	  "purpose": "maskable"	  
+    },
+	{
+      "src": "Public/images/asj_21_180.png",
+      "type": "image/png",
+      "sizes": "180x180" 
     },
 	{
       "src": "Public/images/asj_21_152.png",
       "type": "image/png",
-      "sizes": "152x152"	  
+      "sizes": "152x152",
+	  "purpose": "maskable"	  
     },
 		{
       "src": "Public/images/asj_21_144.png",
       "type": "image/png",
-      "sizes": "144x144"
+      "sizes": "144x144",
+	  "purpose": "maskable"
     },
 	{
       "src": "Public/images/asj_21_144.png",
       "type": "image/png",
-      "sizes": "144x144",
-	  "purpose": "maskable"	  
+      "sizes": "144x144"	  
     },
 	{
       "src": "Public/images/asj_21_128.png",
@@ -55,7 +64,8 @@
 	{
       "src": "Public/images/asj_21_120.png",
       "type": "image/png",
-      "sizes": "120x120"	  
+      "sizes": "120x120",
+	  "purpose": "maskable"	  
     },
 	{
       "src": "Public/images/asj_21_96.png",
@@ -65,7 +75,8 @@
 	{
       "src": "Public/images/asj_21_72.png",
       "type": "image/png",
-      "sizes": "72x72"	  
+      "sizes": "72x72",
+	  "purpose": "maskable" 
     },
     {
       "src": "Public/images/asj_21_64.png",
@@ -75,17 +86,20 @@
     {
       "src": "Public/images/asj_21_48.png",
       "type": "image/png",
-      "sizes": "48x48"
+      "sizes": "48x48",
+	  "purpose": "maskable"
     },
 	{
       "src": "Public/images/asj_21_32.png",
       "type": "image/png",
-      "sizes": "32x32"
+      "sizes": "32x32",
+	  "purpose": "maskable"
     },
 	{
       "src": "Public/images/asj_21_16.png",
       "type": "image/png",
-      "sizes": "16x16"
+      "sizes": "16x16",
+	  "purpose": "maskable"
     },
 	{
       "src": "Public/images/asj_2_100.webp",
