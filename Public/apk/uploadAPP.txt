@@ -4,9 +4,9 @@
 
 asjupload_keystore
 
-jarsigner -verbose -keystore D:\asjadansari.jks C:\Users\Aszad\Desktop\apk\Sign_blank_APK_to_certify_com.example.asjadansari.apk asjadansari_keystore
+jarsigner -verbose -keystore D:\asjadansari.jks C:\Users\Aszad\Desktop\apk\Sign_blank_APK_to_certify_com.example.AsjedAnsari.apk asjadansari_keystore
 
-zipalign -c -v 4 asjadansari.apk
+zipalign -c -v 4 AsjedAnsari.apk
 
 
 Ansari@10061989
