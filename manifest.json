@@ -18,6 +18,11 @@
 	],
     "icons": [
 	{
+	src": "favicon.ico",
+    "sizes": "256x256",
+    "type": "image/x-icon"
+	},
+	{
       "src": "Public/images/asj_21_512.png",
       "type": "image/png",
       "sizes": "512x512",
