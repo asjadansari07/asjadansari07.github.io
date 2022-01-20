@@ -45,8 +45,7 @@ $(document).ready(function () {
     //let regexp = /android|iphone|kindle|ipad/i; 
     let regexp = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|kindle|Opera Mini/i;
     let isMobileDevice = regexp.test(details); 
-    //let isWebview=details.toString().includes('wv');
-    let isWebview=function(){if((details.toString().indexOf('wv'))!==-1){return true}else{return false}};
+    let isWebview=details.toString().includes('wv');    
     //check browser in mobile-end
 
 
