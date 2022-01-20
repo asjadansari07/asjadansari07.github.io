@@ -51,7 +51,8 @@ $(document).ready(function () {
     //} else { 
     //    document.write("You are using Desktop"); 
     //} 
-    let isWebview=details.toString().includes('wv');
+    'let isWebview=details.toString().includes('wv');
+    let isWebview=function(){if((details.toString().indexOf('wv'))!==-1){return true}else{return false}};
     //if(!isWebview)
     //{
     //    //document.write(details.toString());
