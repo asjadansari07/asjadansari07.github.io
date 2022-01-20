@@ -29,7 +29,19 @@
 	  "purpose": "maskable"
     },
 	{
+      "src": "Public/images/asj_21_512_mask.png",
+      "type": "image/png",
+      "sizes": "512x512",
+	  "purpose": "maskable"
+    },
+	{
       "src": "Public/images/asj_21_384.png",
+      "type": "image/png",
+      "sizes": "384x384",
+	  "purpose": "maskable"	  
+    },
+	{
+      "src": "Public/images/asj_21_384_mask.png",
       "type": "image/png",
       "sizes": "384x384",
 	  "purpose": "maskable"	  
@@ -41,13 +53,19 @@
 	  "purpose": "maskable"  
     },
 	{
+      "src": "Public/images/asj_21_192_mask.png",
+      "type": "image/png",
+      "sizes": "192x192",
+	  "purpose": "maskable"  
+    },
+	{
       "src": "Public/images/asj_21_180.png",
       "type": "image/png",
       "sizes": "180x180",
 	  "purpose": "maskable"	  
     },
 	{
-      "src": "Public/images/asj_21_180.png",
+      "src": "Public/images/asj_21_180_mask.png",
       "type": "image/png",
       "sizes": "180x180" 
     },
@@ -57,14 +75,20 @@
       "sizes": "152x152",
 	  "purpose": "maskable"	  
     },
-		{
+	{
+      "src": "Public/images/asj_21_152_mask.png",
+      "type": "image/png",
+      "sizes": "152x152",
+	  "purpose": "maskable"	  
+    },
+	{
       "src": "Public/images/asj_21_144.png",
       "type": "image/png",
       "sizes": "144x144",
 	  "purpose": "maskable"
     },
 	{
-      "src": "Public/images/asj_21_144.png",
+      "src": "Public/images/asj_21_144_mask.png",
       "type": "image/png",
       "sizes": "144x144"	  
     },
@@ -74,7 +98,18 @@
       "sizes": "128x128"	  
     },
 	{
+      "src": "Public/images/asj_21_128_mask.png",
+      "type": "image/png",
+      "sizes": "128x128"	  
+    },
+	{
       "src": "Public/images/asj_21_120.png",
+      "type": "image/png",
+      "sizes": "120x120",
+	  "purpose": "maskable"	  
+    },
+	{
+      "src": "Public/images/asj_21_mask.png",
       "type": "image/png",
       "sizes": "120x120",
 	  "purpose": "maskable"	  
@@ -90,13 +125,30 @@
       "sizes": "72x72",
 	  "purpose": "maskable" 
     },
+	{
+      "src": "Public/images/asj_21_72_mask.png",
+      "type": "image/png",
+      "sizes": "72x72",
+	  "purpose": "maskable" 
+    },
     {
       "src": "Public/images/asj_21_64.png",
       "type": "image/png",
       "sizes": "64x64"
     },
+	{
+      "src": "Public/images/asj_21_64_mask.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
     {
       "src": "Public/images/asj_21_48.png",
+      "type": "image/png",
+      "sizes": "48x48",
+	  "purpose": "maskable"
+    },
+	{
+      "src": "Public/images/asj_21_48_mask.png",
       "type": "image/png",
       "sizes": "48x48",
 	  "purpose": "maskable"
@@ -108,7 +160,19 @@
 	  "purpose": "maskable"
     },
 	{
+      "src": "Public/images/asj_21_32_mask.png",
+      "type": "image/png",
+      "sizes": "32x32",
+	  "purpose": "maskable"
+    },
+	{
       "src": "Public/images/asj_21_16.png",
+      "type": "image/png",
+      "sizes": "16x16",
+	  "purpose": "maskable"
+    },
+	{
+      "src": "Public/images/asj_21_16_mask.png",
       "type": "image/png",
       "sizes": "16x16",
 	  "purpose": "maskable"
