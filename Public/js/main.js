@@ -45,7 +45,7 @@ $(document).ready(function () {
     //let regexp = /android|iphone|kindle|ipad/i; 
     let regexp = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|kindle|Opera Mini/i;
     let isMobileDevice = regexp.test(details); 
-    'let isWebview=details.toString().includes('wv');
+    //let isWebview=details.toString().includes('wv');
     let isWebview=function(){if((details.toString().indexOf('wv'))!==-1)return true};
     //check browser in mobile-end
 
@@ -76,8 +76,8 @@ $(document).ready(function () {
     (function () { 
         //const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
         //const rgx = new RegExp('localhost:2435');
-        //const rgx = new RegExp('localhost:8426');
-        const rgx = new RegExp('asjadansari07.github.io');
+        const rgx = new RegExp('localhost:8426');
+        //const rgx = new RegExp('asjadansari07.github.io');
     const host = window.location.host; 
     const isMatch = !host.match(rgx); 
  
