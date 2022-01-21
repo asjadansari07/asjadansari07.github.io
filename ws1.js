@@ -35,7 +35,7 @@ self.addEventListener('fetch', evt => {
     })
   );
 });
-
+/////////////////////////////////////////////////////////////////////////////////////////
 //Dynamic
 const dynamicCacheName = 'site-dynamic-v1';
 // activate event
