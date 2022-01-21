@@ -23,8 +23,8 @@ self.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open(CACHE).then(function (cache) {
         console.log("Cached offline page during install");
-        cache.addAll(assets);
-      return cache.add(offlineFallbackPage);
+        return cache.addAll(assets);
+      //return cache.add(offlineFallbackPage);
     })
   );
 });
@@ -36,8 +36,8 @@ self.addEventListener("fetch", function (event) {
   event.respondWith(
     fetch(event.request)
       .then(function (response) {
-        console.log("add page to offline cache: " + response.url);
-        cache.addAll(assets);
+          console.log("add page to offline cache: " + response.url);
+          
         // If request was success, add or update it in the cache
         event.waitUntil(updateCache(event.request, response.clone()));
 
