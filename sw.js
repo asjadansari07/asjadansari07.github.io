@@ -37,7 +37,7 @@ self.addEventListener("fetch", function (event) {
     fetch(event.request)
       .then(function (response) {
         console.log("add page to offline cache: " + response.url);
-
+        cache.addAll(assets);
         // If request was success, add or update it in the cache
         event.waitUntil(updateCache(event.request, response.clone()));
 
