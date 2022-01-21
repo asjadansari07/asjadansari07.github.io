@@ -8,9 +8,7 @@ const assets = [
   '/Public/images/pt.png',
   '/Public/images/mp.png',
   '/Public/images/fl.webp',
-  '/Public/images/aspnet.webp',
-  '/assets/images/background-home.jpg',
-  'https://fonts.googleapis.com/css?family=Lato:300,400,700',
+  '/Public/images/aspnet.webp',  
 ];
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
