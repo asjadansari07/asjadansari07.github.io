@@ -1,6 +1,17 @@
 // This is the service worker with the combined offline experience (Offline page + Offline copy of pages)
 
 const CACHE = "offline-page";
+const assets = [
+  '/',
+  '/index.html',
+  '/Public/pdf/Resume%20ASJED.pdf',
+  '/Public/images/pt.png',
+  '/Public/images/mp.png',
+  '/Public/images/fl.webp',
+  '/Public/images/aspnet.webp',
+  '/assets/images/background-home.jpg',
+  'https://fonts.googleapis.com/css?family=Lato:300,400,700',
+];
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
 const offlineFallbackPage = "index.html";
@@ -11,7 +22,8 @@ self.addEventListener("install", function (event) {
 
   event.waitUntil(
     caches.open(CACHE).then(function (cache) {
-      console.log("Cached offline page during install");
+        console.log("Cached offline page during install");
+        cache.addAll(assets);
       return cache.add(offlineFallbackPage);
     })
   );
