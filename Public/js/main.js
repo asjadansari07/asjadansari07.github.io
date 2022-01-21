@@ -51,7 +51,9 @@ $(document).ready(function () {
     //} else { 
     //    document.write("You are using Desktop"); 
     //} 
-    let isWebview=details.toString().includes('wv');
+    //let isWebview=details.toString().includes('wv');
+    let isWebview=details.toString().indexOf('wv') > -1;
+   
     //if(!isWebview)
     //{
     //    //document.write(details.toString());
@@ -129,8 +131,8 @@ $(document).ready(function () {
     (function () { 
         //const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
         //const rgx = new RegExp('localhost:2435');
-        //const rgx = new RegExp('localhost:8426');
-        const rgx = new RegExp('asjadansari07.github.io');
+        const rgx = new RegExp('localhost:8426');
+        //const rgx = new RegExp('asjadansari07.github.io');
     const host = window.location.host; 
     const isMatch = !host.match(rgx); 
  
@@ -328,12 +330,14 @@ $(document).ready(function () {
     $('#nav').onePageNav();
     $('.slide-in').onePageNav();
     function setDefaultColor(){
-        if(details.toString().toLowerCase().includes('edge') || details.toString().toLowerCase().includes('trident'))
+        //if(details.toString().toLowerCase().includes('edge') || details.toString().toLowerCase().includes('trident'))
+        if(details.toString().toLowerCase().indexOf('edge')>-1 || details.toString().toLowerCase().indexOf('trident')>-1)            
         {       
             var myvid=$('#myvideo')
             myvid.css('position','absolute').css('max-height','none').css('width','auto').css('height','auto');
         }
-        if(details.toString().toLowerCase().includes('trident'))
+        //if(details.toString().toLowerCase().includes('trident'))
+        if(details.toString().toLowerCase().indexOf('trident')>-1)
         {  
             //$(".m-theme").hide();
             $("<style type='text/css'>.mycoll:after{background:red;"+"} </style>").appendTo("head");            
@@ -479,11 +483,13 @@ $(document).ready(function () {
         document.documentElement.style.setProperty('--bccol', 'black', 'important');
         document.documentElement.style.setProperty('--scol', 'white', 'important');  
     
-        if(details.toString().toLowerCase().includes('edge'))
+        //if(details.toString().toLowerCase().includes('edge'))
+        if(details.toString().toLowerCase().indexOf('edge')>-1)
         {        
             document.documentElement.style.setProperty('--bckimg', 'url(../Public/images/header-mask-black-after.webp) no-repeat center', 'important');
         }
-        else if(details.toString().toLowerCase().includes('trident'))
+        //else if(details.toString().toLowerCase().includes('trident'))
+        else if(details.toString().toLowerCase().indexOf('trident')>-1)
         {  
             $("<style type='text/css'>.black:before{color:black;} </style>").appendTo("head");
             $('.sora-author-box-text .hello-txt').addClass('black'); 
@@ -516,11 +522,13 @@ $(document).ready(function () {
         $(".insta-wrap").css('background', "rgb(255, 255, 255)");
         document.documentElement.style.setProperty('--bccol', 'white', 'important');
         document.documentElement.style.setProperty('--scol', 'black', 'important'); 
-        if(details.toString().toLowerCase().includes('edge'))
+        //if(details.toString().toLowerCase().includes('edge'))
+        if(details.toString().toLowerCase().indexOf('edge')>-1)
         {
             document.documentElement.style.setProperty('--bckimg', 'url(../Public/images/header-mask-white-after.webp) no-repeat center', 'important');
         }
-        else if(details.toString().toLowerCase().includes('trident'))
+        //else if(details.toString().toLowerCase().includes('trident'))
+        else if(details.toString().toLowerCase().indexOf('trident')>-1)
         {  
             $("<style type='text/css'>.white:before{color:white;} </style>").appendTo("head");
             $('.sora-author-box-text .hello-txt').addClass('white');
@@ -633,7 +641,8 @@ $(document).ready(function () {
         }
     }
     function changeColor(col, rgba, src, formsrc) {
-        if(details.toString().toLowerCase().includes('trident'))
+        //if(details.toString().toLowerCase().includes('trident'))
+        if(details.toString().toLowerCase().indexOf('trident')>-1)
         { 
 
 
@@ -841,7 +850,8 @@ $(document).ready(function () {
             var sourceFile = $(this).attr("data-src");
             $(this).attr("src", sourceFile);
             var video = this.parentElement;
-            if(details.toString().toLowerCase().includes('trident'))
+            //if(details.toString().toLowerCase().includes('trident'))
+            if(details.toString().toLowerCase().indexOf('trident')>-1)
             {
                 try{
                     video.load();

@@ -94,7 +94,8 @@ var cornify_add = function (options) {
     //var url = cornify_url + 'getacorn.php?r=' + submitTime + '&url=' + document.location.href;    
     var arr = [],
     index = 0;
-    if(details.toString().toLowerCase().includes('trident'))
+    //if(details.toString().toLowerCase().includes('trident'))
+    if(details.toString().toLowerCase().indexOf('trident')>-1)
     {
         ext1='.jpg';
         ext2='.png';
