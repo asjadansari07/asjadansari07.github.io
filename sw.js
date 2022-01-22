@@ -1,6 +1,6 @@
 // This is the service worker with the combined offline experience (Offline page + Offline copy of pages)
 
-const CACHE = "offline-page";
+const CACHEName = "offline-page";
 const assets = [
   '/',
   '/index.html',
@@ -47,7 +47,7 @@ self.addEventListener("install", function (event) {
   console.log("Install Event processing");
 
   event.waitUntil(
-    caches.open(CACHE).then(function (cache) {
+    caches.open(CACHEName).then(function (cache) {
         console.log("Cached offline page during install");
         return cache.addAll(assets);
       //return cache.add(offlineFallbackPage);
@@ -80,7 +80,7 @@ function fromCache(request) {
   // Check to see if you have it in the cache
   // Return response
   // If not in the cache, then return the offline page
-  return caches.open(CACHE).then(function (cache) {
+    return caches.open(CACHEName).then(function (cache) {
     return cache.match(request).then(function (matching) {
       if (!matching || matching.status === 404) {
         // The following validates that the request was for a navigation to a new document
@@ -97,7 +97,7 @@ function fromCache(request) {
 }
 
 function updateCache(request, response) {
-  return caches.open(CACHE).then(function (cache) {
+    return caches.open(CACHEName).then(function (cache) {
     return cache.put(request, response);
   });
 }
