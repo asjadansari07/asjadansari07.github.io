@@ -7,9 +7,7 @@ const assets = [
   '/Public/pdf/Resume%20ASJED.pdf',
   '/Public/images/pt.png',
   '/Public/images/mp.png',
-  '/Public/images/fl.webp',  
-  '/Public/images/beach.webm',
-  '/Public/images/beach.mp4',
+  '/Public/images/fl.webp',    
   '/Public/images/aspnet.webp',
   '/Public/images/sql.webp',
   '/Public/images/crm.webp',
@@ -36,7 +34,9 @@ const assets = [
   '/Public/images/apk_teal.gif',
   '/Public/images/apk_magenta.gif',
   '/Public/images/apk_orange.gif',
-  '/Public/images/apk_grey.gif'
+  '/Public/images/apk_grey.gif',
+  '/Public/images/beach.webm',
+  '/Public/images/beach.mp4'
 ];
 
 // TODO: replace the following with the correct offline fallback page i.e.: const offlineFallbackPage = "offline.html";
