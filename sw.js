@@ -9,6 +9,8 @@ const assets = [
   '/Public/images/mp.png',
   '/Public/images/fl.webp', 
   '/Public/images/asj_circle1.webp', 
+  '/Public/images/header-mask-black-after.webp', 
+  '/Public/images/header-mask-white-after.webp', 
   '/Public/images/aspnet.webp',
   '/Public/images/sql.webp',
   '/Public/images/crm.webp',
