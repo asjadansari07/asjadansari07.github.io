@@ -174,6 +174,7 @@ $(document).ready(function () {
     var hinner=$('#header-inner')
     var asj_warning=$('#_asj_warning')
     var popupqr=$('#pop-up')
+    var lqr=$('#Lqr')
     var mainvid=$('video')
     var fntweight=$("i.color .lnr .lnr-license");
     switch (true) {                
@@ -184,7 +185,8 @@ $(document).ready(function () {
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")   
             asj_warning.css("font-size","5em");
-            popupqr.css("width","193").css("height","193"); 
+            popupqr.css("width","193").css("height","193");
+            lqr.css("width","193").css("height","193");
             break;
         case (w<=1200 && w>1100):
             ele.css("font-size","7px").css("font-weight","600");
@@ -194,6 +196,7 @@ $(document).ready(function () {
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","5em");
             popupqr.css("width","193").css("height","193");
+            lqr.css("width","193").css("height","193");
             break;
         case (w<=1100 && w>980):
             ele.css("font-size","7px").css("font-weight","600");
@@ -203,6 +206,7 @@ $(document).ready(function () {
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","4em");
             popupqr.css("width","193").css("height","193");
+            lqr.css("width","193").css("height","193");
             break;
         case (w<=980 && w>880):
             ele.css("font-size","7px").css("font-weight","600");
@@ -212,6 +216,7 @@ $(document).ready(function () {
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","4em");
             popupqr.css("width","193").css("height","193");
+            lqr.css("width","193").css("height","193");
             break;
         case (w<=880 && w>768):
             ele.css("font-size","7px").css("font-weight","600");
@@ -221,6 +226,7 @@ $(document).ready(function () {
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","3em");
             popupqr.css("width","193").css("height","193");
+            lqr.css("width","193").css("height","193");
             break;
         case (w<=768 && w>767):
             ele.css("font-size","7px").css("font-weight","600");
@@ -230,6 +236,7 @@ $(document).ready(function () {
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","3em");
             popupqr.css("width","193").css("height","193");
+            lqr.css("width","193").css("height","193");
             break;
         case (w<=767 && w>480):
             if (!isMobileDevice) { 
@@ -245,6 +252,7 @@ $(document).ready(function () {
             asj_warning.css("font-size","2em");
             $('head').append('<meta name="color-scheme" content="dark light" />');
             popupqr.css("width","157").css("height","157");
+            lqr.css("width","157").css("height","157");
             mainvid.css("width","inherit").css("object-fit","cover");
             break;
         case (w<=480 && w>360):
@@ -261,6 +269,7 @@ $(document).ready(function () {
             asj_warning.css("font-size","1.5em");
             $('head').append('<meta name="color-scheme" content="dark light" />');
             popupqr.css("width","157").css("height","157");
+            lqr.css("width","157").css("height","157");
             mainvid.css("width","inherit").css("object-fit","cover");
             break;
         case (w<=360 && w>300):
@@ -277,6 +286,7 @@ $(document).ready(function () {
             asj_warning.css("font-size","1.5em");
             $('head').append('<meta name="color-scheme" content="dark light" />');
             popupqr.css("width","157").css("height","157");
+            lqr.css("width","157").css("height","157");
             mainvid.css("width","inherit").css("object-fit","cover");
             break;
         case (w<=300):
@@ -293,6 +303,7 @@ $(document).ready(function () {
             asj_warning.css("font-size","1em");
             $('head').append('<meta name="color-scheme" content="dark light" />');
             popupqr.css("width","157").css("height","157");
+            lqr.css("width","157").css("height","157");
             mainvid.css("width","inherit").css("object-fit","cover");
             break;
         default:
@@ -302,6 +313,7 @@ $(document).ready(function () {
             formdiv.css("padding","20px 20px 5px")
             hlogo.css("height","56px").css("width","56px")
             popupqr.css("width","193").css("height","193");
+            lqr.css("width","193").css("height","193");
             break;
     }    
     $('#nav').onePageNav();
