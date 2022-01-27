@@ -186,8 +186,8 @@ $(document).ready(function () {
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")   
             asj_warning.css("font-size","5em");
-            popupqr.css("width","193").css("height","193");
-            lqr.css("width","193").css("height","193");
+            popupqr.css("width","175").css("height","175");
+            lqr.css("width","175").css("height","175");
             break;
         case (w<=1200 && w>1100):
             ele.css("font-size","7px").css("font-weight","600");
@@ -196,8 +196,8 @@ $(document).ready(function () {
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","5em");
-            popupqr.css("width","193").css("height","193");
-            lqr.css("width","193").css("height","193");
+            popupqr.css("width","175").css("height","175");
+            lqr.css("width","175").css("height","175");
             break;
         case (w<=1100 && w>980):
             ele.css("font-size","7px").css("font-weight","600");
@@ -206,8 +206,8 @@ $(document).ready(function () {
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","4em");
-            popupqr.css("width","193").css("height","193");
-            lqr.css("width","193").css("height","193");
+            popupqr.css("width","175").css("height","175");
+            lqr.css("width","175").css("height","175");
             break;
         case (w<=980 && w>880):
             ele.css("font-size","7px").css("font-weight","600");
@@ -216,8 +216,8 @@ $(document).ready(function () {
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","4em");
-            popupqr.css("width","193").css("height","193");
-            lqr.css("width","193").css("height","193");
+            popupqr.css("width","175").css("height","175");
+            lqr.css("width","175").css("height","175");
             break;
         case (w<=880 && w>768):
             ele.css("font-size","7px").css("font-weight","600");
@@ -226,8 +226,8 @@ $(document).ready(function () {
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","3em");
-            popupqr.css("width","193").css("height","193");
-            lqr.css("width","193").css("height","193");
+            popupqr.css("width","175").css("height","175");
+            lqr.css("width","175").css("height","175");
             break;
         case (w<=768 && w>767):
             ele.css("font-size","7px").css("font-weight","600");
@@ -236,8 +236,8 @@ $(document).ready(function () {
             formdiv.css("padding","40px 40px 5px")
             hlogo.css("height","56px").css("width","56px")
             asj_warning.css("font-size","3em");
-            popupqr.css("width","193").css("height","193");
-            lqr.css("width","193").css("height","193");
+            popupqr.css("width","175").css("height","175");
+            lqr.css("width","175").css("height","175");
             break;
         case (w<=767 && w>480):
             if (!isMobileDevice) { 
@@ -313,8 +313,8 @@ $(document).ready(function () {
             skillvid.css("display","none")
             formdiv.css("padding","20px 20px 5px")
             hlogo.css("height","56px").css("width","56px")
-            popupqr.css("width","193").css("height","193");
-            lqr.css("width","193").css("height","193");
+            popupqr.css("width","175").css("height","175");
+            lqr.css("width","175").css("height","175");
             break;
     }    
     $('#nav').onePageNav();
