@@ -348,7 +348,7 @@ $(document).ready(function () {
             $('head').append('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />');
             $('img[alt="Loading..."]').attr('src','Public/images/asj_circle1.png');
             $('#Header1_headerimg').attr('src','Public/images/asj_2.png');
-            $('image[width="104"]').attr('xlink:href','/Public/images/asj_2.png');
+            $('image[width="73"]').attr('xlink:href','/Public/images/asj_2.png');
             $('img[title="Click to Connect"]').attr('src','Public/images/asj_circle1.png');
             $('img[data-src="Public/images/fl.webp"]').attr('class','').attr('src','Public/images/fl.jpg').addClass('testimonial-avatar');
             $('img[alt="Asp.Net"]').attr('class','').attr('src','Public/images/aspnet.jpg');
