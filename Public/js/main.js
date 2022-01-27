@@ -24,7 +24,8 @@ $(document).ready(function () {
             var height = 0;
             var scrollTop = $(this).scrollTop();
 
-            if (scrollTop < 66) {
+            //if (scrollTop < 66) {
+            if (scrollTop < 65) {
                 height = $("#head-trigger").height();
                 $("#head-trigger").removeClass("scrolled-header");
             }
