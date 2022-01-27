@@ -54,8 +54,8 @@ self.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open(CACHEName).then(function (cache) {
         console.log("Cached offline page during install");
-        //return cache.addAll(assets);
-      return cache.add(offlineFallbackPage);
+        return cache.addAll(assets);
+      //return cache.add(offlineFallbackPage);
     })
   );
 });
