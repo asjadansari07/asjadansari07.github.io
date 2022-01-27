@@ -103,6 +103,11 @@ function fromCache(request) {
 
 function updateCache(request, response) {
     return caches.open(CACHEName).then(function (cache) {
+        if (
+    url.startsWith('chrome-extension') ||
+    url.includes('extension') ||
+    !(url.indexOf('http') === 0)
+) return
     return cache.put(request, response);
   });
 }
