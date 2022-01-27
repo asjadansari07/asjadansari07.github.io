@@ -456,7 +456,7 @@ $(document).ready(function () {
         $(".sora-works-box").css('background', "rgb(0, 0, 0)");
         $(".sora-about-box").css('background', "rgb(0, 0, 0)");
         $("#outer-wrapper").css('background', "rgb(0, 0, 0)");
-        $(".wrap-me").css('border', "1px solid #ffffff");                    
+        //$(".wrap-me").css('border', "1px solid #ffffff");                    
         //$(".insta-wrap").css('background', "rgb(0, 0, 0)");
         document.documentElement.style.setProperty('--bccol', 'black', 'important');
         document.documentElement.style.setProperty('--scol', 'white', 'important');  
@@ -493,7 +493,7 @@ $(document).ready(function () {
         $(".sora-works-box").css('background', "rgb(255, 255, 255)");
         $(".sora-about-box").css('background', "rgb(255, 255, 255)");
         $("#outer-wrapper").css('background', "rgb(255, 255, 255)");
-        $(".wrap-me").css('border', "1px solid #000000");                    
+        //$(".wrap-me").css('border', "1px solid #ffffff");                    
         //$(".insta-wrap").css('background', "rgb(255, 255, 255)");
         document.documentElement.style.setProperty('--bccol', 'white', 'important');
         document.documentElement.style.setProperty('--scol', 'black', 'important'); 
