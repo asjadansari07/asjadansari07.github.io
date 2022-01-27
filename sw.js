@@ -101,8 +101,8 @@ function fromCache(request) {
   });
 }
 
-function updateCache(request, response) {
-    return caches.open(CACHEName).then(function (cache) {
-    return cache.put(request, response);
-  });
-}
+//function updateCache(request, response) {
+//    return caches.open(CACHEName).then(function (cache) {
+//    return cache.put(request, response);
+//  });
+//}
