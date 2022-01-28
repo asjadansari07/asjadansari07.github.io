@@ -372,7 +372,7 @@ $(document).ready(function () {
             $('img[alt="SSRS"]').attr('class','').attr('src','Public/images/ssrs.jpg');
             $('img[alt="MVC"]').attr('class','').attr('src','Public/images/mvc.jpg');
             $(".counter-sora").css("font-size","60px");
-            $(".block-image .thumb").addClass("mycol3");         
+                        
             $('#google_translate_element').css('display','none');
             $('#iegtranslate').css('display','inline-block').css('color','#ff0000');
             $('#iegform').css('display','inline-block').css('color','#ff0000');
