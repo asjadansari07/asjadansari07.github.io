@@ -366,6 +366,7 @@ $(document).ready(function () {
             $(".main-gallery").css("background", "url(/Public/images/head-back1.jpg) no-repeat fixed 50% 50%/cover");
             $(".insta-wrap").css("background", "url(/Public/images/map.jpg) no-repeat fixed 50% 50%/cover");
             $(".counter-box").css("background", "url(/Public/images/sg-back.jpg) no-repeat").css("background-attachment","fixed");
+            $(".insta-wrap .filter").css("display","block");
             $('head').append('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />');
             $('img[alt="Loading..."]').attr('src','Public/images/asj_circle1.png');
             $('#Header1_headerimg').attr('src','Public/images/asj_2.png');
