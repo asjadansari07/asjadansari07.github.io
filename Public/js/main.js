@@ -28,6 +28,9 @@ $(document).ready(function () {
             if (scrollTop < 65) {
                 height = $("#head-trigger").height();
                 $("#head-trigger").removeClass("scrolled-header");
+                $(".counter-box").css("background","url(/Public/images/sg-back.webp) no-repeat");
+                $(".main-gallery").css("background","url(/Public/images/head-back1.webp) no-repeat fixed 50% 50%/cover");
+                $(".insta-wrap").css("background","url(/Public/images/map.webp) no-repeat fixed 50% 50%/cover").css("position","relative");
             }
 
             else {
