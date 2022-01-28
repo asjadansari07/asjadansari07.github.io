@@ -15,15 +15,7 @@ $(document).ready(function () {
         label: ''
     })
     
-    window.addEventListener("scroll", function(){
-        if(window.scrollY!==0 || window.scrollY>65){
-            //user is at the top of the page; no need to show the back to top button
-            $(".counter-box").css("background","url(/Public/images/sg-back.webp) no-repeat");
-            $(".main-gallery").css("background","url(/Public/images/head-back1.webp) no-repeat fixed 50% 50%/cover");
-            $(".insta-wrap").css("background","url(/Public/images/map.webp) no-repeat fixed 50% 50%/cover").css("position","relative");
-            $(".insta-wrap .filter").css("display","block");
-        }
-    });
+    
     $(function () {
 
         $(window).on("scroll", function (e) {
@@ -102,7 +94,19 @@ $(document).ready(function () {
     //}    
     //check browser in mobile-end
 
-
+    window.addEventListener("scroll", function(){
+        if(!(details.toString().toLowerCase().indexOf('trident')>-1))
+        {
+            if(window.scrollY!==0 || window.scrollY>65){
+             
+                //user is at the top of the page; no need to show the back to top button
+                $(".counter-box").css("background","url(/Public/images/sg-back.webp) no-repeat");
+                $(".main-gallery").css("background","url(/Public/images/head-back1.webp) no-repeat fixed 50% 50%/cover");
+                $(".insta-wrap").css("background","url(/Public/images/map.webp) no-repeat fixed 50% 50%/cover").css("position","relative");
+                $(".insta-wrap .filter").css("display","block");
+            }
+        }
+    });
     var h=$(window).height(); // New height
     var w=$(window).width(); // New width
     var matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
