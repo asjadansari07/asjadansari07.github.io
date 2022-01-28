@@ -629,6 +629,7 @@ a.btnLM.hover-slide-right:hover::before {
 
 #google_translate_element {
     z-index: 1;
+    margin:2px;
 }
 
 .fancyBtn {
