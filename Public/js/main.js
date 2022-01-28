@@ -23,7 +23,7 @@ $(document).ready(function () {
             $(".insta-wrap").css("background","url(/Public/images/map.webp) no-repeat fixed 50% 50%/cover").css("position","relative");
             $(".insta-wrap .filter").css("display","block");
         }
-
+    });
     $(function () {
 
         $(window).on("scroll", function (e) {
