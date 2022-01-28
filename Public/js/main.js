@@ -16,7 +16,7 @@ $(document).ready(function () {
     })
     
     window.addEventListener("scroll", function(){
-        if(window.scrollY!==0){
+        if(window.scrollY!==0 || window.scrollY>65){
             //user is at the top of the page; no need to show the back to top button
             $(".counter-box").css("background","url(/Public/images/sg-back.webp) no-repeat");
             $(".main-gallery").css("background","url(/Public/images/head-back1.webp) no-repeat fixed 50% 50%/cover");
