@@ -1,4 +1,7 @@
-﻿.insta-wrap .filter {
+﻿#google_translate_element {
+display:none;
+}
+.insta-wrap .filter {
     background: rgba(0,0,0,.85);
     position: absolute;
     width: 100%;
