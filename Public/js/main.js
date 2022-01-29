@@ -133,6 +133,7 @@ $(document).ready(function () {
                 else{
                     $('#zoom').load('Public/images/sqr.svg');                           
                     $('#pop-up').load('Public/images/lqr.svg'); 
+                    $('image[width="73"]').attr('xlink:href','/Public/images/asj_2.png');
                 }
             }
         };
