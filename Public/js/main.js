@@ -125,6 +125,7 @@ $(document).ready(function () {
 
                         $('#zoom').load('Public/images/sqr.svg');                           
                         $('#pop-up').load('Public/images/lqr.svg');
+                        $('#pop-up').html($('#pop-up').html().replace('webp','png'));
 
                         //document.getElementById("zoom").innerHTML='<object type="text/html" data="Public/images/sqr.svg" ></object>';
                         //document.getElementById("pop-up").innerHTML='<object type="text/html" data="Public/images/lqr.svg" ></object>';
