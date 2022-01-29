@@ -411,7 +411,7 @@ a.btnLM.hover-slide-right:hover::before {
     padding-bottom: 60px!important;
 }
 
-    #section-6:after, .counter-box.wow.slideInUp:after {
+    #section-6:after, .counter-box:after {
         content: '';
         position: absolute;
         bottom: 0;
