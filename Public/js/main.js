@@ -379,7 +379,9 @@ $(document).ready(function () {
             $('#noscript').remove();
             $('#bundlecss1').remove();
             $('head').append('<link rel="stylesheet" href="Public/css/3597120983-css_bundle_v2.css" type="text/css" />');
-            $('#googleForm').css("display","block");
+            let iframe2=$('#googleForm');
+            iframe2.attr("src","https://docs.google.com/forms/d/e/1FAIpQLScMJ6lFRbePTtDsSnTRCXPQEOhP8K8nVK5Xb8p-qT69QssbpQ/viewform?embedded=true");
+            iframe2.css("display","block");
             $('#Footer social widget').attr('style', 'top:0 !important;')            
             $('img[alt="Loading..."]').attr('src','Public/images/asj_circle1.png');
             $('#Header1_headerimg').attr('src','Public/images/asj_2.png');
