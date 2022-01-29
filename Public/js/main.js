@@ -408,7 +408,7 @@ $(document).ready(function () {
             $(".counter-sora").css("font-size","60px");
                         
             $('#google_translate_element').css('display','none');
-            $('#iegtranslate').css('display','inline-block').css('color','#ff0000')..css('margin-top','12px');
+            $('#iegtranslate').css('display','inline-block').css('color','#ff0000').css('margin-top','12px');
             $('#iegform').css('display','inline-block').css('color','#ff0000');
             $('#resume a').hover(function(){$(this).css('color','red');},function(){$(this).css('color','white');});             
         }
