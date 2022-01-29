@@ -124,10 +124,7 @@ $(document).ready(function () {
                         //});
 
                         $('#zoom').load('Public/images/sqr.svg');                           
-                        $('#pop-up').load('Public/images/lqr.svg',function(){
-                            $(this).html($(this).html().replace('webp','png'));
-                            alert('replaced');
-                    });
+                        $('#pop-up').load('Public/images/lqr.svg');
                         
 
                         //document.getElementById("zoom").innerHTML='<object type="text/html" data="Public/images/sqr.svg" ></object>';
@@ -140,7 +137,6 @@ $(document).ready(function () {
                     //$('#pop-up').html($('#pop-up').html().replace('webp','png'));
                     $('#pop-up').load('Public/images/lqr.svg',function(){
                         $(this).html($(this).html().replace('webp','png'));
-                        alert('replaced');
                     });
                 }
             }
