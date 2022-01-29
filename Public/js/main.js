@@ -375,7 +375,7 @@ $(document).ready(function () {
             $(".counter-box").css("background", "url(/Public/images/sg-back.jpg)  no-repeat fixed 50% 50%/cover");
             $(".insta-wrap .filter").css("display","block");
             $('head').append('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />');
-            $('head').append('<link rel="stylesheet" href="Public/css/3597120983-css_bundle_v2.css" rel="stylesheet" defer="defer" type="text/css" />');
+            $('head').append('<link rel="stylesheet" href="Public/css/3597120983-css_bundle_v2.css" defer="defer" type="text/css" />');
             $('img[alt="Loading..."]').attr('src','Public/images/asj_circle1.png');
             $('#Header1_headerimg').attr('src','Public/images/asj_2.png');
             $('image[width="73"]').attr('xlink:href','/Public/images/asj_2.png');
