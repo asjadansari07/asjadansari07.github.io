@@ -496,7 +496,7 @@ $(document).ready(function () {
         {        
             document.documentElement.style.setProperty('--bckimg', 'url(../Public/images/header-mask-black-after.webp) no-repeat center', 'important');
             $('.main-gallery').css('animation-name','none').removeClass('fadeInUp');
-            $('.counter-box').css('animation-name','none').removeClass('slideInUp');
+            $('.counter-box').css('animation-name','none');
         }
         //else if(details.toString().toLowerCase().includes('trident'))
         else if(details.toString().toLowerCase().indexOf('trident')>-1)
@@ -532,7 +532,7 @@ $(document).ready(function () {
         {
             document.documentElement.style.setProperty('--bckimg', 'url(../Public/images/header-mask-white-after.webp) no-repeat center', 'important');
             $('.main-gallery').css('animation-name','none').removeClass('fadeInUp');
-            $('.counter-box').css('animation-name','none').removeClass('slideInUp');
+            $('.counter-box').css('animation-name','none');
         }
         //else if(details.toString().toLowerCase().includes('trident'))
         else if(details.toString().toLowerCase().indexOf('trident')>-1)
