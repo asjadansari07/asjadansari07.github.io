@@ -375,6 +375,9 @@ $(document).ready(function () {
             $(".counter-box").css("background", "url(/Public/images/sg-back.jpg)  no-repeat fixed 50% 50%/cover");
             $(".insta-wrap .filter").css("display","block");
             $('head').append('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />');
+            $('#bundlecss').remove();
+            $('#noscript').remove();
+            $('#bundlecss1').remove();
             $('head').append('<link rel="stylesheet" href="Public/css/3597120983-css_bundle_v2.css" type="text/css" />');
             $('img[alt="Loading..."]').attr('src','Public/images/asj_circle1.png');
             $('#Header1_headerimg').attr('src','Public/images/asj_2.png');
@@ -407,8 +410,8 @@ $(document).ready(function () {
             $('#iegtranslate').css('display','inline-block').css('color','#ff0000');
             $('#iegform').css('display','inline-block').css('color','#ff0000');
             $('#resume a').hover(function(){$(this).css('color','red');},function(){$(this).css('color','white');});             
-        }    
-    
+        }
+
         document.documentElement.style.setProperty('--mycol', '#FF0000', 'important');
         document.documentElement.style.setProperty('--background', '#FF0000', 'important');
         if(w>1200 || (w<=1200 && w>1100) || (w<=1100 && w>980) || (w<=980 && w>880) || (w<=880 && w>768) || (w<=768 && w>767)){  
