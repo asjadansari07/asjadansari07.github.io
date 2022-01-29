@@ -495,7 +495,7 @@ $(document).ready(function () {
         if(details.toString().toLowerCase().indexOf('edge')>-1)
         {        
             document.documentElement.style.setProperty('--bckimg', 'url(../Public/images/header-mask-black-after.webp) no-repeat center', 'important');
-            $('.main-gallery').css('animation-name','none').removeClass('wow fadeInUp');
+            $('.main-gallery').css('animation-name','none').removeClass('fadeInUp');
             $('.counter-box').css('animation-name','none').removeClass('slideInUp');
         }
         //else if(details.toString().toLowerCase().includes('trident'))
@@ -531,7 +531,7 @@ $(document).ready(function () {
         if(details.toString().toLowerCase().indexOf('edge')>-1)
         {
             document.documentElement.style.setProperty('--bckimg', 'url(../Public/images/header-mask-white-after.webp) no-repeat center', 'important');
-            $('.main-gallery').css('animation-name','none').removeClass('wow fadeInUp');
+            $('.main-gallery').css('animation-name','none').removeClass('fadeInUp');
             $('.counter-box').css('animation-name','none').removeClass('slideInUp');
         }
         //else if(details.toString().toLowerCase().includes('trident'))
