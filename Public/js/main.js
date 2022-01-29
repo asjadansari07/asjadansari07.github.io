@@ -111,6 +111,8 @@ $(document).ready(function () {
                         myScript.setAttribute("type","text/javascript");
                         document.body.appendChild(myScript);
 
+                        let iframe1=$('#googleForm');
+                        iframe1.setAttribute("src","https://docs.google.com/forms/d/e/1FAIpQLScMJ6lFRbePTtDsSnTRCXPQEOhP8K8nVK5Xb8p-qT69QssbpQ/viewform?embedded=true");
                         
                     }
                 }
