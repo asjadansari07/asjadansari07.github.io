@@ -115,8 +115,8 @@ $(document).ready(function () {
                         iframe1.attr("src","https://docs.google.com/forms/d/e/1FAIpQLScMJ6lFRbePTtDsSnTRCXPQEOhP8K8nVK5Xb8p-qT69QssbpQ/viewform?embedded=true");
                         iframe1.css("display","block");
 
-                        $('#zoom').load('sqr.svg');
-                        $('#pop-up').load('lqr.svg');                        
+                        $('#zoom').load('Public/images/sqr.svg');
+                        $('#pop-up').load('Public/images/lqr.svg');                        
                     }
                 }
             }
