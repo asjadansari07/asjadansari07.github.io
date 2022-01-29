@@ -115,20 +115,24 @@ $(document).ready(function () {
                         iframe1.attr("src","https://docs.google.com/forms/d/e/1FAIpQLScMJ6lFRbePTtDsSnTRCXPQEOhP8K8nVK5Xb8p-qT69QssbpQ/viewform?embedded=true");
                         iframe1.css("display","block");
 
-                            //$.ajax({
-                            //    url : "Public/images/sqr.svg",
-                            //    dataType: "svg",
-                            //    success : function (data) {
-                            //        $("#zoom").html(data);
-                            //    }
-                            //});
+                        //$.ajax({
+                        //    url : "Public/images/sqr.svg",
+                        //    dataType: "svg",
+                        //    success : function (data) {
+                        //        $("#zoom").html(data);
+                        //    }
+                        //});
 
-                            $('#zoom').load('Public/images/sqr.svg');                           
-                            $('#pop-up').load('Public/images/lqr.svg');                            
+                        $('#zoom').load('Public/images/sqr.svg');                           
+                        $('#pop-up').load('Public/images/lqr.svg');                            
 
                         //document.getElementById("zoom").innerHTML='<object type="text/html" data="Public/images/sqr.svg" ></object>';
                         //document.getElementById("pop-up").innerHTML='<object type="text/html" data="Public/images/lqr.svg" ></object>';
                     }
+                }
+                else{
+                    $('#zoom').load('Public/images/sqr.svg');                           
+                    $('#pop-up').load('Public/images/lqr.svg'); 
                 }
             }
         };
