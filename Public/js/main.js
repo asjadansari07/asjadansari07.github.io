@@ -24,6 +24,13 @@ $(document).ready(function () {
             if (scrollTop < 65) {
                 height = $("#head-trigger").height();
                 $("#head-trigger").removeClass("scrolled-header");
+                $.getScript("Public/js/gtranslate.js", function(){
+                    alert("Running test.js");
+                });
+                let myScript = document.createElement("script");
+                myScript.setAttribute("src", "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit");
+                myScript.setAttribute("type","text/javascript");
+                document.body.appendChild(myScript);
             }
             else {
                 $("#head-trigger").addClass("scrolled-header");
