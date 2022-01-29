@@ -379,7 +379,7 @@ $(document).ready(function () {
             $('#noscript').remove();
             $('#bundlecss1').remove();
             $('head').append('<link rel="stylesheet" href="Public/css/3597120983-css_bundle_v2.css" type="text/css" />');
-            $('#Footer social widget').css('top',0);
+            $('#Footer social widget').attr('style', 'top:0 !important;')            
             $('img[alt="Loading..."]').attr('src','Public/images/asj_circle1.png');
             $('#Header1_headerimg').attr('src','Public/images/asj_2.png');
             $('image[width="73"]').attr('xlink:href','/Public/images/asj_2.png');
