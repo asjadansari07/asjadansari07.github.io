@@ -96,16 +96,10 @@ $(document).ready(function () {
                         $(".insta-wrap").css("background","url(/Public/images/map.webp) no-repeat fixed 50% 50%/cover").css("position","relative");                        
                         $(".insta-wrap .filter,#google_translate_element,#Lqr,#Sqr").css("display","block");
                         
-                        //$("#googleForm").css("display","block");
-
-                        //$.getScript("Public/js/gtranslate.js", function(){
-                        //    //alert("Running test.js");
-                        //});
-
-                        let myScript1 = document.createElement("script");
-                        myScript1.setAttribute("src", "Public/js/gtranslate.js");
-                        myScript1.setAttribute("type","text/javascript");
-                        document.body.appendChild(myScript1);
+                        //let myScript1 = document.createElement("script");
+                        //myScript1.setAttribute("src", "Public/js/gtranslate.js");
+                        //myScript1.setAttribute("type","text/javascript");
+                        //document.body.appendChild(myScript1);
                         let myScript = document.createElement("script");
                         myScript.setAttribute("src", "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit");
                         myScript.setAttribute("type","text/javascript");
