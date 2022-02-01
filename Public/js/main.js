@@ -404,7 +404,7 @@ $(document).ready(function () {
             $('#LinkList236').removeClass('widget');
             $('img[alt="Loading..."]').attr('src','Public/images/asj_circle1.png');
             $('#Header1_headerimg').attr('src','Public/images/asj_2.png');
-            $('image[width="315"]').attr('xlink:href','/Public/images/asj_2.png');
+            $('#qrimg').attr('xlink:href','/Public/images/asj_2.png');
             $('img[title="Click to Connect"]').attr('src','Public/images/asj_circle1.png');
             $('img[data-src="Public/images/fl.webp"]').attr('class','').attr('src','Public/images/fl.jpg').addClass('testimonial-avatar');
             $('img[alt="Asp.Net"]').attr('class','').attr('src','Public/images/aspnet.jpg');
