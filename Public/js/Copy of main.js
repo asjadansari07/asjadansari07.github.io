@@ -1,4 +1,5 @@
-﻿jQuery(document)['ready'](function(_0x24d5x2) {
+﻿//https://jscompress.com/
+jQuery(document)['ready'](function(_0x24d5x2) {
     _0x24d5x2('.counter-sora')['counterUp']({
         delay: 10,
         time: 1000
