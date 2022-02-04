@@ -154,10 +154,8 @@ $(document).ready(function() {
     //})
     window.addEventListener('online',  update_status);
     window.addEventListener('offline',  update_status);
-    let update_status = () => {
-        const p = document.getElementById('status');
-    p.className = navigator.onLine ? 'online' : 'offline';
-    p.innerHTML = navigator.onLine ? 'online' : 'offline';
+    let update_status = function() {
+        showhideform();
 }
     var theme = window.matchMedia('(prefers-color-scheme: dark)');
     bindEvent(theme, 'change', function() {
