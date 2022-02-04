@@ -839,9 +839,8 @@ $(document).ready(function() {
             }
         }  else{
             setTimeout(function() {
-                var translateText=$("#google_translate_element").text();
-                var gformText=$("#googleForm").text();
-                if(translateText.length == 2 || translateText.length == 0 || translateText=="")
+                var translateText=$("#google_translate_element").text();                
+                if(translateText.length == 2 || translateText=="")
                 {
                     $("#google_translate_element").text("Offline Translation Is'nt Avaliable").css("color","#707070");
                 }                
