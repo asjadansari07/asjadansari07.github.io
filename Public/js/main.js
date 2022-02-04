@@ -34,6 +34,7 @@ $(document).ready(function() {
         });
     });
     //check browser in mobile-start
+    var isinitformlang=false;
     var iframe = $('#googleForm');
     var gtranslate = $('#google_translate_element');
     let details = navigator.userAgent;
@@ -96,6 +97,7 @@ $(document).ready(function() {
                         $(".insta-wrap").css("background", "url(/Public/images/map.webp) no-repeat fixed 50% 50%/cover").css("position", "relative");
                         $(".insta-wrap .filter,#Lqr,#Sqr").css("display", "block");
                         initformlang();
+                        isinitformlang=true;
                         //$("#google_translate_element").html($("#google_translate_element").html().replace("Offline Translation Is'nt Avaliable",""));
                         //let myScript1 = document.createElement("script");
                         //myScript1.setAttribute("src", "Public/js/gtranslate.js");
@@ -838,15 +840,16 @@ $(document).ready(function() {
             $("#formdiv").hide();
             $(".contact-title span").hide();
             $(".con-title").hide();
-            $("#sora_blogger_cntct_form").css("padding-top","0px"); 
-            document.body.removeChild("transscript");
+            $("#sora_blogger_cntct_form").css("padding-top","0px");             
             $("#google_translate_element").hide();
         } else{
             $("#formdiv").show();
             $(".contact-title span").show();
             $(".con-title").show();
-            $("#sora_blogger_cntct_form").css("padding-top","50px"); 
-            initformlang();
+            $("#sora_blogger_cntct_form").css("padding-top","50px");
+            $("#google_translate_element").show();
+            if(!isinitformlang)
+            {initformlang();}
         }
         //}
         //    else{
