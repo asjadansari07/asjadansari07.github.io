@@ -822,12 +822,12 @@ $(document).ready(function() {
     //}, 1000); 
     
     function showhideform(){
-        if(navigator.onLine) { 
-            $("#formdiv").show();
-        }
-        else{
+        if(!(navigator.onLine)) { 
             $("#formdiv").hide();
-        } 
+            $(".contact-title span").hide();
+            $(".con-title").hide();
+            $("#sora_blogger_cntct_form").css("padding-top","0px");
+        }
     }
     function disableoptions() {
         //document.addEventListener('contextmenu', event => event.preventDefault());
