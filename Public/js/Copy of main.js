@@ -823,10 +823,10 @@ $(document).ready(function() {
     
     function showhideform(){
         if(navigator.onLine) { 
-            $("#myform").show();
+            $("#formdiv").show();
         }
         else{
-            $("#myform").hide();
+            $("#formdiv").hide();
         } 
     }
     function disableoptions() {
