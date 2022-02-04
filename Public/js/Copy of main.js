@@ -843,6 +843,7 @@ $(document).ready(function() {
             $(".con-title").hide();
             $("#sora_blogger_cntct_form").css("padding-top","0px");             
             $("#google_translate_element").hide();
+            isinitformlang=false;
         } else{
             $("#formdiv").show();
             $(".contact-title span").show();
