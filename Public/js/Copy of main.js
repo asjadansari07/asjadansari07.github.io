@@ -836,11 +836,18 @@ $(document).ready(function() {
                 $(".contact-title span").hide();
                 $(".con-title").hide();
                 $("#sora_blogger_cntct_form").css("padding-top","0px");
-            }else{
-                $("#google_translate_element").innerText="Offline Translation Is'nt Avaliable";
-                $("#googleForm").innerText="Offline Form Is'nt Avaliable";
             }
-        }        
+        }  else{
+            setTimeout(function() {
+                var translateText=$("#google_translate_element").text();
+                var gformText=$("#googleForm").text();
+                if(translateText.length == 2 || translateText.length == 0 || translateText=="")
+                {
+                    $("#google_translate_element").text("Offline Translation Is'nt Avaliable").css("filter","none").css("color","#707070");
+                }                
+            }, 5000);
+            
+        }      
     }
     function disableoptions() {
         //document.addEventListener('contextmenu', event => event.preventDefault());
