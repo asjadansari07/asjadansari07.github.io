@@ -94,20 +94,14 @@ $(document).ready(function() {
                         $(".counter-box").css("background", "url(/Public/images/sg-back.webp) no-repeat fixed 50% 50%/cover");
                         $(".main-gallery").css("background", "url(/Public/images/head-back1.webp) no-repeat fixed 50% 50%/cover");
                         $(".insta-wrap").css("background", "url(/Public/images/map.webp) no-repeat fixed 50% 50%/cover").css("position", "relative");
-                        $(".insta-wrap .filter,#google_translate_element,#Lqr,#Sqr").css("display", "block");
+                        $(".insta-wrap .filter,#Lqr,#Sqr").css("display", "block");
+                        initformlang();
                         //$("#google_translate_element").html($("#google_translate_element").html().replace("Offline Translation Is'nt Avaliable",""));
                         //let myScript1 = document.createElement("script");
                         //myScript1.setAttribute("src", "Public/js/gtranslate.js");
                         //myScript1.setAttribute("type","text/javascript");
                         //document.body.appendChild(myScript1);
-                        let myScript = document.createElement("script");
-                        myScript.setAttribute("src", "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit");
-                        myScript.setAttribute("type", "text/javascript");
-                        document.body.appendChild(myScript);
-
-                        let iframe1 = $('#googleForm');
-                        iframe1.attr("src", "https://docs.google.com/forms/d/e/1FAIpQLScMJ6lFRbePTtDsSnTRCXPQEOhP8K8nVK5Xb8p-qT69QssbpQ/viewform?embedded=true");
-                        iframe1.css("display", "block");
+                        
 
                         //$.ajax({
                         //    url : "Public/images/sqr.svg",
@@ -135,7 +129,17 @@ $(document).ready(function() {
             }
         };
     })();
+    var initformlang=(function(){
+        $("#google_translate_element").css("display", "block");
+        let myScript = document.createElement("script");
+        myScript.setAttribute("src", "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit");
+        myScript.setAttribute("type", "text/javascript");
+        document.body.appendChild(myScript);
 
+        let iframe1 = $('#googleForm');
+        iframe1.attr("src", "https://docs.google.com/forms/d/e/1FAIpQLScMJ6lFRbePTtDsSnTRCXPQEOhP8K8nVK5Xb8p-qT69QssbpQ/viewform?embedded=true");
+        iframe1.css("display", "block");
+    })();
     window.addEventListener("scroll", function() {
         cssImgLazyLoad();
     });
@@ -832,15 +836,14 @@ $(document).ready(function() {
             $("#formdiv").hide();
             $(".contact-title span").hide();
             $(".con-title").hide();
-            $("#sora_blogger_cntct_form").css("padding-top","0px");            
+            $("#sora_blogger_cntct_form").css("padding-top","0px"); 
+            $("#google_translate_element").hide();
         } else{
             $("#formdiv").show();
             $(".contact-title span").show();
             $(".con-title").show();
             $("#sora_blogger_cntct_form").css("padding-top","50px"); 
-            let iframe2 = $('#googleForm');
-            iframe2.attr("src", "https://docs.google.com/forms/d/e/1FAIpQLScMJ6lFRbePTtDsSnTRCXPQEOhP8K8nVK5Xb8p-qT69QssbpQ/viewform?embedded=true");
-            iframe2.css("display", "block");
+            initformlang();
         }
         //}
         //    else{
