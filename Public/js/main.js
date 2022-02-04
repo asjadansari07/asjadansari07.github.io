@@ -134,9 +134,11 @@ $(document).ready(function() {
         let myScript = document.createElement("script");
         myScript.setAttribute("src", "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit");
         myScript.setAttribute("type", "text/javascript");
+        myScript.setAttribute("id", "transscript");
         document.body.appendChild(myScript);
 
         let iframe1 = $('#googleForm');
+        iframe1.attr("src","");
         iframe1.attr("src", "https://docs.google.com/forms/d/e/1FAIpQLScMJ6lFRbePTtDsSnTRCXPQEOhP8K8nVK5Xb8p-qT69QssbpQ/viewform?embedded=true");
         iframe1.css("display", "block");
     }
@@ -837,6 +839,7 @@ $(document).ready(function() {
             $(".contact-title span").hide();
             $(".con-title").hide();
             $("#sora_blogger_cntct_form").css("padding-top","0px"); 
+            document.body.removeChild("transscript");
             $("#google_translate_element").hide();
         } else{
             $("#formdiv").show();
