@@ -154,7 +154,7 @@ $(document).ready(function() {
     //})
     window.addEventListener('online',  update_status);
     window.addEventListener('offline',  update_status);
-    let update_status = function() {
+    function update_status() {
         showhideform();
 }
     var theme = window.matchMedia('(prefers-color-scheme: dark)');
