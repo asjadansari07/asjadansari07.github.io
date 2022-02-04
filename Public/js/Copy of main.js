@@ -840,7 +840,7 @@ $(document).ready(function() {
         }  else{
             setTimeout(function() {
                 var translateText=$("#google_translate_element").text();                
-                if(translateText.length == 2 || translateText=="")
+                if(translateText.length == 2)
                 {
                     $("#google_translate_element").text("Offline Translation Is'nt Avaliable").css("color","#707070");
                 }                
