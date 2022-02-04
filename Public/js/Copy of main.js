@@ -843,7 +843,7 @@ $(document).ready(function() {
                 var gformText=$("#googleForm").text();
                 if(translateText.length == 2 || translateText.length == 0 || translateText=="")
                 {
-                    $("#google_translate_element").text("Offline Translation Is'nt Avaliable").css("filter","none").css("color","#707070");
+                    $("#google_translate_element").text("Offline Translation Is'nt Avaliable").css("color","#707070");
                 }                
             }, 5000);
             
