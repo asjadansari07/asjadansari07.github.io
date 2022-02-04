@@ -152,6 +152,13 @@ $(document).ready(function() {
     //    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {   
     //        changeThemeMode();
     //})
+    window.addEventListener('online',  update_status);
+    window.addEventListener('offline',  update_status);
+    let update_status = () => {
+        const p = document.getElementById('status');
+    p.className = navigator.onLine ? 'online' : 'offline';
+    p.innerHTML = navigator.onLine ? 'online' : 'offline';
+}
     var theme = window.matchMedia('(prefers-color-scheme: dark)');
     bindEvent(theme, 'change', function() {
         changeThemeMode();
@@ -823,13 +830,18 @@ $(document).ready(function() {
     
     function showhideform(){
         if(!(navigator.onLine)) {
-           // if(device=="mobile"){            
-                $("#formdiv").hide();
-                $(".contact-title span").hide();
-                $(".con-title").hide();
-                $("#sora_blogger_cntct_form").css("padding-top","0px");
-            //}
-        }  
+            // if(device=="mobile"){            
+            $("#formdiv").hide();
+            $(".contact-title span").hide();
+            $(".con-title").hide();
+            $("#sora_blogger_cntct_form").css("padding-top","0px");            
+        } else{
+            $("#formdiv").show();
+            $(".contact-title span").show();
+            $(".con-title").show();
+            $("#sora_blogger_cntct_form").css("padding-top","50px");  
+        }
+        //}
     //    else{
     //        setTimeout(function() {
     //            var translateText=$("#google_translate_element").text();                
