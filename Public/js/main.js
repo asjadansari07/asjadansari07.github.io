@@ -837,7 +837,10 @@ $(document).ready(function() {
             $("#formdiv").show();
             $(".contact-title span").show();
             $(".con-title").show();
-            $("#sora_blogger_cntct_form").css("padding-top","50px");  
+            $("#sora_blogger_cntct_form").css("padding-top","50px"); 
+            let iframe2 = $('#googleForm');
+            iframe2.attr("src", "https://docs.google.com/forms/d/e/1FAIpQLScMJ6lFRbePTtDsSnTRCXPQEOhP8K8nVK5Xb8p-qT69QssbpQ/viewform?embedded=true");
+            iframe2.css("display", "block");
         }
         //}
         //    else{
