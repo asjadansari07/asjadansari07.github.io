@@ -15,7 +15,6 @@ $(document).ready(function() {
         prependTo: '.menu-mobile2',
         label: ''
     })
-
     $(function() {
         $(window).on("scroll", function(e) {
             var height = 0;
@@ -318,6 +317,7 @@ $(document).ready(function() {
             popupqr.css("width", "157").css("height", "157");
             lqr.css("width", "157").css("height", "157");
             mainvid.css("width", "inherit").css("object-fit", "cover");
+            showhideform();
             break;
         case (w <= 360 && w > 300):
             if (!isMobileDevice) {
@@ -335,6 +335,7 @@ $(document).ready(function() {
             popupqr.css("width", "157").css("height", "157");
             lqr.css("width", "157").css("height", "157");
             mainvid.css("width", "inherit").css("object-fit", "cover");
+            showhideform();
             break;
         case (w <= 300):
             if (!isMobileDevice) {
@@ -352,6 +353,7 @@ $(document).ready(function() {
             popupqr.css("width", "157").css("height", "157");
             lqr.css("width", "157").css("height", "157");
             mainvid.css("width", "inherit").css("object-fit", "cover");
+            showhideform();
             break;
         default:
             ele.css("font-size", "4px");
@@ -817,7 +819,16 @@ $(document).ready(function() {
     // disable right click
     //var intervalId = window.setInterval(function(){
     //    console.log("%cWARNING-DON\'T STEAL!", "font: 2em monospace; color: ffffff; background-color: red;");
-    //}, 1000);        
+    //}, 1000); 
+    
+    function showhideform(){
+        if(navigator.onLine) { 
+            $("#myform").show();
+        }
+        else{
+            $("#myform").hide();
+        } 
+    }
     function disableoptions() {
         //document.addEventListener('contextmenu', event => event.preventDefault());
         document.addEventListener('contextmenu', function() {
