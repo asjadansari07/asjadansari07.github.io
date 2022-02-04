@@ -233,6 +233,7 @@ $(document).ready(function() {
             asj_warning.css("font-size", "5em");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
+            showhideform("desktop");
             break;
         case (w <= 1200 && w > 1100):
             ele.css("font-size", "7px").css("font-weight", "600");
@@ -243,6 +244,7 @@ $(document).ready(function() {
             asj_warning.css("font-size", "5em");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
+            showhideform("desktop");
             break;
         case (w <= 1100 && w > 980):
             ele.css("font-size", "7px").css("font-weight", "600");
@@ -253,6 +255,7 @@ $(document).ready(function() {
             asj_warning.css("font-size", "4em");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
+            showhideform("desktop");
             break;
         case (w <= 980 && w > 880):
             ele.css("font-size", "7px").css("font-weight", "600");
@@ -263,6 +266,7 @@ $(document).ready(function() {
             asj_warning.css("font-size", "4em");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
+            showhideform("desktop");
             break;
         case (w <= 880 && w > 768):
             ele.css("font-size", "7px").css("font-weight", "600");
@@ -273,6 +277,7 @@ $(document).ready(function() {
             asj_warning.css("font-size", "3em");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
+            showhideform("desktop");
             break;
         case (w <= 768 && w > 767):
             ele.css("font-size", "7px").css("font-weight", "600");
@@ -283,6 +288,7 @@ $(document).ready(function() {
             asj_warning.css("font-size", "3em");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
+            showhideform("desktop");
             break;
         case (w <= 767 && w > 480):
             if (!isMobileDevice) {
@@ -300,6 +306,7 @@ $(document).ready(function() {
             popupqr.css("width", "157").css("height", "157");
             lqr.css("width", "157").css("height", "157");
             mainvid.css("width", "inherit").css("object-fit", "cover");
+            showhideform("desktop");
             break;
         case (w <= 480 && w > 360):
             if (!isMobileDevice) {
@@ -317,7 +324,7 @@ $(document).ready(function() {
             popupqr.css("width", "157").css("height", "157");
             lqr.css("width", "157").css("height", "157");
             mainvid.css("width", "inherit").css("object-fit", "cover");
-            showhideform();
+            showhideform("mobile");
             break;
         case (w <= 360 && w > 300):
             if (!isMobileDevice) {
@@ -335,7 +342,7 @@ $(document).ready(function() {
             popupqr.css("width", "157").css("height", "157");
             lqr.css("width", "157").css("height", "157");
             mainvid.css("width", "inherit").css("object-fit", "cover");
-            showhideform();
+            showhideform("mobile");
             break;
         case (w <= 300):
             if (!isMobileDevice) {
@@ -353,7 +360,7 @@ $(document).ready(function() {
             popupqr.css("width", "157").css("height", "157");
             lqr.css("width", "157").css("height", "157");
             mainvid.css("width", "inherit").css("object-fit", "cover");
-            showhideform();
+            showhideform("mobile");
             break;
         default:
             ele.css("font-size", "4px");
@@ -363,6 +370,7 @@ $(document).ready(function() {
             hlogo.css("height", "56px").css("width", "56px")
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
+            showhideform("desktop");
             break;
     }
     $('#nav').onePageNav();
@@ -821,13 +829,18 @@ $(document).ready(function() {
     //    console.log("%cWARNING-DON\'T STEAL!", "font: 2em monospace; color: ffffff; background-color: red;");
     //}, 1000); 
     
-    function showhideform(){
-        if(!(navigator.onLine)) { 
-            $("#formdiv").hide();
-            $(".contact-title span").hide();
-            $(".con-title").hide();
-            $("#sora_blogger_cntct_form").css("padding-top","0px");
-        }
+    function showhideform(device){
+        if(!(navigator.onLine)) {
+            if(device=="mobile"){            
+                $("#formdiv").hide();
+                $(".contact-title span").hide();
+                $(".con-title").hide();
+                $("#sora_blogger_cntct_form").css("padding-top","0px");
+            }else{
+                $("#google_translate_element").innerText="Offline Translation Is'nt Avaliable";
+                $("#googleForm").innerText="Offline Form Is'nt Avaliable";
+            }
+        }        
     }
     function disableoptions() {
         //document.addEventListener('contextmenu', event => event.preventDefault());
