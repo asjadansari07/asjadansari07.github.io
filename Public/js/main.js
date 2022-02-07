@@ -96,8 +96,13 @@ $(document).ready(function() {
                         $(".main-gallery").css("background", "url(/Public/images/head-back1.webp) no-repeat fixed 50% 50%/cover");
                         $(".insta-wrap").css("background", "url(/Public/images/map.webp) no-repeat fixed 50% 50%/cover").css("position", "relative");
                         $(".insta-wrap .filter,#Lqr,#Sqr").css("display", "block");
-                        if(!isinitformlang)
-                        {initformlang();}                   
+                        var online=navigator.onLine;
+                        alert(online);
+                        if(online/*offline*/) {
+                            if(!isinitformlang)
+                            {initformlang();} 
+                        }
+                                         
                         //$("#google_translate_element").html($("#google_translate_element").html().replace("Offline Translation Is'nt Avaliable",""));
                         //let myScript1 = document.createElement("script");
                         //myScript1.setAttribute("src", "Public/js/gtranslate.js");
@@ -165,6 +170,37 @@ $(document).ready(function() {
     window.addEventListener('offline',  update_status);
     function update_status() {
         showhideform();
+    }
+    function showhideform(){
+        var online=navigator.onLine;
+        alert(online);
+        if(!online/*offline*/) {
+            // if(device=="mobile"){            
+            $("#formdiv").hide();
+            $(".contact-title span").hide();
+            $(".con-title").hide();
+            $("#sora_blogger_cntct_form").css("padding-top","0px");             
+            $("#google_translate_element").hide();
+        } else{/*online*/
+            $("#formdiv").show();
+            $(".contact-title span").show();
+            $(".con-title").show();
+            $("#sora_blogger_cntct_form").css("padding-top","50px");
+            $("#google_translate_element").show();
+            if(!isinitformlang)
+            {initformlang();}
+        }
+        //}
+        //    else{
+        //        setTimeout(function() {
+        //            var translateText=$("#google_translate_element").text();                
+        //            if(translateText.length == 2)
+        //            {
+        //                $("#google_translate_element").text("Offline Translation Is'nt Avaliable").css("color","#707070");
+        //            }                
+        //        }, 5000);
+            
+        //    }      
     }
     var theme = window.matchMedia('(prefers-color-scheme: dark)');
     bindEvent(theme, 'change', function() {
@@ -835,35 +871,7 @@ $(document).ready(function() {
     //    console.log("%cWARNING-DON\'T STEAL!", "font: 2em monospace; color: ffffff; background-color: red;");
     //}, 1000); 
     
-    function showhideform(){
-        if(!(navigator.onLine)) {
-            // if(device=="mobile"){            
-            $("#formdiv").hide();
-            $(".contact-title span").hide();
-            $(".con-title").hide();
-            $("#sora_blogger_cntct_form").css("padding-top","0px");             
-            $("#google_translate_element").hide();
-        } else{
-            $("#formdiv").show();
-            $(".contact-title span").show();
-            $(".con-title").show();
-            $("#sora_blogger_cntct_form").css("padding-top","50px");
-            $("#google_translate_element").show();
-            if(!isinitformlang)
-            {initformlang();}
-        }
-        //}
-        //    else{
-        //        setTimeout(function() {
-        //            var translateText=$("#google_translate_element").text();                
-        //            if(translateText.length == 2)
-        //            {
-        //                $("#google_translate_element").text("Offline Translation Is'nt Avaliable").css("color","#707070");
-        //            }                
-        //        }, 5000);
-            
-        //    }      
-    }
+
     function disableoptions() {
         //document.addEventListener('contextmenu', event => event.preventDefault());
         document.addEventListener('contextmenu', function() {
