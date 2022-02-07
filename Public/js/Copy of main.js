@@ -96,9 +96,7 @@ $(document).ready(function() {
                         $(".main-gallery").css("background", "url(/Public/images/head-back1.webp) no-repeat fixed 50% 50%/cover");
                         $(".insta-wrap").css("background", "url(/Public/images/map.webp) no-repeat fixed 50% 50%/cover").css("position", "relative");
                         $(".insta-wrap .filter,#Lqr,#Sqr").css("display", "block");
-                        var online=navigator.onLine;
-                        alert(online);
-                        if(online/*offline*/) {
+                        if(navigator.onLine/*online*/) {
                             if(!isinitformlang)
                             {initformlang();} 
                         }
@@ -172,9 +170,7 @@ $(document).ready(function() {
         showhideform();
     }
     function showhideform(){
-        var online=navigator.onLine;
-        //alert(online);
-        if(!online/*offline*/) {
+        if(!(navigator.onLine)/*offline*/) {
             // if(device=="mobile"){            
             $("#formdiv").hide();
             $(".contact-title span").hide();
