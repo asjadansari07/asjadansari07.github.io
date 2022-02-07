@@ -178,13 +178,15 @@ $(document).ready(function() {
             $("#sora_blogger_cntct_form").css("padding-top","0px");             
             $("#google_translate_element").hide();
         } else{/*online*/
-            $("#formdiv").show();
-            $(".contact-title span").show();
-            $(".con-title").show();
-            $("#sora_blogger_cntct_form").css("padding-top","50px");
-            $("#google_translate_element").show();
-            if(!isinitformlang)
-            {initformlang();}
+            if (window.scrollY !== 0 || window.scrollY > 65) {
+                $("#formdiv").show();
+                $(".contact-title span").show();
+                $(".con-title").show();
+                $("#sora_blogger_cntct_form").css("padding-top","50px");
+                $("#google_translate_element").show();
+                if(!isinitformlang)
+                {initformlang();}
+            }
         }
         //}
         //    else{
