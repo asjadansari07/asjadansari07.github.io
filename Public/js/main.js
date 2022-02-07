@@ -173,7 +173,7 @@ $(document).ready(function() {
     }
     function showhideform(){
         var online=navigator.onLine;
-        alert(online);
+        //alert(online);
         if(!online/*offline*/) {
             // if(device=="mobile"){            
             $("#formdiv").hide();
