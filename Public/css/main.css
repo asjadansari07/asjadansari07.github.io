@@ -3696,11 +3696,8 @@ div#sora_blogger_cntct_form .clear-button {
     .works-tiles {
         width: 50%;
     }
-        .counter-box-item{
-        width: 100%;
-    }
-    .about-tiles {
-        width:100%;
+        .counter-box-item,.about-tiles{
+        width: 100% !important;
     }
     .post h2 {
         font-size:25px;
