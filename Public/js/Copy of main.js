@@ -217,8 +217,8 @@ $(document).ready(function() {
     (function() {
         //const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
         //const rgx = new RegExp('localhost:2435');
-        //const rgx = new RegExp('localhost:8426');
-        const rgx = new RegExp('asjadansari07.github.io');
+        const rgx = new RegExp('localhost:7852');
+        //const rgx = new RegExp('asjadansari07.github.io');
         const host = window.location.host;
         const isMatch = !host.match(rgx);
 
@@ -828,6 +828,18 @@ $(document).ready(function() {
         } else {
             $(this).hide();
             $("#btntitle").hide();
+        }
+        var y = $(window).scrollTop(); //your current y position on the page
+        $(window).scrollTop(y + 1);
+    });
+    $("#loadmore1").click(function() {
+        if (!$("#cert1").is(":visible")) {
+            $("#cert1").show();
+            $(this).hide();
+            $("#btntitle1").hide();
+        }  else {
+            $(this).hide();
+            $("#btntitle1").hide();
         }
         var y = $(window).scrollTop(); //your current y position on the page
         $(window).scrollTop(y + 1);
