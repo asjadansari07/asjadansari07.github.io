@@ -2765,7 +2765,7 @@ div#sora_blogger_cntct_form .clear-button {
     text-align: left;
     line-height: 21px;
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     align-items: flex-start;
 }
 
