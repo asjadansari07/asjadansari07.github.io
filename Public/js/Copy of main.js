@@ -846,6 +846,22 @@ $(document).ready(function() {
         var y = $(window).scrollTop(); //your current y position on the page
         $(window).scrollTop(y + 1);
     });
+    $("#loadmore2").click(function() {
+        if (!$("#proj1").is(":visible")) {
+            $("#proj1").show();
+        } else if (!$("#proj2").is(":visible")) {
+            $("#proj2").show();
+        } else if (!$("#proj3").is(":visible")) {
+            $("#proj3").show();
+            $(this).hide();
+            $("#btntitle2").hide();
+        } else {
+            $(this).hide();
+            $("#btntitle2").hide();
+        }
+        var y = $(window).scrollTop(); //your current y position on the page
+        $(window).scrollTop(y + 1);
+    });
 
     var flkty = new Flickity('.main-gallery', {
         cellAlign: 'left',

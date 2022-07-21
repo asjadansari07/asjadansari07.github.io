@@ -387,7 +387,7 @@ a.btnLM.hover-slide-right:hover::before {
     box-shadow: 0 7px 15px rgba(0,0,0,.95);
 }
 
-#gal2, #gal3, #gal4, #cert1 {
+#gal2, #gal3, #gal4, #cert1,#proj1,#proj2,#proj3 {
     display: none;
 }
 
@@ -2132,7 +2132,7 @@ ul#nav1 {
 .special-icons {
     font-size: 45px;
     float: left;
-    color: #303030;
+    color: var(--mycol);
     margin-right: 10px;
     width: 50px;
     height: 60px;
@@ -2142,7 +2142,7 @@ ul#nav1 {
 .special-heading {
     font-size: 14px;
     line-height: 21px;
-    color: #303030;
+    color: #707070;
     text-transform: capitalize;
     letter-spacing: 1.5px;
     margin-bottom: 10px;
@@ -6049,4 +6049,14 @@ h3.profile-position {
 
 .testimonial-avatar1 {
     width: 100px !important;
+}
+.special-tiles-wrap {
+background: var(--bccol);
+box-sizing: border-box;
+border-radius: 5px;
+padding: 30px 30px 20px;
+box-shadow: 5px 5px 45px -27px rgba(0,0,0,0.5);
+-webkit-box-shadow: 5px 5px 55px -27px rgba(0,0,0,0.5);
+-moz-box-shadow: 5px 5px 45px -27px rgba(0,0,0,0.5);
+border:1px solid #fff;
 }
