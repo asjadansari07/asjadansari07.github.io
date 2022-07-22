@@ -3784,9 +3784,9 @@ div#sora_blogger_cntct_form .clear-button {
 }
 
 @media only screen and (max-width:767px) {
-       /*.tyard-thumb {
-        padding: 0 26% !important;
-    }*/
+       .tyard-thumb {
+        padding: 0 23% !important;
+    }
     #imgSkills {
         display: block;
     }
