@@ -217,8 +217,8 @@ $(document).ready(function() {
     (function() {
         //const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
         //const rgx = new RegExp('localhost:2435');
-        //const rgx = new RegExp('localhost:7852');
-        const rgx = new RegExp('asjadansari07.github.io');
+        const rgx = new RegExp('localhost:7852');
+        //const rgx = new RegExp('asjadansari07.github.io');
         const host = window.location.host;
         const isMatch = !host.match(rgx);
 
@@ -473,6 +473,13 @@ $(document).ready(function() {
             $('img[alt="MS Office"]').attr('class', '').attr('src', 'Public/images/office.jpg');
             $('img[alt="SSRS"]').attr('class', '').attr('src', 'Public/images/ssrs.jpg');
             $('img[alt="MVC"]').attr('class', '').attr('src', 'Public/images/mvc.jpg');
+            $('img[alt="Certificate4"]').attr('class', '').attr('src', 'Public/images/Summit_Award_Certificate_Jul2020.jpg');
+            $('img[alt="Certificate2"]').attr('class', '').attr('src', 'Public/images/Summit_Award_Certificate_Jan2022.jpg');
+            $('img[alt="MVC Certificate"]').attr('class', '').attr('src', 'Public/images/MVC_Certificate.jpg');
+            $('img[alt="Certificate3"]').attr('class', '').attr('src', 'Public/images/AppCardRepSep2020.jpg');
+            $('img[alt="Certificate5"]').attr('class', '').attr('src', 'Public/images/AppCardRepJun2020.jpg');
+            $('img[alt="Certificate1"]').attr('class', '').attr('src', 'Public/images/AppCardRepJul2022.jpg');
+            $('img[alt="Certificate6"]').attr('class', '').attr('src', 'Public/images/AppCardRepJan2020.jpg');            
             $(".counter-sora").css("font-size", "60px");
 
             $('#google_translate_element').css('display', 'none');
@@ -903,7 +910,7 @@ $(document).ready(function() {
     function disableoptions() {
         //document.addEventListener('contextmenu', event => event.preventDefault());
         document.addEventListener('contextmenu', function() {
-            event.preventDefault()
+            //event.preventDefault()
         });
         document.onkeydown = function(e) {
             // disable F12 key
