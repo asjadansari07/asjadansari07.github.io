@@ -217,8 +217,8 @@ $(document).ready(function() {
     (function() {
         //const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
         //const rgx = new RegExp('localhost:2435');
-        //const rgx = new RegExp('localhost:4063');
-        const rgx = new RegExp('asjadansari07.github.io');
+        const rgx = new RegExp('localhost:4063');
+        //const rgx = new RegExp('asjadansari07.github.io');
         const host = window.location.host;
         const isMatch = !host.match(rgx);
 
@@ -914,7 +914,7 @@ $(document).ready(function() {
     function disableoptions() {
         //document.addEventListener('contextmenu', event => event.preventDefault());
         document.addEventListener('contextmenu', function() {
-            event.preventDefault()
+            //event.preventDefault()
         });
         document.onkeydown = function(e) {
             // disable F12 key
