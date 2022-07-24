@@ -276,7 +276,7 @@ $(document).ready(function() {
             ele.css("font-size", "7px").css("font-weight", "600");
             skillimg.css("display", "none")
             skillvid.css("display", "block")
-            formdiv.css("padding", "40px 40px 5px")
+            formdiv.css("padding", "40px 0px 5px 0px")
             hlogo.css("height", "56px").css("width", "56px")
             asj_warning.css("font-size", "5em");
             popupqr.css("width", "175").css("height", "175");
