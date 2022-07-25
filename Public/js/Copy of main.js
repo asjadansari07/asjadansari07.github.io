@@ -863,7 +863,9 @@ $(document).ready(function() {
         } else if (!$("#proj4").is(":visible")) {
             $("#proj4").show();           
         } else if (!$("#proj5").is(":visible")) {
-            $("#proj5").show();  
+            $("#proj5").show(); 
+        } else if (!$("#proj6").is(":visible")) {
+            $("#proj6").show(); 
             $(this).hide();
             $("#btntitle2").hide();
         } else {
