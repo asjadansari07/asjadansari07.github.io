@@ -163,6 +163,7 @@ ol li, ul li {
 #langskills {
     padding: 0;
     width: 100%;
+    color:#707070;
 }
 
 #main-wrapper h4, #section-3 h4, #section-7 h4 {
@@ -1892,11 +1893,19 @@ color:#ffffff;
     margin-bottom: 10px;
 }
 
-.skill-details, .skills {
+.skill-details {
     padding: 15px 40px 15px 0;
     width: 50%;
     float: left;
-    box-sizing: border-box;
+    box-sizing: border-box;    
+}
+.skills {
+    padding: 15px 40px 15px 0;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;    
+    color:#ffffff;
+    position:relative;
 }
 
 .archive .post-grid-item:nth-child(4n), .index .post-grid-item:nth-child(4n), .skill-details, .tysum .ty-feat .tybox-rest:nth-child(4n) {
@@ -3193,15 +3202,6 @@ div#sora_blogger_cntct_form {
         float: none;
         padding: 20px;
         clear: both;
-    }
-
-    .skills {
-        width: 100%;
-        float: none;
-        padding: 20px;
-        clear: both;
-        color: #ffffff;
-        position:relative;
     }
 }
 
