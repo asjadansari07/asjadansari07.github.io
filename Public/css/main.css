@@ -2212,7 +2212,7 @@ http://flickity.metafizzy.co
     overflow: hidden;
 }
 
-.counter-box:before, .overlay, .team-details {
+.counter-box:before,#section-5C:before, .overlay, .team-details {
     position: absolute;
     width: 100%;
 }
