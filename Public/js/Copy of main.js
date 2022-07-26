@@ -563,7 +563,7 @@ $(document).ready(function() {
         $(".preloader1").css("background", "rgb(0, 0, 0)");
         $(".preloader1-circle").css("background", "rgb(0, 0, 0)");
         $("body").css("background-color", "rgb(0, 0, 0)");
-        $("#section-2").css('background', "rgb(0, 0, 0)");
+        $("#section-2,#section-5B").css('background', "rgb(0, 0, 0)");
         $(".sora-works-box").css('background', "rgb(0, 0, 0)");
         $(".sora-about-box").css('background', "rgb(0, 0, 0)");
         $("#outer-wrapper").css('background', "rgb(0, 0, 0)");
@@ -598,7 +598,7 @@ $(document).ready(function() {
         $(".preloader1").css("background", "rgb(255, 255, 255)");
         $(".preloader1-circle").css("background", "rgb(255, 255, 255)");
         $("body").css("background-color", "rgb(255, 255, 255)");
-        $("#section-2").css('background', "rgb(255, 255, 255)");
+        $("#section-2,#section-5B").css('background', "rgb(255, 255, 255)");
         $(".sora-works-box").css('background', "rgb(255, 255, 255)");
         $(".sora-about-box").css('background', "rgb(255, 255, 255)");
         $("#outer-wrapper").css('background', "rgb(255, 255, 255)");

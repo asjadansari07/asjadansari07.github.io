@@ -3185,7 +3185,7 @@ div#sora_blogger_cntct_form {
         padding: 0 0 30px;
     }
 
-    .skill-details, .skills {
+    .skill-details {
         width: 100%;
         float: none;
         padding: 20px;
@@ -3193,6 +3193,10 @@ div#sora_blogger_cntct_form {
     }
 
     .skills {
+        width: 100%;
+        float: none;
+        padding: 20px;
+        clear: both;
         color: #ffffff;
         position:relative;
     }
