@@ -1839,7 +1839,7 @@ ul#nav1 {
     position: relative;
 }
 
-    #section-2A:before, #section-5C:before {
+    #section-5C:before {
         background: rgba(0,0,0,.7);
         content: "";
         display: block;
@@ -1905,7 +1905,6 @@ color:#ffffff;
     float: left;
     box-sizing: border-box;    
     color:#ffffff;
-    position:relative;
 }
 
 .archive .post-grid-item:nth-child(4n), .index .post-grid-item:nth-child(4n), .skill-details, .tysum .ty-feat .tybox-rest:nth-child(4n) {
@@ -2244,7 +2243,7 @@ http://flickity.metafizzy.co
     overflow: hidden;
 }
 
-.counter-box:before, .overlay, .team-details, #section-2A:before, #section-5C:before {
+.counter-box:before, .overlay, .team-details, #section-5C:before {
     position: absolute;
     width: 100%;
 }
