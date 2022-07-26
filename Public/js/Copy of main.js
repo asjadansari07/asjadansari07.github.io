@@ -93,7 +93,7 @@ $(document).ready(function() {
                     if (window.scrollY !== 0 || window.scrollY > 65) {
                         //user is at the top of the page; no need to show the back to top button
                         $(".counter-box").css("background", "url(/Public/images/sg-back.webp) no-repeat fixed 50% 50%/cover");
-                        $(".main-gallery").css("background", "url(/Public/images/head-back1.webp) no-repeat fixed 50% 50%/cover");
+                        $(".main-gallery,.sora-special-box").css("background", "url(/Public/images/head-back1.webp) no-repeat fixed 50% 50%/cover");                        
                         $(".insta-wrap").css("background", "url(/Public/images/map.webp) no-repeat fixed 50% 50%/cover").css("position", "relative");
                         $(".insta-wrap .filter,#Lqr,#Sqr").css("display", "block");
                         if(navigator.onLine/*online*/) {
