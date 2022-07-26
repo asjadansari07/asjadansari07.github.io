@@ -1833,7 +1833,7 @@ ul#nav1 {
     background-position: 50% 0;
     overflow: hidden;
     margin: 0 auto;
-    padding: 83px 0;
+    padding-bottom: 83px;
     position: relative;
 }
 .about-title, .special-title, .works-title {
