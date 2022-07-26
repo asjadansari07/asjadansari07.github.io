@@ -411,7 +411,7 @@ a.btnLM.hover-slide-right:hover::before {
     padding-bottom: 60px!important;
 }
 
-    #section-6:after, .counter-box:after, .insta-wrap:after,#section-2A:after,#section-5B:after {
+    #section-6:after, .counter-box:after, .insta-wrap:after, #section-2A:after, #section-5B:after {
         content: '';
         position: absolute;
         bottom: 0;
@@ -1821,13 +1821,14 @@ ul#nav1 {
     }
 }
 
-.sora-about-box,.sora-special-box{
+.sora-about-box, .sora-special-box {
     background: #fff;
     overflow: hidden;
     margin: 0 auto;
     padding: 20px 0 0;
 }
-#section-2A,#section-5B {
+
+#section-2A, #section-5B {
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 0;
@@ -1836,6 +1837,17 @@ ul#nav1 {
     padding-bottom: 83px;
     position: relative;
 }
+
+    #section-2A:before, #section-5B:before {
+        background: rgba(0,0,0,.7);
+        content: "";
+        display: block;
+        left: 0;
+        top: 0;
+        height: 100%;
+        bottom: 0;
+    }
+
 .about-title, .special-title, .works-title {
     text-align: center;
     margin-bottom: 35px;
@@ -2220,7 +2232,7 @@ http://flickity.metafizzy.co
     overflow: hidden;
 }
 
-.counter-box:before, .overlay, .team-details {
+.counter-box:before, .overlay, .team-details,#section-2A:before,#section-5B:before {
     position: absolute;
     width: 100%;
 }
