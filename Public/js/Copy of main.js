@@ -93,7 +93,7 @@ $(document).ready(function() {
                     if (window.scrollY !== 0 || window.scrollY > 65) {
                         //user is at the top of the page; no need to show the back to top button
                         $(".counter-box").css("background", "url(/Public/images/sg-back.webp) no-repeat fixed 50% 50%/cover");
-                        $(".main-gallery,.sora-special-box").css("background", "url(/Public/images/head-back1.webp) no-repeat fixed 50% 50%/cover");                        
+                        $(".main-gallery,#section-2A,#section-5B").css("background", "url(/Public/images/head-back1.webp) no-repeat fixed 50% 50%/cover");
                         $(".insta-wrap").css("background", "url(/Public/images/map.webp) no-repeat fixed 50% 50%/cover").css("position", "relative");
                         $(".insta-wrap .filter,#Lqr,#Sqr").css("display", "block");
                         if(navigator.onLine/*online*/) {
@@ -438,7 +438,7 @@ $(document).ready(function() {
             }, 7000);
 
             $("#header-wrapper").css("background", "url(/Public/images/head-back.jpg) no-repeat center bottom").css('background-size', 'cover').css("background-attachment", "fixed");;
-            $(".main-gallery").css("background", "url(/Public/images/head-back1.jpg) no-repeat fixed 50% 50%/cover");
+            $(".main-gallery,#section-2A,#section-5B").css("background", "url(/Public/images/head-back1.jpg) no-repeat fixed 50% 50%/cover");
             $(".insta-wrap").css("background", "url(/Public/images/map.jpg) no-repeat fixed 50% 50%/cover").css("position", "relative");
             $(".counter-box").css("background", "url(/Public/images/sg-back.jpg)  no-repeat fixed 50% 50%/cover");
             $(".insta-wrap .filter").css("display", "block");
@@ -563,7 +563,7 @@ $(document).ready(function() {
         $(".preloader1").css("background", "rgb(0, 0, 0)");
         $(".preloader1-circle").css("background", "rgb(0, 0, 0)");
         $("body").css("background-color", "rgb(0, 0, 0)");
-        $(".sora-special-box").css('background', "rgb(0, 0, 0)");
+        $("#section-2").css('background', "rgb(0, 0, 0)");
         $(".sora-works-box").css('background', "rgb(0, 0, 0)");
         $(".sora-about-box").css('background', "rgb(0, 0, 0)");
         $("#outer-wrapper").css('background', "rgb(0, 0, 0)");
@@ -598,7 +598,7 @@ $(document).ready(function() {
         $(".preloader1").css("background", "rgb(255, 255, 255)");
         $(".preloader1-circle").css("background", "rgb(255, 255, 255)");
         $("body").css("background-color", "rgb(255, 255, 255)");
-        $(".sora-special-box").css('background', "rgb(255, 255, 255)");
+        $("#section-2").css('background', "rgb(255, 255, 255)");
         $(".sora-works-box").css('background', "rgb(255, 255, 255)");
         $(".sora-about-box").css('background', "rgb(255, 255, 255)");
         $("#outer-wrapper").css('background', "rgb(255, 255, 255)");
