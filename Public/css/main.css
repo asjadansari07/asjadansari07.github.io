@@ -411,7 +411,7 @@ a.btnLM.hover-slide-right:hover::before {
     padding-bottom: 60px!important;
 }
 
-    #section-6:after, .counter-box:after, .insta-wrap:after,.sora-special-box:before {
+    #section-6:after, .counter-box:after, .insta-wrap:after,#section-2A:before {
         content: '';
         position: absolute;
         bottom: 0;
@@ -1821,13 +1821,13 @@ ul#nav1 {
     }
 }
 
-.sora-about-box{
+.sora-about-box,.sora-special-box{
     background: #fff;
     overflow: hidden;
     margin: 0 auto;
     padding: 20px 0 0;
 }
-.sora-special-box {
+#section-2A {
     background-attachment: fixed;
     background-size: cover;
     background-position: 50% 0;
