@@ -438,7 +438,7 @@ $(document).ready(function() {
             }, 7000);
 
             $("#header-wrapper").css("background", "url(/Public/images/head-back.jpg) no-repeat center bottom").css('background-size', 'cover').css("background-attachment", "fixed");;
-            $(".main-gallery").css("background", "url(/Public/images/head-back1.jpg) no-repeat fixed 50% 50%/cover");
+            $(".main-gallery,#section-2A,#section-5B").css("background", "url(/Public/images/head-back1.jpg) no-repeat fixed 50% 50%/cover");
             $(".insta-wrap").css("background", "url(/Public/images/map.jpg) no-repeat fixed 50% 50%/cover").css("position", "relative");
             $(".counter-box").css("background", "url(/Public/images/sg-back.jpg)  no-repeat fixed 50% 50%/cover");
             $(".insta-wrap .filter").css("display", "block");
