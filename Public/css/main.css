@@ -1853,12 +1853,15 @@ ul#nav1 {
     margin-bottom: 35px;
 }
 
-    .Portfolio-title h4, .tyheading-head h2, .works-title h4 ,.special-title h4{
+    .Portfolio-title h4,.tyheading-head h2, .works-title h4 ,.special-title h4{
         font-size: 35px;
         line-height: 45px;
         color: #707070;
         text-transform: capitalize;
-    }     
+    }
+#section-2A .special-title h4,#section-5C .tyheading-head h2{
+color:#ffffff;
+}
 
 .special-tiles {
     width: 100%;
