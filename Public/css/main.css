@@ -2232,7 +2232,7 @@ http://flickity.metafizzy.co
     overflow: hidden;
 }
 
-.counter-box:before, .overlay, .team-details,#section-2A:before,#section-5C:before {
+.counter-box:before, .overlay, .team-details, #section-2A:before, #section-5C:before {
     position: absolute;
     width: 100%;
 }
@@ -3190,6 +3190,11 @@ div#sora_blogger_cntct_form {
         float: none;
         padding: 20px;
         clear: both;
+    }
+
+    .skills {
+        color: #ffffff;
+        position:relative;
     }
 }
 
