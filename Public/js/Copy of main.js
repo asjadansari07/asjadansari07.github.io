@@ -93,6 +93,7 @@ $(document).ready(function() {
                     if (window.scrollY !== 0 || window.scrollY > 65) {
                         //user is at the top of the page; no need to show the back to top button
                         $(".counter-box,#section-5C").css("background", "url(/Public/images/sg-back.webp) no-repeat fixed 50% 50%/cover");
+                        $("#section-5C").css("background", "url(/Public/images/head-back.webp) no-repeat fixed 50% 50%/cover");
                         $(".main-gallery").css("background", "url(/Public/images/head-back1.webp) no-repeat fixed 50% 50%/cover");
                         $(".insta-wrap").css("background", "url(/Public/images/map.webp) no-repeat fixed 50% 50%/cover").css("position", "relative");
                         $(".insta-wrap .filter,#Lqr,#Sqr").css("display", "block");
@@ -439,8 +440,9 @@ $(document).ready(function() {
 
             $("#header-wrapper").css("background", "url(/Public/images/head-back.jpg) no-repeat center bottom").css('background-size', 'cover').css("background-attachment", "fixed");;
             $(".main-gallery").css("background", "url(/Public/images/head-back1.jpg) no-repeat fixed 50% 50%/cover");
+            $("#section-5C").css("background", "url(/Public/images/head-back.jpg) no-repeat fixed 50% 50%/cover");
             $(".insta-wrap").css("background", "url(/Public/images/map.jpg) no-repeat fixed 50% 50%/cover").css("position", "relative");
-            $(".counter-box,#section-5C").css("background", "url(/Public/images/sg-back.jpg)  no-repeat fixed 50% 50%/cover");
+            $(".counter-box").css("background", "url(/Public/images/sg-back.jpg)  no-repeat fixed 50% 50%/cover");
             $(".insta-wrap .filter").css("display", "block");
             $('head').append('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />');
             $('#bundlecss').remove();
