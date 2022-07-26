@@ -1833,12 +1833,19 @@ ul#nav1 {
     margin-bottom: 35px;
 }
 
-    .Portfolio-title h4, .special-title h4, .tyheading-head h2, .works-title h4 {
+    .Portfolio-title h4, .special-title h4, .works-title h4 {
         font-size: 35px;
         line-height: 45px;
         color: #707070;
         text-transform: capitalize;
     }
+
+.tyheading-head h2 {
+    font-size: 35px;
+    line-height: 45px;
+    color: #ffffff;
+    text-transform: capitalize;    
+}
 
 .special-tiles {
     width: 100%;
@@ -2212,7 +2219,7 @@ http://flickity.metafizzy.co
     overflow: hidden;
 }
 
-.counter-box:before,#section-5C:before, .overlay, .team-details {
+.counter-box:before, #section-5C:before, .overlay, .team-details {
     position: absolute;
     width: 100%;
 }
@@ -5453,7 +5460,7 @@ div#sora_blogger_cntct_form {
     position: relative;
 }
 
-#section-5C:before {
+    #section-5C:before {
         content: "";
         display: block;
         left: 0px;
