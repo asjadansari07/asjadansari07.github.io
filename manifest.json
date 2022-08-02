@@ -34,6 +34,17 @@
 	  "purpose": "maskable"
     },
 	{
+      "src": "Public/images/asj_21_384.png",
+      "type": "image/png",
+      "sizes": "384x384"  
+    },
+	{
+      "src": "Public/images/asj_21_384_mask.png",
+      "type": "image/png",
+      "sizes": "384x384",
+	  "purpose": "maskable"	  
+    },
+	{
       "src": "Public/images/asj_21_192.png",
       "type": "image/png",
       "sizes": "192x192"  
