@@ -151,6 +151,10 @@ $(document).ready(function() {
     }
     window.addEventListener("scroll", function() {
         cssImgLazyLoad();
+        var styleCSS= document.createElement("link");
+        styleCSS.rel = "stylesheet";
+        styleCSS.href = "Public/fonts/icon-font.min.css";
+        document.head.insertBefore(styleCSS, document.head.childNodes[document.head.childNodes.length - 1].nextSibling);
     });
     var h = $(window).height(); // New height
     var w = $(window).width(); // New width
