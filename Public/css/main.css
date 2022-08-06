@@ -1827,6 +1827,12 @@ ul#nav1 {
     margin: 0 auto;
     padding: 20px 0 0;
 }
+.sora-special-box1 {
+    background: #fff;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px 0 0;
+}
 
 .about-title, .special-title, .works-title {
     text-align: center;
