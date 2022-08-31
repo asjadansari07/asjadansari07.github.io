@@ -12,6 +12,7 @@ const assets = [
   '/Public/images/sg-back.webp',
   '/Public/images/pt.png',
   '/Public/images/mp.png',
+  '/Public/images/mp-1.png',
   '/Public/images/fl.webp', 
   '/Public/images/Summit_Award_Certificate_Jul2020.webp', 
   '/Public/images/Summit_Award_Certificate_Jan2022.webp', 
