@@ -266,6 +266,7 @@ $(document).ready(function() {
     })();
     //if website steal-end
     var ele = $('.m-backtotop>div.text')
+    var info=$('#info')
     var skillimg = $('#imgSkills')
     var skillvid = $('#vidPlayer')
     var formdiv = $('#formdiv')
@@ -286,6 +287,7 @@ $(document).ready(function() {
             asj_warning.css("font-size", "5em");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
+            info.css("width", "5%");
             break;
         case (w <= 1200 && w > 1100):
             ele.css("font-size", "7px").css("font-weight", "600");
@@ -296,6 +298,7 @@ $(document).ready(function() {
             asj_warning.css("font-size", "5em");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
+            info.css("width", "5%");
             break;
         case (w <= 1100 && w > 980):
             ele.css("font-size", "7px").css("font-weight", "600");
@@ -306,6 +309,7 @@ $(document).ready(function() {
             asj_warning.css("font-size", "4em");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
+            info.css("width", "5%");
             break;
         case (w <= 980 && w > 880):
             ele.css("font-size", "7px").css("font-weight", "600");
@@ -316,6 +320,7 @@ $(document).ready(function() {
             asj_warning.css("font-size", "4em");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
+            info.css("width", "6%");
             break;
         case (w <= 880 && w > 768):
             ele.css("font-size", "7px").css("font-weight", "600");
@@ -326,6 +331,7 @@ $(document).ready(function() {
             asj_warning.css("font-size", "3em");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
+            info.css("width", "3%");
             break;
         case (w <= 768 && w > 767):
             ele.css("font-size", "7px").css("font-weight", "600");
@@ -336,6 +342,7 @@ $(document).ready(function() {
             asj_warning.css("font-size", "3em");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
+            info.css("width", "3.5%");
             break;
         case (w <= 767 && w > 480):
             if (!isMobileDevice) {
@@ -353,6 +360,7 @@ $(document).ready(function() {
             popupqr.css("width", "157").css("height", "157");
             lqr.css("width", "157").css("height", "157");
             mainvid.css("width", "inherit").css("object-fit", "cover");
+            info.css("width", "3.5%");
             break;
         case (w <= 480 && w > 360):
             if (!isMobileDevice) {
@@ -370,6 +378,7 @@ $(document).ready(function() {
             popupqr.css("width", "157").css("height", "157");
             lqr.css("width", "157").css("height", "157");
             mainvid.css("width", "inherit").css("object-fit", "cover");
+            info.css("width", "6%");
             showhideform();
             break;
         case (w <= 360 && w > 300):
@@ -388,6 +397,7 @@ $(document).ready(function() {
             popupqr.css("width", "157").css("height", "157");
             lqr.css("width", "157").css("height", "157");
             mainvid.css("width", "inherit").css("object-fit", "cover");
+            info.css("width", "9%");
             showhideform();
             break;
         case (w <= 300):
@@ -406,6 +416,7 @@ $(document).ready(function() {
             popupqr.css("width", "157").css("height", "157");
             lqr.css("width", "157").css("height", "157");
             mainvid.css("width", "inherit").css("object-fit", "cover");
+            info.css("width", "11%");
             showhideform();
             break;
         default:
@@ -416,6 +427,7 @@ $(document).ready(function() {
             hlogo.css("height", "56px").css("width", "56px")
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
+            info.css("width", "4%");
             break;
     }
     $('#nav').onePageNav();
