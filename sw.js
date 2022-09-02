@@ -10,6 +10,7 @@ const assets = [
   '/Public/images/map.webp',
   '/Public/images/arrow.webp',
   '/Public/images/book-white.webp',
+  '/Public/images/info.webp',
   '/Public/images/head-back1.webp',
   '/Public/images/sg-back.webp',
   '/Public/images/pt.png',
