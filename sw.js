@@ -4,6 +4,7 @@ const CACHEName = "offline-page";
 const assets = [
   '/',
   '/index.html',
+  '/Public/images/favicon.ico',
   '/Public/images/info.webp',
   '/Public/images/arrow.webp',
   '/Public/images/book.webp',
