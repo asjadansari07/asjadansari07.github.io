@@ -132,7 +132,7 @@
                 border-style: solid;
                 border-width: 1px;
                 border-top-color: red;
-                border-top-color: var(--mycol);
+                /*border-top-color: var(--mycol);*/
                 border-bottom-color: transparent;
                 border-left-color: transparent;
                 border-right-color: transparent;
@@ -1846,6 +1846,17 @@
                   });
             }
         }
+
+        var matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (window.matchMedia && matched) {
+        $(".preloader1").css("background", "rgb(0, 0, 0)");
+        $(".preloader1-circle").css("background", "rgb(0, 0, 0)");
+        $("body").css("background-color", "rgb(0, 0, 0)");
+    } else {
+        $(".preloader1").css("background", "rgb(255, 255, 255)");
+        $(".preloader1-circle").css("background", "rgb(255, 255, 255)");
+        $("body").css("background-color", "rgb(255, 255, 255)");
+    }
     </script>
     <script src='Public/js/lazysizes.min.js' type='text/javascript' async></script>
     <script src='Public/js/cornify.js' type='text/javascript'></script>
@@ -1855,7 +1866,7 @@
     <script src='Public/js/flickity.js' type='text/javascript'></script>
     <script src='Public/js/wayPoints.js' type='text/javascript'></script>
     <script src='Public/js/counterUp.js' type='text/javascript'></script>
-    <script src='Public/js/1Copy of main.js' type='text/javascript'></script>
+    <script src='Public/js/main.js' type='text/javascript'></script>
     <script src='Public/js/onePageNav.js' type='text/javascript'></script>
     <script src='Public/js/smoothScroll.js' type='text/javascript'></script>
     <script async src='Public/js/gtranslate.js' type='text/javascript'></script>
