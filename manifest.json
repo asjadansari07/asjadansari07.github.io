@@ -9,13 +9,7 @@
     "description": "This is Asjed Ansari's presonal profile showcase websit.",
 	"orientation": "portrait-primary",
 	"splash_pages": null,
-	"prefer_related_applications": true,
-	"related_applications": [
-	{
-    "platform": "play",
-    "id": ""
-	 }
-	],
+	"prefer_related_applications": true,	
     "icons": [
 	{
 	"src": "favicon.ico",
