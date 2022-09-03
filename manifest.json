@@ -1,15 +1,21 @@
 {
     "short_name": "Asjed Ansari",
     "name": "Asjed Ansari",
-	"start_url": "https://asjadansari07.github.io/index.html",
+	"start_url": "/",
     "background_color": "#000000",
     "display": "fullscreen",
-    "scope": "https://asjadansari07.github.io/",
+    "scope": ".",
     "theme_color": "#000000",
     "description": "This is Asjed Ansari's presonal profile showcase websit.",
 	"orientation": "portrait-primary",
 	"splash_pages": null,
-	"prefer_related_applications": true,	
+	"prefer_related_applications": true,
+	"related_applications": [
+	{
+    "platform": "play",
+    "id": ""
+	 }
+	],
     "icons": [
 	{
 	"src": "favicon.ico",
