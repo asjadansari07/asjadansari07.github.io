@@ -1876,13 +1876,17 @@
     }
     //var age = years + ' years ' + months + ' months ' + days + ' days';
     var age;
-    if(months>0){age= years + '.' + months;}else{age= years;}
+    if(months==12){
+    months=0;
+    years++;
+    }
+    if(months>0 && months<12){age= years + '.' + months;}else{age= years;}
      
     return age;
 }
  $("#age").text(getAge('1989/06/10').split(".")[0]);
- $("#exp").text(getAge('2017/10/16'));
- $("#exp1").text(getAge('2017/10/16'));
+ $("#exp").text(getAge('2017/11/01'));
+ $("#exp1").text(getAge('2017/11/01'));
         }
     </script>
     <script language="javascript">
