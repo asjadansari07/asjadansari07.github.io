@@ -19,7 +19,7 @@
     "icons": [
 	{
 	"src": "Public/images/favicon.ico",
-    "sizes": "132x132",
+    "sizes": "64x64",
     "type": "image/x-icon"
 	},
 	{
