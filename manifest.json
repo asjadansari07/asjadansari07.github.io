@@ -10,12 +10,6 @@
 	"orientation": "portrait-primary",
 	"splash_pages": null,
 	"prefer_related_applications": true,
-	"related_applications": [
-	{
-    "platform": "play",
-    "id": ""
-	 }
-	],
     "icons": [
 	{
 	"src": "favicon.ico",
