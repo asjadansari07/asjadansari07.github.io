@@ -370,7 +370,7 @@ $(document).ready(function() {
             }
             skillimg.css("display", "block")
             skillvid.css("display", "none")
-            formdiv.css("padding", "20px 20px 5px")
+            formdiv.css("padding", "20px 0px 5px")
             hlogo.css("height", "45px").css("width", "45px")
             hinner.css("padding-top", "7px")
             asj_warning.css("font-size", "1.5em");
@@ -389,7 +389,7 @@ $(document).ready(function() {
             }
             skillimg.css("display", "block")
             skillvid.css("display", "none")
-            formdiv.css("padding", "20px 20px 5px")
+            formdiv.css("padding", "20px 0px 5px")
             hlogo.css("height", "45px").css("width", "45px")
             hinner.css("padding-top", "7px")
             asj_warning.css("font-size", "1.5em");
@@ -408,7 +408,7 @@ $(document).ready(function() {
             }
             skillimg.css("display", "block")
             skillvid.css("display", "none")
-            formdiv.css("padding", "20px 20px 5px")
+            formdiv.css("padding", "20px 0px 5px")
             hlogo.css("height", "45px").css("width", "45px")
             hinner.css("padding-top", "7px")
             asj_warning.css("font-size", "1em");
