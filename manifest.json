@@ -9,11 +9,10 @@
     "description": "This is Asjed Ansari's presonal profile showcase websit.",
 	"orientation": "portrait-primary",
 	"splash_pages": null,
-	"prefer_related_applications": true,
     "icons": [
 	{
 	"src": "favicon.ico",
-    "sizes": "256x256",
+    "sizes": "132x132",
     "type": "image/x-icon"
 	},
 	{
