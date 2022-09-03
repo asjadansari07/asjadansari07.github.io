@@ -374,7 +374,7 @@
                         <ul class="profile-list">
                             <li class="clearfix">
                                 <strong class="list-title">Age</strong>
-                                <span class="cont">30</span>
+                                <span id="age" class="cont"></span>
                             </li>
                             <li class="clearfix">
                                 <strong class="list-title">Address</strong>
@@ -496,7 +496,7 @@
                                 <p>I am happy to share a bit about myself,</p>
                                 <p>I have started my career in an Information Technology(IT) field in nearly 2016.</p>
                                 <p>I am an Analytical Middle-Level Software Engineer with deep expertise in ASP.NET and Database Technologies, with a Bachelor's Degree in Computers.</p>
-                                <p>I have around 5 years of experience in IT Development Industry prior to Software Engineering.</p>
+                                <p>I have around <span id="exp"></span> years of experience in IT Development Industry prior to Software Engineering.</p>
 
                                 <br>
                                 <p>
@@ -639,7 +639,7 @@
                         <i class="fa fa-arrow-right imarg"></i><a href='javascript:void(0);'>An Analytical Middle-Level Software Engineer with deep expertise in ASP.NET and Database Technologies, with Bachelor Degree in Computers.</a>
                     </p>
                     <p class="works-text testclass">
-                        <i class="fa fa-arrow-right imarg"></i><a href='javascript:void(0);'>Around 5 years of experience in IT Development Industry prior to Software Engineering.</a>
+                        <i class="fa fa-arrow-right imarg"></i><a href='javascript:void(0);'>Around <span id="exp1"></span> years of experience in IT Development Industry prior to Software Engineering.</a>
                     </p>
                 </div>
                 <!-- First One Ends -->
@@ -1826,7 +1826,63 @@
             //$("div#LinkList230 > div.widget-content > ul#social > li >a[title='whatsapp']").css('background', '#1C8B82');
             //$("div#LinkList230 > div.widget-content > ul#social > li >a[title='SMS']").css('background', '#CEB00A');
             //$("div#LinkList230 > div.widget-content > ul#social > li >a[title='call']").css('background', '#9CB381');
+ //const getAge = birthDate => Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e+10);
+ function getAge(dateString) {
+    var today = new Date();
+    var DOB = new Date(dateString);
+    var totalMonths = (today.getFullYear() - DOB.getFullYear()) * 12 + today.getMonth() - DOB.getMonth();
+    totalMonths += today.getDay() < DOB.getDay() ? -1 : 0;
+    var years = today.getFullYear() - DOB.getFullYear();
+    if (DOB.getMonth() > today.getMonth())
+        years = years - 1;
+    else if (DOB.getMonth() === today.getMonth())
+        if (DOB.getDate() > today.getDate())
+            years = years - 1;
 
+    var days;
+    var months;
+
+    if (DOB.getDate() > today.getDate()) {
+        months = (totalMonths % 12);
+        if (months == 0)
+            months = 11;
+        var x = today.getMonth();
+        switch (x) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12: {
+                var a = DOB.getDate() - today.getDate();
+                days = 31 - a;
+                break;
+            }
+            default: {
+                var a = DOB.getDate() - today.getDate();
+                days = 30 - a;
+                break;
+            }
+        }
+
+    }
+    else {
+        days = today.getDate() - DOB.getDate();
+        if (DOB.getMonth() === today.getMonth())
+            months = (totalMonths % 12);
+        else
+            months = (totalMonths % 12) + 1;
+    }
+    //var age = years + ' years ' + months + ' months ' + days + ' days';
+    var age;
+    if(months>0){age= years + '.' + months;}else{age= years;}
+     
+    return age;
+}
+ $("#age").text(getAge('1989/06/10').split(".")[0]);
+ $("#exp").text(getAge('2017/11/16'));
+ $("#exp1").text(getAge('2017/11/16'));
         }
     </script>
     <script language="javascript">
