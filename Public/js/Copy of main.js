@@ -221,9 +221,9 @@ $(document).ready(function() {
     //if website steal-start
     (function() {
         //const rgx = new RegExp(/(domainName)|(:portNumUsedInLocalDev)|/g); 
-        const rgx = new RegExp('127.0.0.1:5500');
+        //const rgx = new RegExp('127.0.0.1:5500');
         //const rgx = new RegExp('localhost:4063');
-        //const rgx = new RegExp('asjadansari07.github.io');
+        const rgx = new RegExp('asjadansari07.github.io');
         const host = window.location.host;
         const isMatch = !host.match(rgx);
 
@@ -282,7 +282,7 @@ $(document).ready(function() {
             ele.css("font-size", "7px").css("font-weight", "600");
             skillimg.css("display", "none")
             skillvid.css("display", "block")
-            formdiv.css("padding", "40px 0px 5px 0px")
+            formdiv.css("padding", "5px 0px 5px 0px")
             hlogo.css("height", "56px").css("width", "56px")
             asj_warning.css("font-size", "5em");
             popupqr.css("width", "175").css("height", "175");
@@ -293,7 +293,7 @@ $(document).ready(function() {
             ele.css("font-size", "7px").css("font-weight", "600");
             skillimg.css("display", "none")
             skillvid.css("display", "block")
-            formdiv.css("padding", "40px 40px 5px")
+            formdiv.css("padding", "5px 0px 5px 0px")
             hlogo.css("height", "56px").css("width", "56px")
             asj_warning.css("font-size", "5em");
             popupqr.css("width", "175").css("height", "175");
@@ -304,7 +304,7 @@ $(document).ready(function() {
             ele.css("font-size", "7px").css("font-weight", "600");
             skillimg.css("display", "none")
             skillvid.css("display", "block")
-            formdiv.css("padding", "40px 40px 5px")
+            formdiv.css("padding", "5px 0px 5px 0px")
             hlogo.css("height", "56px").css("width", "56px")
             asj_warning.css("font-size", "4em");
             popupqr.css("width", "175").css("height", "175");
@@ -315,7 +315,7 @@ $(document).ready(function() {
             ele.css("font-size", "7px").css("font-weight", "600");
             skillimg.css("display", "none")
             skillvid.css("display", "block")
-            formdiv.css("padding", "40px 40px 5px")
+            formdiv.css("padding", "5px 0px 5px 0px")
             hlogo.css("height", "56px").css("width", "56px")
             asj_warning.css("font-size", "4em");
             popupqr.css("width", "175").css("height", "175");
@@ -326,7 +326,7 @@ $(document).ready(function() {
             ele.css("font-size", "7px").css("font-weight", "600");
             skillimg.css("display", "none")
             skillvid.css("display", "block")
-            formdiv.css("padding", "40px 40px 5px")
+            formdiv.css("padding", "5px 0px 5px 0px")
             hlogo.css("height", "56px").css("width", "56px")
             asj_warning.css("font-size", "3em");
             popupqr.css("width", "175").css("height", "175");
@@ -337,7 +337,7 @@ $(document).ready(function() {
             ele.css("font-size", "7px").css("font-weight", "600");
             skillimg.css("display", "none")
             skillvid.css("display", "block")
-            formdiv.css("padding", "40px 40px 5px")
+            formdiv.css("padding", "5px 0px 5px 0px")
             hlogo.css("height", "56px").css("width", "56px")
             asj_warning.css("font-size", "3em");
             popupqr.css("width", "175").css("height", "175");
@@ -352,7 +352,7 @@ $(document).ready(function() {
             }
             skillimg.css("display", "block")
             skillvid.css("display", "none")
-            formdiv.css("padding", "40px 40px 5px")
+            formdiv.css("padding", "5px 0px 5px 0px")
             hlogo.css("height", "45px").css("width", "45px")
             hinner.css("padding-top", "7px")
             asj_warning.css("font-size", "2em");
@@ -423,7 +423,7 @@ $(document).ready(function() {
             ele.css("font-size", "4px");
             skillimg.css("display", "block")
             skillvid.css("display", "none")
-            formdiv.css("padding", "20px 20px 5px")
+            formdiv.css("padding", "5px 0px 5px 0px")
             hlogo.css("height", "56px").css("width", "56px")
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
