@@ -282,7 +282,7 @@ $(document).ready(function() {
             ele.css("font-size", "7px").css("font-weight", "600");
             skillimg.css("display", "none")
             skillvid.css("display", "block")
-            formdiv.css("padding", "5px 0px 5px 0px")
+            formdiv.css("padding", "15px 0px 15px 0px")
             hlogo.css("height", "56px").css("width", "56px")
             asj_warning.css("font-size", "5em");
             popupqr.css("width", "175").css("height", "175");
@@ -293,7 +293,7 @@ $(document).ready(function() {
             ele.css("font-size", "7px").css("font-weight", "600");
             skillimg.css("display", "none")
             skillvid.css("display", "block")
-            formdiv.css("padding", "5px 0px 5px 0px")
+            formdiv.css("padding", "15px 0px 15px 0px")
             hlogo.css("height", "56px").css("width", "56px")
             asj_warning.css("font-size", "5em");
             popupqr.css("width", "175").css("height", "175");
@@ -304,7 +304,7 @@ $(document).ready(function() {
             ele.css("font-size", "7px").css("font-weight", "600");
             skillimg.css("display", "none")
             skillvid.css("display", "block")
-            formdiv.css("padding", "5px 0px 5px 0px")
+            formdiv.css("padding", "15px 0px 15px 0px")
             hlogo.css("height", "56px").css("width", "56px")
             asj_warning.css("font-size", "4em");
             popupqr.css("width", "175").css("height", "175");
@@ -315,7 +315,7 @@ $(document).ready(function() {
             ele.css("font-size", "7px").css("font-weight", "600");
             skillimg.css("display", "none")
             skillvid.css("display", "block")
-            formdiv.css("padding", "5px 0px 5px 0px")
+            formdiv.css("padding", "15px 0px 15px 0px")
             hlogo.css("height", "56px").css("width", "56px")
             asj_warning.css("font-size", "4em");
             popupqr.css("width", "175").css("height", "175");
@@ -326,7 +326,7 @@ $(document).ready(function() {
             ele.css("font-size", "7px").css("font-weight", "600");
             skillimg.css("display", "none")
             skillvid.css("display", "block")
-            formdiv.css("padding", "5px 0px 5px 0px")
+            formdiv.css("padding", "15px 0px 15px 0px")
             hlogo.css("height", "56px").css("width", "56px")
             asj_warning.css("font-size", "3em");
             popupqr.css("width", "175").css("height", "175");
@@ -337,7 +337,7 @@ $(document).ready(function() {
             ele.css("font-size", "7px").css("font-weight", "600");
             skillimg.css("display", "none")
             skillvid.css("display", "block")
-            formdiv.css("padding", "5px 0px 5px 0px")
+            formdiv.css("padding", "15px 0px 15px 0px")
             hlogo.css("height", "56px").css("width", "56px")
             asj_warning.css("font-size", "3em");
             popupqr.css("width", "175").css("height", "175");
@@ -352,7 +352,7 @@ $(document).ready(function() {
             }
             skillimg.css("display", "block")
             skillvid.css("display", "none")
-            formdiv.css("padding", "5px 0px 5px 0px")
+            formdiv.css("padding", "15px 0px 15px 0px")
             hlogo.css("height", "45px").css("width", "45px")
             hinner.css("padding-top", "7px")
             asj_warning.css("font-size", "2em");
@@ -370,7 +370,7 @@ $(document).ready(function() {
             }
             skillimg.css("display", "block")
             skillvid.css("display", "none")
-            formdiv.css("padding", "0px 0px 0px")
+            formdiv.css("padding", "15px 0px 15px 0px")
             hlogo.css("height", "45px").css("width", "45px")
             hinner.css("padding-top", "7px")
             asj_warning.css("font-size", "1.5em");
@@ -389,7 +389,7 @@ $(document).ready(function() {
             }
             skillimg.css("display", "block")
             skillvid.css("display", "none")
-            formdiv.css("padding", "0px 0px 0px")
+            formdiv.css("padding", "15px 0px 15px 0px")
             hlogo.css("height", "45px").css("width", "45px")
             hinner.css("padding-top", "7px")
             asj_warning.css("font-size", "1.5em");
@@ -408,7 +408,7 @@ $(document).ready(function() {
             }
             skillimg.css("display", "block")
             skillvid.css("display", "none")
-            formdiv.css("padding", "0px 0px px")
+            formdiv.css("padding", "15px 0px 15px 0px")
             hlogo.css("height", "45px").css("width", "45px")
             hinner.css("padding-top", "7px")
             asj_warning.css("font-size", "1em");
@@ -423,7 +423,7 @@ $(document).ready(function() {
             ele.css("font-size", "4px");
             skillimg.css("display", "block")
             skillvid.css("display", "none")
-            formdiv.css("padding", "5px 0px 5px 0px")
+            formdiv.css("padding", "15px 0px 15px 0px")
             hlogo.css("height", "56px").css("width", "56px")
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
