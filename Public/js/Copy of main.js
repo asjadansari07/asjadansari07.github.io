@@ -431,10 +431,11 @@ $(document).ready(function() {
             break;
         default:
             ele.css("font-size", "4px");
-            skillimg.css("display", "block")
-            skillvid.css("display", "none")
-            formdiv.css("padding", "15px 0px 15px 0px")
-            hlogo.css("height", "56px").css("width", "56px")
+            skillimg.css("display", "block");
+            skillvid.css("display", "none");
+            formdiv.css("padding", "15px 0px 15px 0px");
+            iframe.css("width","104%");
+            hlogo.css("height", "56px").css("width", "56px");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
             info.css("width", "4%");
