@@ -378,7 +378,7 @@ $(document).ready(function() {
             skillimg.css("display", "block");
             skillvid.css("display", "none");
             formdiv.css("padding", "15px 0px 15px 0px");
-            iframe.css("width","103%");
+            iframe.css("width","102%");
             hlogo.css("height", "45px").css("width", "45px");
             hinner.css("padding-top", "7px");
             asj_warning.css("font-size", "1.5em");
@@ -398,7 +398,7 @@ $(document).ready(function() {
             skillimg.css("display", "block");
             skillvid.css("display", "none");
             formdiv.css("padding", "15px 0px 15px 0px");
-            iframe.css("width","103.5%");
+            iframe.css("width","101%");
             hlogo.css("height", "45px").css("width", "45px");
             hinner.css("padding-top", "7px");
             asj_warning.css("font-size", "1.5em");
