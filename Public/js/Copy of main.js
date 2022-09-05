@@ -280,9 +280,10 @@ $(document).ready(function() {
     switch (true) {
         case (w > 1200):
             ele.css("font-size", "7px").css("font-weight", "600");
-            skillimg.css("display", "none")
-            skillvid.css("display", "block")
-            formdiv.css("padding", "15px 0px 15px 0px")
+            skillimg.css("display", "none");
+            skillvid.css("display", "block");
+            formdiv.css("padding", "15px 0px 15px 0px");
+            iframe.css("width","104%");
             hlogo.css("height", "56px").css("width", "56px")
             asj_warning.css("font-size", "5em");
             popupqr.css("width", "175").css("height", "175");
@@ -291,10 +292,11 @@ $(document).ready(function() {
             break;
         case (w <= 1200 && w > 1100):
             ele.css("font-size", "7px").css("font-weight", "600");
-            skillimg.css("display", "none")
-            skillvid.css("display", "block")
-            formdiv.css("padding", "15px 0px 15px 0px")
-            hlogo.css("height", "56px").css("width", "56px")
+            skillimg.css("display", "none");
+            skillvid.css("display", "block");
+            formdiv.css("padding", "15px 0px 15px 0px");
+            iframe.css("width","104%");
+            hlogo.css("height", "56px").css("width", "56px");
             asj_warning.css("font-size", "5em");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
@@ -302,10 +304,11 @@ $(document).ready(function() {
             break;
         case (w <= 1100 && w > 980):
             ele.css("font-size", "7px").css("font-weight", "600");
-            skillimg.css("display", "none")
-            skillvid.css("display", "block")
-            formdiv.css("padding", "15px 0px 15px 0px")
-            hlogo.css("height", "56px").css("width", "56px")
+            skillimg.css("display", "none");
+            skillvid.css("display", "block");
+            formdiv.css("padding", "15px 0px 15px 0px");
+            iframe.css("width","104%");
+            hlogo.css("height", "56px").css("width", "56px");
             asj_warning.css("font-size", "4em");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
@@ -313,10 +316,11 @@ $(document).ready(function() {
             break;
         case (w <= 980 && w > 880):
             ele.css("font-size", "7px").css("font-weight", "600");
-            skillimg.css("display", "none")
-            skillvid.css("display", "block")
-            formdiv.css("padding", "15px 0px 15px 0px")
-            hlogo.css("height", "56px").css("width", "56px")
+            skillimg.css("display", "none");
+            skillvid.css("display", "block");
+            formdiv.css("padding", "15px 0px 15px 0px");
+            iframe.css("width","104%");
+            hlogo.css("height", "56px").css("width", "56px");
             asj_warning.css("font-size", "4em");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
@@ -324,10 +328,11 @@ $(document).ready(function() {
             break;
         case (w <= 880 && w > 768):
             ele.css("font-size", "7px").css("font-weight", "600");
-            skillimg.css("display", "none")
-            skillvid.css("display", "block")
-            formdiv.css("padding", "15px 0px 15px 0px")
-            hlogo.css("height", "56px").css("width", "56px")
+            skillimg.css("display", "none");
+            skillvid.css("display", "block");
+            formdiv.css("padding", "15px 0px 15px 0px");
+            iframe.css("width","103%");
+            hlogo.css("height", "56px").css("width", "56px");
             asj_warning.css("font-size", "3em");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
@@ -335,10 +340,11 @@ $(document).ready(function() {
             break;
         case (w <= 768 && w > 767):
             ele.css("font-size", "7px").css("font-weight", "600");
-            skillimg.css("display", "none")
-            skillvid.css("display", "block")
-            formdiv.css("padding", "15px 0px 15px 0px")
-            hlogo.css("height", "56px").css("width", "56px")
+            skillimg.css("display", "none");
+            skillvid.css("display", "block");
+            formdiv.css("padding", "15px 0px 15px 0px");
+            iframe.css("width","103%");
+            hlogo.css("height", "56px").css("width", "56px");
             asj_warning.css("font-size", "3em");
             popupqr.css("width", "175").css("height", "175");
             lqr.css("width", "175").css("height", "175");
@@ -350,11 +356,12 @@ $(document).ready(function() {
             } else {
                 ele.css("font-size", "7px").css("line-height", "10px").css("width", "58%");
             }
-            skillimg.css("display", "block")
-            skillvid.css("display", "none")
-            formdiv.css("padding", "15px 0px 15px 0px")
-            hlogo.css("height", "45px").css("width", "45px")
-            hinner.css("padding-top", "7px")
+            skillimg.css("display", "block");
+            skillvid.css("display", "none");
+            formdiv.css("padding", "15px 0px 15px 0px");
+            iframe.css("width","103%");
+            hlogo.css("height", "45px").css("width", "45px");
+            hinner.css("padding-top", "7px");
             asj_warning.css("font-size", "2em");
             $('head').append('<meta name="color-scheme" content="dark light" />');
             popupqr.css("width", "157").css("height", "157");
@@ -368,11 +375,12 @@ $(document).ready(function() {
             } else {
                 ele.css("font-size", "7px").css("line-height", "10px").css("width", "58%");
             }
-            skillimg.css("display", "block")
-            skillvid.css("display", "none")
-            formdiv.css("padding", "15px 0px 15px 0px")
-            hlogo.css("height", "45px").css("width", "45px")
-            hinner.css("padding-top", "7px")
+            skillimg.css("display", "block");
+            skillvid.css("display", "none");
+            formdiv.css("padding", "15px 0px 15px 0px");
+            iframe.css("width","103%");
+            hlogo.css("height", "45px").css("width", "45px");
+            hinner.css("padding-top", "7px");
             asj_warning.css("font-size", "1.5em");
             $('head').append('<meta name="color-scheme" content="dark light" />');
             popupqr.css("width", "157").css("height", "157");
@@ -387,11 +395,12 @@ $(document).ready(function() {
             } else {
                 ele.css("font-size", "7px").css("line-height", "10px").css("width", "58%");
             }
-            skillimg.css("display", "block")
-            skillvid.css("display", "none")
-            formdiv.css("padding", "15px 0px 15px 0px")
-            hlogo.css("height", "45px").css("width", "45px")
-            hinner.css("padding-top", "7px")
+            skillimg.css("display", "block");
+            skillvid.css("display", "none");
+            formdiv.css("padding", "15px 0px 15px 0px");
+            iframe.css("width","103.5%");
+            hlogo.css("height", "45px").css("width", "45px");
+            hinner.css("padding-top", "7px");
             asj_warning.css("font-size", "1.5em");
             $('head').append('<meta name="color-scheme" content="dark light" />');
             popupqr.css("width", "157").css("height", "157");
@@ -406,11 +415,12 @@ $(document).ready(function() {
             } else {
                 ele.css("font-size", "7px").css("line-height", "10px").css("width", "58%");
             }
-            skillimg.css("display", "block")
-            skillvid.css("display", "none")
-            formdiv.css("padding", "15px 0px 15px 0px")
-            hlogo.css("height", "45px").css("width", "45px")
-            hinner.css("padding-top", "7px")
+            skillimg.css("display", "block");
+            skillvid.css("display", "none");
+            formdiv.css("padding", "15px 0px 15px 0px");
+            iframe.css("width","105%");
+            hlogo.css("height", "45px").css("width", "45px");
+            hinner.css("padding-top", "7px");
             asj_warning.css("font-size", "1em");
             $('head').append('<meta name="color-scheme" content="dark light" />');
             popupqr.css("width", "157").css("height", "157");
