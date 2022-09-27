@@ -872,10 +872,14 @@ $(document).ready(function() {
     });
     $("#loadmore1").click(function() {
         if (!$("#cert1").is(":visible")) {
-            $("#cert1").show();
+            $("#cert1").show();            
+        }
+        else  if (!$("#cert2").is(":visible")) {
+            $("#cert2").show();
             $(this).hide();
             $("#btntitle1").hide();
-        }  else {
+        } 
+          else {
             $(this).hide();
             $("#btntitle1").hide();
         }
@@ -904,7 +908,18 @@ $(document).ready(function() {
         var y = $(window).scrollTop(); //your current y position on the page
         $(window).scrollTop(y + 1);
     });
-
+    $("#loadmore3").click(function() {
+        if (!$("#train1").is(":visible")) {
+            $("#train1").show();
+            $(this).hide();
+            $("#btntitle3").hide();
+        }  else {
+            $(this).hide();
+            $("#btntitle3").hide();
+        }
+        var y = $(window).scrollTop(); //your current y position on the page
+        $(window).scrollTop(y + 1);
+    });
     var flkty = new Flickity('.main-gallery', {
         cellAlign: 'left',
         contain: true,
