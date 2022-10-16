@@ -910,7 +910,12 @@ $(document).ready(function() {
     });
     $("#loadmore3").click(function() {
         if (!$("#train1").is(":visible")) {
+            //$("#train1").show();
+            if(w >= 873 && w<=1136){
+            $("#train1").css("display","inline-flex");
+        }else{
             $("#train1").show();
+        }
             $(this).hide();
             $("#btntitle3").hide();
         }  else {
