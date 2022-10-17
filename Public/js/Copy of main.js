@@ -17,6 +17,13 @@ $(document).ready(function() {
     })
     $(function() {
         $(window).on("scroll", function(e) {
+            var winScroll1 = document.body.scrollTop || document.documentElement.scrollTop;
+    var height1 = document.documentElement.scrollHeight - document.documentElement.clientHeight;  
+    var scrolled = (winScroll1 / height1) * 100;
+  
+    document.getElementById("progressBar").style.width = scrolled + "%";
+
+
             var height = 0;
             var scrollTop = $(this).scrollTop();
 
@@ -24,12 +31,14 @@ $(document).ready(function() {
             if (scrollTop < 65) {
                 height = $("#head-trigger").height();
                 $("#head-trigger").removeClass("scrolled-header");
+                $("#progressBar").hide();
             } else {
                 $("#head-trigger").addClass("scrolled-header");
                 $("body").css({
                     "marginTop": height
                 });
                 $("#head-trigger").fadeIn();
+                $("#progressBar").show();
             }
         });
     });
