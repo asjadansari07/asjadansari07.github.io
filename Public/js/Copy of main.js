@@ -804,7 +804,8 @@ $(document).ready(function() {
             document.documentElement.style.setProperty('--background', col, 'important');
         }
         $('.popup_menu .btn1').css('background', rgba);
-        $('#androidapk').attr("src", src)
+        //$('#androidapk').attr("src", src)
+        $('#androidapk').attr("fill", col)
     }
     $(".trigger").click(function() {
         $(".popup_menu").toggleClass("active");
