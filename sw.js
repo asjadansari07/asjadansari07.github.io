@@ -53,14 +53,7 @@ const assets = [
   '/Public/images/form.webp',
   '/Public/images/office.webp',
   '/Public/images/ssrs.webp',
-  '/Public/images/mvc.webp',
-  '/Public/images/apk_yellow.gif',
-  '/Public/images/apk_green.gif',
-  '/Public/images/apk_blue.gif',
-  '/Public/images/apk_teal.gif',
-  '/Public/images/apk_magenta.gif',
-  '/Public/images/apk_orange.gif',
-  '/Public/images/apk_grey.gif'
+  '/Public/images/mvc.webp'
 ];
 //  '/Public/images/apk_grey.gif',
 //  '/Public/images/beach.webm',
