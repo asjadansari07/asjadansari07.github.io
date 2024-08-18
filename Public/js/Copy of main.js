@@ -530,8 +530,8 @@ $(document).ready(function() {
             });
         }
 
-        document.documentElement.style.setProperty('--mycol', '#FF0000', 'important');
-        document.documentElement.style.setProperty('--background', '#FF0000', 'important');
+        document.documentElement.style.setProperty('--mycol', '#008080', 'important');
+        document.documentElement.style.setProperty('--background', '#008080', 'important');
         if (w > 1200 || (w <= 1200 && w > 1100) || (w <= 1100 && w > 980) || (w <= 980 && w > 880) || (w <= 880 && w > 768) || (w <= 768 && w > 767)) {
             if (window.matchMedia && matched) {
                 iframe.css("filter", "invert(0.9)");
@@ -591,7 +591,7 @@ $(document).ready(function() {
                 counter = 0;
                 break;
             default:
-                changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
+                changeColor('#008080', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
                 counter = 0;
                 break;
         }
@@ -606,6 +606,8 @@ $(document).ready(function() {
         $(".sora-about-box").css('background', "rgb(0, 0, 0)");
         $("#outer-wrapper").css('background', "rgb(0, 0, 0)");
         $(".bot-bar-menu").css('background', "rgb(0, 0, 0)");
+        $(".m-backtotop").css('border', "2px solid rgb(255, 255, 255)");
+        $(".m-theme").css('border', "2px solid rgb(255, 255, 255)");
         //$(".tysum-wrapper").css('background', "rgb(0, 0, 0)");
         document.documentElement.style.setProperty('--bccol', 'black', 'important');
         document.documentElement.style.setProperty('--scol', 'white', 'important');
@@ -641,6 +643,8 @@ $(document).ready(function() {
         $(".sora-about-box").css('background', "rgb(255, 255, 255)");
         $("#outer-wrapper").css('background', "rgb(255, 255, 255)");
         $(".bot-bar-menu").css('background', "rgb(255, 255, 255)");
+        $(".m-backtotop").css('border', "2px solid rgb(0,0,0)");
+        $(".m-theme").css('border', "2px solid rgb(0,0,0)");
         //$(".tysum-wrapper").css('background', "rgb(255, 255, 255)");
         document.documentElement.style.setProperty('--bccol', 'white', 'important');
         document.documentElement.style.setProperty('--scol', 'black', 'important');
@@ -999,8 +1003,8 @@ $(document).ready(function() {
     setTimeout(function() {
         var webmsrcvid = $('#webmsrcvid');
         var mp4srcvid = $('#mp4srcvid');
-        webmsrcvid.attr('data-src', 'Public/images/beach.webm');
-        mp4srcvid.attr('data-src', 'Public/images/beach.mp4');
+        webmsrcvid.attr('data-src', 'Public/images/beach_.webm');
+        mp4srcvid.attr('data-src', 'Public/images/beach_.mp4');
         $("video#myvideo source").each(function() {
             var sourceFile = $(this).attr("data-src");
             $(this).attr("src", sourceFile);
