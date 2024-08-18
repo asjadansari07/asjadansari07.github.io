@@ -559,41 +559,38 @@ $(document).ready(function() {
     $(".m-theme").click(function() {
         switch (counter) {
             case 0:
-                changeColor('#ffbd2f', 'rgba(255,189,47,0.5)', 'Public/images/apk_yellow.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');
+                changeColor('#ffbd2f', 'rgba(255,189,47,0.5)');
                 counter += 1;
                 break;
             case 1:
-                changeColor('#00BC22', 'rgba(0,255,0,0.5)', 'Public/images/apk_green.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSeXyW2PDxsG5Y_R5eTmWrtWjG-vMJQvYXWksHXFC3TbEO7QxQ/viewform?embedded=true');
+                changeColor('#00BC22', 'rgba(0,255,0,0.5)');
                 counter += 1;
                 break;
             case 2:
-                changeColor('#0030EF', 'rgba(0,0,255,0.5)', 'Public/images/apk_blue.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSfNb2Kzqwg1ABhvCjaUbFcUw_zRzrF18AK5aaOF1SnWkdpMZA/viewform?embedded=true');
+                changeColor('#0030EF', 'rgba(0,0,255,0.5)');
                 counter += 1;
                 break;
             case 3:
-                changeColor('#FF0000', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
+                changeColor('#FF0000', 'rgba(255,0,0,0.5)');
                 counter += 1;
                 break;
             case 4:
-                changeColor('#FF00FF', 'rgba(255,0,255,0.5)', 'Public/images/apk_magenta.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSejjLWlzY8VK2eO-bhy5JzNHhumu7VXdTEGG8tpPn4EDC5jyQ/viewform?embedded=true');
+                changeColor('#FF00FF', 'rgba(255,0,255,0.5)');
                 counter += 1;
                 break;
             case 5:
-                changeColor('#FF8000', 'rgba(255,128,0,0.5)', 'Public/images/apk_orange.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSelvtCeFbRzhve1QF3h5nODdntJvFePBabgZiLuDxsuLGZjQA/viewform?embedded=true');
+                changeColor('#FF8000', 'rgba(255,128,0,0.5)');
                 counter += 1;
                 break;
             case 6:
-                changeColor('#808080', 'rgba(192,192,192,0.5)', 'Public/images/apk_grey.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScMJ6lFRbePTtDsSnTRCXPQEOhP8K8nVK5Xb8p-qT69QssbpQ/viewform?embedded=true');
+                changeColor('#808080', 'rgba(192,192,192,0.5)');
                 counter += 1;
                 break;
             case 7:
-                changeColor('#008080', 'rgba(0,128,128,0.5)', 'Public/images/apk_teal.gif', 'https://docs.google.com/forms/d/e/1FAIpQLSex6H7IrFV1OfAGRVnfflw9dv2Z0F2vCTQ2NcoWmL7Q4WPyOg/viewform?embedded=true');
-                counter = 0;
-                break;
             default:
-                changeColor('#008080', 'rgba(255,0,0,0.5)', 'Public/images/apk_red.gif', 'https://docs.google.com/forms/d/e/1FAIpQLScS8s6OrBD3UmDvtTZqPg3j1WcmWptpsubVhLoSqgyY51fnng/viewform?embedded=true');
+                changeColor('#008080', 'rgba(0,128,128,0.5)');
                 counter = 0;
-                break;
+                break;            
         }
     });
 
@@ -743,7 +740,7 @@ $(document).ready(function() {
         }
     }
 
-    function changeColor(col, rgba, src, formsrc) {
+    function changeColor(col, rgba) {
         //if(details.toString().toLowerCase().includes('trident'))
         if (details.toString().toLowerCase().indexOf('trident') > -1) {
             $(".perctext").css("color", col);
