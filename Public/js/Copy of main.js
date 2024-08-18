@@ -606,8 +606,8 @@ $(document).ready(function() {
         $(".sora-about-box").css('background', "rgb(0, 0, 0)");
         $("#outer-wrapper").css('background', "rgb(0, 0, 0)");
         $(".bot-bar-menu").css('background', "rgb(0, 0, 0)");
-        $(".m-backtotop").css('border', "2px solid rgb(255, 255, 255)");
-        $(".m-theme").css('border', "2px solid rgb(255, 255, 255)");
+        // $(".m-backtotop").css('border', "2px solid rgb(255, 255, 255)");
+        // $(".m-theme").css('border', "2px solid rgb(255, 255, 255)");
         //$(".tysum-wrapper").css('background', "rgb(0, 0, 0)");
         document.documentElement.style.setProperty('--bccol', 'black', 'important');
         document.documentElement.style.setProperty('--scol', 'white', 'important');
@@ -643,8 +643,8 @@ $(document).ready(function() {
         $(".sora-about-box").css('background', "rgb(255, 255, 255)");
         $("#outer-wrapper").css('background', "rgb(255, 255, 255)");
         $(".bot-bar-menu").css('background', "rgb(255, 255, 255)");
-        $(".m-backtotop").css('border', "2px solid rgb(0,0,0)");
-        $(".m-theme").css('border', "2px solid rgb(0,0,0)");
+        // $(".m-backtotop").css('border', "2px solid rgb(0,0,0)");
+        // $(".m-theme").css('border', "2px solid rgb(0,0,0)");
         //$(".tysum-wrapper").css('background', "rgb(255, 255, 255)");
         document.documentElement.style.setProperty('--bccol', 'white', 'important');
         document.documentElement.style.setProperty('--scol', 'black', 'important');
