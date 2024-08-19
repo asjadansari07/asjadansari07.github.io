@@ -32,6 +32,8 @@ const assets = [
   '/Public/images/AppCardRepSep2022.webp', 
   '/Public/images/AppCardRepJan2020.webp', 
   '/Public/images/asj_circle1.webp', 
+  '/Public/images/header-mask-black-after.webp', 
+  '/Public/images/header-mask-white-after.webp', 
   '/Public/images/aspnet.webp',
   '/Public/images/sql.webp',
   '/Public/images/crm.webp',
