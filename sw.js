@@ -117,13 +117,33 @@ function fromCache(request) {
   });
 }
 
+// function updateCache(request, response) {
+//     return caches.open(CACHEName).then(function (cache) {
+//         if (request.url.startsWith('chrome-extension') ||request.url.includes('extension') ||!(request.url.indexOf('http') === 0))
+//             {
+//             return
+//         }else{
+//         return cache.put(request, response);
+//         }
+//   });
+// }
 function updateCache(request, response) {
-    return caches.open(CACHEName).then(function (cache) {
-        if (request.url.startsWith('chrome-extension') ||request.url.includes('extension') ||!(request.url.indexOf('http') === 0))
-            {
-            return
-        }else{
-        return cache.put(request, response);
-        }
-  });
+  // Check if response is ok (status code 200) before caching
+  if (response.status === 200) {
+      // Open the cache and put the request-response pair
+      return caches.open(CACHEName).then(function (cache) {
+          // Ignore URLs that should not be cached
+          if (request.url.startsWith('chrome-extension') || 
+              request.url.includes('extension') || 
+              !(request.url.indexOf('http') === 0)) {
+              return; // Do not cache this request
+          } else {
+              return cache.put(request, response);
+          }
+      });
+  } else {
+      // If the response status is not 200, do not cache it
+      // console.log('Response not cached due to status:', response.status);
+      return Promise.resolve(); // Return a resolved promise to maintain promise chain
+  }
 }
