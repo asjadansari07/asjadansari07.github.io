@@ -7,6 +7,15 @@ jQuery(document)['ready'](function(_0x24d5x2) {
 });
 
 $(document).ready(function() {
+
+    function changeWaveCol(col) {
+        // Use jQuery to find the SVG element within the container
+        var $svg = $('.waves svg');
+        if ($svg.length) {
+            // Example: Change the fill color of all paths
+            $svg.find('path').attr('fill', col); // Change to your desired color
+        }
+    }
     $('.menu')['slicknav']({
         prependTo: '.menu-mobile',
         label: ''
@@ -128,14 +137,14 @@ $(document).ready(function() {
 
                         $('#zoom').load('Public/images/sqr.svg');
                         $('#pop-up').load('Public/images/lqr.svg');
-
-
+                        $('.waves').load('Public/images/waves.svg');
                         //document.getElementById("zoom").innerHTML='<object type="text/html" data="Public/images/sqr.svg" ></object>';
                         //document.getElementById("pop-up").innerHTML='<object type="text/html" data="Public/images/lqr.svg" ></object>';
                     }
                 } else {
                     $('#zoom').load('Public/images/sqr.svg');
                     $('#pop-up').load('Public/images/lqr.svg');
+                    $('.waves').load('Public/images/waves.svg');
                     //$('#pop-up').html($('#pop-up').html().replace('webp','png'));
                     $('#pop-up').load('Public/images/lqr.svg', function() {
                         $(this).html($(this).html().replace('webp', 'png'));
@@ -560,35 +569,43 @@ $(document).ready(function() {
         switch (counter) {
             case 0:
                 changeColor('#ffbd2f', 'rgba(255,189,47,0.5)');
+                changeWaveCol('#ffbd2f');
                 counter += 1;
                 break;
             case 1:
                 changeColor('#00BC22', 'rgba(0,255,0,0.5)');
+                changeWaveCol('#00BC22');
                 counter += 1;
                 break;
             case 2:
                 changeColor('#0030EF', 'rgba(0,0,255,0.5)');
+                changeWaveCol('#0030EF');
                 counter += 1;
                 break;
             case 3:
                 changeColor('#FF0000', 'rgba(255,0,0,0.5)');
+                changeWaveCol('#FF0000');
                 counter += 1;
                 break;
             case 4:
                 changeColor('#FF00FF', 'rgba(255,0,255,0.5)');
+                changeWaveCol('#FF00FF');
                 counter += 1;
                 break;
             case 5:
                 changeColor('#FF8000', 'rgba(255,128,0,0.5)');
+                changeWaveCol('#FF8000');
                 counter += 1;
                 break;
             case 6:
                 changeColor('#808080', 'rgba(192,192,192,0.5)');
+                changeWaveCol('#808080');
                 counter += 1;
                 break;
             case 7:
             default:
                 changeColor('#008080', 'rgba(0,128,128,0.5)');
+                changeWaveCol('#008080');
                 counter = 0;
                 break;            
         }
