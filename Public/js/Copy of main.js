@@ -1050,8 +1050,8 @@ $(document).ready(function() {
     setTimeout(function() {
         var webmsrcvid = $('#webmsrcvid');
         var mp4srcvid = $('#mp4srcvid');
-        webmsrcvid.attr('data-src', 'Public/images/beach_.webm');
-        mp4srcvid.attr('data-src', 'Public/images/beach_.mp4');
+        webmsrcvid.attr('data-src', 'Public/images/beach.webm');
+        mp4srcvid.attr('data-src', 'Public/images/beach.mp4');
         $("video#myvideo source").each(function() {
             var sourceFile = $(this).attr("data-src");
             $(this).attr("src", sourceFile);
