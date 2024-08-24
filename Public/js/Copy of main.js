@@ -7,7 +7,7 @@ jQuery(document)['ready'](function(_0x24d5x2) {
 });
 
 $(document).ready(function() {
-
+    var col = $(".hello-txt").css("background-color");
     function changeWaveCol(col) {
         // Use jQuery to find the SVG element within the container
         var $svg = $('.waves svg');
@@ -138,13 +138,24 @@ $(document).ready(function() {
                         $('#zoom').load('Public/images/sqr.svg');
                         $('#pop-up').load('Public/images/lqr.svg');
                         $('.waves').load('Public/images/waves.svg');
+                        $('#androidsvg').load('Public/images/androidLogo.svg', function() {                            
+                            if ($("#androidapk").length) {
+                                $('#androidapk').attr("fill", col);
+                                startAnim();  
+                            } 
+                        });
                         //document.getElementById("zoom").innerHTML='<object type="text/html" data="Public/images/sqr.svg" ></object>';
                         //document.getElementById("pop-up").innerHTML='<object type="text/html" data="Public/images/lqr.svg" ></object>';
                     }
                 } else {
                     $('#zoom').load('Public/images/sqr.svg');
                     $('#pop-up').load('Public/images/lqr.svg');
-                    $('.waves').load('Public/images/waves.svg');
+                    $('.waves').load('Public/images/waves.svg');                   
+                    $('#androidsvg').load('Public/images/androidLogo.svg', function() {                            
+                        if ($("#androidapk").length) {
+                            startAnim();  
+                        } 
+                    });
                     //$('#pop-up').html($('#pop-up').html().replace('webp','png'));
                     $('#pop-up').load('Public/images/lqr.svg', function() {
                         $(this).html($(this).html().replace('webp', 'png'));
@@ -746,7 +757,7 @@ $(document).ready(function() {
     }
 
     function changeThemeMode() {
-        var col = $(".hello-txt").css("background-color");
+        // var col = $(".hello-txt").css("background-color");
         if ($("body").css("background-color").replace(/\s/g, '') == "rgb(255,255,255)") {
             //if(window.matchMedia && matched){                  
             changeForm(w, col)
@@ -831,46 +842,68 @@ $(document).ready(function() {
     if ($(window).width() <= 1100) {
         $(".fancyBtn").removeClass("fancyBtn");
     }
-    $(function() {
-        $("#androidapk").hover(function() {
-            $("#androidapk").animate({
-                left: '-12px'
-            });
-            $(this).stop(true).fadeTo(200, 1);
-        }, function() {
-            $("#androidapk").animate({
-                left: '-12px'
-            });
-            $(this).stop(true).fadeTo(200, 1);
+    // $(function() {
+    //     $("#androidapk").hover(function() {
+    //         $("#androidapk").animate({
+    //             left: '-12px'
+    //         });
+    //         $(this).stop(true).fadeTo(200, 1);
+    //     }, function() {
+    //         $("#androidapk").animate({
+    //             left: '-12px'
+    //         });
+    //         $(this).stop(true).fadeTo(200, 1);
+    //     });
+    // });
+
+    // $(function() {
+    //     $("#androidapk").mouseleave(function() {
+    //         $("#androidapk").animate({
+    //             left: '-65px'
+    //         });
+    //         resetAnim()
+    //     }, function() {
+    //         $("#androidapk").animate({
+    //             left: '-65px'
+    //         });
+    //         resetAnim()
+    //     });
+    //     var startAnim = function() {
+    //         $("#androidapk").delay(7000).animate({
+    //             left: '-12px'
+    //         }, resetAnim);
+    //     }
+    //     var resetAnim = function() {
+    //         $("#androidapk").delay(7000).animate({
+    //             left: '-65px'
+    //         });
+    //         startAnim();
+    //     }
+    //     startAnim()
+    // });
+
+    function startAnim() {
+        $("#androidapk").delay(7000).animate({
+            left: '-12px'
+        }, resetAnim);
+    }
+
+    function resetAnim() {
+        $("#androidapk").delay(7000).animate({
+            left: '-65px'
         });
+        startAnim();
+    }
+
+    // Attach event handlers
+    $(document).on('mouseenter', '#androidapk', function() {
+        $(this).stop(true).animate({ left: '-12px' }, 200).fadeTo(200, 1);
     });
 
-    $(function() {
-        $("#androidapk").mouseleave(function() {
-            $("#androidapk").animate({
-                left: '-65px'
-            });
-            resetAnim()
-        }, function() {
-            $("#androidapk").animate({
-                left: '-65px'
-            });
-            resetAnim()
-        });
-        var startAnim = function() {
-            $("#androidapk").delay(7000).animate({
-                left: '-12px'
-            }, resetAnim);
-        }
-        var resetAnim = function() {
-            $("#androidapk").delay(7000).animate({
-                left: '-65px'
-            });
-            startAnim();
-        }
-        startAnim()
+    $(document).on('mouseleave', '#androidapk', function() {
+        $(this).stop(true).animate({ left: '-65px' }, 200);
+        resetAnim();
     });
-
     //Make sure the user has scrolled at least double the height of the browser
     //var toggleHeight = $(window).outerHeight() * 2;
 
