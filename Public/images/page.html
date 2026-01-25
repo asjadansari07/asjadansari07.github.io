@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Drag & Drop → White PNG (Same Size)</title>
+
+<style>
+    body {
+        background: #111;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .drop-zone {
+        border: 2px dashed #666;
+        border-radius: 10px;
+        padding: 40px;
+        max-width: 400px;
+        margin: auto;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .drop-zone.dragover {
+        border-color: #fff;
+        background: rgba(255,255,255,0.08);
+    }
+
+    canvas {
+        margin-top: 25px;
+        max-width: 100%;
+        border: 1px dashed #333;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 10px 18px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<body>
+
+<h2>Drag & Drop PNG → White PNG</h2>
+<p>Output size = original image size</p>
+
+<div class="drop-zone" id="dropZone">
+    Drop image here
+</div>
+
+<canvas id="canvas"></canvas>
+
+<br>
+<button id="downloadBtn" hidden>Download White PNG</button>
+
+<script>
+const dropZone = document.getElementById("dropZone");
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+const downloadBtn = document.getElementById("downloadBtn");
+
+dropZone.addEventListener("dragover", e => {
+    e.preventDefault();
+    dropZone.classList.add("dragover");
+});
+
+dropZone.addEventListener("dragleave", () => {
+    dropZone.classList.remove("dragover");
+});
+
+dropZone.addEventListener("drop", e => {
+    e.preventDefault();
+    dropZone.classList.remove("dragover");
+
+    const file = e.dataTransfer.files[0];
+    if (!file || !file.type.startsWith("image/")) return;
+
+    const img = new Image();
+    img.onload = () => generateWhite(img);
+    img.src = URL.createObjectURL(file);
+});
+
+function generateWhite(img) {
+    // Canvas size = original image size
+    canvas.width = img.width;
+    canvas.height = img.height;
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw original image
+    ctx.drawImage(img, 0, 0);
+
+    // Convert to pure white (keep alpha)
+    ctx.globalCompositeOperation = "source-in";
+    ctx.fillStyle = "#ffffff";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.globalCompositeOperation = "source-over";
+
+    downloadBtn.hidden = false;
+}
+
+downloadBtn.onclick = () => {
+    const link = document.createElement("a");
+    link.download = "white-image.png";
+    link.href = canvas.toDataURL("image/png");
+    link.click();
+};
+</script>
+
+</body>
+</html>
